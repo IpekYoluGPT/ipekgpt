@@ -1,0 +1,135 @@
+700+ SAAT Teknoloji Eğitimi,1,300+ KİŞİ eğitim gördü.1,800+ SAAT 3D Yazıcı Desteği verildi projelerde. 10+
+Desteklenen Proje var.
+
+
+EN İYİ ÖZELLİKLERİMİZ:
+
+Teknik konuda yetkin personeller:
+Yetkin personellerimiz, teknik konularda derin bilgi ve beceriye sahip olup, teknik olarak karşılaşılan sorunlara çözüm odaklı ve yenilikçi yaklaşımlar sunmaktadır.
+
+
+Prototip atölyelerimiz:
+Prototip atölyelerimiz; 3D Yazıcı Atölyesi, beceri gerektiren Montaj Atölyesi ve hassas çalışmalar için Delici ve Kesici Aletler Atölyesi ile donanımlı ve kapsamlı bir üretim imkanı sunmaktadır. 
+
+Toplantı Salonlarımız:
+Her biri 60 kişilik olmak üzere 3 farklı toplantı ve eğitim salonları. 
+
+
+Sosyal Etkinlik Alanı:
+Çadır Kamp Alanı 
+
+At Binicilik Alanı 
+
+Okçuluk Sahası 
+
+3,5 km Bisiklet Yolu 
+
+Amfi Tiyatro Alanı
+
+Langırt, PlayStation Odası 
+
+
+Konaklama İmkanı:
+Toplam 256 yatak kapasiteli 4 bloktan oluşan konaklama alanları. 
+
+
+
+
+EĞİTİMLERİMİZ:
+Ortaokul Seviyesi Eğitimlerimiz:
+Scratch ile Oyun Geliştirme Eğitimi, çocuklara, blok tabanlı programlama ile oyun ve animasyon yapmayı öğretir. 
+Thinkercad ile tasarım eğitimi, kullanıcıların geometrik ifadelerle 3D modeller oluşturması ve bu modelleri 3D baskı ve elektronik devre tasarımlarında nasıl kullanabileceklerini öğretir. 
+Temel elektronik eğitimi, elektrik ve elektronik alanında başlangıç seviyesinde bilgiler içeren bir eğitim programıdır. 
+DJI Tello ile Temel Drone Kullanımı Eğitimi, temel drone uçuş teknikleri, kumanda kontrolleri ve güvenlik protokolleri hakkında bilgi verici, teorik ve pratik eğitimleri kapsamaktadır. 
+mBot ile Robotik Kodlama Eğitimi, yazılımda sürükle bırak tekniğini kullanarak temel programlama ve robotik öğrenilmeye odaklanılır. 
+
+
+
+
+
+Lise Seviyesi Eğitimlerimiz:
+3D yazıcı eğitimi, katmanlama üretim teknolojisini kullanarak nesne tasarlama, 3D sistemi ve bu modeller 3D yazıcılarla fiziksel olarak oluşturma süreçlerini kapsar. 
+
+3D Modelleme ve Tasarım Eğitimi, Cad programlarını kullanarak katı modelleri oluşturmayı öğretir. 
+
+
+Temel Elektronik Eğitimi, elektronik malzemeleri ve kontrol kartlarının öğrenildiği bir eğitim programıdır. 
+
+
+
+
+İpek Yolu Elektronik Geliştirme Kartını kullanarak robotik sistemleri programlama ve kontrol etme becerilerini öğreten bir eğitim programıdır. 
+
+
+İnsansız Hava Araçları Kullanımı Eğitimi, uçuş teknikleri, kumanda kontrolleri ve güvenlik protokolleri hakkında bilgi verici, teorik ve pratik eğitimleri kapsamaktadır. 
+
+
+
+Temel yazılım eğitimleri, lise seviyesi öğrencilere python, C#, C++ gibi eğitimler  verilerek geleceğin yazılımcılarının yetiştirildiği eğitimlerdir. 
+
+
+
+
+
+
+
+ÜNİVERSİTE SEVİYESİ EĞİTİMLERİMİZ:
+Zirai İnsansız Hava Araçları Eğitimi, tarım sektöründe kullanılan insansız hava araçlarının uçuş teknikleri, kumanda kontrolleri ve güvenlik protokolleri hakkında bilgi verici, teorik ve pratik eğitimleri kapsamaktadır. 
+
+Zirai İnsansız Hava Araçları Eğitimi, tarım sektöründe kullanılan insansız hava araçlarının uçuş teknikleri, kumanda kontrolleri ve güvenlik protokolleri hakkında bilgi verici, teorik ve pratik eğitimleri kapsamaktadır. 
+
+
+Katı Modelleme (Solidworks) Eğitimi, sahip olunan 3D katı modülü, montaj yapma ve teknik çizim oluşturma yeteneği kazandırılır, endüstri standartlarındaki bir CAD yazılımı üzerine detaylı bir teknik ders sunar. 
+
+
+CNC Lazer Eğitimi, CNC lazer kesim makinelerinin kullanımı, tasarım ve üretim süreçlerini kapsayıcı bir şekilde öğretilir. 
+
+Drone Kullanımı Eğitimi, temel drone bilgileri uçuş güvenliği, simülasyon çalışmaları, teorik ve pratik eğitim içerikleri ile temelden profesyonele kadar olan uçuşlar üzerine yoğunlaşılmaktadır. 
+
+
+Sabit Kanat Uçak Eğitimi, sabit kanatlı model uçakların uçuş güvenliği, simülasyon çalışmaları, teorik ve pratik eğitim içerikleri ile temelden profesyonele kadar olan uçuşlar üzerine yoğunlaşılmaktadır. 
+
+
+
+C# ile Masaüstü Uygulama Geliştirme Eğitimi, C# programlama dilini kullanarak Windows tabanlı uygulamalar oluşturmayı öğreten bir eğitim sürecidir. 
+
+
+
+İleri Düzey Robotik Kodlama Eğitimi, daha karmaşık robotik sistemlerin tasarımı, programlanması ve kontrolüne odaklanan bir eğitim sürecidir. 
+
+
+İpek Yolu Elektronik Geliştirme Kartı ile IoT Eğitimi, ev otomasyonları, web sunucu ve uygulamalar, akıllı ev güvenliği, robotik ve uzaktan kumandalı projeler gibi çeşitli alanlardaki eğitimleri kapsamaktadır. 
+
+
+Yapay zeka 101 eğitimi, yapay zeka eğitiminin temel modelleri, yöntemleri ve uygulama programları gibi eğitimleri kapsamaktadır. 
+
+
+ROS Eğitimleri, Robot İşletim Sistemi (ROS) kullanımı ve robotik uygulamalar için programlama teknolojileri üzerindeki eğitimleri kapsamaktadır. 
+
+
+
+Mobil Uygulama Geliştirme Eğitimi, katılımcılara mobil cihazlar için yazılım geliştirmenin temel prensipleri, teknolojilerini ve yeteneklerini öğreten bir eğitim sürecidir. 
+
+
+Siber Güvenlik Eğitimi, bilişim bilgilerinin korunması, siber saldırıların tespit edilmesi ve korunma yöntemleri ile ilgili teorik bilgiler ve pratik olarak öğretilmesini içerir. 
+
+
+Front-End Developer Eğitimi, web sitelerinin kullanıcı tanımlarını oluşturmak için HTML, CSS ve JavaScript teknolojileri gibi teknikleri öğreten, kullanıcı deneyimine yönelik uygulamalı eğitimleri içermektedir. 
+
+
+TEKNOFEST Eğitimleri, yarışmalara katılacak olan bireylerin yada ekiplerin bu süreçte neler ile karşılaşacakları hangi alanlarda zorlanacakları ekip kurulmasında nelere dikkat edileceği gibi konularda temel bilgiler vermektedir. 
+
+
+
+
+
+DESTEKLEYEN KURUMLAR:
+Elazığ Valiliği, Elazığ İl Özel İdaresi, Elazığ Belediyesi, Fırat Üniversitesi,Fırat Kalkınma Ajansı
+
+
+
+
+
+
+
+

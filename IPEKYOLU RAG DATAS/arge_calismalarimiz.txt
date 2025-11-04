@@ -1,0 +1,105 @@
+İpek Yolu Elektronik Geliştirme Kartı:
+İpek Yolu Elektronik Geliştirme Kartı, Girişimci Kuluçka Merkezi mühendisleri tarafından tasarlanan ve üretilen bir geliştirme kartıdır. Bu kart, özel projelerde geniş bir uygulama yelpazesi sunmak amacıyla geliştirilmiştir. Teknik detayları ise;
+
+-ESP8266 32Bit Mikroişlemci
+-80MHz saat hızı (Overclock ile 160MHz saat hızı)
+-CH340 USB Çevirici
+-7 ile 12V arası giriş voltajı
+-3.3V çalışma gerilimi
+-Maksimum 12 mA I/O pin başına DC Akım
+-10 PWM I/O pini (Digital I/O pinleri ile payaşımlı)
+-4 MB Flash Hafıza
+-11 Digital I/O Pin
+-1 Analog Giriş (10 Bit)
+-Dahili 802.11 b/g/n WIFI
+-96 Kbytes Data RAM
+
+
+
+
+
+
+
+
+
+
+
+
+
+AVİYONİK SİSTEM SKYLOGIC:
+
+SkyLogic Uçuş Kontrol Kartı, Girişimci Kuluçka Merkezi mühendisleri tarafından tasarlanan ve üretilen bir aviyonik sistemdir. Bu kart, 7 kilometre dahili haberleşme alanına sahip olup alçak irtifa roketlerde kullanılmak üzere özel olarak geliştirilmiştir. Teknik detayları ise;
+-Dahili Haberleşme Alt Sistemi LoRa -(7km)
+-Haberleşme Frekansı Seçilebilir (900Mhz/433Mhz)
+-Basınç Ölçüm Aralığı (Tam Hassasiyet İle 300-1250hPa)
+-İrtifa Ölçüm Hassasiyeti (25cm)
+-Bir Adet Donanımsal I2C Portu (Harici Sensör Bağlantıları İçin)
+-Yüksek Hassasiyet İle Açısal Hesaplama (Sıfır Durum Hatası +-1 dps)
+-Uçuş Verileri Kayıt İçin USD Kart
+-Dahili Sıcaklık Sensörü (Yüksek Hassasiyet 0.01°C)
+-USB C Static Koruma
+-Geniş Besleme Voltaj Aralığı (7V - 17V)
+-Pyro Max Besleme 60V
+-İki Adet Pyro Çıkışı (Kanal Başına 15A)
+-İki Adet Donanımsal UART Portu (Harici GPS ve Haberleşme İçin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AVİYONİK SİSTEM MISFIRE V1.0
+
+MISFIRE v1.0, Girişimci Kuluçka Merkezi mühendisleri tarafından tasarlanan ve üretilen bir aviyonik sistemdir. Bu sistem, alçak irtifa roketlerinde güvenli ve etkili bir şekilde görev yükünü serbest bırakmak için özel olarak geliştirilmiş bir teknoloji içermektedir. 
+
+Dahili LoRa (10 km)
+Dahili Li-ion Şarj Ünitesi (3.6V to 4.2V 1 Cell 1 A Charce )
+Haberleşme Alt Sistemi (900 Mhz)
+Entegre GSP Alıcısı (Harici de Bağlanabilir)
+30.000 m İrtifaya Kadar Basınç Ölçümü
+20 cm İrtifa Hassasiyet
+Nem ve Sıcaklık Ölçümü
+Pil Voltaj Takibi
+2 Adet PYRO
+3.6-4.2 V Beslenme Gerilimi
+USB Type-C Üzerinden Şarj
+Uçuş Verileri için USD Kart Postu
+USB C Statik Koruma
+
+
+
+
+
+
+
+
+
+
+
+
+
+COPSYS BASINÇLI KURTARMA SİSTEMİ:
+Roketler hedeflenen irtifaya ulaştığında görev yükünü serbest bırakmak ve yere güvenli bir şekilde iniş yapabilmeleri için özel olarak geliştirilen basınçlı kurtarma sistemleri kullanılmaktadır. 2021 yılında özgün olarak tasarlana ayrılma sistemimiz için patent başvurusunda bulunulmuş ve şu an ticari kullanıma yönelik hazırlıklarımız devam etmektedir.
+
+-Ayarlanabilir Basınç Sistemi
+-Basınç Kontrol Modülü
+-İstenilen Sistemlere Entegrasyon Özelliği
+-Basınçlı Ayrılma Sistemi
+-Tekrar Edilebilir Güç Üretimi
+-12 V 1.5 A Güç Üretimi
+-Özel Tasarım Delici İğneler
+
+
+
+
+
+
+
