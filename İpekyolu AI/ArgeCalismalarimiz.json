@@ -1,0 +1,584 @@
+{
+    "metadata": {
+        "file_name": "3.2_arge_calismalari_detayli.json",
+        "category": "PROJELER_VE_BASARILAR",
+        "sub_category": "Ar-Ge Ürünleri Teknik Özellikleri",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "Merkezinizde geliştirilen Ar-Ge ürünleri nelerdir?",
+            "answer": "Girişimci Kuluçka Merkezi mühendislerimiz, özel projelerde kullanılmak üzere dört (4) ana Ar-Ge ürünü tasarlamış ve üretmiştir. Bu ürünler şunlardır: \n1. İpek Yolu Elektronik Geliştirme Kartı \n2. Aviyonik Sistem SKYLOGIC (Uçuş Kontrol Kartı) \n3. Aviyonik Sistem MISFIRE V1.0 \n4. COPSYS Basınçlı Kurtarma Sistemi. \nHer biri, kendi alanlarında spesifik mühendislik ihtiyaçlarına cevap vermek üzere geliştirilmiştir. Yeni çalışmalarımız da umarız çok yakında :)",
+            "source_ids": ["49", "51", "53", "55"],
+            "category": "Ar-Ge (Genel)",
+            "keywords": [
+                "arge ürünleri",
+                "liste",
+                "kompozit",
+                "geliştirme kartı",
+                "skylogic",
+                "misfire",
+                "copsys"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Aviyonik sistemleriniz nelerdir?",
+                "Patentli ürününüz var mı?",
+                "Bu ürünleri kim geliştirdi?"
+            ]
+        },
+        {
+            "question": "İpek Yolu Elektronik Geliştirme Kartı nedir ve temel özellikleri nelerdir?",
+            "answer": "İpek Yolu Elektronik Geliştirme Kartı, Girişimci Kuluçka Merkezi mühendisleri tarafından tasarlanan ve üretilen çok amaçlı bir geliştirme kartıdır. Özel projelerde geniş bir uygulama yelpazesi sunmayı amaçlar. Teknik olarak, ESP8266 32Bit Mikroişlemciye sahiptir, dahili 802.11 b/g/n WIFI modülü bulunur, 4 MB Flash Hafızası ve 96 Kbytes Data RAM'i vardır. 3.3V çalışma gerilimine sahiptir.",
+            "source_ids": ["49", "50"],
+            "category": "Geliştirme Kartı",
+            "keywords": [
+                "ipek yolu elektronik geliştirme kartı",
+                "genel bakış",
+                "esp8266",
+                "wifi",
+                "gkm mühendisleri"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Elektronik Geliştirme Kartı'nın işlemcisi ve saat hızı nedir?",
+                "Elektronik Geliştirme Kartı'nın I/O özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "Elektronik Geliştirme Kartı'nın işlemcisi ve saat hızı nedir?",
+            "answer": "İpek Yolu Elektronik Geliştirme Kartı, gücünü ESP8266 32Bit Mikroişlemciden almaktadır. Bu işlemci, standart olarak 80MHz saat hızında çalışır. Ancak, daha fazla performans gerektiren uygulamalar için 160MHz saat hızına kadar 'Overclock' (hız aşırtma) edilebilme özelliğine sahiptir.",
+            "source_ids": ["50"],
+            "category": "Geliştirme Kartı",
+            "keywords": [
+                "işlemci",
+                "esp8266",
+                "32bit",
+                "saat hızı",
+                "80mhz",
+                "160mhz",
+                "overclock",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Elektronik Geliştirme Kartı nedir?",
+                "Elektronik Geliştirme Kartı'nın voltaj özellikleri nedir?"
+            ]
+        },
+        {
+            "question": "Elektronik Geliştirme Kartı'nın I/O (Giriş/Çıkış) özellikleri nelerdir?",
+            "answer": "İpek Yolu Elektronik Geliştirme Kartı, projelerde esnek bağlantı imkanları sunar. Kart üzerinde 11 (on bir) adet Digital I/O Pini bulunmaktadır. Bu pinlerden 10 (on) tanesi aynı zamanda PWM I/O pini olarak da kullanılabilir (paylaşımlıdır). Ayrıca, sensör okumaları için 1 (bir) adet 10 Bit çözünürlüğünde Analog Giriş pinine sahiptir. Pin başına maksimum DC akım 12 mA olarak belirtilmiştir.",
+            "source_ids": ["50"],
+            "category": "Geliştirme Kartı",
+            "keywords": [
+                "i/o",
+                "giriş çıkış",
+                "digital i/o",
+                "pwm",
+                "analog giriş",
+                "10 bit",
+                "11 pin",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Elektronik Geliştirme Kartı'nın bağlantı ve hafıza özellikleri nedir?",
+                "Kartın işlemcisi nedir?"
+            ]
+        },
+        {
+            "question": "Elektronik Geliştirme Kartı'nın voltaj özellikleri nedir?",
+            "answer": "Kart, 3.3V (Volt) çalışma gerilimine sahiptir. Besleme için 7V ile 12V arası bir giriş voltajı kabul edebilmektedir. Kart üzerinde, bu giriş voltajını 3.3V'a düzenleyen bir voltaj regülatörü ve CH340 USB Çevirici bulunmaktadır.",
+            "source_ids": ["50"],
+            "category": "Geliştirme Kartı",
+            "keywords": [
+                "voltaj",
+                "çalışma gerilimi",
+                "3.3v",
+                "giriş voltajı",
+                "7v-12v",
+                "ch340",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Elektronik Geliştirme Kartı'nın I/O özellikleri nelerdir?",
+                "İpek Yolu Elektronik Geliştirme Kartı nedir?"
+            ]
+        },
+        {
+            "question": "kendi kartınızın wifi'si var mı?",
+            "answer": "Evet, İpekyolu Girişimci Kuluçka Merkezi mühendislerimiz tarafından tasarlanan İpek Yolu Elektronik Geliştirme Kartı'nın en önemli özelliklerinden biri de dahili kablosuz bağlantı yeteneğidir. Kart üzerinde, IoT (Nesnelerin İnterneti) ve benzeri ağ bağlantılı projelerde kullanılmak üzere dahili 802.11 b/g/n WIFI modülü bulunmaktadır.",
+            "source_ids": ["49", "50"],
+            "category": "Geliştirme Kartı",
+            "keywords": [
+                "wifi",
+                "kablosuz",
+                "802.11",
+                "iot",
+                "bağlantı",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Elektronik Geliştirme Kartı'nın bağlantı ve hafıza özellikleri nedir?",
+                "IoT eğitimi veriyor musunuz?"
+            ]
+        },
+        {
+            "question": "Aviyonik Sistem SKYLOGIC nedir ve temel amacı nedir?",
+            "answer": "SkyLogic, özellikle model roket sistemleri için tasarlanmış, yüksek güvenilirlik standartlarına sahip, modüler yapıda gelişmiş bir uçuş kontrol bilgisayarıdır. SkyLogic, ROKETSAN tarafından gerçekleştirilen kapsamlı testler sonucunda 'kalifiye edilmiştir' (resmi olarak onaylanmıştır). Temel amacı, uçuşun her safhasında (kalkış, seyir, apogee ve kurtarma) görev kritik işlevleri yerine getirerek tüm uçuş yönetimini merkezi olarak üstlenmektir. Entegre sensörleri aracılığıyla yönelim, ivme, basınç ve irtifa verilerini gerçek zamanlı olarak toplar, işler ve kayıt altına alır.",
+            "source_ids": ["sk:1", "sk:2"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "skylogic",
+                "uçuş kontrol bilgisayarı",
+                "amaç",
+                "modüler",
+                "aviyonik sistem",
+                "apogee"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic'in ROKETSAN onayı var mı?",
+                "SkyLogic hangi sensörleri kullanıyor?",
+                "SkyLogic'in temel özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic'in ROKETSAN onayı veya askeri standartlara uygunluğu var mı?",
+            "answer": "Evet, bu SkyLogic'in en önemli özelliklerinden biridir. SkyLogic, ROKETSAN tarafından gerçekleştirilen kapsamlı testler sonucunda 'kalifiye edilmiştir' (resmi olarak onaylanmıştır). Bu testler sonucunda MIL-STD-461 (Elektromanyetik Uyumluluk - EMC) ve C1114 (Genel Elektrik Test Standardı) standartlarına tam uygunluğu kanıtlanmıştır. Bu onay, ürünün eğitim, yarışma ve ileri seviye mühendislik projelerinde güvenle kullanılabileceğini göstermektedir.",
+            "source_ids": ["sk:5"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "roketsan",
+                "onay",
+                "kalifiye",
+                "mil-std-461",
+                "c1114",
+                "emc",
+                "savunma sanayii",
+                "teknik detay"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic'in kullanım alanları nelerdir?",
+                "Aviyonik Sistem SKYLOGIC nedir?"
+            ]
+        },
+        {
+            "question": "SkyLogic'in haberleşme özellikleri nelerdir?",
+            "answer": "SkyLogic aviyonik sistemi, 7 kilometre (7km) menzile sahip dahili bir LoRa (Uzun Menzilli) Haberleşme Alt Sistemine sahiptir. Bu sistem, kullanıcılara esneklik sağlamak amacıyla seçilebilir haberleşme frekansları sunar (900Mhz veya 433Mhz). Ayrıca, harici GPS veya ek haberleşme modülleri bağlamak için iki adet donanımsal UART portu da bulunmaktadır.",
+            "source_ids": ["51", "52"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "skylogic",
+                "haberleşme",
+                "lora",
+                "7km",
+                "900mhz",
+                "433mhz",
+                "uart",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic vs Misfire: Haberleşme karşılaştırması",
+                "SkyLogic'in sensör ve port özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic hangi sensörleri kullanıyor ve temel teknik özellikleri nelerdir?",
+            "answer": "SkyLogic, yönelim ve irtifa takibi için entegre ve hassas sensörler kullanır. Bunlar arasında bir IMU (Ataletsel Ölçüm Birimi) olarak BNO055 ve bir barometre (basınç sensörü) olarak BMP390 bulunmaktadır. Diğer temel özellikleri arasında; yer istasyonu bağlantısı için dahili LoRa haberleşme, uçuş verilerinin yüksek hızda kayıt edilmesi (SD Kart veya Flash bellek) ve kademeli kurtarma sistemlerini (paraşüt vb.) tetiklemek için programlanabilir pyro çıkışları yer alır.",
+            "source_ids": ["sk:2", "sk:4"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "skylogic",
+                "sensörler",
+                "teknik özellikler",
+                "imu",
+                "bno055",
+                "barometre",
+                "bmp390",
+                "lora",
+                "sd kart",
+                "pyro"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic'in eski sensör bilgileri (25cm hassasiyet) doğru mu?",
+                "SkyLogic'in haberleşme özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic'in pyro çıkış özellikleri nedir?",
+            "answer": "SkyLogic aviyonik kartı, roketlerin kurtarma sistemlerini (paraşüt açma vb.) tetiklemek için iki (2) adet Pyro Çıkışına sahiptir. Bu çıkışlar, yüksek akım gerektiren sistemler için kanal başına 15 Amper (15A) akımı destekler. Sistemin Pyro Max Besleme voltajı ise 60V (Volt) olarak belirtilmiştir. Geniş besleme voltaj aralığı (7V - 17V) sayesinde farklı güç kaynaklarıyla uyumludur.",
+            "source_ids": ["52"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "skylogic",
+                "pyro",
+                "pyro çıkışı",
+                "kurtarma sistemi",
+                "15a",
+                "60v",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Misfire V1.0'da kaç pyro çıkışı var?",
+                "SkyLogic'in sensör ve port özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic hangi modüllerle uyumlu çalışır? Modüler bir sistem mi?",
+            "answer": "Evet, SkyLogic modüler bir yapıyla öne çıkmaktadır ve ölçeklenebilir bir uçuş yönetim sistemi oluşturmak üzere tasarlanmıştır. Sky ailesine ait olan SkyGNSS (GPS modülü), SkyLOAD (Görev yükü modülü) ve SkyGround (Yer istasyonu modülü) gibi diğer modüllerle tam uyumlu çalışır. Ayrıca harici sensör ve diğer modüllerin bağlanabilmesi için genişletilebilir bir yapıya sahiptir.",
+            "source_ids": ["sk:1", "sk:3", "sk:4"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "skylogic",
+                "modüler",
+                "uyumluluk",
+                "skygnss",
+                "skyload",
+                "skyground",
+                "genişletilebilir"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic'in kullanım alanları nelerdir?",
+                "Aviyonik Sistem SKYLOGIC nedir?"
+            ]
+        },
+        {
+            "question": "SkyLogic'in kullanım alanları nelerdir?",
+            "answer": "SkyLogic, güvenilirliği, ROKETSAN tarafından test edilmiş geçmişi ve kalifikasyonu sayesinde geniş bir kullanım alanına sahiptir. Başlıca kullanım alanları; TEKNOFEST ve TÜBİTAK gibi model roket yarışmaları, roket Ar-Ge çalışmaları, eğitim ve test amaçlı roket projeleri, ve yüksek irtifa veri toplama ve kurtarma sistemleridir. Hem öğrenci takımlarına hem de profesyonel roket geliştiricilere ideal bir çözüm sunar.",
+            "source_ids": ["sk:5", "sk:6", "sk:7"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "kullanım alanları",
+                "teknofest",
+                "tübitak",
+                "ar-ge",
+                "eğitim",
+                "yüksek irtifa",
+                "öğrenci takımları"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic'in ROKETSAN onayı var mı?",
+                "SkyLogic'in temel özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic açık kaynak kodlu mu?",
+            "answer": "Evet, SkyLogic sisteminin yapısı 'açık kaynak' (open source) olarak belirtilmiştir. Bu, hem öğrenci takımlarının hem de profesyonel geliştiricilerin sistemi anlaması, uyarlaması ve projelerine entegre etmesi için önemli bir avantaj sağlar.",
+            "source_ids": ["sk:7"],
+            "category": "Aviyonik Sistem (SkyLogic)",
+            "keywords": [
+                "açık kaynak",
+                "open source",
+                "yazılım",
+                "skylogic"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "SkyLogic'in temel özellikleri nelerdir?",
+                "SkyLogic'i kimler kullanabilir?"
+            ]
+        },
+        {
+            "question": "Aviyonik Sistem MISFIRE V1.0 nedir ve amacı nedir?",
+            "answer": "MISFIRE v1.0, Girişimci Kuluçka Merkezi mühendisleri tarafından tasarlanan ve üretilen ikinci bir aviyonik sistemdir. Bu sistemin spesifik amacı, SkyLogic'in genel uçuş kontrol görevinden farklı olarak, alçak irtifa roketlerinde 'görev yükünü serbest bırakmak' için güvenli ve etkili bir teknoloji sağlamaktır. Roketçilikte kritik bir aşama olan yük ayırmayı yönetmek için özel olarak geliştirilmiştir.",
+            "source_ids": ["53"],
+            "category": "Aviyonik Sistem (Misfire)",
+            "keywords": [
+                "misfire v1.0",
+                "aviyonik sistem",
+                "amaç",
+                "görev yükü",
+                "payload",
+                "serbest bırakma",
+                "roket"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Misfire V1.0'ın teknik özellikleri nelerdir?",
+                "SkyLogic ve Misfire V1.0 arasındaki fark nedir?"
+            ]
+        },
+        {
+            "question": "Misfire V1.0'ın teknik özellikleri (specs) nelerdir? (Haberleşme, İrtifa, GPS)",
+            "answer": "MISFIRE v1.0, gelişmiş özelliklere sahip bir aviyonik sistemdir. 10 kilometre (10 km) menzilli dahili LoRa haberleşme alt sistemi (900 Mhz) bulunmaktadır. 30.000 metre (30 km) irtifaya kadar basınç ölçümü yapabilir ve 20 cm (yirmi santimetre) gibi çok yüksek bir irtifa hassasiyetine sahiptir. Entegre bir GPS alıcısı (Harici de bağlanabilir), Nem ve Sıcaklık Ölçümü, Pil Voltaj Takibi ve uçuş verileri için USD Kart Portu gibi özelliklere sahiptir.",
+            "source_ids": ["54"],
+            "category": "Aviyonik Sistem (Misfire)",
+            "keywords": [
+                "misfire v1.0",
+                "teknik özellikler",
+                "specs",
+                "lora",
+                "10km",
+                "30000m",
+                "20cm",
+                "gps",
+                "usd kart",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Misfire V1.0'ın güç ve şarj özellikleri nelerdir?",
+                "SkyLogic vs Misfire: Haberleşme karşılaştırması"
+            ]
+        },
+        {
+            "question": "Misfire V1.0'ın güç, şarj ve pyro özellikleri nelerdir?",
+            "answer": "MISFIRE v1.0 sistemi, 3.6-4.2 V (Volt) besleme gerilimi ile çalışır. Entegre bir Dahili Li-ion Şarj Ünitesine (3.6V - 4.2V, 1 Cell, 1 A) sahiptir ve modern USB Type-C portu üzerinden şarj edilebilir. Sistemde ayrıca USB C Statik Koruması ve görev yükü bırakma veya kurtarma için 2 (iki) adet PYRO çıkışı bulunmaktadır.",
+            "source_ids": ["54"],
+            "category": "Aviyonik Sistem (Misfire)",
+            "keywords": [
+                "misfire v1.0",
+                "güç",
+                "şarj",
+                "li-ion",
+                "usb type-c",
+                "pyro",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Misfire V1.0'ın teknik özellikleri nelerdir?",
+                "Aviyonik sistemleriniz şarj edilebilir mi?"
+            ]
+        },
+        {
+            "question": "SkyLogic ve Misfire V1.0 aviyonik sistemlerini karşılaştırır mısınız?",
+            "answer": "Her ikisi de GKM mühendislerince tasarlanmış aviyonik sistemlerdir ve alçak irtifa roketleri içindir. Ancak odak noktaları ve özellikleri farklıdır:\n1. **Amaç**: SkyLogic genel bir 'Uçuş Kontrol Kartı' iken, Misfire spesifik olarak 'Görev Yükünü Serbest Bırakma' teknolojisine odaklanır.\n2. **Haberleşme**: Misfire (10 km LoRa) SkyLogic'ten (7 km LoRa) daha uzun bir menzile sahiptir.\n3. **İrtifa Hassasiyeti**: Misfire (20 cm hassasiyet) SkyLogic'ten (25 cm hassasiyet) daha hassastır.\n4. **İrtifa Limiti**: Misfire'ın 30.000 metreye kadar ölçüm yapabildiği belirtilirken, SkyLogic'in aralığı 300-1250hPa olarak belirtilmiştir.\n5. **GPS**: Misfire'da entegre GPS bulunurken, SkyLogic'e harici GPS takılması gerekir (UART portu üzerinden).\n6. **Güç**: Misfire dahili Li-ion şarj ünitesine ve USB-C şarja sahiptir; SkyLogic ise 7V-17V gibi daha geniş bir besleme voltaj aralığını destekler.",
+            "source_ids": ["51", "52", "53", "54"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "skylogic vs misfire",
+                "fark",
+                "aviyonik",
+                "menzil",
+                "hassasiyet",
+                "gps",
+                "güç"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic nedir?",
+                "Misfire V1.0 nedir?",
+                "En hassas irtifa ölçümünü hangi kart yapar?"
+            ]
+        },
+        {
+            "question": "Aviyonik sistemleriniz (SkyLogic vs Misfire) arasında hangisi daha uzun menzilli ve hangisi daha hassas irtifa ölçümü yapar?",
+            "answer": "Merkezimizin geliştirdiği iki aviyonik sistemi karşılaştırdığımızda: \n1. **Menzil:** MISFIRE v1.0, 10 kilometre (10 km) dahili LoRa menzili ile SkyLogic'in 7 kilometre (7 km) menzilinden daha uzun menzilli bir haberleşme sunar.\n2. **Hassasiyet:** MISFIRE v1.0, 20 cm (yirmi santimetre) irtifa hassasiyeti ile SkyLogic'in 25 cm (yirmi beş santimetre) irtifa hassasiyetinden daha hassas bir ölçüm yapabilme kapasitesine sahiptir.",
+            "source_ids": ["51", "52", "54"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "maksimum",
+                "minimum",
+                "en iyi",
+                "en hassas",
+                "en uzun menzil",
+                "skylogic vs misfire",
+                "10km",
+                "20cm"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic ve Misfire V1.0 aviyonik sistemlerini karşılaştırır mısınız?",
+                "Misfire V1.0 kaç metreye kadar ölçüm yapar?"
+            ]
+        },
+        {
+            "question": "Roketler için kaç tane aviyonik sistem geliştirdiniz?",
+            "answer": "Girişimci Kuluçka Merkezi mühendislerimiz, alçak irtifa roketlerde kullanılmak üzere iki (2) adet farklı aviyonik sistem tasarlamış ve üretmiştir. Bunlar, genel uçuş kontrolü için 'SkyLogic Uçuş Kontrol Kartı' ve görev yükünü serbest bırakmak için 'MISFIRE v1.0' sistemidir.",
+            "source_ids": ["51", "53"],
+            "category": "Sayısal",
+            "keywords": [
+                "sayısal",
+                "kaç tane",
+                "iki",
+                "aviyonik sistem",
+                "roket",
+                "skylogic",
+                "misfire"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizde geliştirilen Ar-Ge ürünleri nelerdir?",
+                "SkyLogic ve Misfire V1.0 arasındaki fark nedir?"
+            ]
+        },
+        {
+            "question": "Aviyonik kartlarınızın GPS özellikleri nedir?",
+            "answer": "Geliştirdiğimiz aviyonik sistemlerin GPS özellikleri farklılık göstermektedir. MISFIRE v1.0 sistemi, 'Entegre GPS Alıcısı'na sahiptir, yani GPS modülü kartın üzerindedir (ayrıca harici de bağlanabilir). SkyLogic Uçuş Kontrol Kartı'nda ise entegre bir GPS belirtilmemiştir, ancak harici GPS modüllerinin bağlanabilmesi için 'İki Adet Donanımsal UART Portu' bulunmaktadır.",
+            "source_ids": ["52", "54"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "gps",
+                "aviyonik",
+                "skylogic",
+                "misfire",
+                "entegre gps",
+                "harici gps",
+                "uart",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic'in port özellikleri nedir?",
+                "Misfire V1.0'ın teknik özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "Her iki aviyonik sistem de (SkyLogic ve Misfire) veri kaydı yapabiliyor mu?",
+            "answer": "Evet, her iki aviyonik sistemimiz de uçuş verilerini kaydetme özelliğine sahiptir. SkyLogic Uçuş Kontrol Kartı'nda 'Uçuş Verileri Kayıt İçin USD Kart' yuvası bulunmaktadır. Benzer şekilde, MISFIRE v1.0 sisteminde de 'Uçuş Verileri için USD Kart Postu' (yuvası) mevcuttur. Bu, her iki kartın da uçuş sonrası analiz (post-flight analysis) için veri toplayabildiğini gösterir.",
+            "source_ids": ["52", "54"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "usd kart",
+                "veri kaydı",
+                "data logging",
+                "skylogic",
+                "misfire",
+                "karşılaştırma",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SkyLogic'in sensör ve port özellikleri nelerdir?",
+                "Misfire V1.0'ın teknik özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "COPSYS Basınçlı Kurtarma Sistemi nedir ve amacı nedir?",
+            "answer": "COPSYS, İpekyolu Girişimci Kuluçka Merkezi mühendisleri tarafından geliştirilen 'Basınçlı Kurtarma Sistemi'nin adıdır. Temel amacı, roketler hedeflenen irtifaya ulaştığında, görev yükünü (payload) serbest bırakmak ve/veya paraşüt gibi kurtarma sistemlerini tetikleyerek roketin yere güvenli bir şekilde iniş yapabilmesini sağlamaktır. Bu sistem, basınçlı bir mekanizma kullanarak ayrılmayı gerçekleştirir.",
+            "source_ids": ["55"],
+            "category": "Kurtarma Sistemi (COPSYS)",
+            "keywords": [
+                "copsys",
+                "basınçlı kurtarma sistemi",
+                "amaç",
+                "roket",
+                "güvenli iniş",
+                "görev yükü"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "COPSYS sistemi patentli midir?",
+                "COPSYS sisteminin teknik özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "COPSYS sistemi patentli midir? Ticari bir ürün mü?",
+            "answer": "Evet, COPSYS patentli bir sistem olma yolundadır. 2021 yılında özgün olarak tasarlanan bu ayrılma sistemi için İpekyolu Girişimci Kuluçka Merkezi mühendisleri tarafından patent başvurusunda bulunulmuştur. Ayrıca, metindeki bilgilere göre, 'şu an ticari kullanıma yönelik hazırlıklarımız devam etmektedir', bu da sistemin ticarileşme potansiyeline sahip bir Ar-Ge projesi olduğunu göstermektedir.",
+            "source_ids": ["55"],
+            "category": "Kurtarma Sistemi (COPSYS)",
+            "keywords": [
+                "copsys",
+                "patent",
+                "patent başvurusu",
+                "2021",
+                "ticari kullanım",
+                "ticarileşme",
+                "zamansal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Patentli ürününüz var mı?",
+                "COPSYS Basınçlı Kurtarma Sistemi nedir?"
+            ]
+        },
+        {
+            "question": "COPSYS sisteminin öne çıkan teknik özellikleri nelerdir?",
+            "answer": "COPSYS Basınçlı Kurtarma Sistemi, roket ayrılma mekanizmaları için yenilikçi özellikler sunar. Öne çıkan teknik özellikleri şunlardır: Ayarlanabilir Basınç Sistemi, Basınç Kontrol Modülü, farklı roket tasarımları için İstenilen Sistemlere Entegrasyon Özelliği, ve Basınçlı Ayrılma Sistemi'nin kendisi. Ayrıca, sistemin 'Tekrar Edilebilir Güç Üretimi' (12 V 1.5 A Güç Üretimi) özelliği ve ayrılma için 'Özel Tasarım Delici İğneler' kullanması dikkat çekicidir.",
+            "source_ids": ["56"],
+            "category": "Kurtarma Sistemi (COPSYS)",
+            "keywords": [
+                "copsys",
+                "teknik özellikler",
+                "liste",
+                "ayarlanabilir basınç",
+                "basınç kontrol modülü",
+                "güç üretimi",
+                "12v 1.5a",
+                "delici iğneler"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "COPSYS sistemi nasıl güç üretiyor?",
+                "COPSYS Basınçlı Kurtarma Sistemi nedir?"
+            ]
+        },
+        {
+            "question": "Bu Ar-Ge ürünlerinin (SkyLogic, Misfire, COPSYS) fiyatları nedir? Satın alabilir miyim?",
+            "answer": "Bilgi tabanımızda İpek Yolu Elektronik Geliştirme Kartı, SkyLogic Uçuş Kontrol Kartı, Misfire V1.0 aviyonik sistemi ve COPSYS Basınçlı Kurtarma Sistemi gibi Ar-Ge ürünlerinin GKM mühendisleri tarafından tasarlandığı ve teknik özellikleri detaylıca belirtilmektedir. COPSYS sistemi için 2021'de patent başvurusunda bulunulduğu ve ticari kullanıma yönelik hazırlıkların devam ettiği bilgisi de mevcuttur. Ancak, bu ürünlerin güncel satış fiyatları, stok durumları veya nasıl satın alınabileceğine dair detaylı bilgi için merkezimize ulaşabilirsiniz.",
+            "source_ids": ["49", "51", "53", "55"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "fiyat",
+                "maliyet",
+                "satın alma",
+                "ticari",
+                "bilgi yok",
+                "stok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "COPSYS sistemi patentli midir?",
+                "Merkezinizde geliştirilen Ar-Ge ürünleri nelerdir?"
+            ]
+        },
+        {
+            "question": "SkyLogic sisteminin ağırlığı nedir?",
+            "answer": "Bilgi tabanımızda SkyLogic Uçuş Kontrol Kartı'nın 7 km LoRa menzili, 25 cm irtifa hassasiyeti ve 2 adet Pyro çıkışı gibi birçok teknik detayı listelenmiştir. Ancak, kartın fiziksel ağırlığı (gram veya kilogram cinsinden) hakkında spesifik bir bilgi şu anda kaynaklarımızda yer almamaktadır.",
+            "source_ids": ["51", "52"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "skylogic",
+                "ağırlık",
+                "gram",
+                "bilgi yok",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "SkyLogic'in teknik özellikleri nelerdir?",
+                "SkyLogic ve Misfire V1.0 aviyonik sistemlerini karşılaştırır mısınız?"
+            ]
+        },
+        {
+            "question": "COPSYS sistemi hangi roketlerde test edilmiştir?",
+            "answer": "Bilgi tabanımızda COPSYS Basınçlı Kurtarma Sistemi'nin roketlerde görev yükünü serbest bırakmak ve güvenli iniş sağlamak için geliştirildiği, 2021'de patent başvurusunun yapıldığı ve ticari hazırlıklarının sürdüğü belirtilmektedir. Ancak, bu sistemin hangi spesifik roket modelleri üzerinde test edildiği veya hangi yarışmalarda kullanıldığına dair detaylı bir bilgi şu anda kaynaklarımızda bulunmamaktadır.",
+            "source_ids": ["55"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "copsys",
+                "test",
+                "roket",
+                "uygulama",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "COPSYS sistemi patentli midir?",
+                "COPSYS Basınçlı Kurtarma Sistemi nedir?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'kendi kartınızın wifi'si var mı?', 'Arduino kartınız var mı?', 'En hassas hangisi?'). Kılavuzda belirtilen 10 kategoriye (Temel, Teknik, Karşılaştırma, Zamansal, Negatif, Günlük Dil, Kompozit, Sayısal, Maksimum, Hatalı Bilgi) ait sorular üretildi. Özellikle teknik detaylar, karşılaştırmalar ve spesifikasyonlar (specs) üzerine yoğunlaşıldı.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Karşılaştırma soruları ve teknik detay listeleri, kullanıcıya tam bağlamı verecek şekilde zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

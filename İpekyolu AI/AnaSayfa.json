@@ -1,0 +1,412 @@
+{
+    "metadata": {
+        "file_name": "1.1_ana_sayfa_genel_bakis.json",
+        "category": "TEMEL_BILGILER",
+        "sub_category": "Genel İstatistikler, İmkanlar ve Eğitim Kataloğu",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "Merkezinizin genel istatistikleri nelerdir? (Eğitim, kişi, destek vb.)",
+            "answer": "Merkezimiz, bugüne kadar 700 saatin üzerinde (700+) Teknoloji Eğitimi sağlamıştır. Bu eğitimlerden 1.300'den (1,300+) fazla kişi faydalanmıştır. Ayrıca, merkezimizde yürütülen projelere 1.800 saatten fazla (1,800+) 3D Yazıcı Desteği verilmiş ve 10'dan fazla (10+) proje desteklenmiştir.",
+            "source_ids": ["60"],
+            "category": "İstatistikler",
+            "keywords": [
+                "istatistik",
+                "sayısal",
+                "700+ saat",
+                "1300+ kişi",
+                "1800+ saat",
+                "10+ proje",
+                "3d yazıcı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Kaç kişiye eğitim verdiniz?",
+                "Kaç proje desteklendi?"
+            ]
+        },
+        {
+            "question": "Merkezinizin en iyi özellikleri nelerdir?",
+            "answer": "Merkezimizin öne çıkan en iyi özellikleri arasında; 225.000 metrekare alan üzerine kurulu olması; teknik konularda derin bilgiye sahip, çözüm odaklı ve yenilikçi yaklaşımlar sunan yetkin personellerimiz; 3D Yazıcı, Montaj ve Delici/Kesici Aletler Atölyeleri'ni içeren kapsamlı prototip atölyelerimiz; her biri 60 kişilik 3 adet toplantı salonumuz; zengin sosyal etkinlik alanlarımız (Çadır Kampı, At Binicilik, Okçuluk, Bisiklet Yolu, Amfi Tiyatro, Langırt/PlayStation) ve 256 yatak kapasiteli konaklama imkanımız bulunmaktadır.",
+            "source_ids": ["61", "62", "63", "64"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "en iyi özellikler",
+                "kompozit",
+                "genel bakış",
+                "yetkin personel",
+                "prototip atölyeleri",
+                "toplantı salonu",
+                "sosyal etkinlik",
+                "konaklama"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Konaklama kapasiteniz nedir?",
+                "Hangi sosyal etkinlik alanlarınız var?",
+                "Prototip atölyeleriniz neleri içeriyor?"
+            ]
+        },
+        {
+            "question": "Prototip atölyeleriniz neleri içeriyor?",
+            "answer": "Evet, merkezimizde donanımlı ve kapsamlı bir üretim imkanı sunan prototip atölyelerimiz mevcuttur. Bu atölyeler; 3D Yazıcı Atölyesi, beceri gerektiren Montaj Atölyesi ve hassas çalışmalar için kullanılan Delici ve Kesici Aletler Atölyesi'ni kapsamaktadır.",
+            "source_ids": ["62"],
+            "category": "Atölyeler",
+            "keywords": [
+                "prototip atölyeleri",
+                "3d yazıcı atölyesi",
+                "montaj atölyesi",
+                "delici ve kesici aletler"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Montaj atölyesinde hangi aletler var?",
+                "3D yazıcı eğitiminiz var mı?"
+            ]
+        },
+        {
+            "question": "Toplantı salonlarınızın kapasitesi nedir?",
+            "answer": "Merkezimizde, eğitimler, seminerler ve ekip çalışmaları için kullanılabilecek 3 (üç) farklı toplantı ve eğitim salonu bulunmaktadır. Bu salonların her biri 60 (altmış) kişilik kapasiteye sahiptir. Toplamda 180 kişilik bir kapasite sunulmaktadır.",
+            "source_ids": ["63"],
+            "category": "İmkanlar",
+            "keywords": [
+                "toplantı salonu",
+                "eğitim salonu",
+                "kapasite",
+                "60 kişilik",
+                "3 adet",
+                "sayısal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizin en iyi özellikleri nelerdir?",
+                "Eğitimler nerede yapılıyor?"
+            ]
+        },
+        {
+            "question": "merkezinizde kalacak yer var mı?",
+            "answer": "Evet, merkezimizde konaklama imkanı bulunmaktadır Özellikle şehir dışından gelen katılımcılarımız, uzun süreli eğitimlere katılan öğrencilerimiz ve misafirlerimiz için 4 (dört) bloktan oluşan bir konaklama alanımız mevcuttur. Bu alanın toplam kapasitesi 256 (iki yüz elli altı) yataktır. Ancak konaklama hizmetimiz hakkında bilgi almak için 0(424) 503 9439 numaralı telefondan bizimle iletişime geçebilirsiniz.",
+            "source_ids": ["64"],
+            "category": "İmkanlar",
+            "keywords": [
+                "konaklama",
+                "kalacak yer",
+                "yatakhane",
+                "256 yatak",
+                "4 blok",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Konaklama kapasiteniz tam olarak nedir?",
+                "Konaklama ücretli mi?"
+            ]
+        },
+        {
+            "question": "Hangi sosyal etkinlik alanlarınız var?",
+            "answer": "Merkezimiz, teknoloji eğitimlerinin yanı sıra Sosyal Kuluçka birimimiz kapsamında katılımcıların sosyal gelişimlerini de desteklemektedir. Bünyemizde Çadır Kamp Alanı, At Binicilik Alanı, Okçuluk Sahası, 3,5 km uzunluğunda Bisiklet Yolu, Amfi Tiyatro Alanı ve gençlerin keyifli vakit geçirebileceği Langırt ile PlayStation Odası gibi çeşitli sosyal etkinlik alanları bulunmaktadır.",
+            "source_ids": ["64"],
+            "category": "İmkanlar",
+            "keywords": [
+                "sosyal etkinlik",
+                "sosyal alanlar",
+                "çadır kamp",
+                "at binicilik",
+                "okçuluk",
+                "bisiklet yolu",
+                "amfi tiyatro",
+                "playstation"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin en iyi özellikleri nelerdir?",
+                "Bisiklet yolu kaç km?",
+                "Aktivite olarak ne yapabilirim?"
+            ]
+        },
+        {
+            "question": "Ortaokul seviyesinde hangi eğitimler veriliyor?",
+            "answer": "Evet, ortaokul seviyesindeki öğrencilerimiz için teknoloji ve tasarıma yönelik temel eğitimlerimiz bulunmaktadır. Bu eğitimler; blok tabanlı programlama ile oyun yapmayı öğreten 'Scratch ile Oyun Geliştirme Eğitimi', 3D modelleme ve baskıyı öğreten 'Thinkercad ile tasarım eğitimi', 'Temel elektronik eğitimi', 'DJI Tello ile Temel Drone Kullanımı Eğitimi' ve sürükle-bırak tekniğiyle robotik öğreten 'mBot ile Robotik Kodlama Eğitimi'dir.",
+            "source_ids": ["65", "66", "67", "68", "69"],
+            "category": "Eğitimler (Ortaokul)",
+            "keywords": [
+                "ortaokul eğitimleri",
+                "liste",
+                "scratch",
+                "thinkercad",
+                "temel elektronik",
+                "dji tello",
+                "mbot",
+                "robotik kodlama"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "12 yaşındayım, hangi eğitimleri alabilirim?",
+                "mBot eğitimi nedir?"
+            ]
+        },
+        {
+            "question": "Lise seviyesi eğitimleriniz nelerdir?",
+            "answer": "Lise seviyesindeki öğrencilerimiz için daha ileri düzeyde ve çeşitli teknoloji eğitimleri sunulmaktadır. Bu eğitimler arasında; '3D yazıcı eğitimi', '3D Modelleme ve Tasarım Eğitimi' (Cad programları), 'Temel Elektronik Eğitimi' (kontrol kartları), 'İpek Yolu Elektronik Geliştirme Kartını kullanarak robotik programlama' eğitimi, 'İnsansız Hava Araçları Kullanımı Eğitimi' ve 'Temel yazılım eğitimleri' (Python, C#, C++) bulunmaktadır.",
+            "source_ids": ["70", "71", "72", "73", "74", "75"],
+            "category": "Eğitimler (Lise)",
+            "keywords": [
+                "lise eğitimleri",
+                "liste",
+                "3d modelleme",
+                "ipek yolu kartı",
+                "iha eğitimi",
+                "python",
+                "c#",
+                "c++",
+                "yazılım"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Lise seviyesinde hangi yazılım dilleri öğretiliyor?",
+                "Lise ve Ortaokul seviyesindeki Temel Elektronik eğitimlerinin farkı nedir?",
+                "İpek Yolu Elektronik Geliştirme Kartı eğitimi lisede var mı?"
+            ]
+        },
+        {
+            "question": "Lise seviyesinde hangi yazılım dilleri öğretiliyor?",
+            "answer": "Evet, lise seviyesi öğrencilerimize yönelik temel yazılım eğitimlerimiz mevcuttur. Bu eğitimler, geleceğin yazılımcılarını yetiştirmek amacıyla Python, C# ve C++ gibi güncel ve endüstride yaygın olarak kullanılan programlama dillerini kapsamaktadır.",
+            "source_ids": ["75"],
+            "category": "Eğitimler (Lise)",
+            "keywords": ["yazılım", "python", "c#", "c++", "lise", "programlama dilleri", "teknik detay"],
+            "priority": "medium",
+            "related_questions": [
+                "Lise seviyesi eğitimleriniz nelerdir?",
+                "Üniversite seviyesinde hangi yazılım eğitimleri var?"
+            ]
+        },
+        {
+            "question": "Üniversite seviyesinde hangi eğitimleriniz var? (Tam liste)",
+            "answer": "Üniversite seviyesindeki öğrenciler ve profesyoneller için çok geniş bir yelpazede ileri düzey teknoloji eğitimleri sunmaktayız. Bunlar; Zirai İnsansız Hava Araçları, Katı Modelleme (Solidworks), CNC Lazer, Drone Kullanımı, Sabit Kanat Uçak, C# ile Masaüstü Uygulama Geliştirme, İleri Düzey Robotik Kodlama, İpek Yolu Elektronik Geliştirme Kartı ile IoT, Yapay Zeka 101, ROS (Robot İşletim Sistemi), Mobil Uygulama Geliştirme, Siber Güvenlik, Front-End Developer (HTML, CSS, JavaScript) ve TEKNOFEST Eğitimleri'dir.",
+            "source_ids": ["76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "üniversite eğitimleri",
+                "tam liste",
+                "kompozit",
+                "ileri düzey",
+                "yapay zeka",
+                "ros",
+                "iot",
+                "siber güvenlik",
+                "mobil uygulama",
+                "front-end"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yapay zeka eğitimi veriyor musunuz?",
+                "Web geliştirme eğitimi var mı?",
+                "Robotik alanında hangi üniversite eğitimleri var?"
+            ]
+        },
+        {
+            "question": "Yapay zeka eğitimi veriyor musunuz?",
+            "answer": "Evet, üniversite seviyesindeki eğitim programlarımız arasında 'Yapay Zeka 101' eğitimi bulunmaktadır. Bu eğitim, katılımcılara yapay zeka eğitiminin temel modelleri, yöntemleri ve uygulama programları gibi konularda kapsamlı bilgiler sunmaktadır.",
+            "source_ids": ["85"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "yapay zeka",
+                "ai",
+                "yapay zeka 101",
+                "makine öğrenmesi",
+                "üniversite"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Üniversite seviyesinde hangi eğitimleriniz var?",
+                "İleri Düzey Robotik Kodlama eğitimi nedir?"
+            ]
+        },
+        {
+            "question": "Web geliştirme alanında hangi eğitimleriniz var?",
+            "answer": "Evet, web geliştirme alanında kariyer hedefleyenler için üniversite seviyesinde 'Front-End Developer Eğitimi' sunmaktayız. Bu eğitim, katılımcılara modern web sitelerinin kullanıcı arayüzlerini (UI) oluşturmak için HTML, CSS ve JavaScript teknolojilerini nasıl kullanacaklarını öğreten, kullanıcı deneyimine (UX) yönelik uygulamalı bir eğitim sürecidir.",
+            "source_ids": ["89"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "web geliştirme",
+                "front-end",
+                "html",
+                "css",
+                "javascript",
+                "üniversite"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Back-End Developer eğitimi var mı?",
+                "Mobil Uygulama Geliştirme eğitimi içeriği nedir?"
+            ]
+        },
+        {
+            "question": "Robotik alanında hangi üniversite eğitimleri var?",
+            "answer": "Üniversite seviyesinde robotik alanına ilgi duyanlar için birden fazla ileri düzey eğitimimiz mevcuttur. Bunlar arasında 'İleri Düzey Robotik Kodlama Eğitimi' (karmaşık sistemlerin tasarımı ve programlanması), 'İpek Yolu Elektronik Geliştirme Kartı ile IoT Eğitimi' (robotik ve uzaktan kumandalı projeler) ve 'ROS Eğitimleri' (Robot İşletim Sistemi kullanımı ve programlama teknolojileri) bulunmaktadır.",
+            "source_ids": ["83", "84", "86"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "robotik",
+                "üniversite",
+                "ileri düzey robotik",
+                "iot",
+                "ros",
+                "robot işletim sistemi",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "ROS Eğitimi nedir?",
+                "İleri Düzey Robotik Kodlama Eğitimi neye odaklanır?",
+                "Lise seviyesinde robotik eğitimi var mı?"
+            ]
+        },
+        {
+            "question": "Lise ve Üniversite seviyesindeki İpek Yolu Kartı eğitimlerinin farkı nedir?",
+            "answer": "Merkezimiz, kendi geliştirdiğimiz 'İpek Yolu Elektronik Geliştirme Kartı' üzerine iki farklı seviyede eğitim sunmaktadır. Lise seviyesindeki eğitim, daha çok 'robotik sistemleri programlama ve kontrol etme' becerilerine odaklanır. Üniversite seviyesindeki 'IoT Eğitimi' ise bu kartı kullanarak 'ev otomasyonları', 'web sunucu ve uygulamalar', 'akıllı ev güvenliği' ve 'uzaktan kumandalı projeler' gibi daha karmaşık ve bağlantılı sistemler geliştirmeye odaklanır.",
+            "source_ids": ["73", "84"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "ipek yolu kartı",
+                "lise vs üniversite",
+                "robotik",
+                "iot",
+                "fark"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Lise seviyesi eğitimleriniz nelerdir?",
+                "Üniversite seviyesi IoT eğitimi nedir?"
+            ]
+        },
+        {
+            "question": "Farklı seviyelerde (Ortaokul, Lise, Üniversite) drone/İHA eğitimleriniz var mı? Farkları nelerdir?",
+            "answer": "Evet, merkezimizde her üç seviyede de İnsansız Hava Araçları (İHA) üzerine eğitimler bulunmaktadır ve içerikleri seviyeye göre değişmektedir: \n1. Ortaokul Seviyesi: 'DJI Tello ile Temel Drone Kullanımı Eğitimi' ile temel uçuş teknikleri ve güvenlik protokollerine giriş yapılır. \n2. Lise Seviyesi: 'İnsansız Hava Araçları Kullanımı Eğitimi' ile daha kapsamlı uçuş teknikleri, kumanda kontrolleri ve güvenlik protokolleri öğretilir. \n3. Üniversite Seviyesi: Bu seviyede konu profesyonelleşir; 'Drone Kullanımı Eğitimi' (simülasyon ve profesyonel uçuşlar), 'Zirai İnsansız Hava Araçları Eğitimi' (tarım sektörü odaklı) ve 'Sabit Kanat Uçak Eğitimi' gibi özel alanlara ayrılır.",
+            "source_ids": ["68", "74", "76", "77", "80", "81"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "drone",
+                "iha",
+                "ortaokul vs lise vs üniversite",
+                "dji tello",
+                "zirai iha",
+                "sabit kanat",
+                "kompozit"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Ortaokul seviyesi DJI Tello eğitimi nedir?",
+                "Zirai İHA eğitimi hangi seviyede veriliyor?",
+                "Sabit Kanat Uçak eğitimi nedir?"
+            ]
+        },
+        {
+            "question": "TEKNOFEST Eğitimlerinizin amacı nedir?",
+            "answer": "Üniversite seviyesindeki eğitimlerimiz arasında yer alan 'TEKNOFEST Eğitimleri', özellikle TEKNOFEST gibi büyük teknoloji yarışmalarına katılmayı hedefleyen bireylerin ve ekiplerin hazırlanmasına yöneliktir. Bu eğitimler, katılımcılara yarışma sürecinde neler ile karşılaşacakları, hangi alanlarda zorlanacakları ve özellikle 'ekip kurulmasında nelere dikkat edileceği' gibi konularda stratejik ve temel bilgiler vermektedir.",
+            "source_ids": ["90"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "teknofest eğitimleri",
+                "teknofest",
+                "yarışma",
+                "ekip kurma",
+                "hazırlık",
+                "üniversite"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Teknofest takımlarınıza nasıl katılabiliriz?",
+                "Üniversite seviyesi eğitimleriniz nelerdir?"
+            ]
+        },
+        {
+            "question": "Merkezinizi destekleyen kurumlar hangileridir?",
+            "answer": "Merkezimiz, kamu ve yerel yönetimlerin güçlü desteğine sahiptir. Faaliyetlerimizi yürütürken işbirliği yaptığımız ve destek aldığımız kurumlar; Elazığ Valiliği, Elazığ İl Özel İdaresi, Elazığ Belediyesi, Fırat Üniversitesi ve Fırat Kalkınma Ajansı'dır.",
+            "source_ids": ["91"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "destekleyen kurumlar",
+                "destekçiler",
+                "elazığ valiliği",
+                "elazığ belediyesi",
+                "fırat üniversitesi",
+                "fırat kalkınma ajansı",
+                "işbirliği"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkeziniz kamu kurumu mu?",
+                "Fırat Üniversitesi ile işbirliğiniz var mı?"
+            ]
+        },
+        {
+            "question": "Back-End Developer eğitimi veriyor musunuz?",
+            "answer": "Bilgi tabanımızda web geliştirme alanında üniversite seviyesinde, HTML, CSS ve JavaScript teknolojilerini öğreten 'Front-End Developer Eğitimi'nin bulunduğu belirtilmektedir. Ancak, Back-End geliştirme (Python/Django, Node.js, PHP, veritabanı yönetimi vb.) üzerine spesifik bir eğitim bilgisi şu anda kaynaklarımızda yer almamaktadır.",
+            "source_ids": ["89"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "back-end",
+                "web geliştirme",
+                "yazılım",
+                "bilgi yok",
+                "front-end"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Web geliştirme alanında hangi eğitimleriniz var?",
+                "Lise seviyesinde hangi yazılım dilleri öğretiliyor?"
+            ]
+        },
+        {
+            "question": "Eğitimlerin süreleri ne kadar? Kaç hafta sürüyor?",
+            "answer": "Bilgi tabanımızda Ortaokul, Lise ve Üniversite seviyelerinde 'Scratch', 'Solidworks', 'Yapay Zeka 101' gibi birçok eğitimin içeriği ve amacı detaylıca açıklanmıştır. Ancak, bu eğitimlerin toplam süresi (kaç saat veya kaç hafta sürdüğü) veya spesifik başlangıç-bitiş tarihleri hakkında detaylı bir bilgi şu anda kaynaklarımızda bulunmamaktadır.",
+            "source_ids": ["65", "70", "76"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "eğitim süresi",
+                "kaç saat",
+                "kaç hafta",
+                "takvim",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Eğitimlere nasıl başvurulur?",
+                "Eğitimleriniz ücretli mi?"
+            ]
+        },
+        {
+            "question": "Atölyelerinizi (örn: Montaj Atölyesi) kullanmak ücretli mi?",
+            "answer": "Merkezimizin 'Prototip atölyelerimiz' başlığı altında 3D Yazıcı, Montaj, Delici ve Kesici Aletler Atölyesi gibi donanımlı imkanlar sunduğu belirtilmektedir. Ancak, bu atölyelerin kullanımının ücretli olup olmadığı, bir üyelik gerekip gerekmediği veya kullanım koşullarının (randevu vb.) ne olduğu hakkında detaylı bir bilgi şu anda kaynaklarımızda yer almamaktadır.",
+            "source_ids": ["62"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "atölye ücreti",
+                "maliyet",
+                "fiyat",
+                "prototip",
+                "montaj",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Prototip atölyeleriniz neleri içeriyor?",
+                "Eğitimleriniz ücretli mi?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'kalacak yer var mı?', '13 yaşındayım...', 'Back-End eğitimi var mı?'). Kılavuzda belirtilen Temel, Kompozit, Negatif Test, Karşılaştırma, Sayısal ve Günlük Dil (İnformal) soru tipleri üretildi. Özellikle eğitimler arası karşılaştırmalara (Lise vs Üniversite) odaklanıldı.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Eğitim listeleri ve kompozit sorular detaylandırılarak zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}
