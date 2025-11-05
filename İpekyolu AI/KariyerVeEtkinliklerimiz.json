@@ -1,0 +1,275 @@
+{
+    "metadata": {
+        "file_name": "4.2_kariyer_ve_etkinlik_turleri.json",
+        "category": "ETKINLIK_VE_SSS",
+        "sub_category": "Etkinlik Türleri ve Tanımları",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "Merkezinizde ne tür etkinlikler düzenleniyor?",
+            "answer": "Merkezimiz, farklı ilgi alanlarına ve profesyonel hedeflere yönelik çeşitli etkinlikler düzenlemektedir. Bunlar arasında; Bilim ve Teknoloji Zirveleri, uzaktan eğitime olanak tanıyan Online Seminerler, iş dünyasına yönelik Yeni Nesil Girişimci Buluşmaları, havacılık meraklıları için Model Uçak Gösterileri ve teknoloji profesyonelleri için Yazılımcı Buluşmaları bulunmaktadır. Her etkinlik, kendi alanında bilgi paylaşımı ve ağ kurma fırsatları sunar.",
+            "source_ids": ["60", "63", "67", "70", "73"],
+            "category": "Genel Etkinlik Bilgisi",
+            "keywords": [
+                "etkinlikler",
+                "liste",
+                "kompozit",
+                "zirve",
+                "seminer",
+                "girişimci",
+                "model uçak",
+                "yazılımcı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yazılımcı Buluşmaları'nda neler yapılıyor?",
+                "Girişimci Buluşmaları'nın amacı nedir?",
+                "Bu etkinlikler ücretli mi?"
+            ]
+        },
+        {
+            "question": "Bilim ve Teknoloji Zirveleri'nin içeriği ve amacı nedir?",
+            "answer": "Bilim ve Teknoloji Zirveleri, bilim ve teknoloji dünyasındaki önemli gelişmelerin ve en son yeniliklerin tartışıldığı, üst düzey etkinliklerdir. Bu zirvelerde, alanında önde gelen bilim insanları, mühendisler ve teknoloji birimleri (veya birimleri) konuşmacı olarak yer alır. Etkinlikler, paneller ve teknoloji trendleri hakkında sunumlar (metinde 'görüntüler sunulur' olarak geçmektedir) şeklinde ilerler. Katılımcıların amacı, teknolojik ilerlemeler hakkında bilgi edinmek ve sektördeki en son gelişmeleri takip etmektir.",
+            "source_ids": ["60", "61", "62"],
+            "category": "Etkinlikler (Zirve)",
+            "keywords": [
+                "bilim ve teknoloji zirveleri",
+                "amaç",
+                "içerik",
+                "bilim insanları",
+                "mühendisler",
+                "paneller",
+                "teknoloji trendleri"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bilim ve Teknoloji Zirvesi'ne nasıl kayıt olabilirim?",
+                "Bir sonraki Bilim ve Teknoloji Zirvesi ne zaman?",
+                "Yazılımcı Buluşmaları ile farkı nedir?"
+            ]
+        },
+        {
+            "question": "Online Seminerler (Çevrimiçi Seminerler) nasıl işliyor?",
+            "answer": "Çevrimiçi Seminerler, çeşitli uzmanların (metinde 'seçeneklerin' olarak geçmektedir) çevrimiçi (online) platformlar üzerinden sunumlar yaptığı eğitici etkinliklerdir. Bu seminerlerde belirli bir konu veya beceri hakkında detaylı bilgi verilir. Katılımcılar, eğitmen rehberliğinde bilgi edinir, sunum sırasında soru sorma fırsatı bulur ve çevrimiçi tartışmalara katılabilir. Bu etkinlikler, özellikle uzaktan eğitim almayı tercih eden veya uzman görüşüne kolayca erişmek isteyenler için önemlidir. Tamamen ücretsizdir.",
+            "source_ids": ["63", "64", "65", "66"],
+            "category": "Etkinlikler (Online)",
+            "keywords": [
+                "online seminerler",
+                "çevrimiçi seminer",
+                "uzaktan eğitim",
+                "eğitici etkinlik",
+                "uzman görüşü"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Online Seminerler ücretli mi?",
+                "Geçmiş Online Seminer kayıtlarını izleyebilir miyim?",
+                "Online Seminer takvimi nerede?"
+            ]
+        },
+        {
+            "question": "Yeni Nesil Girişimci Buluşmaları'nın amacı nedir?",
+            "answer": "Yeni Nesil Girişimci Buluşmaları; girişimcilerin, yatırımcıların (metinde 'potansiyel görüşmelerle görüşmeler' olarak belirtilmiştir) ve iş fikri sahiplerinin bir araya geldiği, ağ kurma (networking) odaklı etkinliklerdir. Bu buluşmalarda katılımcılar girişimcilik deneyimlerini birbirleriyle paylaşır, yeni işbirlikleri (metinde 'yeni iş tutulur' olarak geçmektedir) kurar ve iş ağlarını genişletirler. Katılımcılar bu sayede girişimcilik ekonomisi hakkında bilgi edinir ve işlerini büyütmek için yeni fırsatlar ararlar.",
+            "source_ids": ["67", "68", "69"],
+            "category": "Etkinlikler (Girişimcilik)",
+            "keywords": [
+                "girişimci buluşmaları",
+                "networking",
+                "ağ kurma",
+                "girişimcilik",
+                "iş fikri",
+                "iş ağı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Girişimci Buluşmaları'na kimler katılabilir?",
+                "yatırımcı buluşması yapıyo musunuz?",
+                "Yazılımcı Buluşmaları ile farkı nedir?"
+            ]
+        },
+        {
+            "question": "yatırımcı buluşması yapıyo musunuz?",
+            "answer": "Evet, 'Yeni Nesil Girişimci Buluşmaları' adıyla düzenlediğimiz etkinlikler tam olarak bu amaca hizmet etmektedir. Bu buluşmalar, girişimcilerin, iş fikri sahiplerinin ve potansiyel yatırımcıların (metinde 'potansiyel görüşmelerle görüşmeler' olarak belirtilmiştir) bir araya geldiği etkinliklerdir. Amacı, katılımcıların deneyimlerini paylaşması, iş ağlarını genişletmesi ve işlerini büyütmek için yeni fırsatlar (ve potansiyel yatırımcılar) aramasıdır.",
+            "source_ids": ["67", "68", "69"],
+            "category": "Etkinlikler (Girişimcilik)",
+            "keywords": [
+                "yatırımcı",
+                "girişimci",
+                "networking",
+                "gayri resmi",
+                "informal",
+                "iş ağı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yeni Nesil Girişimci Buluşmaları'nın amacı nedir?",
+                "Girişimci Buluşmaları'na nasıl kayıt olabilirim?"
+            ]
+        },
+        {
+            "question": "Model Uçak Gösterileri'nde neler yapılıyor?",
+            "answer": "Model Uçak Gösterileri, model uçak tutkunlarının ve bu alana meraklı olan kişilerin bir araya geldiği keyifli etkinliklerdir. Bu gösterilerde, genellikle katılımcılar veya uzmanlar tarafından özel olarak tasarlanmış ve uzaktan kontrol edilen model uçaklar havada sergilenir ve çeşitli manevralar yapılır. Bu etkinlikler sadece bir gösteri değil, aynı zamanda katılımcıların model uçakların tasarımı, uçuş prensipleri ve uzaktan kumanda teknolojileri hakkında bilgi edinebilecekleri eğitici bir platformdur.",
+            "source_ids": ["70", "71", "72"],
+            "category": "Etkinlikler (Hobi/Havacılık)",
+            "keywords": [
+                "model uçak",
+                "gösteri",
+                "manevra",
+                "uçuş prensipleri",
+                "uzaktan kumanda",
+                "havacılık"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Model Uçak Gösterileri'ne kendi uçağımla katılabilir miyim?",
+                "Model Uçak Gösterileri ne zaman?"
+            ]
+        },
+        {
+            "question": "Yazılımcı Buluşmaları'nın (Developer Meetups) amacı nedir?",
+            "answer": "Yazılımcı Buluşmaları; yazılım geliştiricilerinin (developer), mühendislerin ve genel olarak teknoloji meraklılarının bir araya geldiği, teknik paylaşıma dayalı etkinliklerdir. Bu buluşmalarda genellikle yeni teknolojiler, güncel programlama dilleri (Python, Go, Rust vb.) ve modern yazılım geliştirme yöntemleri (Agile, DevOps vb.) hakkında sunumlar, atölye (workshop) çalışmaları ve tartışma panelleri düzenlenir. Katılımcılar, bu etkinliklerde kendi projelerini paylaşır, yeni işbirlikleri yapar ve sektördeki güncel gelişmeleri takip etme fırsatı bulur.",
+            "source_ids": ["73", "74", "75"],
+            "category": "Etkinlikler (Teknoloji)",
+            "keywords": [
+                "yazılımcı buluşmaları",
+                "developer meetup",
+                "yazılım",
+                "kodlama",
+                "programlama dilleri",
+                "atölyeler",
+                "teknoloji"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "kodlama hakkında konuşmalar var mı?",
+                "Yazılımcı Buluşmaları'na kimler katılabilir?",
+                "Yazılımcı Buluşmaları ile Girişimci Buluşmaları arasındaki fark nedir?"
+            ]
+        },
+        {
+            "question": "kodlama hakkında konuşmalar var mı?",
+            "answer": "Evet, tam olarak bu amaçla 'Yazılımcı Buluşmaları' düzenliyoruz. Bu buluşmalar, yazılım geliştiricilerinin ve teknoloji meraklılarının bir araya geldiği etkinliklerdir. Bu buluşmalarda genellikle yeni teknolojiler, programlama dilleri ve yazılım geliştirme yöntemleri üzerine sunumlar, atölyeler (workshop) ve tartışmalar yapılır. Katılımcılar hem projelerini paylaşabilir hem de sektördeki güncel gelişmeleri takip edebilir.",
+            "source_ids": ["73", "74", "75"],
+            "category": "Etkinlikler (Teknoloji)",
+            "keywords": [
+                "kodlama",
+                "yazılım",
+                "programlama",
+                "yazılımcı buluşmaları",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yazılımcı Buluşmaları'nın amacı nedir?",
+                "Bir sonraki Yazılımcı Buluşması ne zaman?"
+            ]
+        },
+        {
+            "question": "Yazılımcı Buluşmaları ile Girişimci Buluşmaları arasındaki fark nedir?",
+            "answer": "Her iki etkinlik de ağ kurma (networking) imkanı sunsa da odak noktaları farklıdır. Yazılımcı Buluşmaları; teknik konulara odaklanır. Katılımcılar (geliştiriciler, mühendisler) yeni teknolojileri, programlama dillerini, yazılım geliştirme yöntemlerini tartışır ve projelerini paylaşırlar. Yeni Nesil Girişimci Buluşmaları ise; iş dünyasına ve ticarete odaklanır. Katılımcılar (girişimciler, iş fikri sahipleri) girişimcilik deneyimlerini paylaşır, iş ağlarını genişletir ve işlerini büyütmek için fırsatlar (potansiyel yatırımcılar veya ortaklar) ararlar.",
+            "source_ids": ["67", "68", "69", "73", "74", "75"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "yazılımcı vs girişimci",
+                "fark",
+                "teknik",
+                "iş dünyası",
+                "networking"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yazılımcı Buluşmaları'nın amacı nedir?",
+                "Yeni Nesil Girişimci Buluşmaları'nın amacı nedir?"
+            ]
+        },
+        {
+            "question": "Bu etkinliklere (Zirve, Buluşma, Seminer) nasıl kayıt olabilirim? Ücretli mi?",
+            "answer": "Bilgi tabanımızda Bilim ve Teknoloji Zirveleri, Online Seminerler, Girişimci Buluşmaları, Model Uçak Gösterileri ve Yazılımcı Buluşmaları gibi birçok etkinliğin amacı ve içeriği detaylıca açıklanmıştır. Bu etkinliklere nasıl kayıt olunacağı hakkında en güncel bilgileri https://www.instagram.com/ipekyolugirisimcikulucka/?igshid=OGQ5ZDc2ODk2ZA%3D%3D instagram adresimizden öğrenebilirsiniz.",
+            "source_ids": ["60", "63", "67", "70", "73"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "kayıt",
+                "başvuru",
+                "ücretli mi",
+                "fiyat",
+                "bilet",
+                "kontenjan",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Etkinlik takviminiz nerede?",
+                "Eğitimleriniz ücretli mi? (SSS dosyasından)"
+            ]
+        },
+        {
+            "question": "Bir sonraki Bilim ve Teknoloji Zirvesi (veya diğer etkinlikler) ne zaman?",
+            "answer": "Merkezimizin düzenlediği Bilim ve Teknoloji Zirveleri, Yazılımcı Buluşmaları ve Girişimci Buluşmaları gibi etkinliklerin içerikleri ve amaçları hakkında bilgilere sahibiz. Ancak, bu etkinliklerin spesifik tarihleri, etkinlik takvimi veya bir sonraki etkinliğin ne zaman düzenleneceği hakkında detaylı bilgi ve en güncel takvim için sosyal medya hesaplarımızı takip etmenizi öneririz.",
+            "source_ids": ["60", "63", "67", "70", "73"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "ne zaman",
+                "tarih",
+                "takvim",
+                "etkinlik takvimi",
+                "bilgi yok",
+                "zamansal"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Eğitimlerinizden nasıl haberdar olabilirim? (SSS dosyasından)",
+                "Bu etkinliklere nasıl kayıt olabilirim?"
+            ]
+        },
+        {
+            "question": "Geçmiş Online Seminer kayıtlarını izleyebilir miyim?",
+            "answer": "Bilgi tabanımızda, 'Çevrimiçi Seminerler' sunduğumuz ve bu etkinliklerin uzaktan eğitim ile uzman görüşüne erişim açısından önemli olduğu belirtilmektedir. Ancak, bu canlı seminerlerin sonradan izlenmek üzere kaydedilip kaydedilmediği (arşiv, VOD) veya geçmiş seminer kayıtlarına nereden ulaşılabileceği hakkında spesifik bir bilgi şu anda kaynaklarımızda yer almamaktadır.",
+            "source_ids": ["63", "66"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "online seminer",
+                "kayıt",
+                "arşiv",
+                "video",
+                "izleme",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Online Seminerler (Çevrimiçi Seminerler) nasıl işliyor?",
+                "Online eğitim var mı? (SSS dosyasından)"
+            ]
+        },
+        {
+            "question": "Bilim ve Teknoloji Zirveleri'ndeki konuşmacılar kimler?",
+            "answer": "Bilgi tabanımızda, Bilim ve Teknoloji Zirveleri'nde 'önde gelen bilim insanları, mühendisler ve teknoloji birimleri'nin konuşmacı olarak yer aldığı, paneller düzenlendiği ve teknoloji trendleri hakkında sunumlar yapıldığı belirtilmektedir. Ancak, geçmiş etkinliklerde yer alan spesifik konuşmacıların isimleri, unvanları veya bir sonraki zirvenin konuk listesi hakkında detaylı bir bilgi şu anda kaynaklarımızda bulunmamaktadır.",
+            "source_ids": ["61"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "konuşmacılar",
+                "speaker list",
+                "bilim insanları",
+                "isimler",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Bilim ve Teknoloji Zirveleri'nin içeriği ve amacı nedir?",
+                "Bir sonraki Bilim ve Teknoloji Zirvesi ne zaman?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'kodlama hakkında konuşmalar var mı?', 'yatırımcı buluşması yapıyo musunuz?'). Metnin 'yetersiz' (sadece tanımlayıcı) doğası gereği, Kılavuz'daki 'Negatif Test' ve 'Hatalı Bilgi Testi' kategorilerine ağırlık verildi. Bu, RAG modelinin olmayan bilgiler (tarih, ücret, kayıt) hakkında halüsinasyon görmesini engellemek için kritiktir.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Basit tanımlar, kullanıcıya tam bağlamı verecek şekilde zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

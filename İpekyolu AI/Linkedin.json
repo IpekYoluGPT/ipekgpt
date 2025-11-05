@@ -1,0 +1,496 @@
+{
+    "metadata": {
+        "file_name": "4.3_etkinlik_ve_egitim_detaylari.json",
+        "category": "ETKINLIK_VE_SSS",
+        "sub_category": "Gerçekleşen ve Planlanan Etkinlikler",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "BTK Akademi ve İpek Yolu iş birliğiyle hangi eğitimleri düzenlediniz?",
+            "answer": "BTK Akademi ve İpek Yolu Girişimci Kuluçka Birimi iş birliğiyle, hem lise hem de üniversite öğrencilerine yönelik kapsamlı teknoloji eğitimleri düzenlenmiştir. Bu iş birliği kapsamında 'Python Programlama Eğitimi' ve 'ROS (Robot Operating System) ile Robotik Sistem Geliştirme Eğitimi' gibi 4 günlük yoğun programlar tamamlanmıştır. Ayrıca lise öğrencilerine özel, uygulamalı projeler içeren 'Python Programlama Eğitimi' de bu işbirliğiyle başlatılmıştır. Bu eğitimlerin, Teknofest'te 'Sanayide Dijital Teknolojiler Kategorisi'nde alınan Türkiye İkinciliği gibi başarılarda da payı bulunmaktadır.",
+            "source_ids": ["7", "8", "9", "10", "24", "25", "28"],
+            "category": "Eğitimler (İş Birliği)",
+            "keywords": [
+                "btk akademi",
+                "işbirliği",
+                "ros eğitimi",
+                "python eğitimi",
+                "lise",
+                "kompozit"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "ROS eğitimi içeriğinde neler vardı?",
+                "Python eğitiminde hangi projeler yapıldı?",
+                "BTK Akademi eğitimleri ücretli mi?"
+            ]
+        },
+        {
+            "question": "Take Off İstanbul etkinliğinde ne yaptınız? Hangi ürünleri sergilediniz?",
+            "answer": "İpek Yolu Roket Takımı olarak, Türkiye’nin en büyük teknoloji ve girişimcilik zirvesi olan Take Off İstanbul’da yer aldık. Bu prestijli etkinlikte, takımımızın geliştirdiği roketimizi ve en önemlisi, 'ticari' bir ürün olan özgün tasarım uçuş kontrol bilgisayarımız 'Skylogic'i gururla tanıttık. Standımız, Sanayi ve Teknoloji Bakanımız Sayın Mehmet Fatih Kacır tarafından da ziyaret edildi. Bakanımız projelerimizi yakından inceleyerek bizlere destek ve takdirlerini iletti. Etkinlik boyunca roket yarışmalarına ilgi duyan birçok kişiyle bilgi ve deneyim paylaşımı yaptık.",
+            "source_ids": ["15", "16", "17"],
+            "category": "Başarılar",
+            "keywords": [
+                "take off istanbul",
+                "zirve",
+                "roket takımı",
+                "skylogic",
+                "ticari ürün",
+                "Mehmet Fatih Kacır"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Skylogic nedir?",
+                "Bakan Mehmet Fatih Kacır standınızı ziyaret etti mi?",
+                "Take Off İstanbul nedir?"
+            ]
+        },
+        {
+            "question": "Skylogic nedir? Ticari bir ürün mü?",
+            "answer": "Evet, Skylogic, İpek Yolu Roket Takımımız tarafından geliştirilen özgün tasarım bir uçuş kontrol bilgisayarıdır. Bu ürün, Take Off İstanbul gibi Türkiye'nin en büyük teknoloji ve girişimcilik zirvelerinde 'ticari uçuş kontrol bilgisayarı' olarak tanıtılmıştır. Standımızda sergilenen Skylogic, Sanayi ve Teknoloji Bakanımız Sayın Mehmet Fatih Kacır tarafından da yakından incelenmiştir.",
+            "source_ids": ["15", "16", "17"],
+            "category": "Ar-Ge (Skylogic)",
+            "keywords": [
+                "skylogic",
+                "ticari",
+                "uçuş kontrol bilgisayarı",
+                "arge",
+                "özgün tasarım",
+                "roket takımı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Take Off İstanbul etkinliğinde ne yaptınız?",
+                "Skylogic'in teknik özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "Merkezinizde 'Ara Tatil Teknoloji Kampı' düzenlendi mi? İçeriği neydi?",
+            "answer": "Evet, lise öğrencilerine yönelik bir 'Ara Tatil Teknoloji Kampı' düzenlenmiştir. Bu kamp kapsamında katılımcılara birden fazla alanda eğitimler verilmiştir. Eğitimler arasında; 'Sabit Kanat Model Uçak Eğitimi' (teorik bilgiler ve simülasyon), 'İpek Yolu Elektronik Geliştirme Kartı ile Robotik Kodlama Eğitimi' (kodlama, devre kurma, sensörler) ve 'Temel Python Eğitimi' (problem çözme, algoritmik düşünme) yer almıştır.",
+            "source_ids": ["19", "21", "22", "23"],
+            "category": "Eğitimler (Lise)",
+            "keywords": [
+                "ara tatil",
+                "teknoloji kampı",
+                "lise",
+                "sabit kanat",
+                "robotik kodlama",
+                "python",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kış Teknoloji Kampı ile Ara Tatil Kampı'nın farkı nedir?",
+                "Ara Tatil Kampı ne zaman yapıldı?",
+                "İpek Yolu Elektronik Geliştirme Kartı eğitimi içeriği nedir?"
+            ]
+        },
+        {
+            "question": "Kış Teknoloji Kampı düzenlendi mi? İçeriği ve tarihi neydi?",
+            "answer": "Evet, liseli öğrenciler için ücretsiz bir 'Kış Teknoloji Kampı' düzenlenmiştir. Bu kamp, 20-25 Ocak 2025 tarihleri arasında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi’nde gerçekleştirilmiştir. Kampın son başvuru tarihi 17 Ocak 2025 olarak duyurulmuştur. Eğitim alanları 3D Yazıcı Eğitimi, Robotik Kodlama Eğitimi ve Uçuş Simülasyonu Eğitimi'ni kapsamaktadır.",
+            "source_ids": ["31"],
+            "category": "Eğitimler (Lise)",
+            "keywords": [
+                "kış teknoloji kampı",
+                "lise",
+                "ücretsiz",
+                "tarih",
+                "ocak 2025",
+                "3d yazıcı",
+                "robotik kodlama",
+                "uçuş simülasyonu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kış Teknoloji Kampı'na şimdi başvurabilir miyim?",
+                "Kış Teknoloji Kampı ile Ara Tatil Kampı'nın farkı nedir?"
+            ]
+        },
+        {
+            "question": "Kış Teknoloji Kampı'na şimdi başvurabilir miyim? Bir sonraki ne zaman?",
+            "answer": "Bilgi tabanımızda, liseli öğrenciler için 20-25 Ocak 2025 tarihleri arasında düzenlenen ücretsiz bir 'Kış Teknoloji Kampı' bilgisi yer almaktadır. Bu kampın son başvuru tarihi 17 Ocak 2025 olarak belirtilmiştir. Bu tarihler geçmiş olduğundan, şu an bu kampa başvuru mümkün görünmemektedir. Bir sonraki Kış Teknoloji Kampı'nın ne zaman düzenleneceği veya yeni başvuru tarihlerinin ne olduğu hakkında güncel bilgi için instagram sayfamız: https://www.instagram.com/ipekyolugirisimcikulucka/.",
+            "source_ids": ["31"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "kış kampı",
+                "başvuru",
+                "tarih",
+                "geçmiş tarih",
+                "bilgi yok",
+                "zamansal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Kış Teknoloji Kampı içeriği neydi?",
+                "Eğitim duyurularını nereden takip edebilirim?"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 101 etkinliğinizin amacı ve tarihi neydi?",
+            "answer": "Evet, 'TEKNOFEST 101' adında bir etkinlik 2 Şubat 2025, Pazar günü 13:00-17:00 saatleri arasında merkezimizde gerçekleştirilmiştir. Bu etkinliğin amacı, TEKNOFEST'e katılmayı düşünenlere rehberlik etmekti. Etkinlikte, geçmiş TEKNOFEST katılımcıları ve ödül sahibi ekiplerimiz, yarışma sürecine dair tüm detayları ve tecrübelerini paylaştı. Yarışma şartnamelerinin incelenmesi, başvuru detayları, soru-cevap oturumları ve takım oluşturma stratejileri gibi konular ele alındı.",
+            "source_ids": ["30"],
+            "category": "TEKNOFEST",
+            "keywords": [
+                "teknofest 101",
+                "eğitim",
+                "tecrübe paylaşımı",
+                "şartname",
+                "başvuru",
+                "strateji",
+                "tarih",
+                "şubat 2025"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bir sonraki TEKNOFEST 101 etkinliği ne zaman?",
+                "TEKNOFEST 2025 takımlarınızın durumu nedir?"
+            ]
+        },
+        {
+            "question": "Merkezinizde gönüllü olursam ne kazanırım? Gönüllü buluşmasında ne konuşuldu?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi Girişimci Kuluçka Birimi olarak gönüllü adaylarımızla buluşmalar gerçekleştirdik. Gönüllülerimize birçok alanda destek olmayı taahhüt ediyoruz. Bu destekler arasında teknoloji atölyelerinden faydalanma, Teknofest yarışma takımlarında yer alma ve kişisel gelişimlerine katkı sunacak eğitimlere katılma fırsatları bulunmaktadır. Ayrıca, gönüllülerimize 'Eğitmen Eğitimi' verilmesi ve 'Kurumsal Çalışma Disiplini' kazanmaları gibi profesyonel gelişim imkanları da sunulacaktır.",
+            "source_ids": ["20", "26"],
+            "category": "Gönüllülük",
+            "keywords": [
+                "gönüllü",
+                "gönüllü buluşması",
+                "kazanım",
+                "eğitmen eğitimi",
+                "kurumsal çalışma disiplini",
+                "teknofest"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Gönüllü başvuruları ne zaman?",
+                "Gönüllüler hangi eğitimleri alıyor?",
+                "Nasıl gönüllü olabilirim?"
+            ]
+        },
+        {
+            "question": "100 Mühendis Nasıl Eğlenir etkinliğinizin tarihi ve içeriği neydi?",
+            "answer": "Merkezimizde 5 Ekim 2025 tarihinde '100 Mühendis Nasıl Eğlenir?' adında özel bir etkinlik düzenlenmiştir. Etkinliğin son başvuru tarihi 3 Ekim 2025 olarak belirlenmişti. Bu etkinliğin amacı mühendislik, yaratıcılık ve eğlenceyi bir araya getirmekti. Katılımcılara eğlenceli sürpriz aktiviteler, teknoloji ve inovasyon deneyimleri, ekip çalışması fırsatları ve benzer düşünce yapısına sahip diğer mühendislerle tanışma (networking) imkanı sunulmuştur.",
+            "source_ids": ["1"],
+            "category": "Etkinlikler",
+            "keywords": [
+                "100 mühendis",
+                "etkinlik",
+                "tarih",
+                "ekim 2025",
+                "networking",
+                "ekip çalışması"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "100 Mühendis etkinliğine şimdi katılabilir miyim?",
+                "Mühendisler için başka etkinlikler var mı?"
+            ]
+        },
+        {
+            "question": "100 Mühendis etkinliğine şimdi katılabilir miyim?",
+            "answer": "Bilgi tabanımızda '100 Mühendis Nasıl Eğlenir?' etkinliğinin 5 Ekim 2025 tarihinde düzenlendiği ve son başvuru tarihinin 3 Ekim 2025 olduğu bilgisi yer almaktadır. Bu tarihler geçmiş olduğundan, şu an bu etkinliğe başvuru mümkün görünmemektedir. Gelecekte benzer bir etkinliğin düzenlenip düzenlenmeyeceği konusunda güncel bir bilgi bulunmamaktadır. Lütfen duyurular için sosyal medya hesaplarımızı takip ediniz.",
+            "source_ids": ["1"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "100 mühendis",
+                "geçmiş tarih",
+                "ekim 2025",
+                "başvuru",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "100 Mühendis etkinliğinin içeriği neydi?",
+                "Eğitim duyurularını nereden takip edebilirim?"
+            ]
+        },
+        {
+            "question": "Üniversite öğrencilerine yönelik hangi eğitimleri tamamladınız?",
+            "answer": "İpek Yolu Girişimci Kuluçka Birimi olarak üniversite öğrencilerine yönelik birçok uygulamalı eğitimi başarıyla tamamladık. Tamamlanan eğitimlerimiz arasında 'Drone ile Arazi Keşfi ve Haritalama Eğitimi' (otonom uçuş ve 3D haritalama), '3D Tasarım ve Yazıcı Eğitimi' (teorik ve pratik) ve 'Zirai İnsansız Hava Aracı (İHA) Eğitimi' (tarımsal veri toplama ve profesyonel uçuş) bulunmaktadır.",
+            "source_ids": ["4", "13", "27"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "üniversite",
+                "tamamlanan eğitimler",
+                "kompozit",
+                "drone",
+                "3d tasarım",
+                "zirai iha"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Drone ile Arazi Keşfi eğitiminin içeriği nedir?",
+                "3D Tasarım ve Yazıcı Eğitimi ne zaman yapıldı?",
+                "Üniversite öğrencileri için hangi eğitimler *başlıyor*?"
+            ]
+        },
+        {
+            "question": "Lise öğrencilerine yönelik hangi eğitimleri tamamladınız?",
+            "answer": "Evet, lise öğrencilerine yönelik çeşitli teknoloji eğitimlerini başarıyla tamamladık. Tamamlanan programlarımız arasında 'Model Uçak ve Simülasyon Eğitimi' ve Ara Tatil Teknoloji Kampı kapsamında verilen 'Temel Python Eğitimi' (problem çözme ve algoritmik düşünme) bulunmaktadır.",
+            "source_ids": ["11", "22"],
+            "category": "Eğitimler (Lise)",
+            "keywords": ["lise", "tamamlanan eğitimler", "model uçak", "simülasyon", "python", "ara tatil"],
+            "priority": "medium",
+            "related_questions": [
+                "Lise öğrencileri için hangi kamplar düzenlendi?",
+                "Lise öğrencilerine yönelik Sabit Kanat eğitimi başladı mı?"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2025 takımlarınızın durumu nedir? Hangi takımlar yarışıyor?",
+            "answer": "İpek Yolu Girişimci Kuluçka Birimi olarak, 2025 yılı TEKNOFEST yarışmalarına 4 (dört) farklı kategoride takımlarımızla katılıyoruz. Bu takımlar; Model Roket Takımı, Su Altı Roket Takımı, Hava Savunma Sistemleri Takımı ve Model Uydu Takımı'dır. Tüm bu ekiplerimiz, kendi disiplinlerindeki hakem değerlendirmelerinden başarıyla geçerek ilk aşamaları tamamlamış ve bir üst aşamaya geçmeye hak kazanmıştır. Kendilerini tebrik ediyor ve milli teknoloji hamlesi yolunda onlarla gurur duyuyoruz.",
+            "source_ids": ["3"],
+            "category": "TEKNOFEST",
+            "keywords": [
+                "teknofest 2025",
+                "durum",
+                "ilk aşama",
+                "model roket",
+                "su altı roket",
+                "hava savunma",
+                "model uydu",
+                "kompozit"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 101 etkinliğinizin amacı neydi?",
+                "TEKNOFEST takımlarınız hiç ödül aldı mı?"
+            ]
+        },
+        {
+            "question": "ROS (Robot Operating System) eğitimi içeriğinde neler vardı?",
+            "answer": "BTK Akademi ve İpek Yolu iş birliğiyle düzenlenen 'ROS ile Robotik Sistem Geliştirme Eğitimi', katılımcılara robotik sistemlerin temellerini öğretmeyi amaçlamıştır. Eğitim içeriği hem teorik hem de uygulamalı konuları kapsamıştır. Başlangıçta ROS Temelleri, Robot Kontrolü ve Simülasyon, Sensör ve Aktüatör Entegrasyonu gibi konulara odaklanılmıştır. Eğitimin 2. gününde uygulamalı olarak Temel Linux komutları, ROS CLI kullanımı, paket ve düğüm oluşturma gibi konular işlenmiştir. 4 günlük eğitimin sonunda katılımcılar, dağıtık sistemler, yazılım haberleşmesi ve robotik kurgu konularında deneyim kazanmışlardır.",
+            "source_ids": ["7", "10", "24"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "ros",
+                "robot işletim sistemi",
+                "eğitim içeriği",
+                "btk akademi",
+                "linux",
+                "ros cli",
+                "paket",
+                "düğüm",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Otonom robot takımı ROS eğitimi verdi mi?",
+                "BTK Akademi ile başka hangi eğitimler var?",
+                "ROS eğitimi kaç gün sürdü?"
+            ]
+        },
+        {
+            "question": "Otonom robot takımınız gönüllülere ROS eğitimi verdi mi?",
+            "answer": "Evet, böyle bir etkinlik gerçekleştirilmiştir. Teknofest Sanayide Dijital Teknolojiler Yarışması’nda Türkiye ikincisi olan otonom robot takımımız, edindiği bilgi ve tecrübeleri merkezimizdeki gönüllü arkadaşlarımızla paylaşmıştır. Bu etkinlikte, takımımız elde ettiği başarıları ve birikimlerini aktarırken, özellikle ROS (Robot İşletim Sistemi) işletim sistemleri ve otonom robot geliştirme süreçleri üzerine detaylı bilgiler vermiştir.",
+            "source_ids": ["18"],
+            "category": "Gönüllülük",
+            "keywords": [
+                "otonom robot takımı",
+                "gönüllüler",
+                "ros",
+                "eğitim",
+                "tecrübe paylaşımı",
+                "türkiye ikincisi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "ROS (Robot Operating System) eğitimi içeriğinde neler vardı?",
+                "Gönüllü olursam ne kazanırım?"
+            ]
+        },
+        {
+            "question": "BTK Akademi Python eğitiminin içeriği neydi? Hangi projeler yapıldı?",
+            "answer": "BTK Akademi iş birliğiyle düzenlenen 4 günlük Python Programlama Eğitimi, katılımcıların kodlama becerilerini uygulamalı olarak geliştirmesine odaklanmıştır. Eğitimde Python'un temellerinden başlayarak fonksiyonlar ve hata ayıklama (error handling) gibi konulara geçilmiştir. Eğitimin 2. gününde uygulamalı olarak liste (list), demet (tuple) ve koşul ifadelerinin (if/else) kullanımı işlenmiştir. Ayrıca, öğrenilen bilgileri pekiştirmek için 'sayı tahmin oyunu' ve 'hesap makinesi' gibi mini projeler üzerinde çalışılmıştır.",
+            "source_ids": ["8", "25"],
+            "category": "Eğitimler (İş Birliği)",
+            "keywords": [
+                "python",
+                "eğitim içeriği",
+                "btk akademi",
+                "projeler",
+                "sayı tahmin oyunu",
+                "hesap makinesi",
+                "teknik detay",
+                "liste",
+                "tuple"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Lise öğrencileri için de Python eğitimi var mı?",
+                "BTK Akademi ile hangi eğitimleri düzenlediniz?"
+            ]
+        },
+        {
+            "question": "Üniversite öğrencilerine yönelik Temel Arduino Eğitimi'nin tarihi ve süresi nedir?",
+            "answer": "Üniversite öğrencilerine özel olarak 'Temel Arduino Eğitimi' planlanmıştır. Bu eğitim, 26-27 Nisan 2025 tarihlerinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi / Elazığ konumunda gerçekleştirilecektir. Eğitimin toplam süresi 15 Saat olarak belirlenmiştir (iki gün, 09:00 - 16:30 arası). Bu eğitimde elektronik ve yazılım disiplinleri bir araya getirilerek projeler hayata geçirilecektir.",
+            "source_ids": ["2", "29"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "arduino",
+                "eğitim",
+                "üniversite",
+                "tarih",
+                "nisan 2025",
+                "süre",
+                "15 saat"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Arduino eğitimine nasıl başvurabilirim?",
+                "Arduino eğitimi kontenjanı kaç kişi?",
+                "Temel Arduino eğitimi ücretli mi?"
+            ]
+        },
+        {
+            "question": "Arduino eğitimine nasıl başvurabilirim? Kontenjanı nedir?",
+            "answer": "Üniversite öğrencilerine yönelik 26-27 Nisan 2025 tarihlerinde düzenlenecek olan 15 saatlik Temel Arduino Eğitimi'nin kontenjanı 20 (yirmi) kişi ile sınırlıdır. Ancak, bu eğitime nasıl başvuru yapılacağı (başvuru linki, son başvuru tarihi vb.) hakkında detaylı bilgi şu anda bilgi tabanımızda yer almamaktadır. Lütfen güncel duyurular için sosyal medya hesaplarımızı takip ediniz.",
+            "source_ids": ["29"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "arduino",
+                "başvuru",
+                "kontenjan",
+                "20 kişi",
+                "bilgi yok",
+                "kayıt"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Üniversite öğrencilerine yönelik Temel Arduino Eğitimi'nin tarihi nedir?",
+                "Eğitim duyurularını nereden takip edebilirim?"
+            ]
+        },
+        {
+            "question": "Üniversite öğrencileri için 3D Tasarım ve Yazıcı Eğitimi ne zaman düzenlendi?",
+            "answer": "Evet, üniversite öğrencilerine yönelik ücretsiz '3 Boyutlu Tasarım ve Yazıcı Kullanımı Eğitimi' düzenlenmiştir. Bu eğitim 4-5 Ocak tarihlerinde, 09:00 - 17:00 saatleri arasında merkezimizde gerçekleştirilmiştir. Eğitimde 3D tasarımın temelleri, 3D yazıcı prensipleri, modelleme ve baskı malzemeleri gibi konular hem teorik hem de uygulamalı olarak keşfedilmiştir. Eğitim başarıyla tamamlanmıştır.",
+            "source_ids": ["13", "14", "32"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "3d tasarım",
+                "3d yazıcı",
+                "eğitim",
+                "üniversite",
+                "tarih",
+                "ocak",
+                "tamamlandı",
+                "ücretsiz"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bir sonraki 3D Tasarım eğitimi ne zaman?",
+                "3D Tasarım eğitimi içeriği neydi?",
+                "Lise seviyesinde 3D eğitim var mı?"
+            ]
+        },
+        {
+            "question": "Zirai İHA eğitimi hangi seviyeye yönelikti ve içeriği neydi?",
+            "answer": "Merkezimizde düzenlenen 'Zirai İnsansız Hava Aracı (İHA) Eğitimi', üniversite öğrencilerine yönelikti ve başarıyla tamamlanmıştır. Eğitimde, tarım sektöründe İHA teknolojilerinin kullanımı, tarımsal veri toplama teknikleri gibi konulara odaklanılmıştır. Katılımcılar, teorik bilgilerin yanı sıra uygulamalı uçuş eğitimi alarak İHA'ları profesyonel bir şekilde kullanma becerisi kazanmışlardır.",
+            "source_ids": ["27"],
+            "category": "Eğitimler (Üniversite)",
+            "keywords": [
+                "zirai iha",
+                "drone",
+                "tarım",
+                "eğitim",
+                "üniversite",
+                "veri toplama",
+                "uçuş eğitimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Drone ile Arazi Keşfi eğitiminden farkı nedir?",
+                "Zirai İHA eğitimi ne zaman yapıldı?"
+            ]
+        },
+        {
+            "question": "Drone ile Arazi Keşfi eğitimi ile Zirai İHA eğitimi arasındaki fark nedir?",
+            "answer": "Her ikisi de üniversite öğrencilerine yönelik tamamlanmış drone eğitimleri olsa da odak noktaları farklıdır. 'Drone ile Arazi Keşfi ve Haritalama Eğitimi', otonom uçuş ve *3 boyutlu haritalama tekniklerine* odaklanır. 'Zirai İnsansız Hava Aracı (İHA) Eğitimi' ise spesifik olarak *tarım sektörüne* odaklanır; tarımda İHA kullanımı ve *tarımsal veri toplama* tekniklerini öğretir. Her ikisi de uygulamalı uçuş eğitimleri içermektedir.",
+            "source_ids": ["4", "27"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "drone",
+                "zirai iha",
+                "fark",
+                "haritalama",
+                "tarım",
+                "veri toplama"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Zirai İHA eğitimi içeriği neydi?",
+                "Drone ile Arazi Keşfi eğitimi tamamlandı mı?"
+            ]
+        },
+        {
+            "question": "Kış Teknoloji Kampı ile Ara Tatil Teknoloji Kampı'nın farkı nedir?",
+            "answer": "Her iki kamp da lise öğrencilerine yönelik düzenlenmiş teknoloji kamplarıdır, ancak içerikleri ve muhtemelen tarihleri farklıdır. \n1. Kış Teknoloji Kampı (20-25 Ocak 2025): Eğitim alanları 3D Yazıcı Eğitimi, Robotik Kodlama Eğitimi ve Uçuş Simülasyonu Eğitimi'ni kapsamıştır. \n2. Ara Tatil Teknoloji Kampı: Eğitim alanları Sabit Kanat Model Uçak Eğitimi, İpek Yolu Elektronik Geliştirme Kartı ile Robotik Kodlama Eğitimi ve Temel Python Eğitimi'ni kapsamıştır. \n'Robotik Kodlama Eğitimi' her iki kampta da yer almış gibi görünse de, Ara Tatil Kampı'ndaki eğitim 'İpek Yolu Elektronik Geliştirme Kartı' ile spesifikleştirilmiştir.",
+            "source_ids": ["19", "21", "22", "31"],
+            "category": "Karşılaştırma",
+            "keywords": [
+                "karşılaştırma",
+                "kış kampı",
+                "ara tatil kampı",
+                "fark",
+                "lise",
+                "eğitim içeriği"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kış Teknoloji Kampı içeriği neydi?",
+                "Ara Tatil Teknoloji Kampı içeriği neydi?"
+            ]
+        },
+        {
+            "question": "BTK Akademi eğitimleri (ROS, Python) ücretli miydi?",
+            "answer": "Bilgi tabanımızda, BTK Akademi ve İpek Yolu iş birliğiyle 'ROS ile Robotik Sistem Geliştirme Eğitimi' ve 'Python Programlama Eğitimi' gibi 4 günlük yoğun programların düzenlendiği ve başarıyla tamamlandığı belirtilmektedir. Ancak, bu eğitimlerin katılımcılara ücretli olup olmadığı (maliyeti, fiyatı) hakkında detaylı bir bilgi şu anda kaynaklarımızda yer almamaktadır. (Not: Kış Kampı ve 3D Tasarım eğitimleri 'Ücretsiz' olarak belirtilmiştir, ancak BTK eğitimleri için bu bilgi eksiktir).",
+            "source_ids": ["24", "25", "31", "32"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "btk akademi",
+                "ros",
+                "python",
+                "ücretli mi",
+                "fiyat",
+                "maliyet",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "ROS eğitimi içeriğinde neler vardı?",
+                "Python eğitimi içeriği neydi?",
+                "Kış Teknoloji Kampı ücretli mi?"
+            ]
+        },
+        {
+            "question": "Su Altı Roket Takımı'nız ödül aldı mı?",
+            "answer": "Bilgi tabanımızda, İpek Yolu Girişimci Kuluçka Birimi olarak 2025 yılı TEKNOFEST kapsamında 'Su Altı Roket Yarışması'na katılan bir takımımızın bulunduğu ve bu takımın *ilk aşamaları başarıyla tamamlayarak* bir üst aşamaya geçtiği bilgisi yer almaktadır. Ancak, bu takımın henüz bir ödül (derece) aldığına dair bir bilgi (Türkiye 1.liği, 2.liği vb.) kaynaklarımızda bulunmamaktadır. Başarı bilgisi, Otonom Robot (Türkiye 2.si) ve Roket Takımları (Türkiye 2.liği, 3.lüğü) için mevcuttur.",
+            "source_ids": ["3", "28"],
+            "category": "Hatalı Bilgi Testi",
+            "keywords": [
+                "hatalı bilgi testi",
+                "su altı roket",
+                "ödül",
+                "derece",
+                "negatif test",
+                "ilk aşama"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "TEKNOFEST 2025 takımlarınızın durumu nedir?",
+                "Otonom robot takımınızın başarısı nedir?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'kalacak yer var mı?', 'yatırımcı buluşması yapıyo musunuz?', 'kodlama hakkında konuşmalar var mı?'). Metnin 'yetersiz' (sığ) doğası, Negatif Test (tarih, ücret, kayıt) ve Hatalı Bilgi Testi soruları üretmek için bir fırsat olarak kullanıldı. Kullanıcının 'ne sorar' talebine odaklanıldı.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Eğitim içerikleri ve karşılaştırma soruları, kullanıcıya tam bağlamı verecek şekilde zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

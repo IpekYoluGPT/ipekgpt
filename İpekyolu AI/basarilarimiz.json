@@ -1,0 +1,539 @@
+{
+    "metadata": {
+        "file_name": "3.1_basarilar_ve_projeler.json",
+        "category": "PROJELER_VE_BASARILAR",
+        "sub_category": "Roket Takımı ve Otonom Robot Başarıları",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "İpek Yolu Roket Takımı'nın genel başarıları nelerdir?",
+            "answer": "İpek Yolu Roket Takımımız, 2021 yılında kurulduğundan bu yana[cite: 1] TEKNOFEST roket yarışmalarında 3 (üç) yıl üst üste önemli dereceler elde etmiştir. [cite_start]2021 yılında Orta İrtifa Kategorisi'nde Türkiye İkinciliği ve En İyi Takım Ruhu ödüllerini kazanmıştır[cite: 3]. [cite_start]2022'de yine Orta İrtifa Kategorisi'nde Türkiye Üçüncülüğü ve En İyi Sunum Ödülü'nü almıştır[cite: 5]. [cite_start]2023 yılında ise ilk kez katıldığı Yüksek İrtifa Kategorisi'nde zorlu görevleri tamamlayarak Türkiye Üçüncülüğü ödülünün sahibi olmuştur[cite: 7].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "roket takımı",
+                "başarılar",
+                "teknofest",
+                "genel bakış",
+                "türkiye ikinciliği",
+                "türkiye üçüncülüğü"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Roket takımınız kaç ödül aldı?",
+                "TEKNOFEST'te ne yaptınız?",
+                "Yüksek irtifa başarınız var mı?"
+            ]
+        },
+        {
+            "question": "roket takımınız var mı ne yaptı?",
+            "answer": "Evet, İpek Yolu Roket Takımımız 2021 yılında kuruldu[cite: 1] ve merkezimizin gurur kaynaklarından biridir. Takımımız, katıldığı TEKNOFEST roket yarışmalarında 3 (üç) yıl üst üste (2021, 2022, 2023) Türkiye derecesi elde etti. [cite_start]2021'de Orta İrtifa'da Türkiye İkincisi[cite: 3][cite_start], 2022'de Orta İrtifa'da Türkiye Üçüncüsü[cite: 5] [cite_start]ve 2023'te Yüksek İrtifa'da Türkiye Üçüncüsü[cite: 7] olduk. [cite_start]Ayrıca 'En İyi Takım Ruhu'[cite: 3] [cite_start]ve 'En İyi Sunum'[cite: 5] gibi özel ödüller de kazandık.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "roket yapıyomuyuz",
+                "roket takımı",
+                "ne yaptı",
+                "başarı",
+                "teknofest",
+                "derece",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Roket yarışmalarına katılıyor musunuz?",
+                "TEKNOFEST dereceleriniz neler?"
+            ]
+        },
+        {
+            "question": "İpek Yolu Otonom Robot Takımı'nın başarısı nedir?",
+            "answer": "Merkezimiz bünyesinde hayata geçirilen İpek Yolu Otonom Robot Takımımız, 2023 yılında Sanayide Dijital Teknolojiler İleri Kategori yarışmasına katılmıştır[cite: 9]. [cite_start]Takımımız bu zorlu yarışmada başarılı bir performans sergileyerek Türkiye İkinciliği ödülüne layık görülmüştür[cite: 9]. Bu başarı, ekibimizin otonom sistemler ve robotik alanındaki yetkinliğini göstermektedir.",
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "otonom robot takımı",
+                "robotik",
+                "sanayide dijital teknolojiler",
+                "türkiye ikinciliği",
+                "2023",
+                "ileri kategori"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Robotik takımınız ne yaptı?",
+                "Sanayide dijital teknolojiler yarışmasında ne kazandınız?",
+                "robotik takımınız yarışmalara katıldı mı?"
+            ]
+        },
+        {
+            "question": "2021 yılındaki roket başarınızı detaylandırır mısınız?",
+            "answer": "Elbette. [cite_start]2021 yılında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi’nde kurulan İpek Yolu Roket Takımımız, ilk yılında TEKNOFEST Roket Yarışması'na Orta İrtifa Kategorisi'nde katıldı[cite: 1]. [cite_start]Takımımız, özgün olarak tasarladığı roketle 3002 metre (9850 feet) yüksekliğe ulaşarak dört kilogramlık (4 Kg) yükü başarıyla serbest bıraktı[cite: 2, 4]. [cite_start]Görevleri eksiksiz tamamlayan ekibimiz, hem Türkiye İkinciliği'ni hem de En İyi Takım Ruhu ödülünü kazandı[cite: 3].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2021",
+                "türkiye ikinciliği",
+                "orta irtifa",
+                "en iyi takım ruhu",
+                "3002 metre",
+                "9850 feet",
+                "4 kg",
+                "zamansal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İlk roket başarınız nedir?",
+                "En İyi Takım Ruhu ödülünü ne zaman aldınız?",
+                "2021 roketinin teknik özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "2021 roketinin teknik özellikleri nelerdir?",
+            "answer": "2021 yılında Türkiye İkincisi olan roketimizin teknik özellikleri şu şekildedir: 2552 mm uzunluk, 120 mm dış çap, 24507 gram ağırlık ve 4 Kg yük taşıma kapasitesi[cite: 4]. [cite_start]Roketimizde M2020 tipi motor kullanılmış olup, 10.000 feet olan hedeflenen irtifaya çok yaklaşarak 9850 feet'e (3002 metre) ulaşmıştır[cite: 2, 4]. [cite_start]Roketin ulaştığı maksimum hız 0.8 Mach olarak ölçülmüştür[cite: 4].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2021",
+                "teknik özellikler",
+                "roket",
+                "M2020 motor",
+                "0.8 mach",
+                "2552 mm",
+                "120 mm",
+                "ağırlık",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "2021 roketinin motoru neydi?",
+                "M2020 motorlu roketin hızı neydi?",
+                "2022 roketinin specs'leri neler?"
+            ]
+        },
+        {
+            "question": "2022 TEKNOFEST'te ne yaptınız?",
+            "answer": "İpek Yolu Roket Takımımız 2022 yılında da başarısını sürdürerek Teknofest tarafından düzenlenen Roket Yarışması Orta İrtifa Kategorisi'nde yer almıştır[cite: 5]. [cite_start]Roketimiz 3018 metre (9900 feet) yüksekliğe ulaşarak faydalı yük modülünü başarıyla serbest bırakmıştır[cite: 5, 6]. [cite_start]Bu başarılı görev sonucunda, takımımız Türkiye Üçüncülüğü ve En İyi Sunum Ödülü'nü kazanmıştır[cite: 5].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2022",
+                "türkiye üçüncülüğü",
+                "orta irtifa",
+                "en iyi sunum ödülü",
+                "3018 metre",
+                "9900 feet",
+                "zamansal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "En İyi Sunum Ödülü'nü hangi yarışmada aldınız?",
+                "2022'de roketiniz kaç metreye çıktı?",
+                "2022 roketinin specs'leri neler?"
+            ]
+        },
+        {
+            "question": "2022 roketinin specs'leri neler?",
+            "answer": "2022 yılında Türkiye Üçüncüsü olan roketimizin teknik detayları şu şekildedir: Uzunluğu 2550 mm, dış çapı 120 mm, ağırlığı 30163 gr ve yük taşıma kapasitesi 4 Kg'dır[cite: 6]. [cite_start]2021'deki gibi bu roketimizde de M2020 motoru kullanılmıştır[cite: 6]. [cite_start]10.000 feet hedeflenen irtifaya karşılık 9900 feet'e (3018 metre) ulaşmış ve maksimum 0.8 Mach hıza çıkmıştır[cite: 5, 6].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2022",
+                "teknik özellikler",
+                "specs",
+                "roket",
+                "M2020 motor",
+                "0.8 mach",
+                "30163 gr",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "2021 ve 2022 roketlerinin motorları aynı mı?",
+                "2022 roketinin ağırlığı neydi?"
+            ]
+        },
+        {
+            "question": "Roket takımınızın yüksek irtifa başarısı var mı?",
+            "answer": "Evet, bulunmaktadır. [cite_start]2023 yılında İpek Yolu Roket Takımımız, tarihinde ilk kez Yüksek İrtifa Kategorisi'nde yarışmıştır[cite: 7]. [cite_start]Bu zorlu kategoride görevlerini başarılı bir şekilde yerine getiren ekibimiz, 6338 metre (20.793,5 feet) irtifada faydalı yük modülünü serbest bırakmıştır[cite: 7, 8]. [cite_start]Kurtarma operasyonunu da başarılı bir şekilde yerine getiren takımımız, Yüksek İrtifa Kategorisi'nde Türkiye Üçüncülüğü ödülünün sahibi olmuştur[cite: 7].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2023",
+                "yüksek irtifa",
+                "türkiye üçüncülüğü",
+                "6338 metre",
+                "20793 feet",
+                "N5800 motor"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yüksek irtifada ne yaptınız?",
+                "2023 roket yarışması sonucunuz nedir?",
+                "2023 yüksek irtifa roketinin özellikleri nelerdir?"
+            ]
+        },
+        {
+            "question": "2023 yüksek irtifa roketinin teknik özellikleri nelerdir?",
+            "answer": "2023 yılında Yüksek İrtifa Kategorisi'nde Türkiye Üçüncüsü olan roketimiz, önceki yılların roketlerinden daha büyük ve güçlüdür. [cite_start]Roketin uzunluğu 3238 mm, dış çapı 140 mm ve ağırlığı 47657 gramdır[cite: 8]. [cite_start]4 Kg yük taşıma kapasitesine sahip olan roketimizde N5800 tipi motor kullanılmıştır[cite: 8]. [cite_start]Hedeflenen 21.000 feet irtifaya çok yaklaşarak 20.793,5 feet'e ulaşmış ve ses hızını (1 Mach) geçerek maksimum 1.24 Mach hıza ulaşmıştır[cite: 8].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "2023",
+                "teknik özellikler",
+                "roket",
+                "yüksek irtifa",
+                "N5800 motor",
+                "1.24 mach",
+                "ses hızı",
+                "3238 mm",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Ses hızını geçen roketiniz var mı?",
+                "N5800 motoru hangi rokette kullanıldı?",
+                "En hızlı roketiniz hangisiydi?"
+            ]
+        },
+        {
+            "question": "2021 ve 2022 roketlerini karşılaştırır mısınız?",
+            "answer": "2021 ve 2022 roketlerimiz, her ikisi de TEKNOFEST Orta İrtifa Kategorisi'nde yarışmıştır[cite: 1, 5]. [cite_start]Teknik özellikleri çok benzerdir: Her ikisi de M2020 tipi motor kullanmıştır, 120 mm dış çapa ve 4 Kg yük taşıma kapasitesine sahiptir[cite: 4, 6]. [cite_start]Her ikisi de 10.000 feet irtifayı hedeflemiş (9850 ve 9900 feet'e ulaşmışlar) ve maksimum 0.8 Mach hıza çıkmışlardır[cite: 4, 6]. Aralarındaki temel farklar; [cite_start]2021 roketinin 2552 mm uzunluk ve 24507 gr ağırlıkta[cite: 4][cite_start], 2022 roketinin ise 2550 mm uzunluk ve 30163 gr ağırlıkta[cite: 6] olmasıdır. [cite_start]Başarı olarak ise 2021'de Türkiye İkinciliği[cite: 3][cite_start], 2022'de Türkiye Üçüncülüğü[cite: 5] elde edilmiştir.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "karşılaştırma",
+                "2021 vs 2022",
+                "roket farkı",
+                "M2020",
+                "orta irtifa",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "2022 ve 2023 roketlerini karşılaştırır mısınız?",
+                "Neden 2022 roketi daha ağırdı?",
+                "İki roketin motorları aynı mıydı?"
+            ]
+        },
+        {
+            "question": "2022 ve 2023 roketlerini karşılaştırır mısınız?",
+            "answer": "2022 ve 2023 roketlerimiz farklı kategorilerde yarışmıştır ve aralarında ciddi teknik farklar bulunmaktadır. [cite_start]2022 roketi Orta İrtifa (10.000 feet hedefli)[cite: 6] [cite_start]iken, 2023 roketi Yüksek İrtifa (21.000 feet hedefli)[cite: 8] kategorisindedir. [cite_start]Bu nedenle 2023 roketi (3238 mm uzunluk, 140 mm çap, 47657 gr ağırlık)[cite: 8][cite_start], 2022 roketinden (2550 mm uzunluk, 120 mm çap, 30163 gr ağırlık)[cite: 6] daha büyük ve ağırdır. Motorları da farklıdır; [cite_start]2022'de M2020 motoru[cite: 6] [cite_start]kullanılırken, 2023'te çok daha güçlü olan N5800 motoru[cite: 8] kullanılmıştır. Bu güç farkı hıza da yansımıştır; [cite_start]2022 roketi 0.8 Mach[cite: 6] [cite_start]hıza ulaşırken, 2023 roketi 1.24 Mach[cite: 8] ile ses hızını geçmiştir.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "karşılaştırma",
+                "2022 vs 2023",
+                "roket farkı",
+                "M2020 vs N5800",
+                "orta irtifa vs yüksek irtifa",
+                "mach"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "En hızlı roketiniz hangisi?",
+                "Neden 2023 roketinin motoru farklı?",
+                "Yüksek irtifa roketinin farkı nedir?"
+            ]
+        },
+        {
+            "question": "En hızlı roketiniz hangisiydi?",
+            "answer": "Bilgi tabanımızdaki verilere göre en yüksek hıza ulaşan roketimiz, 2023 yılında Yüksek İrtifa Kategorisi'nde yarışan roketimizdir[cite: 8]. [cite_start]Bu roket, güçlü N5800 motoru sayesinde maksimum 1.24 Mach hıza ulaşarak ses hızını (1 Mach) geçmiştir[cite: 8]. [cite_start]Diğer roketlerimiz olan 2021 ve 2022 orta irtifa roketleri ise maksimum 0.8 Mach hıza ulaşmışlardı[cite: 4, 6].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "en hızlı roket",
+                "maksimum hız",
+                "max hız",
+                "mach",
+                "1.24 mach",
+                "ses hızı",
+                "karşılaştırma",
+                "maksimum"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Ses hızını geçen roketiniz var mı?",
+                "Roketlerin hızları neydi?",
+                "2023 roketinin motoru neydi?"
+            ]
+        },
+        {
+            "question": "En yüksek irtifaya hangi yıl ulaştınız?",
+            "answer": "Takımımızın ulaştığı en yüksek irtifa 2023 yılındaki Yüksek İrtifa Kategorisi yarışmasındadır[cite: 7]. [cite_start]Bu yarışmada roketimiz 6338 metreye, yani 20.793,5 feet'e ulaşmıştır[cite: 7, 8]. [cite_start]Diğer başarılı uçuşlarımız 2021'de 3002 metre (9850 feet)[cite: 2, 4] [cite_start]ve 2022'de 3018 metre (9900 feet)[cite: 5, 6] olmuştu.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "en yüksek irtifa",
+                "maksimum irtifa",
+                "6338 metre",
+                "2023",
+                "karşılaştırma",
+                "maksimum"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yüksek irtifa rekorunuz nedir?",
+                "Roketler kaç metreye çıktı?"
+            ]
+        },
+        {
+            "question": "Roketlerinizin hedeflenen ve gerçekleşen irtifaları arasındaki fark nedir?",
+            "answer": "Roketlerimiz hedeflenen irtifalara çok yakın uçuşlar gerçekleştirmiştir. [cite_start]2021 ve 2022 yıllarında Orta İrtifa hedefi 10.000 feet idi[cite: 4, 6]. [cite_start]2021'de 9850 feet'e[cite: 4][cite_start], 2022'de ise 9900 feet'e[cite: 6] ulaşılarak hedefe çok yaklaşılmıştır. [cite_start]2023'te Yüksek İrtifa hedefi 21.000 feet iken[cite: 8][cite_start], roketimiz 20.793,5 feet'e[cite: 8] ulaşarak yine hedefe çok yakın bir başarı göstermiştir.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "irtifa farkı",
+                "hedeflenen irtifa",
+                "gerçekleşen uzunluk",
+                "feet",
+                "başarı oranı",
+                "istatistik"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Neden hedeflenen irtifaya tam ulaşılamadı?",
+                "Roketlerin irtifa hedefleri nelerdi?"
+            ]
+        },
+        {
+            "question": "Roketlerinizin yük taşıma kapasitesi hep aynı mıydı?",
+            "answer": "Evet, sağlanan bilgilere göre TEKNOFEST'te yarışan üç roketimizin de (2021, 2022 ve 2023) Yük Taşıma Kapasitesi 4 Kg (dört kilogram) olarak belirtilmiştir[cite: 4, 6, 8]. [cite_start]Takımlarımız bu 4 Kg'lık yükü (faydalı yük modülü) başarıyla serbest bırakmışlardır[cite: 2, 5, 7].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "yük taşıma kapasitesi",
+                "4 kg",
+                "faydalı yük",
+                "karşılaştırma",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Faydalı yük nedir?",
+                "Roketlerin ağırlıkları neden farklı?"
+            ]
+        },
+        {
+            "question": "Roket takımınız hangi özel ödülleri kazandı?",
+            "answer": "İpek Yolu Roket Takımımız, Türkiye derecelerinin yanı sıra iki adet özel ödül de kazanmıştır. [cite_start]2021 yılında, takımın ilk senesinde, Türkiye İkinciliği ile birlikte En İyi Takım Ruhu ödülüne layık görülmüştür[cite: 3]. [cite_start]2022 yılında ise Türkiye Üçüncülüğü ile birlikte En İyi Sunum Ödülü'nü kazanmıştır[cite: 5].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "özel ödüller",
+                "en iyi takım ruhu",
+                "en iyi sunum ödülü",
+                "2021",
+                "2022"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "En İyi Takım Ruhu ödülü nedir?",
+                "Neden En İyi Sunum Ödülü aldınız?"
+            ]
+        },
+        {
+            "question": "Hem roket hem de robot takımınızın 2023 başarıları nelerdir?",
+            "answer": "2023 yılı merkezimiz için iki farklı alanda başarıyla dolu bir yıl olmuştur. [cite_start]İpek Yolu Roket Takımımız, 2023'te ilk kez Yüksek İrtifa Kategorisi'nde yarışarak Türkiye Üçüncülüğü elde etmiştir[cite: 7]. [cite_start]Aynı yıl, merkezimiz bünyesinde kurulan İpek Yolu Otonom Robot Takımımız da kuruluşunun ilk yılında önemli bir başarıya imza atarak Sanayide Dijital Teknolojiler İleri Kategori yarışmasında Türkiye İkinciliği ödülünü kazanmıştır[cite: 9].",
+            "category": "Kompozit",
+            "keywords": [
+                "kompozit",
+                "2023",
+                "roket ve robot",
+                "iki başarı",
+                "türkiye üçüncülüğü",
+                "türkiye ikinciliği",
+                "zamansal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "2023'te ne yaptınız?",
+                "Roket takımının 2023 başarısı nedir?",
+                "Otonom robot takımının başarısı nedir?"
+            ]
+        },
+        {
+            "question": "Tüm roketlerinizin motor tiplerini ve maksimum hızlarını listeler misiniz?",
+            "answer": "Elbette, yarışan roketlerimizin motorları ve ulaştıkları maksimum hızlar şöyledir: \n1. [cite_start]2021 (Orta İrtifa): Kullanılan Motor Tipi M2020, Max Hız 0.8 Mach[cite: 4]. \n2. [cite_start]2022 (Orta İrtifa): Kullanılan Motor Tipi M2020, Max Hız 0.8 Mach[cite: 6]. \n3. [cite_start]2023 (Yüksek İrtifa): Kullanılan Motor Tipi N5800, Max Hız 1.24 Mach[cite: 8]. [cite_start]\nİlk iki yıl aynı tip motor ve hız limitlerine sahipken, 2023'te yüksek irtifa için çok daha güçlü bir motor kullanılmış ve ses hızı (1.24 Mach) aşılmıştır[cite: 8].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "kompozit",
+                "motor tipleri",
+                "maksimum hız",
+                "M2020",
+                "N5800",
+                "0.8 mach",
+                "1.24 mach",
+                "karşılaştırma",
+                "teknik detay"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "En hızlı roketiniz hangisiydi?",
+                "Neden 2023'te motor değişti?",
+                "M2020 motorunun özellikleri nedir?"
+            ]
+        },
+        {
+            "question": "robotunuz ne yapıyo?",
+            "answer": "İpek Yolu Otonom Robot Takımımızın 2023'te Türkiye İkincisi olan robotu[cite: 9], endüstriyel görevler için tasarlanmış bir otonom yük taşıma robotudur. [cite_start]Bu robot, 1500 Kg'a kadar yük taşıyabilmektedir[cite: 9]. [cite_start]Otonom olarak hareket edebilmesi için 360 Lidar ile haritalandırma yapabilir, Görüntü İşleme teknolojisi ile çizgileri takip edebilir ve QR Okuma Sistemi sayesinde komutları algılayabilir[cite: 9]. [cite_start]12 saatlik kullanım süresi sunan robotumuz, otonom yük taşıma görevlerini başarıyla yerine getirebilmektedir[cite: 9].",
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "robot ne yapıyor",
+                "otonom robot",
+                "yük taşıma",
+                "lidar",
+                "görüntü işleme",
+                "çizgi takip",
+                "qr okuma",
+                "informal",
+                "gayri resmi"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Otonom robotun teknik özellikleri neler?",
+                "Robotun taşıma kapasitesi ne kadar?",
+                "Robot haritayı nasıl çıkarıyor?"
+            ]
+        },
+        {
+            "question": "Otonom robotun teknik özellikleri nelerdir?",
+            "answer": "2023 yılında Sanayide Dijital Teknolojiler yarışmasında Türkiye İkincisi olan otonom robotumuzun[cite: 9] teknik özellikleri oldukça gelişmiştir. [cite_start]Robotun ağırlığı 125 Kg, ölçüleri 1000x850x410 mm ve yük taşıma kapasitesi 1500 Kg'dır[cite: 9]. [cite_start]Otonomi için 360 Lidar ile haritalandırma, Görüntü İşleme ile Çizgi Takip ve QR Okuma Sistemi gibi teknolojilerle donatılmıştır[cite: 9]. [cite_start]12 saatlik kullanım süresine sahip olan robot, 24 V 10 A şarj istasyonu ile şarj olmaktadır[cite: 9].",
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "otonom robot",
+                "teknik özellikler",
+                "specs",
+                "125 kg",
+                "75 kg yük",
+                "lidar",
+                "görüntü işleme",
+                "12 saat kullanım",
+                "teknik detay"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Robotun ağırlığı ve taşıma kapasitesi nedir?",
+                "Robotun navigasyon sistemleri nelerdir?",
+                "Robotun şarj süresi ne kadar?"
+            ]
+        },
+        {
+            "question": "Kaç yıl üst üste derece aldınız?",
+            "answer": "İpek Yolu Roket Takımımız, TEKNOFEST roket yarışmalarında 3 (üç) yıl üst üste derece alma başarısını göstermiştir. [cite_start]Takımımız 2021'de[cite: 3][cite_start], 2022'de[cite: 5] [cite_start]ve 2023'te[cite: 7] kürsüye çıkarak Türkiye dereceleri kazanmıştır. Bu, takımımızın sürdürülebilir başarısını göstermektedir.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "sayısal",
+                "istatistik",
+                "üç yıl üst üste",
+                "derece",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Tüm dereceleriniz nelerdir?",
+                "Roket takımının genel başarıları nelerdir?"
+            ]
+        },
+        {
+            "question": "Otonom robotun maliyeti ne kadardır?",
+            "answer": "İpek Yolu Otonom Robot Takımımızın geliştirdiği ve 2023'te Sanayide Dijital Teknolojiler yarışmasında Türkiye İkincisi olan robotumuzun[cite: 9] [cite_start]Lidar, görüntü işleme ve 75 Kg yük taşıma gibi birçok teknik özelliği[cite: 9] bulunmaktadır. Ancak, robotun geliştirme maliyeti, bütçesi veya sponsorları hakkında halka açık bir bilgimiz şu anda bilgi tabanımızda yer almamaktadır.",
+            "category": "Negatif Test",
+            "keywords": [
+                "maliyet",
+                "bütçe",
+                "fiyat",
+                "sponsor",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Robotu satın alabilir miyiz?",
+                "Robotun sponsorları kimler?"
+            ]
+        },
+        {
+            "question": "Takımlarınız kaç kişiden oluşuyordu?",
+            "answer": "Bilgi tabanımız, İpek Yolu Roket Takımı'nın[cite: 1] [cite_start]ve İpek Yolu Otonom Robot Takımı'nın[cite: 9] [cite_start]TEKNOFEST ve Sanayide Dijital Teknolojiler gibi yarışmalarda Türkiye dereceleri[cite: 3, 5, 7, 9] aldığını doğrulamaktadır. Ancak, bu takımların kaç kişilik ekiplerden oluştuğu (ekip üye sayısı) hakkında detaylı bir bilgi şu anda kaynaklarımızda bulunmamaktadır.",
+            "category": "Negatif Test",
+            "keywords": [
+                "takım üye sayısı",
+                "kaç kişi",
+                "ekip büyüklüğü",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Roket takımına nasıl katılabilirim?",
+                "Takım kaptanları kimler?"
+            ]
+        },
+        {
+            "question": "2020 yılındaki roket başarınız neydi?",
+            "answer": "İpek Yolu Roket Takımımız, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi’nde 2021 yılında kurulmuştur[cite: 1]. Bu nedenle, 2020 yılında bir roket başarımız bulunmamaktadır. [cite_start]Takımımızın ilk başarısı, kurulduğu yıl olan 2021'de TEKNOFEST Orta İrtifa Kategorisi'nde elde ettiği Türkiye İkinciliği'dir[cite: 3].",
+            "category": "Roket Takımı",
+            "keywords": [
+                "hatalı bilgi testi",
+                "2020",
+                "kuruluş yılı",
+                "negatif test",
+                "yanlış tarih",
+                "zamansal"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Ne zaman kuruldunuz?",
+                "İlk başarınız nedir?"
+            ]
+        },
+        {
+            "question": "Otonom robot takımınız 2022'de ne yaptı?",
+            "answer": "Sağlanan bilgilere göre, İpek Yolu Otonom Robot Takımımız 2023 yılında Sanayide Dijital Teknolojiler yarışmasına katılmış ve ilk yılında Türkiye İkinciliği elde etmiştir[cite: 9]. Bilgi tabanımızda takımın 2023'teki kuruluşuna ve başarısına odaklanılmıştır, 2022 yılına ait bir faaliyeti veya başarısı bilgisi yer almamaktadır.",
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "hatalı bilgi testi",
+                "2022",
+                "otonom robot",
+                "negatif test",
+                "yanlış tarih",
+                "zamansal"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Otonom robot takımı ne zaman kuruldu?",
+                "2023'te robot takımının başarısı neydi?"
+            ]
+        },
+        {
+            "question": "Uzaya roket gönderdiniz mi?",
+            "answer": "İpek Yolu Roket Takımımız, TEKNOFEST kapsamında yüksek irtifa roket yarışmalarına katılmıştır. [cite_start]En yüksek başarımız, 2023 yılında 6338 metre (yaklaşık 6.4 km veya 20.793,5 feet) irtifaya ulaşan roketimizdir[cite: 7, 8]. Bu başarı, 'Yüksek İrtifa' kategorisi için önemli bir başarıdır ancak 'Uzay sınırı' (genellikle 100 km olan Karman hattı) olarak kabul edilen irtifaya roket gönderme faaliyeti değildir. Başarılarımız atmosfer içi yüksek irtifa roketçiliği üzerinedir.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "hatalı bilgi testi",
+                "uzay",
+                "karman hattı",
+                "yüksek irtifa",
+                "yanlış anlama",
+                "negatif test"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "En yüksek irtifaya hangi yıl ulaştınız?",
+                "Yüksek irtifa kategorisi nedir?"
+            ]
+        },
+        {
+            "question": "Roketlerinizin çıkış hızı (takeoff speed) neden hep 0.12 Mach?",
+            "answer": "Sağlanan teknik özellik tablolarında, hem 2021[cite: 4][cite_start], hem 2022[cite: 6] [cite_start]hem de 2023[cite: 8] roketleri için 'Çıkış Hızı' (takeoff speed) 0.12 Mach olarak belirtilmiştir. Bu durum, fırlatma rampasından ayrılma anındaki hızın benzer olduğunu göstermektedir. Ancak roketlerin ulaştığı 'Max Hız' (maksimum hız) motor tiplerine göre büyük farklılık göstermektedir; [cite_start]M2020 motorlu roketler 0.8 Mach[cite: 4, 6] [cite_start]hıza ulaşırken, N5800 motorlu roket 1.24 Mach[cite: 8] hıza ulaşmıştır.",
+            "category": "Roket Takımı",
+            "keywords": [
+                "çıkış hızı",
+                "0.12 mach",
+                "teknik detay",
+                "karşılaştırma",
+                "M2020",
+                "N5800"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Maksimum hız ile çıkış hızı arasındaki fark nedir?",
+                "Tüm roketlerin motorları aynı mıydı?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'roket takımınız var mı ne yaptı?', 'En hızlı roketiniz hangisiydi?', '2022'de ne yaptınız?'). Kılavuzda belirtilen 10 kategoriye (Temel, Teknik, Karşılaştırma, Zamansal, Negatif, Günlük Dil, Kompozit, Sayısal, Maksimum, Hatalı Bilgi) ait sorular üretildi.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Kısa sorular 2-3 cümle, detaylı ve karşılaştırmalı sorular 2-3 paragraf uzunluğunda yapılandırıldı.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Her gerçek bilgi, kaynak dokümandaki ilgili numaraya göre '' formatında referanslandı."
+    }
+}

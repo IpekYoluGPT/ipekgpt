@@ -1,0 +1,353 @@
+{
+    "metadata": {
+        "file_name": "1.3_basinda_biz_ve_genel_bilgiler.json",
+        "category": "TEMEL_BILGILER",
+        "sub_category": "Merkez Hakkında Genel Bilgiler ve Basın Yansımaları",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ne zaman ve kim tarafından açıldı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, Elazığ'da yaklaşık 3 (üç) yıl önce açılmıştır. Merkezin açılışı, Cumhurbaşkanı Recep Tayyip Erdoğan’ın katılımıyla gerçekleştirilmiştir.",
+            "source_ids": ["6", "17"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "açılış",
+                "ne zaman açıldı",
+                "cumhurbaşkanı",
+                "Recep Tayyip Erdoğan",
+                "kuruluş",
+                "3 yıl",
+                "zamansal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkeziniz kaç yıllık?",
+                "Merkezinizin kapasitesi nedir?",
+                "Merkezinizi kimler destekliyor?"
+            ]
+        },
+        {
+            "question": "Merkezinizin kapasitesi ve konaklama imkanları nedir?",
+            "answer": "Merkezimiz, Türkiye'de 1, Avrupa’nın en büyük 3.merkezi olarak tanımlanmaktadır. Toplam kapasitesi bin (1000) kişiliktir. Aynı zamanda, şehir dışından veya uzak bölgelerden gelen katılımcılar için 256 (iki yüz elli altı) kişilik konaklama imkanı da sunmaktadır ve bu şekilde hizmet vermeye devam etmektedir.",
+            "source_ids": ["7"],
+            "category": "İmkanlar",
+            "keywords": [
+                "kapasite",
+                "konaklama",
+                "1000 kişi",
+                "250 kişi",
+                "avrupa'nın en büyüğü",
+                "sayısal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "merkezinizde kalacak yer var mı?",
+                "Merkezde hangi atölyeler bulunuyor?"
+            ]
+        },
+        {
+            "question": "Merkezde hangi atölyeler ve eğitim alanları bulunuyor?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, çocuklara ve gençlere uzmanlar eşliğinde birçok farklı alanda eğitimler vermektedir. Bünyemizde Girişimci Kuluçka Merkezi, Ar-Ge, tasarım, yazılım, kodlama, uçuş simülasyon, teknik ve üretim montaj atölyeleri bulunmaktadır. Ayrıca tarım, hayvancılık, doğa bilimleri, okçuluk, atıcılık ve binicilik gibi çeşitli alanlarda da faaliyetler yürütülmektedir.",
+            "source_ids": ["8"],
+            "category": "İmkanlar",
+            "keywords": [
+                "atölyeler",
+                "eğitimler",
+                "ar-ge",
+                "tasarım",
+                "yazılım",
+                "kodlama",
+                "tarım",
+                "okçuluk",
+                "binicilik",
+                "liste"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin kapasitesi nedir?",
+                "Girişimci Kuluçka Merkezi'nde neler var?"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı hangi uluslararası kongreye katıldı?",
+            "answer": "İpek Yolu Roket Takımımız, T3 Vakfı tarafından özel olarak davet edilmiştir. Takımımız, dünyaca prestijli bir etkinlik olan 74. Uluslararası Uzay Kongresi’ne (International Astronautical Congress) katılmıştır. Bu kongre, Azerbaycan’ın başkenti Bakü’de düzenlenmiştir. Takımımız bu sayede Türkiye’nin uzay alanındaki yetenek ve inovasyonunu uluslararası platformda sergileme fırsatı bulmuştur.",
+            "source_ids": ["1", "2", "3"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "uluslararası uzay kongresi",
+                "74. IAC",
+                "bakü",
+                "azerbaycan",
+                "T3 Vakfı",
+                "uluslararası"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "roket takımı bakü'de ne yaptı?",
+                "Selçuk Bayraktar ile kongreye mi katıldınız?",
+                "Uluslararası Uzay Kongresi'nde ödül aldınız mı?"
+            ]
+        },
+        {
+            "question": "Selçuk Bayraktar ile kongreye mi katıldınız?",
+            "answer": "Evet, İpek Yolu Roket Takımımız, 74. Uluslararası Uzay Kongresi'ne TEKNOFEST Yönetim Kurulu ve T3 Vakfı Mütevelli Heyeti Başkanı Selçuk Bayraktar'ın liderliğindeki heyet ile birlikte katılım sağlamıştır. Selçuk Bayraktar, TEKNOFEST’te proje üreten 500 yarışmacı ile birlikte Bakü'deki kongreye katılmıştır. Bu heyet, Türkiye’nin uzay ve teknoloji alanındaki gelişimini temsil etmiştir.",
+            "source_ids": ["1", "2", "4", "5"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "selçuk bayraktar",
+                "T3 Vakfı",
+                "uluslararası uzay kongresi",
+                "bakü",
+                "heyet",
+                "500 yarışmacı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Roket Takımı hangi uluslararası kongreye katıldı?",
+                "Uluslararası Uzay Kongresi'nde ödül aldınız mı?"
+            ]
+        },
+        {
+            "question": "İpek Yolu Otonom Robot Takımı'nın başarısı nedir?",
+            "answer": "Elazığ Belediye Başkanı Şahin Şerifoğulları’nın “Genç Beyinler Bilimle Buluşuyor” projesi kapsamında desteklenen İpek Yolu Otonom Robot Takımımız, TEKNOFEST'e katılmıştır. Takımımız, 41 farklı kategorinin ve 1 milyona yakın yarışmacının yer aldığı bu büyük organizasyonda, “Sanayide Dijital Teknolojileri” kategorisinde yarışarak 2’ncilik (ikincilik) ödülü almıştır. Bu başarılarıyla tüm Elazığlıları gururlandırmışlardır.",
+            "source_ids": ["9", "10"],
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "otonom robot takımı",
+                "başarı",
+                "ödül",
+                "teknofest",
+                "ikincilik",
+                "sanayide dijital teknolojileri",
+                "Şahin Şerifoğulları"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "robot takımınız ne kazandı?",
+                "Otonom Robot Takımı hangi kategoride yarıştı?",
+                "1 milyona yakın yarışmacı arasından mı derece yaptınız?"
+            ]
+        },
+        {
+            "question": "robot takımınız ne kazandı?",
+            "answer": "İpek Yolu Otonom Robot Takımımız, TEKNOFEST'te çok önemli bir başarı elde etti. 1 milyona yakın yarışmacı arasından sıyrılarak “Sanayide Dijital Teknolojileri” kategorisinde yarıştılar ve Türkiye 2'ncisi (ikincisi) oldular. Bu başarı, Elazığ Belediye Başkanı Şahin Şerifoğulları’nın “Genç Beyinler Bilimle Buluşuyor” projesi kapsamında verilen desteklerle gerçekleşti.",
+            "source_ids": ["9", "10"],
+            "category": "Otonom Robot Takımı",
+            "keywords": [
+                "robot takımı",
+                "ne kazandı",
+                "ikincilik",
+                "teknofest",
+                "sanayide dijital teknolojileri",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Otonom Robot Takımı'nın başarısı nedir?",
+                "Roket takımının başarıları nelerdir?"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2022'de alınan 'Çifte Ödül' tam olarak nedir?",
+            "answer": "İpek Yolu Çocuk ve Gençlik Vakfı Roket Takımı, 2022 yılında katıldığı dünyanın en büyük havacılık, uzay ve teknoloji festivali TEKNOFEST'te 'Çifte Ödül' alarak büyük bir başarı göstermiştir. Takımımız, 'Roket Yarışması Orta İrtifa Kategorisi’nde Türkiye 3.’lüğü (üçüncülüğü) ödülü kazanmıştır. Buna ek olarak, takımımız ayrıca 'En İyi Sunum' ödülüne de layık görülmüştür.",
+            "source_ids": ["11", "12"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "çifte ödül",
+                "teknofest 2022",
+                "türkiye üçüncülüğü",
+                "orta irtifa",
+                "en iyi sunum ödülü",
+                "zamansal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Roket Takımının 2022 başarısı nedir?",
+                "Bakan Kacır takımı neden tebrik etti?"
+            ]
+        },
+        {
+            "question": "Bakan Mehmet Fatih Kacır, İpek Yolu Roket Takımını neden tebrik etti?",
+            "answer": "Sanayi ve Teknoloji Bakanı Mehmet Fatih KACIR, Elazığ ziyaretinde İpek Yolu Roket Takımıyla bir araya gelmiştir. Bakan Kacır, takımımızı ROKETSAN tarafından düzenlenen Roket Yarışması’nda, Yüksek İrtifa kategorisinde elde ettikleri Türkiye 3’üncülüğü (üçüncülüğü) sebebiyle tebrik etmiştir. Bu başarı, takımın 2023 yılındaki en önemli derecelerinden biridir.",
+            "source_ids": ["13"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "Mehmet Fatih Kacır",
+                "Sanayi ve Teknoloji Bakanı",
+                "tebrik",
+                "yüksek irtifa",
+                "türkiye üçüncülüğü",
+                "2023"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Roket takımının Yüksek İrtifa başarısı nedir?",
+                "Roket takımının tüm ödülleri nelerdir?"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı'nın bugüne kadarki tüm TEKNOFEST dereceleri ve özel ödülleri nelerdir?",
+            "answer": "İpek Yolu Roket Takımı, katıldığı yarışmalarda birden fazla derece ve ödül kazanmıştır. Başarılarımız şu şekildedir: \n1. TEKNOFEST 2021 (Orta İrtifa): Türkiye 2.’liği (İkinciliği) ve En İyi Takım Ruhu Ödülü. \n2. TEKNOFEST 2022 (Orta İrtifa): Türkiye 3.’lüğü (Üçüncülüğü) ve En İyi Sunum Ödülü (veya Sunum Özel Ödülü). \n3. TEKNOFEST 2023 (Yüksek İrtifa): Türkiye 3.’lüğü (Üçüncülüğü). \nTakımımız böylece üç yıl üst üste TEKNOFEST'ten ödülle dönmüştür.",
+            "source_ids": ["12", "13", "14"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "tüm ödüller",
+                "kompozit",
+                "roket takımı",
+                "teknofest",
+                "2021",
+                "2022",
+                "2023",
+                "orta irtifa",
+                "yüksek irtifa"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "2021 ve 2022 başarılarını karşılaştırır mısınız?",
+                "Roket takımının Yüksek İrtifa başarısı nedir?"
+            ]
+        },
+        {
+            "question": "2021 ve 2022 TEKNOFEST roket başarılarını karşılaştırır mısınız?",
+            "answer": "Her iki yılda da İpek Yolu Roket Takımı, TEKNOFEST Roket Yarışması'nda 'Orta İrtifa Kategorisi'nde yarışmıştır ve her iki yılda da hem derece hem de özel ödül almıştır. \n- 2021 yılında: Türkiye 2.’liği ve En İyi Takım Ruhu Ödülü alınmıştır. \n- 2022 yılında: Türkiye 3.’lüğü ve En İyi Sunum Ödülü (veya Sunum Özel Ödülü) alınmıştır. \nDolayısıyla, 2021'de derece olarak daha yüksek bir başarı (İkincilik) elde edilirken, her iki yılda da takdir gören özel ödüller kazanılmıştır.",
+            "source_ids": ["12", "14"],
+            "category": "Roket Takımı",
+            "keywords": [
+                "karşılaştırma",
+                "2021 vs 2022",
+                "roket takımı",
+                "orta irtifa",
+                "türkiye ikinciliği",
+                "türkiye üçüncülüğü"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Roket takımının tüm ödülleri nelerdir?",
+                "Roket takımının Yüksek İrtifa başarısı nedir?"
+            ]
+        },
+        {
+            "question": "Merkeziniz açıldıktan ne kadar süre sonra başarı elde etti?",
+            "answer": "Merkezimiz, Cumhurbaşkanlığı himayesinde ve Elazığ Valiliği İl Özel İdaresi’nin yapımcılığında kurulmuştur. Kuruluşundan sadece sekiz ay sonra önemli bir başarı elde ederek, 21–26 Eylül 2021 tarihleri arasında Atatürk Havalimanı’nda düzenlenen TEKNOFEST 2021 Havacılık, Uzay ve Teknoloji Festivali kapsamında gerçekleştirilen Roket Yarışması’nın orta irtifa kategorisinde yarışmış ve ödül kazanmıştır.",
+            "source_ids": ["15", "16", "17"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "8 ay",
+                "kısa süre",
+                "teknofest 2021",
+                "başarı",
+                "kuruluş",
+                "zamansal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "TEKNOFEST 2021'deki başarınız nedir?",
+                "Merkezinizi kimler destekliyor?"
+            ]
+        },
+        {
+            "question": "Merkezinizi kimler destekliyor veya işletiyor?",
+            "answer": "Merkezimiz geniş bir kurumsal destek yapısına sahiptir. Cumhurbaşkanlığı himayesinde kurulmuştur ve Elazığ Valiliği İl Özel İdaresi tarafından yapımı üstlenilmiştir. Merkezimizin işletilmesi ise İpek Yolu Çocuk ve Gençlik Vakfı aracılığıyla projelerle ve desteklerle sağlanmaktadır. Ayrıca, İpek Yolu Otonom Robot Takımımız özelinde, Elazığ Belediye Başkanı Şahin Şerifoğulları’nın “Genç Beyinler Bilimle Buluşuyor” projesi kapsamında da destek almaktayız.",
+            "source_ids": ["9", "17"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "destekçiler",
+                "işletme",
+                "cumhurbaşkanlığı",
+                "elazığ valiliği",
+                "ipek yolu vakfı",
+                "Şahin Şerifoğulları",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Otonom Robot Takımı'nın başarısı nedir?",
+                "Merkeziniz ne zaman açıldı?"
+            ]
+        },
+        {
+            "question": "merkezinizde kalacak yer var mı?",
+            "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, Türkiye ve Avrupa’nın en büyük merkezi olma özelliğine sahiptir. Merkezimiz, özellikle şehir dışından gelen katılımcılar, uzun süreli eğitimlere katılan öğrenciler ve misafirler için 250 (iki yüz elli) kişilik konaklama kapasitesine sahiptir ve bu şekilde hizmet vermeye devam etmektedir.",
+            "source_ids": ["7"],
+            "category": "İmkanlar",
+            "keywords": [
+                "konaklama",
+                "kalacak yer",
+                "yatakhane",
+                "kapasite",
+                "250 kişi",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin toplam kapasitesi nedir?",
+                "Konaklama ücretli mi?"
+            ]
+        },
+        {
+            "question": "Merkeziniz 'Türkiye ve Avrupa’nın en büyüğü' olarak tanımlanıyor mu?",
+            "answer": "Evet, merkezimiz hakkındaki basın bilgilendirmelerinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 'Türkiye ve Avrupa’nın en büyük merkezi' olarak tanımlanmaktadır. Bu merkez, 1000 (bin) kişilik toplam kapasitesi ve 250 (iki yüz elli) kişilik konaklama imkanıyla bu tanımı desteklemektedir.",
+            "source_ids": ["7"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "avrupa'nın en büyüğü",
+                "türkiye'nin en büyüğü",
+                "büyüklük",
+                "kapasite",
+                "maksimum"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizin kapasitesi nedir?",
+                "Merkeziniz nerede?"
+            ]
+        },
+        {
+            "question": "Uluslararası Uzay Kongresi'nde ödül aldınız mı?",
+            "answer": "İpek Yolu Roket Takımımız, T3 Vakfı davetlisi olarak Azerbaycan'ın başkenti Bakü'de düzenlenen 74. Uluslararası Uzay Kongresi’ne katılmıştır. Takımımız, bu prestijli etkinlikte Türkiye’nin uzay alanındaki yetenek ve inovasyonunu uluslararası platformda sergileme fırsatı bulmuştur. Ancak, metinlerde bu kongreye katılım sağlandığı belirtilmekte olup, bir ödül veya derece alındığına dair bir bilgi bulunmamaktadır.",
+            "source_ids": ["1", "2", "3"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "ödül",
+                "uluslararası uzay kongresi",
+                "IAC",
+                "bakü",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "İpek Yolu Roket Takımı hangi uluslararası kongreye katıldı?",
+                "Selçuk Bayraktar ile kongreye mi katıldınız?"
+            ]
+        },
+        {
+            "question": "Merkezinizde yüzme havuzu veya spor salonu var mı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin bünyesinde Ar-Ge, tasarım, yazılım, kodlama, uçuş simülasyon gibi teknoloji atölyeleri ve tarım, hayvancılık, doğa bilimleri, okçuluk, atıcılık, binicilik gibi eğitim alanları bulunduğu belirtilmektedir. Ancak yüzme havuzu ve fitness salonu yer almamaktadır.",
+            "source_ids": ["8"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "yüzme havuzu",
+                "spor salonu",
+                "fitness",
+                "imkanlar",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Merkezde hangi atölyeler ve eğitim alanları bulunuyor?",
+                "Merkezinizde kalacak yer var mı?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'robot takımınız ne kazandı?', 'merkezinizde kalacak yer var mı?'). Kılavuzda belirtilen Temel, Kompozit, Negatif Test, Hatalı Bilgi Testi, Sayısal, Maksimum, Karşılaştırma ve Günlük Dil (İnformal) soru tipleri üretildi.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Basın bültenleri zengin içerikli olduğu için cevaplar detaylandırılarak hazırlandı.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

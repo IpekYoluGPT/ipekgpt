@@ -1,0 +1,382 @@
+{
+    "metadata": {
+        "file_name": "1.1_hakkimizda_ve_misyon.json",
+        "category": "TEMEL_BILGILER",
+        "sub_category": "Hakkımızda, Misyon, Vizyon ve Kurucu Bilgileri",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi nedir? (Biz Kimiz)",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 2021 yılında T.C. Cumhurbaşkanlığı himayesinde kurulan bir eğitim ve inovasyon merkezidir. Geniş bir kampüs içerisinde yer alan merkezimiz, gençlerin teknoloji, inovasyon ve girişimcilik yeteneklerini keşfetmeleri ve geliştirmeleri için kapsamlı bir altyapı imkanı sağlamaktadır. Amacımız, gençlerin becerilerini keşfetmelerine, teknoloji ve inovasyonun sınırlarını zorlamalarına ve topluma anlamlı katkılarda bulunmalarına yardımcı olmaktır.",
+            "source_ids": ["34", "37", "43"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "biz kimiz",
+                "ipek yolu nedir",
+                "genel tanım",
+                "kuruluş",
+                "eğitim merkezi",
+                "inovasyon",
+                "cumhurbaşkanlığı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin amacı nedir?",
+                "Ne zaman kuruldu ve kurucusu kimdir?",
+                "Merkezde hangi kuluçka birimleri var?"
+            ]
+        },
+        {
+            "question": "merkez ne iş yapıyor?",
+            "answer": "Merkezimiz, gençlerin teknoloji ve girişimcilik alanlarında kendilerini geliştirmeleri için kurulmuş bir eğitim ve inovasyon merkezidir. Gençlere hem pratik hem de teorik bilgi birikimlerini artırmak amacıyla çeşitli teknolojik alanlarda eğitimler ve atölye çalışmaları düzenliyoruz. Ayrıca, gençlerin fikirlerini paylaşabileceği, sektör profesyonelleriyle buluşabileceği ve yenilikçi projeler üzerinde iş birliği yapabileceği seminerler, hackathonlar ve girişimci buluşmaları gibi etkinlikler organize ediyoruz. Amacımız gençlerin potansiyel kariyer yollarını keşfetmelerine yardımcı olmaktır.",
+            "source_ids": ["34", "39", "41", "42", "47"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "ne iş yapıyor",
+                "genel amaç",
+                "eğitim",
+                "etkinlik",
+                "girişimcilik",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu nedir?",
+                "Merkezinizin misyonu nedir?",
+                "Ne tür etkinlikler düzenliyorsunuz?"
+            ]
+        },
+        {
+            "question": "Merkezinizin kurucusu kimdir ve ne zaman kurulmuştur?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 2021 yılında Hakan Karabulut tarafından kurulmuştur. Merkezimiz, T.C. Cumhurbaşkanlığı himayesinde destek gören proje yürüten bir kurumdur. Açıldığı 2021 yılından itibaren TEKNOFEST yarışmalarına katılan ekiplerimiz önemli başarılar elde etmiştir.",
+            "source_ids": ["34", "40", "48"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "kurucu",
+                "hakan karabulut",
+                "kuruluş tarihi",
+                "2021",
+                "cumhurbaşkanlığı",
+                "destek"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "ne zaman açıldınız?",
+                "İpek Yolu nedir?"
+            ]
+        },
+        {
+            "question": "Merkezinizin misyonu nedir?",
+            "answer": "Girişimci Kuluçka Merkezi olarak misyonumuz, teknolojik alanlarda öncü eğitimler ve faaliyetler düzenlemektir. Bu kapsamda, katılımcılarımıza robotik kodlama, 3D yazıcı, insansız hava araçları, Scratch, IoT ve katı modelleme gibi yenilikçi alanlarda uzmanlaşma fırsatı sunuyoruz. Temel amacımız, tesisimizden faydalanan her bireyi en iyi şekilde bilgilendirmek, yeteneklerini geliştirmek ve hem ulusal hem de uluslararası platformlarda öne çıkmalarına aktif olarak destek olmaktır.",
+            "source_ids": ["44", "45"],
+            "category": "Misyon",
+            "keywords": [
+                "misyon",
+                "amaç",
+                "eğitimler",
+                "robotik kodlama",
+                "3d yazıcı",
+                "iot",
+                "scratch",
+                "uluslararası destek"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin vizyonu nedir?",
+                "Misyonunuzda belirtilen teknolojik eğitimler nelerdir?"
+            ]
+        },
+        {
+            "question": "Merkezinizin vizyonu nedir?",
+            "answer": "Vizyonumuz, Girişimci Kuluçka Merkezi’ni teknolojik inovasyonun öncüsü ve etkin bir öğrenme merkezi haline getirmektir. Bu hedefe ulaşmak için merkezimiz, sadece standart eğitimlerle değil, aynı zamanda katılımcıları motive edici etkinliklerle de desteklemektedir. Düzenlediğimiz seminerler, hackathonlar ve girişimci buluşmaları sayesinde gençlerin teknolojiyle ilgili vizyonlarını genişletmelerine ve ruhlarını canlandırmalarına olanak sağlıyoruz. Bu sayede, teknoloji alanında sürekli büyüyen ve öncü bir merkez olmayı hedefliyoruz.",
+            "source_ids": ["46", "47"],
+            "category": "Vizyon",
+            "keywords": [
+                "vizyon",
+                "hedef",
+                "inovasyon öncüsü",
+                "öğrenme merkezi",
+                "seminerler",
+                "hackathonlar",
+                "girişimci buluşmaları"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin misyonu nedir?",
+                "Ne tür etkinlikler düzenliyorsunuz?"
+            ]
+        },
+        {
+            "question": "Merkezinizin kampüs özellikleri ve fiziksel tesisleri nelerdir?",
+            "answer": "Merkezimiz, 225.000 metrekarelik bir kampüs içerisinde yer almaktadır ve birçok farklı tesise ev sahipliği yapmaktadır. Kampüsümüzde ana operasyon binası ve idari bina bulunmaktadır. Ayrıca tarım faaliyetleri için tarım alanları, 256 kişilik kapasiteli 4 bloktan oluşan oteller, olimpik ok sahası, at binicilik alanı, çadır kamp alanı ve trafik eğitim parkurları gibi çok çeşitli sosyal ve eğitim alanları mevcuttur.",
+            "source_ids": ["35"],
+            "category": "İmkanlar",
+            "keywords": [
+                "kampüs",
+                "tesisler",
+                "fiziksel imkanlar",
+                "otel",
+                "tarım alanları",
+                "ok sahası",
+                "at binicilik",
+                "çadır kamp"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Konaklama kapasiteniz nedir?",
+                "Hangi sosyal ve spor alanlarınız var?"
+            ]
+        },
+        {
+            "question": "Konaklama kapasiteniz nedir? kalacak yer var mı?",
+            "answer": "Evet, merkezimiz geniş bir kampüs içerisinde yer alır ve konaklama imkanı sunmaktadır. Tesisimizde 256 (iki yüz elli altı) kişilik kapasiteye sahip, 4 (dört) ayrı bloktan oluşan oteller bulunmaktadır. Bu imkan, özellikle şehir dışından gelen katılımcılarımız ve uzun süreli programlara katılan gençlerimiz için tasarlanmıştır.",
+            "source_ids": ["35"],
+            "category": "İmkanlar",
+            "keywords": [
+                "konaklama",
+                "kalacak yer",
+                "otel",
+                "256 kişilik",
+                "4 blok",
+                "yatak kapasitesi",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin kampüs özellikleri nelerdir?",
+                "Konaklama ücretli mi?"
+            ]
+        },
+        {
+            "question": "Merkezde hangi ana birimler veya kuluçka merkezleri bulunmaktadır?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gençler için üç (3) ana birim bulunmaktadır. Bu birimler, farklı alanlara odaklanarak gençlere çeşitli eğitim ve gelişim fırsatları sunmaktadır. Bu birimler şunlardır: Sosyal Kuluçka, Tarımsal Kuluçka ve Girişimci Kuluçka.",
+            "source_ids": ["36"],
+            "category": "Genel Bilgiler",
+            "keywords": [
+                "ana birimler",
+                "kuluçka merkezleri",
+                "sosyal kuluçka",
+                "tarımsal kuluçka",
+                "girişimci kuluçka",
+                "liste"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Sosyal Kuluçka ve Tarımsal Kuluçka arasındaki fark nedir?",
+                "Girişimci Kuluçka Merkezi'nin amacı nedir?"
+            ]
+        },
+        {
+            "question": "Girişimci Kuluçka Merkezi'nin amacı nedir?",
+            "answer": "Girişimci Kuluçka Merkezimiz, merkezimizdeki üç ana birimden biridir ve teknoloji odaklıdır. Bu merkezin temel amacı, genç neslin teknoloji, inovasyon ve girişimcilik alanlarındaki yeteneklerini keşfetmeleri ve bu yeteneklerini geliştirebilmeleri için kapsamlı bir altyapı imkanı sağlamaktır. Gençlere hem pratik hem de teorik bilgi birikimlerini artırmak için çeşitli teknolojik eğitimler ve atölye çalışmaları düzenlemekteyiz.",
+            "source_ids": ["36", "37", "39"],
+            "category": "Girişimci Kuluçka",
+            "keywords": [
+                "girişimci kuluçka",
+                "amaç",
+                "teknoloji",
+                "inovasyon",
+                "girişimcilik",
+                "altyapı",
+                "pratik",
+                "teorik"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Girişimci Kuluçka Merkezi'nde hangi atölyeler var?",
+                "Sosyal Kuluçka ve Tarımsal Kuluçka nedir?"
+            ]
+        },
+        {
+            "question": "Girişimci Kuluçka Merkezi'nde hangi atölyeler var?",
+            "answer": "Girişimci Kuluçka Merkezimiz, gençlerin projelerini hayata geçirebilmeleri için altı (6) farklı teknoloji atölyesi ile donatılmıştır. Bu atölyeler şunlardır: AR-GE atölyesi, tasarım atölyesi, insansız hava araçları (İHA) atölyesi, robotik kodlama atölyesi, 3D yazıcı atölyesi ve montaj atölyesi.",
+            "source_ids": ["38"],
+            "category": "Girişimci Kuluçka",
+            "keywords": [
+                "atölyeler",
+                "liste",
+                "girişimci kuluçka",
+                "ar-ge",
+                "tasarım",
+                "insansız hava araçları",
+                "robotik kodlama",
+                "3d yazıcı",
+                "montaj"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Robotik atölyesinde ne tür eğitimler veriliyor?",
+                "Misyonunuzda belirtilen eğitimler bu atölyelerde mi veriliyor?"
+            ]
+        },
+        {
+            "question": "robot atölyeniz var mı?",
+            "answer": "Evet, Girişimci Kuluçka Merkezimizde gençlere yönelik altı farklı atölyeden biri de 'robotik kodlama atölyesi'dir. Misyonumuz kapsamında da katılımcılarımıza robotik kodlama alanında uzmanlaşma fırsatı sunmaktayız. Bu atölye, gençlerin hem pratik hem de teorik bilgi birikimlerini artırmaları için tasarlanmıştır.",
+            "source_ids": ["38", "39", "44"],
+            "category": "Girişimci Kuluçka",
+            "keywords": [
+                "robot atölyesi",
+                "robotik",
+                "robotik kodlama",
+                "atölye",
+                "eğitim",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Girişimci Kuluçka Merkezi'nde hangi atölyeler var?",
+                "Misyonunuzda belirtilen teknolojik eğitimler nelerdir?"
+            ]
+        },
+        {
+            "question": "Merkezinizin TEKNOFEST başarıları (Hakkımızda özet) nelerdir?",
+            "answer": "Merkezimizde TEKNOFEST yarışmalarına hazırlanan ekiplerimiz, açıldığımız 2021 yılından itibaren önemli başarılar elde etmiştir. Bu 'hakkımızda' metninde özetlendiği kadarıyla, takımlarımız toplamda iki (2) Türkiye İkinciliği, iki (2) Türkiye Üçüncülüğü ve iki (2) Jüri Özel Ödülü kazanarak bizleri gururlandırmıştır.",
+            "source_ids": ["40"],
+            "category": "Başarılar",
+            "keywords": [
+                "teknofest",
+                "başarılar",
+                "ödüller",
+                "türkiye ikinciliği",
+                "türkiye üçüncülüğü",
+                "jüri özel ödülü",
+                "sayısal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Toplam kaç ödül kazandınız?",
+                "TEKNOFEST 2021 başarınız nedir?"
+            ]
+        },
+        {
+            "question": "Toplam kaç TEKNOFEST ödülü kazandınız (Hakkımızda özetine göre)?",
+            "answer": "Merkezimiz açıldığı 2021 yılından bu yana TEKNOFEST yarışmalarında büyük başarılar göstermiştir. Bu metindeki özete göre, ekiplerimiz toplamda 6 (altı) adet ödül kazanmıştır. Bu ödüller; iki adet Türkiye İkinciliği, iki adet Türkiye Üçüncülüğü ve iki adet Jüri Özel Ödülü'dür.",
+            "source_ids": ["40"],
+            "category": "Başarılar",
+            "keywords": [
+                "toplam ödül",
+                "sayısal",
+                "istatistik",
+                "6 ödül",
+                "teknofest",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizin TEKNOFEST başarıları nelerdir?",
+                "Bu ödüller hangi yıllarda kazanıldı?"
+            ]
+        },
+        {
+            "question": "Girişimci Kuluçka Merkezi'nde ne tür etkinlikler düzenleniyor?",
+            "answer": "Girişimci Kuluçka Merkezimiz, eğitimlerin yanı sıra gençlerin sosyal ve profesyonel ağlarını geliştirmeleri için çeşitli etkinlikler düzenlemektedir. Bu etkinlikler arasında gençlerin bir araya gelip fikirlerini paylaşabileceği, sektör profesyonelleriyle buluşabileceği ve yenilikçi projeler üzerinde iş birliği yapabileceği organizasyonlar bulunmaktadır. Vizyonumuz doğrultusunda seminerler, hackathonlar ve girişimci buluşmaları gibi motive edici etkinlikler de düzenleyerek teknoloji vizyonlarını genişletmelerine olanak tanıyoruz.",
+            "source_ids": ["41", "42", "47"],
+            "category": "Etkinlikler",
+            "keywords": [
+                "etkinlikler",
+                "networking",
+                "sektör profesyonelleri",
+                "seminerler",
+                "hackathonlar",
+                "girişimci buluşmaları",
+                "kompozit"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin vizyonu nedir?",
+                "Gençler merkezde nasıl bağlantı kurabilir?"
+            ]
+        },
+        {
+            "question": "Misyonunuzda belirtilen teknolojik eğitimler nelerdir?",
+            "answer": "Girişimci Kuluçka Merkezi olarak misyonumuz, teknolojik alanlarda öncü eğitimler düzenlemektir. Bu misyon doğrultusunda katılımcılarımıza uzmanlaşma fırsatı sunduğumuz yenilikçi alanlar şunlardır: robotik kodlama, 3D yazıcı teknolojileri, insansız hava araçları (İHA) kullanımı, Scratch ile temel programlama, IoT (Nesnelerin İnterneti) ve katı modelleme (CAD) eğitimleri.",
+            "source_ids": ["44"],
+            "category": "Misyon",
+            "keywords": [
+                "misyon",
+                "teknolojik eğitimler",
+                "liste",
+                "robotik kodlama",
+                "3d yazıcı",
+                "iha",
+                "scratch",
+                "iot",
+                "katı modelleme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizin misyonu nedir?",
+                "Bu eğitimler hangi atölyelerde veriliyor?"
+            ]
+        },
+        {
+            "question": "Sosyal Kuluçka ve Tarımsal Kuluçka birimlerinin detayları nelerdir?",
+            "answer": "Merkezimizde gençlerin eğitim ve gelişim fırsatları bulduğu üç ana birim bulunmaktadır: Sosyal Kuluçka, Tarımsal Kuluçka ve Girişimci Kuluçka. Bu metin, Girişimci Kuluçka Merkezi'nin (atölyeleri, misyonu, vizyonu) detaylarına odaklanmaktadır. Sosyal Kuluçka ve Tarımsal Kuluçka birimlerinin spesifik hedefleri, faaliyetleri veya eğitim içerikleri hakkında detaylı bilgi şu anda bu kaynakta yer almamaktadır.",
+            "source_ids": ["36", "37"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "sosyal kuluçka",
+                "tarımsal kuluçka",
+                "detay",
+                "bilgi yok",
+                "karşılaştırma"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Merkezde hangi ana birimler var?",
+                "Girişimci Kuluçka Merkezi'nin amacı nedir?",
+                "Tarımsal kuluçkada traktör eğitimi var mı?"
+            ]
+        },
+        {
+            "question": "Merkeziniz 2020 yılında mı kuruldu?",
+            "answer": "Hayır, bu bilgi doğru değildir. İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 2021 yılında kurulmuştur. Kurucusu Hakan Karabulut'tur ve kurum T.C. Cumhurbaşkanlığı himayesinde destek görmektedir.",
+            "source_ids": ["34", "48"],
+            "category": "Hatalı Bilgi Testi",
+            "keywords": [
+                "hatalı bilgi testi",
+                "kuruluş tarihi",
+                "2020",
+                "2021",
+                "negatif test",
+                "zamansal"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Ne zaman kuruldu ve kurucusu kimdir?",
+                "Hakan Karabulut merkezin müdürü mü?"
+            ]
+        },
+        {
+            "question": "Atölye eğitimleri ücretli mi?",
+            "answer": "Bilgi tabanımızda, merkezimizde altı farklı atölye (AR-GE, tasarım, İHA vb.) bulunduğu ve bu atölyelerde gençlere pratik ve teorik eğitimler düzenlendiği belirtilmektedir. Ayrıca misyonumuzun bu eğitimleri sunmak olduğu vurgulanmaktadır. Ancak, bu eğitimlerin herhangi bir ücreti bulunmamaktadır.",
+            "source_ids": ["38", "39", "44"],
+            "category": "Negatif Test",
+            "keywords": [
+                "negatif test",
+                "ücret",
+                "fiyat",
+                "atölye",
+                "eğitim",
+                "maliyet",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Girişimci Kuluçka Merkezi'nde hangi atölyeler var?",
+                "Eğitimleriniz ücretli mi? (SSS dosyasından)"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'merkez ne iş yapıyor?', 'robot atölyeniz var mı?', 'kalacak yer var mı?'). Kılavuzda belirtilen Temel, Kompozit, Negatif Test, Hatalı Bilgi Testi, Sayısal, Maksimum, Karşılaştırma ve Günlük Dil (İnformal) soru tipleri üretildi. Bu dosyadaki her bir kaynak (34-48) en az bir Q&A çiftinde kullanılmıştır.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Misyon, vizyon ve genel bakış gibi temel sorular detaylandırılarak zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

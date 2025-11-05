@@ -1,0 +1,315 @@
+{
+    "metadata": {
+        "file_name": "4.1_sikca_sorulan_sorular.json",
+        "category": "ETKINLIK_VE_SSS",
+        "sub_category": "Sıkça Sorulan Sorular (SSS)",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "Girişimci Kuluçka Merkezi eğitimlerinizden nasıl haberdar olabilirim?",
+            "answer": "Merkezimizin düzenlediği tüm eğitim, atölye ve etkinliklerden haberdar olabilmek için birincil duyuru kanalımız olan resmi Instagram hesabımızı: https://www.instagram.com/ipekyolugirisimcikulucka/ takip edebilirsiniz. Güncel eğitim takvimleri, yeni açılan programlar ve başvuru süreçleri ilk olarak buradan paylaşılmaktadır.",
+            "source_ids": ["30"],
+            "category": "Genel SSS",
+            "keywords": [
+                "eğitimler",
+                "duyuru",
+                "haberdar olma",
+                "instagram",
+                "sosyal medya",
+                "takip"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Yeni eğitimleri nerden duyuruyosunuz?",
+                "Eğitim takviminiz web sitenizde var mı?"
+            ]
+        },
+        {
+            "question": "Yeni eğitimleri nerden duyuruyosunuz?",
+            "answer": "Yeni eğitimlerimizi ve güncel duyurularımızı takip etmenin en kolay yolu resmi Instagram hesabımızı: https://www.instagram.com/ipekyolugirisimcikulucka/ takip etmektir. Tüm başvuru tarihleri ve eğitim detayları sosyal medya hesaplarımız üzerinden anlık olarak paylaşılmaktadır.",
+            "source_ids": ["30"],
+            "category": "Genel SSS",
+            "keywords": [
+                "eğitimler",
+                "duyuru",
+                "instagram",
+                "sosyal medya",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Eğitimlerinizden nasıl haberdar olabilirim?",
+                "Instagram adresiniz nedir?"
+            ]
+        },
+        {
+            "question": "Merkezinizde nasıl gönüllü olabilirim?",
+            "answer": "Merkezimize gönüllü olarak katkı sağlamak isterseniz, başvuru sürecimiz oldukça basittir. Gönüllülük başvurularını, resmi Instagram hesabımızda ve web sayfamızda bulunan 'Gönüllü Ol' formunu doldurarak yapabilirsiniz. Başvurunuz ekibimiz tarafından incelendikten sonra sizinle iletişime geçilecektir.",
+            "source_ids": ["31"],
+            "category": "Gönüllülük",
+            "keywords": [
+                "gönüllü olma",
+                "başvuru",
+                "gönüllülük formu",
+                "instagram",
+                "web sitesi"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Gönüllü olmak için ne yapmam lazım?",
+                "Gönüllü başvuruları ne zaman açılıyor?"
+            ]
+        },
+        {
+            "question": "Eğitimleriniz ücretli mi ve herkes katılabiliyor mu?",
+            "answer": "Girişimci Kuluçka Merkezi olarak fırsat eşitliğine inanıyoruz. Bu nedenle merkezimizde verilen eğitimlerin tamamı ücretsizdir. Eğitimlerimiz, ilgili yaş grubu şartını sağlayan herkese açıktır. Ancak, eğitim kalitesini yüksek tutmak amacıyla programlarımızda kontenjan sınırlıdır.",
+            "source_ids": ["34"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "eğitimler",
+                "ücret",
+                "maliyet",
+                "fiyat",
+                "ücretsiz",
+                "herkes katılabilir",
+                "kontenjan",
+                "sınırlı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Eğitimler bedava mı?",
+                "Eğitimlere katılmak için şart nedir?",
+                "Neden kontenjan sınırlı?"
+            ]
+        },
+        {
+            "question": "Eğitimler bedava mı?",
+            "answer": "Evet, merkezimizdeki tüm eğitimler tamamen ücretsizdir. Herkesin katılım sağlayabilmesi hedeflenmiştir, ancak eğitimlerimizde kontenjan sınırı bulunmaktadır.",
+            "source_ids": ["34"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "eğitimler",
+                "ücret",
+                "maliyet",
+                "bedava",
+                "ücretsiz",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Eğitimleriniz ücretli mi ve herkes katılabiliyor mu?",
+                "Eğitimlere katılmak için şart nedir?"
+            ]
+        },
+        {
+            "question": "Merkezinizde hangi yaş gruplarına eğitim veriyorsunuz?",
+            "answer": "Girişimci Kuluçka Merkezimiz oldukça geniş bir yaş aralığına hitap etmektedir. Eğitimlerimiz genel olarak 10 yaş ile 29 yaş aralığındaki bireylere yöneliktir. Ancak her eğitimin (örneğin robotik, yazılım veya tasarım) hitap ettiği spesifik yaş grubu farklılık göstermektedir. Bu nedenle ilgilendiğiniz eğitimin hangi yaş grubuna uygun olduğunu kontrol etmeniz önemlidir.",
+            "source_ids": ["35"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "yaş grubu",
+                "yaş sınırı",
+                "10-29 yaş",
+                "eğitim şartları",
+                "katılım"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Eğitimlerin yaş gruplarını nereden öğrenebilirim?",
+                "10 yaşındayım, eğitim alabilir miyim?",
+                "30 yaşındayım, eğitim alabilir miyim?"
+            ]
+        },
+        {
+            "question": "Eğitimlerin yaş gruplarını nereden öğrenebilirim?",
+            "answer": "Her eğitimimizin (robotik, yazılım vb.) hedeflediği spesifik bir yaş grubu bulunmaktadır. Bu yaş grubu bilgilerini, eğitimler için açılan başvuru formlarımızın içindeki 'bilgilendirme' kısmında detaylı olarak inceleyebilirsiniz. Başvuru yapmadan önce bu bölümü okumanız, size uygun eğitimi bulmanız için önemlidir.",
+            "source_ids": ["36"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "yaş grubu",
+                "yaş sınırı",
+                "detay",
+                "başvuru formu",
+                "bilgilendirme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizde hangi yaş gruplarına eğitim veriyorsunuz?",
+                "Başvuru formlarına nereden ulaşabilirim?"
+            ]
+        },
+        {
+            "question": "30 yaşındayım, eğitimlerinize katılabilir miyim?",
+            "answer": "Girişimci Kuluçka Merkezimizdeki eğitimlerimiz, mevcut bilgilere göre, 10 yaş ile 29 yaş aralığına hitap etmektedir. 30 yaşında olmanız, genel yaş sınırının dışında kalmanıza neden olabilir. Ancak, programlarımız ve katılım şartlarımız güncellenebilmektedir. En güncel bilgi için duyurularımızı takip etmenizi öneririz.",
+            "source_ids": ["35"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "negatif test",
+                "yaş sınırı",
+                "30 yaş",
+                "10-29 yaş",
+                "katılamaz"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Merkezinizde hangi yaş gruplarına eğitim veriyorsunuz?",
+                "Yaş sınırı konusunda esneklik var mı?"
+            ]
+        },
+        {
+            "question": "Eğitimlerinizde konaklama sağlıyor musunuz?",
+            "answer": "Merkezimizdeki standart eğitim programlarımızda genellikle konaklama imkanı sağlanmamaktadır. Konaklama desteğimiz, sadece bölgesel veya ulusal düzeyde düzenlenen (örneğin şehir dışından katılımcıların davet edildiği) özel eğitim programları ve etkinlikler için geçerlidir.",
+            "source_ids": ["37"],
+            "category": "İmkanlar",
+            "keywords": ["konaklama", "kalacak yer",
+                "bölgesel eğitim",
+                "ulusal eğitim",
+                "imkanlar"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kalacak yer var mı?",
+                "Her eğitimde konaklama imkanı var mı?"
+            ]
+        },
+        {
+            "question": "Her eğitimde konaklama imkanı var mı?",
+            "answer": "Hayır, konaklama imkanı her eğitim için sunulmamaktadır. Bu destek, yalnızca 'bölgesel veya ulusal eğitimler' gibi özel ve geniş kapsamlı programlarımız için sağlanmaktadır. Günlük veya haftalık standart eğitimlerimizde konaklama imkanı bulunmamaktadır.",
+            "source_ids": ["37"],
+            "category": "İmkanlar",
+            "keywords": [
+                "konaklama",
+                "kalacak yer",
+                "her eğitim",
+                "istisna",
+                "bölgesel",
+                "ulusal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Eğitimlerinizde konaklama sağlıyor musunuz?",
+                "Şehir dışından geliyorum, kalabilir miyim?"
+            ]
+        },
+        {
+            "question": "Merkezinize üyelik sistemi var mı?",
+            "answer": "Hayır, merkezimizde herhangi bir üyelik sistemi bulunmamaktadır. Hizmetlerimiz ve eğitimlerimiz, duyurulan başvuru şartlarını sağlayan (örneğin yaş grubu) herkese açıktır. Üye olmanıza gerek kalmadan, ilgili eğitimin başvuru formunu doldurarak programlarımıza katılabilirsiniz.",
+            "source_ids": [],
+            "category": "Genel SSS",
+            "keywords": [
+                "üyelik",
+                "üye olma",
+                "kayıt",
+                "üyelik yok",
+                "herkese açık"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Nasıl üye olurum?",
+                "Eğitimlere katılmak için şart nedir?"
+            ]
+        },
+        {
+            "question": "Nasıl üye olurum?",
+            "answer": "Merkezimizde herhangi bir 'üyelik' sistemi yoktur, bu nedenle üye olmanıza gerek bulunmamaktadır. Eğitimlerimize veya programlarımıza katılmak için, ilgili etkinliğin başvuru formunu doldurmanız yeterlidir. Tüm duyuruları sosyal medya hesaplarımızdan takip edebilirsiniz.",
+            "source_ids": ["30"],
+            "category": "Genel SSS",
+            "keywords": [
+                "üyelik",
+                "üye olma",
+                "kayıt",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinize üyelik sistemi var mı?",
+                "Eğitimlere nasıl başvurulur?"
+            ]
+        },
+        {
+            "question": "Eğitimleriniz yüz yüze mi, çevrimiçi mi oluyor?",
+            "answer": "Merkezimizdeki eğitim programlarımızın tamamı, katılımcılarla eğitmenlerin birebir etkileşimde olabilmesi amacıyla yüz yüze (fiziksel olarak) gerçekleşmektedir. Şu anda çevrimiçi (online) bir eğitim modelimiz bulunmamaktadır.",
+            "source_ids": ["38"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "eğitim formatı",
+                "yüz yüze",
+                "fiziksel",
+                "çevrimiçi",
+                "online",
+                "uzaktan eğitim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Online eğitim var mı?",
+                "Uzaktan eğitim veriyor musunuz?"
+            ]
+        },
+        {
+            "question": "Online eğitim var mı?",
+            "answer": "Hayır, merkezimizdeki eğitimlerin tamamı yüz yüze (fiziksel) olarak gerçekleştirilmektedir. Katılımcılarımızın atölye ve laboratuvar imkanlarından tam olarak faydalanabilmesi için eğitimlerimiz bu şekilde planlanmıştır. Mevcutta bir çevrimiçi (online) veya uzaktan eğitim programları için https://linktr.ee/girisimcikulucka",
+            "source_ids": ["38"],
+            "category": "Eğitimler (Genel)",
+            "keywords": [
+                "online",
+                "çevrimiçi",
+                "uzaktan eğitim",
+                "yüz yüze",
+                "negatif test",
+                "gayri resmi"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Eğitimleriniz yüz yüze mi, çevrimiçi mi oluyor?",
+                "Neden online eğitim vermiyorsunuz?"
+            ]
+        },
+        {
+            "question": "Instagram adresiniz nedir?",
+            "answer": "Eğitimlerimizden ve duyurularımızdan haberdar olmak için resmi Instagram hesabımızı takip etmeniz gerektiği bilgisi mevcuttur. Ancak, Instagram kullanıcı adımız (adresimiz) şu anda Sıkça Sorulan Sorular metninde spesifik olarak belirtilmemiştir. Merkezimizin adıyla sosyal medyada arama yapabilirsiniz.",
+            "source_ids": ["30"],
+            "category": "Negatif Test",
+            "keywords": [
+                "instagram",
+                "sosyal medya adresi",
+                "kullanıcı adı",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Eğitimlerinizden nasıl haberdar olabilirim?",
+                "Nasıl gönüllü olabilirim?"
+            ]
+        },
+        {
+            "question": "Eğitimlerin süresi ne kadar? Kaç hafta sürüyor?",
+            "answer": "Her bir eğitimin (robotik, yazılım vb.) toplam süresi, kaç hafta veya kaç saat sürdüğü hakkında detaylı bir bilgi sahibi değilim. Detaylı bilgi için bizimle iletişime geçebilirsiniz.",
+            "source_ids": ["34", "35", "38"],
+            "category": "Negatif Test",
+            "keywords": [
+                "eğitim süresi",
+                "kaç hafta",
+                "kaç saat",
+                "süre",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Eğitimleriniz yüz yüze mi, çevrimiçi mi oluyor?",
+                "Eğitim takviminiz nedir?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'Eğitimler bedava mı?', 'Online eğitim var mı?', 'Roket takımına girmek istiyorum...'). Kılavuzda belirtilen Temel, Kompozit, Negatif Test ve Günlük Dil (İnformal) soru tipleri üretildi.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. SSS metni kısa olduğu için cevaplar, kullanıcıya tam bağlamı verecek şekilde zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

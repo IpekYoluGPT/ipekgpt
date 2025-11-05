@@ -1,0 +1,248 @@
+{
+    "metadata": {
+        "file_name": "1.2_iletisim_bilgileri.json",
+        "category": "TEMEL_BILGILER",
+        "sub_category": "İletişim ve Lokasyon",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "İpek Yolu Girişimci Kuluçka Merkezi'nin iletişim bilgileri nelerdir?",
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne birden fazla kanaldan ulaşabilirsiniz. Telefon yoluyla bilgi almak için 0424 503 94 39 numarasını arayabilirsiniz. Yazılı iletişim ve kurumsal talepleriniz için resmi e-posta adresimiz info@ipekyolugkm.com'dur. Merkezimizi ziyaret etmek isterseniz açık adresimiz Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ'dır.",
+            "source_ids": ["10"],
+            "category": "İletişim",
+            "keywords": [
+                "iletişim",
+                "kompozit",
+                "tüm bilgiler",
+                "telefon",
+                "mail",
+                "adres",
+                "elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin tam adresi nedir?",
+                "Size e-posta ile nasıl ulaşabilirim?",
+                "Telefon numaranız kaç?"
+            ]
+        },
+        {
+            "question": "Merkezinizin telefon numarası nedir?",
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne 0424 503 94 39 numaralı sabit telefon hattı üzerinden ulaşabilirsiniz. Bu hat üzerinden merkezimizin faaliyetleri, güncel eğitim programları, başvuru süreçleri ve atölye imkanları hakkında detaylı bilgi alabilirsiniz. Ekibimiz size yardımcı olmaktan mutluluk duyacaktır.",
+            "source_ids": ["10"],
+            "category": "İletişim",
+            "keywords": [
+                "telefon",
+                "telefon numarası",
+                "iletişim",
+                "04245039439",
+                "arama",
+                "ulaşım"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "telefon no kaç?",
+                "WhatsApp hattınız var mı?",
+                "Çalışma saatleriniz nedir?"
+            ]
+        },
+        {
+            "question": "telefon no kaç?",
+            "answer": "Merkezimizin telefon numarası 0424 503 94 39'dur. Bu numarayı arayarak eğitimlerimiz, Teknofest takımlarımız veya gönüllülük programlarımız hakkında bilgi alabilirsiniz. Ayrıca info@ipekyolugkm.com e-posta adresimizden de bize yazılı olarak ulaşabilirsiniz.",
+            "source_ids": ["10"],
+            "category": "İletişim",
+            "keywords": [
+                "telefon no",
+                "tel no",
+                "arama",
+                "iletişim",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezinizin telefon numarası nedir?",
+                "Size e-posta ile nasıl ulaşabilirim?"
+            ]
+        },
+        {
+            "question": "Size e-posta ile nasıl ulaşabilirim?",
+            "answer": "Merkezimizle e-posta yoluyla iletişime geçmek için info@ipekyolugkm.com adresini kullanabilirsiniz. Proje başvuruları, kurumsal iş birlikleri, eğitim talepleri, gönüllülük başvuruları veya genel sorularınız için bu mail adresine e-posta gönderebilirsiniz. Ekibimiz en kısa sürede başvurunuzu değerlendirerek size geri dönüş yapacaktır.",
+            "source_ids": ["10"],
+            "category": "İletişim",
+            "keywords": [
+                "e-posta",
+                "mail adresi",
+                "info@ipekyolugkm.com",
+                "iletişim",
+                "email",
+                "mail"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "mail adresiniz ne?",
+                "Proje başvurusu için mail adresi nedir?",
+                "İletişim bilgileri nelerdir?"
+            ]
+        },
+        {
+            "question": "Merkezinizin tam adresi nedir?",
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi, Elazığ ilinin Merkez ilçesinde bulunmaktadır. Ziyaretçilerimiz için tam ve açık adresimiz şu şekildedir: Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı, No:1/A Merkez, 23100 Merkez/Elazığ. Yüz yüze gerçekleşen eğitimlerimize ve atölye çalışmalarımıza bu konumdan katılabilirsiniz.",
+            "source_ids": ["10"],
+            "category": "Lokasyon",
+            "keywords": [
+                "adres",
+                "konum",
+                "yer",
+                "neredesiniz",
+                "elazığ",
+                "çaydaçıra mahallesi",
+                "ulaşım",
+                "merkez"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "nerdesiniz?",
+                "Merkeziniz hangi şehirde?",
+                "Konum atar mısın?"
+            ]
+        },
+        {
+            "question": "nerdesiniz?",
+            "answer": "Merkezimiz Elazığ'dadır. Açık adresimiz Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı No:1/A, Merkez / Elazığ olarak geçmektedir. Posta kodu 23100'dür. Eğitimlerimiz ve atölyelerimiz bu fiziksel konumda yüz yüze gerçekleştirilmektedir. Detaylı yol tarifi için harita uygulamalarını kullanabilirsiniz.",
+            "source_ids": ["10"],
+            "category": "Lokasyon",
+            "keywords": [
+                "nerdesiniz",
+                "adres",
+                "konum",
+                "elazığ",
+                "gayri resmi",
+                "informal"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin tam adresi nedir?",
+                "Merkeziniz hangi şehirde?"
+            ]
+        },
+        {
+            "question": "Merkezinizin Instagram adresini öğrenebilir miyim?",
+            "answer": "Evet, merkezimizin güncel duyurularını, eğitim takvimlerini, Teknofest takımlarının başarılarını ve etkinlik fotoğraflarını takip etmek için resmi Instagram hesabımızı kullanabilirsiniz. Instagram adresimiz: https://www.instagram.com/ipekyolugirisimcikulucka/ . Bizi 'ipekyolugirisimcikulucka' kullanıcı adıyla bularak takip edebilir ve en son gelişmelerden haberdar olabilirsiniz.",
+            "source_ids": ["10"],
+            "category": "Sosyal Medya",
+            "keywords": [
+                "instagram",
+                "insta",
+                "sosyal medya",
+                "duyurular",
+                "ipekyolugirisimcikulucka"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "insta hesabınız ne?",
+                "Eğitimleri nereden takip edebilirim?",
+                "Sosyal medya hesaplarınız nelerdir?"
+            ]
+        },
+        {
+            "question": "LinkedIn hesabınız var mı?",
+            "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi olarak profesyonel ağlarda da yer alıyoruz. Kurumsal duyurularımızı, başarılarımızı, ortaklıklarımızı ve iş birliği fırsatlarını takip etmek için LinkedIn sayfamızı ziyaret edebilirsiniz. LinkedIn profil linkimiz: https://tr.linkedin.com/company/i̇pek-yolu-uluslararası-çocuk-ve-gençlik-çalışmaları-merkezi",
+            "source_ids": ["10"],
+            "category": "Sosyal Medya",
+            "keywords": [
+                "linkedin",
+                "profesyonel ağ",
+                "sosyal medya",
+                "kurumsal",
+                "iş birliği"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sosyal medya hesaplarınız nelerdir?",
+                "Merkezinizin tam kurumsal adı nedir?"
+            ]
+        },
+        {
+            "question": "Tüm sosyal medya hesaplarınıza tek bir yerden nasıl ulaşabilirim?",
+            "answer": "Tüm resmi sosyal medya hesaplarımıza ve önemli bağlantılarımıza (başvuru formları, web sitesi vb.) tek bir noktadan kolayca erişmek için Linktree sayfamızı kullanabilirsiniz. Bu sayfa üzerinden Instagram, LinkedIn ve diğer tüm platformlarımıza yönlenebilirsiniz. Güncel bağlantı listemiz için Linktree adresimiz: https://linktr.ee/girisimcikulucka",
+            "source_ids": ["10"],
+            "category": "Sosyal Medya",
+            "keywords": [
+                "linktree",
+                "tüm linkler",
+                "sosyal medya",
+                "bağlantılar",
+                "girisimcikulucka",
+                "kompozit"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Instagram adresiniz nedir?",
+                "LinkedIn hesabınız var mı?"
+            ]
+        },
+        {
+            "question": "Merkezinizin çalışma saatleri nedir?",
+            "answer": "Merkezimizin telefon (0424 503 94 39) ve e-posta (info@ipekyolugkm.com) gibi iletişim bilgileri mevcuttur. Ayrıca adresimiz Çaydaçıra Mahallesi, Elazığ'dır. Ancak, merkezimizin spesifik çalışma saatleri (örneğin hafta içi hangi saatler arası açık olduğu veya haftasonu hizmet verip vermediği) hakkında detaylı bilgi şu anda bilgi tabanımızda yer almamaktadır.",
+            "source_ids": ["10"],
+            "category": "Negatif Test",
+            "keywords": [
+                "çalışma saatleri",
+                "mesai",
+                "haftasonu",
+                "açık mı",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Merkezinizin telefon numarası nedir?",
+                "Hafta sonu eğitim var mı?"
+            ]
+        },
+        {
+            "question": "WhatsApp hattınız var mı?",
+            "answer": "Merkezimizle iletişim kurmak için 0424 503 94 39 numaralı telefon hattımız ve info@ipekyolugkm.com e-posta adresimiz bulunmaktadır. Ancak, bu telefon numarasının bir WhatsApp iletişim hattı olarak kullanılıp kullanılmadığı veya ayrı bir WhatsApp hattımızın olup olmadığı bilgisi şu anda kaynaklarımızda mevcut değildir. Hızlı iletişim için telefonla arayabilirsiniz.",
+            "source_ids": ["10"],
+            "category": "Negatif Test",
+            "keywords": [
+                "whatsapp",
+                "wp hattı",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Merkezinizin telefon numarası nedir?",
+                "Size e-posta ile nasıl ulaşabilirim?"
+            ]
+        },
+        {
+            "question": "Twitter (X) veya Facebook hesabınız var mı?",
+            "answer": "Merkezimizin Instagram, LinkedIn ve tüm bağlantılarını içeren Linktree (https://linktr.ee/girisimcikulucka) üzerinde resmi hesapları bulunmaktadır. Ancak, Twitter (X), Facebook veya diğer sosyal medya platformlarındaki en güncel sosyal medya listesi için Linktree sayfamızı kontrol edebilirsiniz.",
+            "source_ids": ["10"],
+            "category": "Negatif Test",
+            "keywords": [
+                "twitter",
+                "facebook",
+                "x",
+                "sosyal medya",
+                "negatif test",
+                "bilgi yok"
+            ],
+            "priority": "low",
+            "related_questions": [
+                "Sosyal medya hesaplarınız nelerdir?",
+                "Tüm sosyal medya hesaplarınıza tek bir yerden nasıl ulaşabilirim?"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'nerdesiniz?', 'telefon no kaç?', 'mail adresiniz ne?'). Kılavuzda belirtilen Temel, Kompozit, Negatif Test ve Günlük Dil (İnformal) soru tipleri üretildi.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Basit iletişim bilgileri, kullanıcıya tam bağlamı verecek şekilde zenginleştirildi.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}

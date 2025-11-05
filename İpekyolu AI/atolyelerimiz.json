@@ -1,0 +1,199 @@
+{
+    "metadata": {
+        "file_name": "2.1_atolyelerimiz_detayli.json",
+        "category": "PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Atölye Detayları ve İmkanları",
+        "last_updated": "2025-11-04",
+        "version": "1.0"
+    },
+    "data": [{
+            "question": "İpekyolu Girişimci Kuluçka Merkezi'nde hangi atölyeler bulunmaktadır?",
+            "answer": "Girişimci Kuluçka Merkezi'miz, katılımcıların projelerini geliştirebilmeleri için kapsamlı ve çeşitli atölye imkanları sunmaktadır. Bünyemizde Ar-Ge Atölyesi, Tasarım Atölyesi, Uçuş Simülasyon Atölyesi, Robotik Kodlama Atölyesi, 3D Yazıcı Atölyesi ve Montaj Atölyesi bulunmaktadır. Her atölye, kendi alanına özel teknolojik ekipmanlar ve çalışma ortamları sağlamaktadır.",
+            "source_ids": ["4", "7", "9", "14", "19", "21"],
+            "category": "Genel Atölye Bilgisi",
+            "keywords": ["atölyeler", "liste", "imkanlar", "genel bakış", "ar-ge", "tasarım", "robotik", "3d yazıcı", "montaj"],
+            "priority": "high",
+            "related_questions": [
+                "Prototip yapmak için hangi atölyeleriniz var?",
+                "Atölyelerinizi kimler kullanabilir?"
+            ]
+        },
+        {
+            "question": "Ar-Ge Atölyesi'nin amacı nedir ve kimlere yöneliktir?",
+            "answer": "Girişimci Kuluçka Merkezi AR-GE Atölyemiz, yenilikçi fikirlerin gerçekleştirildiği ve teknolojik projelerin hayat bulduğu bir atölyedir. Katılımcıların kullanımına sunulan bu atölyede, yüksek teknolojiye sahip ekipmanlar ve araçlar mevcuttur. Atölye, özellikle yazılım geliştirme ve diğer ileri teknoloji konularında bilgi ve becerilerini geliştirmek isteyen kullanıcılar için ideal bir ortam sağlamaktadır.",
+            "source_ids": ["4", "5", "6"],
+            "category": "Ar-Ge Atölyesi",
+            "keywords": ["ar-ge atölyesi", "amaç", "yenilikçi fikirler", "yazılım geliştirme", "ileri teknoloji"],
+            "priority": "medium",
+            "related_questions": [
+                "Ar-Ge atölyesinde hangi ekipmanlar var?",
+                "Yazılım projem için hangi atölyeyi kullanmalıyım?"
+            ]
+        },
+        {
+            "question": "Tasarım Atölyesi'nde ne tür çalışmalar yapılmaktadır?",
+            "answer": "Girişimci Kuluçka Merkezi’nin Tasarım Atölyesi, geleneksel ve dijital tasarım araçlarının bir arada sunulduğu yaratıcı bir çalışma alanıdır. Bu atölyede, katılımcıların uzmanlaşması için geniş imkanlar sunulmaktadır. Özellikle 2D ve 3D modelleme başta olmak üzere, grafik tasarım ve endüstriyel tasarım gibi alanlarda çalışmalar yapılmaktadır.",
+            "source_ids": ["7", "8"],
+            "category": "Tasarım Atölyesi",
+            "keywords": ["tasarım atölyesi", "2d modelleme", "3d modelleme", "grafik tasarım", "endüstriyel tasarım"],
+            "priority": "medium",
+            "related_questions": [
+                "Ürün tasarımı yapmak istiyorum, hangi atölye uygun?",
+                "3d modelleme yapabilir miyim?"
+            ]
+        },
+        {
+            "question": "Uçuş Simülasyon Atölyesi kimler içindir ve ne gibi imkanlar sunar?",
+            "answer": "Uçuş Simülasyon Atölyesi, havacılık ve uzay bilimleri alanında eğitim ve araştırma faaliyetlerini destekleyen bir bölümdür. Bu atölye, uçuş eğitimi almak isteyen öğrencilere ve hobi olarak İnsansız Hava Araçlarıyla (İHA) ilgilenen bireylere yöneliktir. Gerçekçi uçuş deneyimleri sağlayan simülatörlerle donatılmıştır ve bu sayede kullanıcıları gerçek uçuşlara hazırlamaktadır.",
+            "source_ids": ["9", "10", "11", "12"],
+            "category": "Uçuş Simülasyon Atölyesi",
+            "keywords": ["uçuş simülasyonu", "havacılık", "İHA", "drone", "simülatör", "gerçek uçuş"],
+            "priority": "high",
+            "related_questions": [
+                "drone uçurabiliyomuyuz?",
+                "Uçuş atölyenizde hangi İHA'lar var?",
+                "İHA pistiniz var mı?"
+            ]
+        },
+        {
+            "question": "drone uçurabiliyomuyuz?",
+            "answer": "Evet, merkezimizde drone (İnsansız Hava Aracı) uçurma imkanınız bulunmaktadır. Uçuş Simülasyon Atölyemiz, hobi olarak İHA'larla ilgilenen bireylere yöneliktir. Önce gerçekçi simülatörlerle eğitim alarak kendinizi gerçek uçuşlara hazırlarsınız. Simülasyonlarını başarıyla tamamlayan katılımcılara, envanterimizdeki dronlarla gerçek uçuş imkanı sağlanmaktadır. Ayrıca tesisimiz içinde İHA'ların uçurulabilmesi için 1 adet İHA pistimiz de bulunmaktadır.",
+            "source_ids": ["10", "11", "12", "13"],
+            "category": "Uçuş Simülasyon Atölyesi",
+            "keywords": ["drone", "iha", "uçuş", "drone uçurmak", "simülatör", "iha pisti", "gayri resmi", "informal"],
+            "priority": "high",
+            "related_questions": [
+                "Uçuş atölyenizde hangi İHA'lar var?",
+                "Simülasyonu geçmek zorunlu mu?"
+            ]
+        },
+        {
+            "question": "Uçuş atölyenizdeki İHA envanteriniz nedir? Kaç tane drone var?",
+            "answer": "Uçuş Simülasyon Atölyemizde çeşitli amaçlara yönelik geniş bir İHA (İnsansız Hava Aracı) envanteri bulunmaktadır. Toplamda 15 adet hava aracı mevcuttur. Bu envanter; 6 adet başlangıç dronu, 2 adet profesyonel görüntüleme dronu, 1 adet yarış dronu, 1 adet zirai insansız hava aracı ve 5 adet sabit kanat model uçaktan oluşmaktadır. Ayrıca İHA'ların uçurulabilmesi için tesisimizde 1 adet İHA pisti de yer almaktadır.",
+            "source_ids": ["12", "13"],
+            "category": "Uçuş Simülasyon Atölyesi",
+            "keywords": ["İHA envanteri", "drone sayısı", "teknik detay", "sayısal", "başlangıç dronu", "yarış dronu", "zirai iha", "sabit kanat"],
+            "priority": "medium",
+            "related_questions": [
+                "Zirai drone eğitimi veriyor musunuz?",
+                "Sabit kanat model uçak eğitimi alabilir miyim?"
+            ]
+        },
+        {
+            "question": "Robotik Kodlama Atölyesi'nde ne tür beceriler kazanılır?",
+            "answer": "Robotik Kodlama Atölyesi, katılımcıların robotik ve kodlama becerilerini geliştirmesine odaklanır. Bu atölyede robotik sistemlerin temelleri öğretilirken, bu bilgiler pratik ve yaratıcı projelerde uygulanır. Katılımcılar, bu süreçte algoritmik düşünme, problem çözme ve takım çalışması gibi kritik becerilerini geliştirirler. Atölye, geleceğin mühendislik ve teknoloji liderlerini yetiştirmek için tasarlanmıştır.",
+            "source_ids": ["14", "16", "18"],
+            "category": "Robotik Kodlama Atölyesi",
+            "keywords": ["robotik kodlama", "beceriler", "algoritmik düşünme", "problem çözme", "takım çalışması", "mühendislik"],
+            "priority": "medium",
+            "related_questions": [
+                "robot yapıyomuyuz?",
+                "Robotik atölyesinde hangi seviyeler var?"
+            ]
+        },
+        {
+            "question": "robot yapıyomuyuz?",
+            "answer": "Evet, Robotik Kodlama Atölyemizin temel amaçlarından biri budur. Atölye, kendine özgü bir dizi eğitim aracı ve kit sağlayarak, her öğrencinin kendi robotunu tasarlamasına ve inşa etmesine olanak tanır. Katılımcılara robotik sistemlerin temelleri öğretilir ve bu bilgileri pratik projelerde uygulama fırsatı sunulur.",
+            "source_ids": ["14", "15", "17"],
+            "category": "Robotik Kodlama Atölyesi",
+            "keywords": ["robot yapmak", "robot inşa etmek", "eğitim kiti", "robotik projeler", "gayri resmi", "informal"],
+            "priority": "high",
+            "related_questions": [
+                "Robotik Kodlama Atölyesi'nde ne tür beceriler kazanılır?",
+                "Robotik atölyesinde hangi seviyeler var?"
+            ]
+        },
+        {
+            "question": "3D Yazıcı Atölyesi'nde kaç adet yazıcı var ve ne amaçla kullanılıyor?",
+            "answer": "Girişimci Kuluçka Merkezi 3D Yazıcı Atölyemizde toplam 13 adet 3D yazıcı bulunmaktadır. Bu atölye, 3D tasarım ve üretim alanıyla ilgilenenlerin, 3 boyutlu sanal nesneleri somut hale getirebilmesi için tasarlanmıştır. Atölyedeki yazıcılar, hem merkezimizin kendi iç projeleri için hem de dışarıdan destek isteyen projeler için tasarım ve üretim imkanı sağlamaktadır.",
+            "source_ids": ["19", "20"],
+            "category": "3D Yazıcı Atölyesi",
+            "keywords": ["3d yazıcı", "sayısal", "13 adet", "teknik detay", "prototipleme", "üretim"],
+            "priority": "high",
+            "related_questions": [
+                "3d yazıcı var mı?",
+                "Kendi projemi 3D yazıcıda basabilir miyim?",
+                "3D Yazıcı Atölyesi ile Montaj Atölyesi arasındaki fark nedir?"
+            ]
+        },
+        {
+            "question": "Kendi projemi 3D yazıcıda basabilir miyim?",
+            "answer": "Evet, 3D Yazıcı Atölyemiz bu imkanı sunmaktadır. Atölyemizde bulunan 13 adet 3D yazıcı, hem merkezimizin kendi projeleri için hem de sizinki gibi 'destek isteyen projeler' için tasarım ve üretim imkanı sağlamaktadır. Atölyemiz, 3 boyutlu sanal nesnelerinizi somut hale getirebilmeniz için kurulmuştur.",
+            "source_ids": ["19", "20"],
+            "category": "3D Yazıcı Atölyesi",
+            "keywords": ["3d baskı", "kendi projem", "prototip", "destek", "üretim imkanı"],
+            "priority": "high",
+            "related_questions": [
+                "3D Yazıcı Atölyesi'nde kaç adet yazıcı var?",
+                "3d yazıcı var mı?"
+            ]
+        },
+        {
+            "question": "Montaj Atölyesi'nin amacı ve envanteri nedir?",
+            "answer": "Girişimci Kuluçka Merkezi Montaj Atölyesi, nihai hale gelen (tamamlanmış) projelerin montajlandığı atölyemizdir. Projelerin rahatlıkla hayata geçirilmesi için özel olarak dizayn edilmiştir. Atölye envanterinde CNC Lazer, CNC Router, Mini Torna ve Freze gibi profesyonel ekipmanlar bulunmaktadır. Ayrıca, delici ve kesici malzemelerle birlikte birçok farklı ürün de atölyede mevcuttur.",
+            "source_ids": ["21", "22", "23"],
+            "category": "Montaj Atölyesi",
+            "keywords": ["montaj atölyesi", "amaç", "envanter", "teknik detay", "cnc lazer", "cnc router", "mini torna", "freze"],
+            "priority": "medium",
+            "related_questions": [
+                "CNC lazer kullanabilir miyim?",
+                "3D Yazıcı Atölyesi ile Montaj Atölyesi arasındaki fark nedir?"
+            ]
+        },
+        {
+            "question": "3D Yazıcı Atölyesi ile Montaj Atölyesi arasındaki fark nedir?",
+            "answer": "İkisi de üretim ve prototipleme sürecinin önemli parçaları olsalar da odak noktaları farklıdır. 3D Yazıcı Atölyesi, 13 adet 3D yazıcı ile 3 boyutlu sanal tasarımların *somut nesnelere dönüştürülmesine* (üretilmesine) odaklanır. Montaj Atölyesi ise, bu ve benzeri üretilmiş parçaların *nihai hale getirilip montajlandığı* yerdir. Bu nedenle Montaj Atölyesi'nde CNC Lazer, CNC Router, Mini Torna ve Freze gibi daha çok şekillendirme, kesme ve birleştirme amaçlı ekipmanlar bulunur.",
+            "source_ids": ["19", "20", "21", "22"],
+            "category": "Karşılaştırma",
+            "keywords": ["karşılaştırma", "3d yazıcı vs montaj", "fark", "prototipleme", "cnc", "üretim"],
+            "priority": "medium",
+            "related_questions": [
+                "3D Yazıcı Atölyesi'nde kaç adet yazıcı var?",
+                "Montaj Atölyesi'nin envanteri nedir?"
+            ]
+        },
+        {
+            "question": "Tasarım ve Ar-Ge atölyeleri arasındaki fark nedir?",
+            "answer": "Her iki atölye de proje geliştirmenin ilk aşamalarına odaklansa da farklı ihtiyaçlara cevap verir. Tasarım Atölyesi, 2D/3D modelleme, grafik tasarım ve endüstriyel tasarım gibi daha çok *fikrin görselleştirilmesi ve yapısal tasarımı* üzerine yoğunlaşır; geleneksel ve dijital tasarım araçlarını bir arada sunar. Ar-Ge Atölyesi ise, bu tasarımların *teknolojik projelere* dönüştürüldüğü, yazılım geliştirme ve ileri teknoloji ekipmanlarının kullanıldığı, *yenilikçi fikirlerin gerçekleştirildiği* yerdir.",
+            "source_ids": ["4", "6", "7", "8"],
+            "category": "Karşılaştırma",
+            "keywords": ["karşılaştırma", "ar-ge vs tasarım", "fark", "yazılım geliştirme", "3d modelleme", "proje geliştirme"],
+            "priority": "medium",
+            "related_questions": [
+                "Ar-Ge Atölyesi'nin amacı nedir?",
+                "Tasarım Atölyesi'nde ne tür çalışmalar yapılmaktadır?"
+            ]
+        },
+        {
+            "question": "CNC kullanabilir miyim?",
+            "answer": "Evet, merkezimizdeki Montaj Atölyesi'nde CNC ekipmanları bulunmaktadır. Atölye envanterinde CNC Lazer ve CNC Router mevcuttur. Bu atölye, projelerin rahatlıkla hayata geçirilmesi ve nihai montajlarının yapılması için özel olarak dizayn edilmiştir.",
+            "source_ids": ["22", "23"],
+            "category": "Montaj Atölyesi",
+            "keywords": ["cnc", "cnc lazer", "cnc router", "montaj", "teknik detay"],
+            "priority": "medium",
+            "related_questions": [
+                "Montaj Atölyesi'nin envanteri nedir?",
+                "Atölyelerin kullanım koşulları nedir?"
+            ]
+        },
+        {
+            "question": "Atölyeler haftasonu açık mı? Çalışma saatleriniz nedir?",
+            "answer": "Merkezimizdeki atölyelerin (Ar-Ge, Tasarım, Montaj vb.) projelerin hayata geçirilmesi için katılımcılara geniş imkanlar sunduğu belirtilmektedir. Ancak, bu atölyelerin spesifik çalışma saatleri, hangi günlerde açık oldukları veya haftasonu (Cumartesi, Pazar) hizmet verip vermedikleri hakkında detaylı bilgi şu anda bilgi tabanımızda bulunmamaktadır.",
+            "source_ids": ["5", "7", "9", "14", "19", "21"],
+            "category": "Negatif Test",
+            "keywords": ["negatif test", "çalışma saatleri", "haftasonu", "açık mı", "mesai saatleri", "bilgi yok"],
+            "priority": "low",
+            "related_questions": [
+                "Atölyelerin kullanım koşulları nedir?",
+                "Merkezinizin iletişim bilgileri nedir?"
+            ]
+        }
+
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı. Cevaplar, soruyu tam olarak yanıtlamak için gereken tüm bağlamı içermektedir.",
+        "augmentation_notes": "Aynı bilgi için farklı soru varyasyonları eklendi (örn: 'robot yapıyomuyuz?', '3d yazıcı var mı?', 'drone uçurabiliyomuyuz?'). Kılavuzda belirtilen Temel, Teknik Detay, Karşılaştırma, Negatif Test, Günlük Dil, Kompozit ve Sayısal soru tipleri üretildi.",
+        "answer_length": "Cevaplar kılavuzdaki 50-500 kelime aralığına uygun tutuldu. Kısa sorular 2-3 cümle, detaylı ve karşılaştırmalı sorular 2-3 paragraf.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır. 'Yukarıda', 'aşağıda' gibi referanslardan kaçınıldı. Sistem hatası alınmaması için 'answer' metni %100 temiz tutulmuş, kaynak numaraları 'source_ids' adlı ayrı bir dizine eklenmiştir."
+    }
+}
