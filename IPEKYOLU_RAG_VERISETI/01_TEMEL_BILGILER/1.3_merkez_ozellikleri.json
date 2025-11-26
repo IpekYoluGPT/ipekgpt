@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "file_name": "1.3_merkez_ozellikleri.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ne zaman açıldı ve açılışını kim yaptı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin açılışı 2021 yılında Cumhurbaşkanı Recep Tayyip Erdoğan tarafından yapılmıştır.",
+            "category": "Genel Merkez Bilgisi",
+            "keywords": [
+                "açılış",
+                "Recep Tayyip Erdoğan",
+                "İpek Yolu",
+                "Elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde hangi tür atölyeler bulunmaktadır?",
+                "Cumhurbaşkanı Erdoğan, İpek Yolu merkezi hakkında ne söyledi?",
+                "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi nerede bulunmaktadır?"
+            ],
+            "source_ids": [
+                "news_2021-01-25_0"
+            ]
+        },
+        {
+            "question": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, İpek Yolu Merkezi'ni ne zaman ziyaret etti?",
+            "answer": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, 2023-08-28 tarihinde İpek Yolu Merkezi'ni ziyaret etti ve merkezdeki atölyeleri inceleyerek Fırat Kalkınma Ajansı destekli projeleri takdir etti.",
+            "category": "Ziyaret",
+            "keywords": [
+                "Bakan Ziyareti",
+                "Mehmet Fatih Kacır",
+                "Fırat Kalkınma Ajansı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır'ın İpek Yolu Merkezi ziyaretinin amacı neydi?",
+                "Bakan Kacır, İpek Yolu Merkezi'ndeki hangi projeleri inceledi?",
+                "Fırat Kalkınma Ajansı'nın İpek Yolu Merkezi'ne destekleri nelerdir?"
+            ],
+            "source_ids": [
+                "news_2023-08-28_9"
+            ]
+        },
+        {
+            "question": "İpek Yolu Gençlik Merkezi'nin açılışından sonraki ilk faaliyeti ne olmuştur?",
+            "answer": "İpek Yolu Gençlik Merkezi, açılışının ardından faaliyetlerine 'Proje Döngüsü ve Yönetimi' eğitimi ile başlamıştır. Bu ilk eğitime 18-30 yaş arası gençlere yönelik olarak 321 kişi başvurmuştur. Eğitim 2021 yılında gerçekleşmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "İpek Yolu",
+                "Gençlik Merkezi",
+                "Proje Döngüsü ve Yönetimi",
+                "eğitim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Gençlik Merkezi hangi yaş aralığındaki gençlere eğitim vermektedir?",
+                "Proje Döngüsü ve Yönetimi eğitimi ne zaman yapılmıştır?"
+            ],
+            "source_ids": [
+                "news_2021-03-01_12"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

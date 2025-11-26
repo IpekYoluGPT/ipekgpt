@@ -1,0 +1,57 @@
+{
+    "metadata": {
+        "file_name": "medya_egitimi_projesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun Depremzede Gençler için Medya Eğitimi Projesi tamamlandı mı?",
+            "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin Depremzede Gençler için Medya Eğitimi Projesi 22 Haziran 2025 tarihinde tamamlanmıştır.",
+            "category": "Eğitim Projeleri",
+            "keywords": [
+                "medya eğitimi",
+                "depremzede gençler",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Medya Eğitimi Projesi'nin içeriği nedir?",
+                "Bu proje kimler için düzenlendi?",
+                "İpek Yolu başka hangi eğitim projeleri yürütüyor?"
+            ],
+            "source_ids": [
+                "ig_2025-06-22_85"
+            ]
+        },
+        {
+            "question": "İpek Yolu tarafından depremzede gençlere yönelik düzenlenen Medya Eğitimi Projesi ne zaman tamamlandı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından depremzede gençlere yönelik düzenlenen Medya Eğitimi Projesi, 20 Haziran 2025 tarihinde başarıyla tamamlanmıştır. Proje, Gençlik ve Spor Bakanlığı ile ANKADER iş birliğinde gerçekleştirilmiştir.",
+            "category": "Eğitim Projeleri",
+            "keywords": [
+                "medya eğitimi",
+                "depremzede gençler",
+                "İpek Yolu",
+                "Gençlik ve Spor Bakanlığı",
+                "ANKADER"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Medya Eğitimi Projesi'nin içeriği nelerdi?",
+                "Bu projede hangi kurumlar iş birliği yaptı?",
+                "Bu tür eğitim projeleri devam edecek mi?"
+            ],
+            "source_ids": [
+                "ig_2025-06-20_89"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

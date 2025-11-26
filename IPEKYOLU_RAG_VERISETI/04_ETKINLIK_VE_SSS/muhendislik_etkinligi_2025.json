@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "muhendislik_etkinligi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda '100 Mühendis Nasıl Elenir?' etkinliği ne zaman ve nerede düzenleniyor?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 5 Ekim 2025 tarihinde '100 Mühendis Nasıl Elenir?' etkinliği düzenlenecektir. Bu etkinlikte teknoloji, eğlence ve inovasyon bir araya gelecektir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "mühendislik",
+                "etkinlik",
+                "teknoloji",
+                "eğlence"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "'100 Mühendis Nasıl Elenir?' etkinliğine son başvuru tarihi nedir?",
+                "Bu etkinlikte hangi aktiviteler yapılacak?",
+                "Etkinliğe nasıl başvuru yapabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-09-29_17"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

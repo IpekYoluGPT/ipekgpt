@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kamp_lideri_oryantiring.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 18 Temmuz 2025'teki Yeşilay Kamp Lideri Yetiştirme Kampı'nda hangi eğitim gerçekleştirildi?",
+            "answer": "İpek Yolu'nun 18 Temmuz 2025'teki Yeşilay Kamp Lideri Yetiştirme Kampı'nda katılımcılarla birlikte Oryantiring Eğitimi gerçekleştirildi.",
+            "category": "Kamplar",
+            "keywords": [
+                "Yeşilay Kampı",
+                "liderlik",
+                "oryantiring",
+                "doğa"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kamp Lideri Yetiştirme Kampı'nın amacı nedir?",
+                "Oryantiring eğitimi kamp liderliğine nasıl katkı sağlar?",
+                "İpek Yolu'nun başka hangi kampları bulunmaktadır?"
+            ],
+            "source_ids": [
+                "ig_2025-07-18_62"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

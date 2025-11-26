@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "siber_farkindalik_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 13 Nisan 2025 tarihinde gerçekleştirilen Siber Farkındalık eğitimi hangi konuları kapsıyordu?",
+            "answer": "13 Nisan 2025 tarihinde İpek Yolu'nda düzenlenen Siber Farkındalık eğitimi, öğrencileri güvenli internet kullanımı, dijital zorbalık ve sosyal medya güvenliği konularında bilgilendirmeyi amaçlamıştır. Emniyet birimlerinin katkılarıyla, siber dünyada güvende kalmanın yolunun bilgiden geçtiği vurgulanmıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "Siber farkındalık",
+                "güvenli internet",
+                "dijital zorbalık",
+                "sosyal medya güvenliği"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Siber zorbalıkla mücadele yöntemleri nelerdir?",
+                "Güvenli internet kullanımı için hangi önlemler alınmalıdır?",
+                "Sosyal medya hesaplarının güvenliği nasıl sağlanır?"
+            ],
+            "source_ids": [
+                "ig_2025-04-13_138"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "bitkisel_krem_uretimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde, 'Yeşil Köprüler Permakültürle Avrupa'da Sürdürülebilirlik' projesi kapsamında ne tür bir eğitim gerçekleştirildi?",
+            "answer": "22 Şubat 2025 tarihinde, 'Yeşil Köprüler Permakültürle Avrupa'da Sürdürülebilirlik' projesi kapsamında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde yetiştirilen bitkilerden elde edilen yağlarla bitkisel krem üretimi eğitimi gerçekleştirildi.",
+            "category": "Eğitim",
+            "keywords": [
+                "bitkisel krem",
+                "permakültür",
+                "sürdürülebilirlik",
+                "Yeşil Köprüler"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşil Köprüler Permakültür projesi nedir?",
+                "Bu eğitimde hangi bitkilerden elde edilen yağlar kullanıldı?",
+                "Bu tür eğitimlerin İpek Yolu'ndaki diğer faaliyetlerle ilişkisi nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-02-22_152"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

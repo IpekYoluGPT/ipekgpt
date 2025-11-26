@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "ekrandan_uzak_beceri_gelistirme_kampi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı El Becerileri Atölyesi'nde ne yapıldı?",
+            "answer": "2025-08-05 tarihinde düzenlenen Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı El Becerileri Atölyesi'nde gençlerin odaklanma yetileri geliştirildi ve üretmenin keyfi yaşandı. Katılımcılar ekranlardan uzak, emeğe ve yaratıcılığa yakın bir gün geçirdiler. İpek Yolu tarafından düzenlenmiştir.",
+            "category": "Atölye Çalışmaları",
+            "keywords": [
+                "Yeşilay",
+                "beceri geliştirme",
+                "el becerileri",
+                "İpek Yolu",
+                "atölye"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu kampa kimler katılabilir?",
+                "El becerileri atölyesinde hangi materyaller kullanıldı?",
+                "İpek Yolu'nun başka atölye çalışmaları var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-08-05_39"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

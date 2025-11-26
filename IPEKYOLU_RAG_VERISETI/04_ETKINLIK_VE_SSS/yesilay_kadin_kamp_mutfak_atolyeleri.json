@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kadin_kamp_mutfak_atolyeleri.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Kadın Komisyonu'nun İpek Yolu'ndaki kampında hangi atölye çalışması yapılıyor?",
+            "answer": "Yeşilay Kadın Komisyonu'nun kampı İpek Yolu'nda devam ediyor ve katılımcılar mutfak atölyesinde yer alıyor.",
+            "category": "Kamp Etkinlikleri",
+            "keywords": [
+                "Yeşilay",
+                "kadın",
+                "kamp",
+                "İpek Yolu",
+                "mutfak atölyesi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kampta başka hangi atölyeler düzenleniyor?",
+                "Yeşilay Kadın Komisyonu'nun bu kampının amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-25_29"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

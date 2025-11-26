@@ -1,0 +1,55 @@
+{
+    "metadata": {
+        "file_name": "necmettin_bilal_erdogan_ziyareti.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni kimler ziyaret etti?",
+            "answer": "2025-10-19 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni, Lim Yayma Vakfı Mütevelli Heyeti Başkanı Sayın Necmettin Bilal Erdoğan, Elazığ Valisi Sayın Numan Hatipoğlu, AK Parti Türk Devletleri ile İlişkilerden Sorumlu Genel Başkan Yardımcısı Sayın Kürşat Zorlu ve beraberindeki heyet ziyaret etmiştir. Heyette Kültür ve Turizm Bakan Yardımcısı Sayın Batuhan Mumcu, Milletvekilleri Prof. Dr. Sayın Erol Keleş, Sayın Ejder Açıkkapı, Sayın Mahmut Rıdvan Nazırlı ve Elazığ İl Özel İdaresi Genel Sekreteri Sayın Cemil Yatkın da yer almıştır.",
+            "category": "ziyaret",
+            "keywords": [
+                "ziyaret",
+                "protokol",
+                "Necmettin Bilal Erdoğan"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Ziyarette hangi projeler hakkında bilgi verildi?",
+                "İpek Yolu Merkezi'nin genel koordinatörü kimdir?",
+                "Merkezi ziyaret eden diğer yetkililer kimlerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-10-19_6"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni 18 Ekim 2025 tarihinde kimler ziyaret etti?",
+            "answer": "18 Ekim 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni Lim Yayma Vakfı Mütevelli Heyeti Başkanı Sayın Necmettin Bilal Erdoğan öncülüğünde, Elazığ Valisi Sayın Numan Hatipoğlu ve AK Parti Türk Devletleri ile İlişkilerden Sorumlu Genel Başkan Yardımcısı Sayın Kürşat Zorlu ziyaret etti. Ziyarette Kültür ve Turizm Bakan Yardımcısı Sayın Batuhan Mumcu, Milletvekilleri Prof. Dr. Sayın Erol Keleş, Sayın Ejder Açıkkapı, Sayın Mahmut Rıdvan Nazırlı ve Elazığ İl Özel İdaresi Genel Sekreteri Sayın Cemil Yatkın da yer aldı.",
+            "category": "Ziyaret",
+            "keywords": [
+                "ziyaret",
+                "Necmettin Bilal Erdoğan",
+                "protokol"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Ziyarette hangi projeler hakkında bilgi alındı?",
+                "Bu ziyaretin İpek Yolu için önemi nedir?",
+                "Merkezi daha önce kimler ziyaret etti?"
+            ],
+            "source_ids": [
+                "ig_2025-10-18_7"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

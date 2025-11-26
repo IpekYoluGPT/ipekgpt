@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "teknofest_101_etkinligi.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Girişimci Kulübü'nün TEKNOFEST 101 etkinliğinde neler yapıldı?",
+            "answer": "2 Şubat 2025 tarihinde İpek Yolu Girişimci Kulübü tarafından düzenlenen TEKNOFEST 101 etkinliğinde, TEKNOFEST yarışmaları incelendi, deneyimler paylaşıldı ve yarışmalara katılmayı düşünenler için faydalı bilgiler sunuldu. Teknofest'e ilgi duyan arkadaşlarla bir araya gelinerek, yarışma süreçleri değerlendirildi.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "yarışma",
+                "girişimcilik",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "TEKNOFEST yarışmalarına nasıl başvurulur?",
+                "İpek Yolu'nun TEKNOFEST ile ilgili başka etkinlikleri var mı?",
+                "TEKNOFEST yarışmaları hakkında daha fazla bilgiye nereden ulaşabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-02-02_160"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

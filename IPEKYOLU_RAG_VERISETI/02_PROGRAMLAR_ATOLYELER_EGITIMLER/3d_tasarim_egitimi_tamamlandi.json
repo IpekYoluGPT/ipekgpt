@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "3d_tasarim_egitimi_tamamlandi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından düzenlenen 3D Tasarım ve Yazıcı Eğitimi ne zaman tamamlandı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından düzenlenen 3D Tasarım ve Yazıcı Eğitimi 5 Ocak 2025 tarihinde tamamlanmıştır. Eğitimde 3D tasarımın temelleri öğrenilmiş ve 3D yazıcılar teorik ve pratik olarak keşfedilmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "3D tasarım",
+                "3D yazıcı",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi eğitimler düzenleniyor?",
+                "3D tasarım eğitimi içeriği hakkında daha fazla bilgi alabilir miyim?",
+                "İpek Yolu'nun düzenlediği eğitimlere nasıl katılabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-01-05_174"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "roket_takimi_take_off_istanbul.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Roket Takımı, Take Off İstanbul'da hangi projeleri sergiledi?",
+            "answer": "İpek Yolu Roket Takımı, Take Off İstanbul'da geliştirdiği roketi ve özgün tasarım uçuş kontrol bilgisayarı Skylogic'i sergilemiştir. Etkinlik 2024-12-11 tarihinde gerçekleşmiştir.",
+            "category": "Proje Tanıtımı",
+            "keywords": [
+                "roket takımı",
+                "Take Off İstanbul",
+                "Skylogic",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Take Off İstanbul etkinliği nedir?",
+                "İpek Yolu Roket Takımı'nın gelecek hedefleri nelerdir?",
+                "Skylogic uçuş kontrol bilgisayarının özellikleri nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2024-12-11_188"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

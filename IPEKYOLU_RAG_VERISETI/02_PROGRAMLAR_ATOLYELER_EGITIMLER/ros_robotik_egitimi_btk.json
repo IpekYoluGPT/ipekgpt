@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "ros_robotik_egitimi_btk.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "BTK Akademi ve İpek Yolu işbirliğiyle düzenlenen ROS ile Robotik Sistem Geliştirme Eğitimi'nde 2. gün hangi konular işlendi?",
+            "answer": "28 Ocak 2025 tarihinde, BTK Akademi ve İpek Yolu işbirliğiyle düzenlenen ROS ile Robotik Sistem Geliştirme Eğitimi'nin ikinci gününde uygulamalı olarak Temel Linux komutları, ROS CLI kullanımı, paket ve düğüm oluşturma konuları işlenmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "ROS",
+                "Robotik",
+                "BTK Akademi",
+                "Linux"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "ROS ile Robotik Sistem Geliştirme Eğitimi'nin içeriği nedir?",
+                "İpek Yolu'nun BTK Akademi ile başka işbirlikleri var mı?",
+                "ROS eğitimi hangi tarihlerde düzenlendi?"
+            ],
+            "source_ids": [
+                "ig_2025-01-28_163"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "sabit_kanat_model_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından düzenlenen Sabit Kanat Model Uçak Eğitimi ne zaman başladı?",
+            "answer": "İpek Yolu tarafından düzenlenen Lise öğrencilerine yönelik Sabit Kanat Model Uçak Eğitimi 25 Ocak 2025 tarihinde başlamıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "sabit kanat",
+                "model uçak",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitime kimler katılabilir?",
+                "Sabit Kanat Model Uçak Eğitimi'nin içeriği nedir?",
+                "İpek Yolu'nun diğer eğitim programları nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-01-25_168"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

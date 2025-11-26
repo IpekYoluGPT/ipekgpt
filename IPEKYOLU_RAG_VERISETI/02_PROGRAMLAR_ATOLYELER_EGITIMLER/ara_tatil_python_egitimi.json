@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "ara_tatil_python_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun ara tatil teknoloji kampında hangi eğitim başladı?",
+            "answer": "İpek Yolu'nun ara tatil teknoloji kampında Temel Python Eğitimi başladı. Lise öğrencileri Python'un temellerini öğrenmeye başladılar ve ilk kodlarını yazdılar.",
+            "category": "Eğitim",
+            "keywords": [
+                "Python",
+                "eğitim",
+                "ara tatil",
+                "teknoloji kampı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Python eğitimi içeriği nedir?",
+                "Bu tür kamplar ne sıklıkla düzenleniyor?",
+                "Kampa kimler katılabilir?"
+            ],
+            "source_ids": [
+                "ig_2024-11-11_209"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

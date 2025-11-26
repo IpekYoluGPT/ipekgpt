@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "file_name": "spor_gunu_etkinligi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 11 Mayıs 2025 tarihindeki 'İpek Yolu'na Bir Yolculuk Bin Keşif' programında hangi aktiviteler yapıldı?",
+            "answer": "11 Mayıs 2025 tarihinde İpek Yolu'nun 'İpek Yolu'na Bir Yolculuk Bin Keşif' programında öğrencilerle birlikte güne sporla başlandı. Futbol, basketbol, voleybol, geleneksel oyunlar gibi çeşitli aktivitelerle takım ruhu, fair play, sağlıklı yaşam ve eğlence bir aradaydı. Hem beden hem de zihin gelişimine katkı sunuldu.",
+            "category": "Etkinlik",
+            "keywords": [
+                "spor",
+                "etkinlik",
+                "öğrenci",
+                "futbol",
+                "basketbol",
+                "voleybol"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu tür spor etkinlikleri İpek Yolu'nda düzenli olarak yapılıyor mu?",
+                "Bu etkinliğin amacı nedir?",
+                "İpek Yolu'nun bu etkinliğe benzer başka hangi etkinlikleri var?"
+            ],
+            "source_ids": [
+                "ig_2025-05-11_117"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

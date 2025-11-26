@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "sosyal_girisimcilik_projesi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun ortak olduğu, 7-11 Temmuz 2025 tarihleri arasında gerçekleşecek olan sosyal girişimcilik projesi hakkında bilgi alabilir miyim?",
+            "answer": "T.C. Ulusal Ajans tarafından kabul edilen 2024-3-TR01-KA154-YOU-000287249 referans numaralı Gençlik İnovasyonu: Sosyal Girişimcilik Modeli Projesi, 7-11 Temmuz 2025 tarihleri arasında 'İlhamdan Eyleme Sosyal Girişimcilik' temasıyla Elazığ'da gerçekleştirilecektir. Bu çalıştay, sosyal girişimcilik alanında bilgi ve deneyimlerini geliştirmek isteyen 18-30 yaş aralığındaki gençlere yöneliktir. Katılımcılar, farklı ülkelerin sosyal girişimcilik politikalarını inceleyip, grup çalışmalarıyla yenilikçi projeler tasarlayacak ve mentörlerden geri bildirim alacaklardır. Proje, yeşil seyahati desteklemekte olup, başvuru şartları arasında belirtilen şehirlerden birinde ikamet etmek ve sosyal girişimcilik alanına ilgi duymak yer almaktadır.",
+            "category": "Proje Duyurusu",
+            "keywords": [
+                "sosyal girişimcilik",
+                "gençlik inovasyonu",
+                "çalıştay",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Proje başvuru şartları nelerdir?",
+                "Proje hangi şehirde gerçekleştirilecektir?",
+                "Proje ne zaman ve hangi tarihler arasında yapılacaktır?"
+            ],
+            "source_ids": [
+                "ig_2025-06-17_91"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

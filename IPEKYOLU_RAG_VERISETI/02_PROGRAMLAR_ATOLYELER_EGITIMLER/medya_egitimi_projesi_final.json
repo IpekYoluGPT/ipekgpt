@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "medya_egitimi_projesi_final.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin Gençlik ve Spor Bakanlığı & ANKADER Birliğiyle düzenlediği Medya Eğitimi Projesi'nin final akşamında neler yapıldı?",
+            "answer": "2025-06-19 tarihinde düzenlenen final akşamında, gençlerle ateş başında buluşularak eğitim süreci değerlendirilmiş, soru-cevap etkinliğiyle bilgi ve deneyimler paylaşılmış, kamera kullanımı, içerik üretimi, kısa film çalışmaları üzerine sohbet edilmiştir. Gençler bu süreçte teknik bilgilerin yanı sıra dayanışma, özgüven ve ekip ruhu gibi değerler de kazanmışlardır.",
+            "category": "Medya Eğitimi",
+            "keywords": [
+                "medya eğitimi",
+                "gençlik",
+                "ANKADER",
+                "eğitim projesi",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Medya Eğitimi Projesi'nin amacı neydi?",
+                "Bu projede gençlerin kazandığı temel beceriler nelerdir?",
+                "İpek Yolu bu tür projeleri düzenlemeye devam edecek mi?"
+            ],
+            "source_ids": [
+                "ig_2025-06-19_90"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

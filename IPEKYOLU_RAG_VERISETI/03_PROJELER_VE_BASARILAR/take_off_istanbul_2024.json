@@ -1,0 +1,59 @@
+{
+    "metadata": {
+        "file_name": "take_off_istanbul_2024.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Roket Takımı'nın Take Off İstanbul'daki etkinliği hakkında bilgi verir misiniz?",
+            "answer": "2024-12-14 tarihinde İpek Yolu Roket Takımı, Take Off İstanbul'da geliştirdikleri roketi ve Skylogic ticari uçuş kontrol bilgisayarını tanıtmıştır. Stantta roket yarışmalarına ilgi duyan birçok kişiyle bilgi alışverişinde bulunulmuş ve projelere dair detaylı bilgi verilmiştir. İpek Yolu Girişimci Kuluçka Birimi, gençlerin teknoloji projelerini desteklemeye devam etmektedir.",
+            "category": "Proje Başarıları",
+            "keywords": [
+                "Take Off İstanbul",
+                "Roket Takımı",
+                "Skylogic",
+                "Teknoloji",
+                "Girişimcilik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Girişimci Kuluçka Birimi ne gibi destekler sunuyor?",
+                "Skylogic uçuş kontrol bilgisayarının özellikleri nelerdir?",
+                "İpek Yolu Roket Takımı'nın gelecekteki projeleri nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2024-12-14_186"
+            ]
+        },
+        {
+            "question": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, İpek Yolu Roket Takımı'nın Take Off İstanbul'daki standını ziyaret etti mi?",
+            "answer": "Evet, Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, İpek Yolu Roket Takımı'nın Take Off İstanbul'daki standını ziyaret etmiştir. Ziyarette, takımın geliştirdiği roket ve özgün tasarım uçuş kontrol bilgisayarı Skylogic sergilenmiştir. Bakan Kacır, projeleri yakından inceleyerek destek ve takdirlerini iletti.",
+            "category": "Proje Başarıları",
+            "keywords": [
+                "Take Off İstanbul",
+                "Mehmet Fatih Kacır",
+                "İpek Yolu",
+                "roket takımı",
+                "Skylogic"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Roket Takımı'nın geliştirdiği Skylogic nedir?",
+                "Bakan Kacır'ın ziyareti İpek Yolu Roket Takımı'nı nasıl etkiledi?",
+                "İpek Yolu Roket Takımı'nın milli teknoloji hamlesine katkıları nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2024-12-11_187"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

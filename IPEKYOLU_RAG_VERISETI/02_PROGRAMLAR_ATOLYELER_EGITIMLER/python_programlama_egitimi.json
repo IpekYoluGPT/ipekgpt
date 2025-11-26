@@ -1,0 +1,79 @@
+{
+    "metadata": {
+        "file_name": "python_programlama_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu ve BTK Akademi işbirliğiyle düzenlenen Python Programlama Eğitimi ne zaman tamamlandı?",
+            "answer": "İpek Yolu ve BTK Akademi işbirliğiyle düzenlenen 4 günlük Python Programlama Eğitimi 30 Ocak 2025 tarihinde başarıyla tamamlanmıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "Python",
+                "programlama",
+                "eğitim",
+                "BTK Akademi",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Python Programlama Eğitimi kaç gün sürdü?",
+                "Bu eğitimde hangi konular işlendi?",
+                "İpek Yolu başka hangi eğitimler düzenliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-01-30_162"
+            ]
+        },
+        {
+            "question": "BTK Akademi ve İpek Yolu iş birliğiyle düzenlenen Python Programlama Eğitimi'nde 2. gün neler yapıldı?",
+            "answer": "28 Ocak 2025 tarihinde, BTK Akademi ve İpek Yolu iş birliğiyle düzenlenen Python Programlama Eğitimi'nin ikinci gününde liste, tuple, koşul ifadelerin kullanımı ve sayı tahmin oyunu, hesap makinesi gibi mini projeler üzerinde çalışıldı.",
+            "category": "Eğitim",
+            "keywords": [
+                "Python",
+                "BTK Akademi",
+                "Programlama Eğitimi",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Python Programlama Eğitimi'ne nasıl katılabilirim?",
+                "İpek Yolu'nun BTK Akademi ile başka eğitimleri var mı?",
+                "Bu eğitim hangi tarihlerde düzenlendi?"
+            ],
+            "source_ids": [
+                "ig_2025-01-28_164"
+            ]
+        },
+        {
+            "question": "İpek Yolu ve BTK Akademi işbirliğiyle düzenlenen Python Programlama Eğitimi'nin içeriği nedir?",
+            "answer": "İpek Yolu ve BTK Akademi işbirliğiyle lise öğrencilerine özel olarak başlatılan Python Programlama Eğitimi, Python Temelleri, Algoritma Mantığı, Uygulamalı Projeler ve daha fazlasını içermektedir. Eğitim, öğrencilere uygulamalı projelerle becerilerini geliştirme fırsatı sunmaktadır. Eğitim tarihi 27 Ocak 2025'tir.",
+            "category": "Eğitim",
+            "keywords": [
+                "Python",
+                "Programlama",
+                "BTK Akademi",
+                "İpek Yolu",
+                "Eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Python Programlama Eğitimi'ne kimler başvurabilir?",
+                "Bu eğitimde hangi projeler yapılacak?",
+                "Eğitimin sonunda bir sertifika verilecek mi?"
+            ],
+            "source_ids": [
+                "ig_2025-01-27_165"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

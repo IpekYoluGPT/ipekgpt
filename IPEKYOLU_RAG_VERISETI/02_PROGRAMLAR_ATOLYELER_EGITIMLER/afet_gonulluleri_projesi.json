@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "file_name": "afet_gonulluleri_projesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 'Afet Gönüllüleri' projesi ne durumda?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 'Afet Gönüllüleri' projesi tüm hızıyla devam ediyor. Gençler afet bilinci kazanıyor ve topluma fayda sağlayacak beceriler ediniyorlar. Bu bilgi 20 Mayıs 2025 tarihlidir.",
+            "category": "Proje",
+            "keywords": [
+                "Afet Gönüllüleri",
+                "gençlik",
+                "bilinçlendirme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet Gönüllüleri projesinin amacı nedir?",
+                "Bu projeye nasıl katılabilirim?",
+                "Proje kapsamında hangi eğitimler veriliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-05-20_103"
+            ]
+        },
+        {
+            "question": "İpek Yolu Afet Gönüllüleri Projesi'nin amacı nedir?",
+            "answer": "İpek Yolu Afet Gönüllüleri Projesi, toplumu afetlere karşı daha dirençli hale getirmek amacıyla başlatılmıştır. Eğitimlerle donanacak, tatbikatlarla güçlenecek ve kriz anlarında birlikte hareket edilecektir. Proje, 19 Mayıs 2025 tarihinde başlamıştır.",
+            "category": "Afet Gönüllülüğü",
+            "keywords": [
+                "afet",
+                "gönüllü",
+                "eğitim",
+                "direnç"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet Gönüllüleri projesine nasıl katılabilirim?",
+                "Proje kapsamında hangi eğitimler verilecek?",
+                "Afet gönüllüsü olmanın faydaları nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-05-19_109"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

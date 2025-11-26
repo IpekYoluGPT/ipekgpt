@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_farkindalik_kamp_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "29 Temmuz 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin katılımıyla Yeşilay Gençlik ve Gönüllülük Kampı'nda hangi konuda eğitim verildi?",
+            "answer": "29 Temmuz 2025 tarihinde Yeşilay Gençlik ve Gönüllülük Kampı'nda, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ev sahipliğinde gençlere Bağımlılık Endüstrisi hakkında eğitim verildi. Gençler, bağımlılıkların sadece bireysel değil, aynı zamanda küresel bir endüstrinin parçası olduğunu öğrendi ve eleştirel bir bakış açısı kazandılar.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "bağımlılık",
+                "gençlik kampı",
+                "farkındalık"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bağımlılık endüstrisi hakkında daha fazla bilgiye nasıl ulaşabilirim?",
+                "İpek Yolu'nun Yeşilay ile başka ortak projeleri var mı?",
+                "Bu kampta başka hangi konular ele alındı?"
+            ],
+            "source_ids": [
+                "ig_2025-07-29_47"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

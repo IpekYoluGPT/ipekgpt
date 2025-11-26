@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "afet_gonulluleri_projesi.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Afet Gönüllüleri Projesi kapsamında ne tür bir faaliyet gerçekleştirildi ve bu faaliyete kimler katıldı?",
+            "answer": "2025-10-04 tarihinde, Afetten Etkilenen Gençlerin Güçlendirilmesi Destek Programı kapsamında yürütülen İpek Yolu Afet Gönüllüleri Projesi çerçevesinde bir tatbikat gerçekleştirildi. Gençlik ve Spor Bakanlığı Bakan Yardımcısı Doç. Dr. Safa Koçoğlu tesisi ziyaret ederek incelemelerde bulundu ve tatbikata katılarak gönüllülerin heyecanına ortak oldu. Ayrıca Elazığ Vali Yardımcısı Ömer Özbay, Elazığ İl Özel İdare Genel Sekreteri Cemil Yatkın ve çeşitli kurumların temsilcileri de katılım sağladı.",
+            "category": "Proje Faaliyetleri",
+            "keywords": [
+                "Afet Gönüllüleri",
+                "Tatbikat",
+                "Gençlik ve Spor Bakanlığı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet Gönüllüleri Projesi'nin amacı nedir?",
+                "Gerçekleştirilen tatbikatın içeriği hakkında daha fazla bilgi alabilir miyim?",
+                "Projede yer alan diğer kurumlar hangileridir?"
+            ],
+            "source_ids": [
+                "ig_2025-10-04_13"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

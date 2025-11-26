@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "teknofest_btk_akademi_basarisi.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "BTK Akademi'nin Teknofest'teki başarısı nedir?",
+            "answer": "BTK Akademi öğrencileri, Teknofest'te Sanayide Dijital Teknolojiler Kategorisinde BTK Akademi eğitimleriyle zirveye çıkarak büyük bir başarı elde etmiştir. İpek Yolu, öğrencilerin bu başarısıyla gurur duymaktadır.",
+            "category": "Projeler ve Başarılar",
+            "keywords": [
+                "Teknofest",
+                "BTK Akademi",
+                "Sanayi",
+                "Dijital Teknolojiler",
+                "Başarı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "BTK Akademi hangi alanlarda eğitimler vermektedir?",
+                "İpek Yolu'nun Teknofest ile ilgili başka başarıları var mı?",
+                "Bu başarı İpek Yolu'nun hedeflerine nasıl katkı sağlıyor?"
+            ],
+            "source_ids": [
+                "ig_2025-01-13_170"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

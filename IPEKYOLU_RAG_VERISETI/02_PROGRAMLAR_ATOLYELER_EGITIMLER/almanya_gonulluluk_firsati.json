@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "almanya_gonulluluk_firsati.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Almanya Köln'de Avrupa Dayanışma Programı kapsamında sunulan gönüllülük fırsatının detayları nelerdir?",
+            "answer": "2024-11-23 tarihinde yapılan duyuruya göre, Almanya Köln'de 58 gün sürecek bir gönüllülük projesi için 18-30 yaş aralığındaki gençler aranmaktadır. Proje, proje yazımı, geliştirme ve erik üretimi konularını kapsamaktadır. Başlangıç tarihi 9 Aralık'tır. Başvuracak kişilerin en az B1 seviyesinde İngilizce bilmesi ve tercihen yeşil pasaport sahibi olması gerekmektedir. Program seyahat masraflarını, yiyecek ve konaklamayı, sağlık sigortasını ve aylık 180€ harçlığı kapsamaktadır. Bu fırsat, gençlerin kendilerini geliştirmeleri, uluslararası deneyim kazanmaları ve diğer gençlerin hayatlarına dokunmaları için harika bir imkandır. İpek Yolu tarafından desteklenen bu gönüllük fırsatının başvuru linki bio'da bulunmaktadır.",
+            "category": "Gönüllülük Programı",
+            "keywords": [
+                "gönüllülük",
+                "Almanya",
+                "Avrupa Dayanışma Programı",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu gönüllülük programına kimler başvurabilir?",
+                "Gönüllülük programı hangi masrafları karşılıyor?",
+                "Başvuru için aranan İngilizce seviyesi nedir?"
+            ],
+            "source_ids": [
+                "ig_2024-11-23_196"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

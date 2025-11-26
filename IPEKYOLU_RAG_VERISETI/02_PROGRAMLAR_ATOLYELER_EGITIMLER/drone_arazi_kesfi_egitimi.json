@@ -1,0 +1,79 @@
+{
+    "metadata": {
+        "file_name": "drone_arazi_kesfi_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Girişimci Kulübü'nün Drone ile Arazi Keşfi ve Haritalama Eğitimi ne zaman tamamlandı?",
+            "answer": "İpek Yolu Girişimci Kulübü birimi, Drone ile Arazi Keşfi ve Haritalama Eğitimini 23 Şubat 2025 tarihinde tamamlamıştır. Bu eğitimde katılımcılar, otonom uçuş ve 3 boyutlu haritalama tekniklerini uygulamalı olarak öğrenmişlerdir.",
+            "category": "Eğitim",
+            "keywords": [
+                "drone",
+                "arazi keşfi",
+                "haritalama",
+                "eğitim",
+                "otonom uçuş",
+                "3 boyutlu haritalama"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Drone ile arazi keşfi eğitiminde hangi konular işlendi?",
+                "Bu eğitime kimler katılabilir?",
+                "İpek Yolu'nun başka hangi eğitimleri bulunmaktadır?"
+            ],
+            "source_ids": [
+                "ig_2025-02-23_150"
+            ]
+        },
+        {
+            "question": "İpek Yolu Girişimci Kulübü'nün Drone ile Arazi Keşfi ve Haritalama Eğitimi ne zaman başladı?",
+            "answer": "İpek Yolu Girişimci Kulübü Girişimci Kuluçka Birimi olarak Drone ile Arazi Keşfi ve Haritalama Eğitimimiz 22 Şubat 2025 tarihinde başladı. Katılımcılar drone teknolojisini öğreniyor ve arazi keşfi ile haritalama hakkında bilgiler ediniyor.",
+            "category": "Eğitim",
+            "keywords": [
+                "Drone",
+                "Arazi Keşfi",
+                "Haritalama",
+                "Eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitimde hangi konular öğretiliyor?",
+                "Drone eğitimine kimler katılabilir?",
+                "İpek Yolu'nda başka hangi eğitimler düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-02-22_151"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde drone ile arazi keşfi ve haritalama eğitimi ne zaman düzenlenecek?",
+            "answer": "Ücretsiz drone ile arazi keşfi ve haritalama eğitimi, 22-23 Şubat 2025 tarihlerinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde düzenlenecektir. Son başvuru tarihi 19 Şubat 2025'tir.",
+            "category": "Eğitim",
+            "keywords": [
+                "drone",
+                "arazi keşfi",
+                "haritalama",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Drone eğitimine kimler başvurabilir?",
+                "Eğitim kaç saat sürecek?",
+                "Eğitime nasıl kayıt olabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-02-11_158"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

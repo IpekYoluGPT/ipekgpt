@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_proje_yazma_kamp_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından 20 Ağustos 2025 tarihinde düzenlenen Yeşilay Proje Yazma Kampı atölye çalışmaları neyi amaçlıyor?",
+            "answer": "İpek Yolu'nda 20 Ağustos 2025 tarihinde Yeşilay Proje Yazma Kampı atölye çalışmaları devam etmektedir.",
+            "category": "Atölye Çalışmaları",
+            "keywords": [
+                "Yeşilay",
+                "proje yazma",
+                "kamp",
+                "atölye"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Proje Yazma Kampı'na kimler katılabilir?",
+                "Bu kampın içeriği hakkında daha fazla bilgi alabilir miyim?",
+                "İpek Yolu'nun diğer atölye çalışmaları nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-20_32"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

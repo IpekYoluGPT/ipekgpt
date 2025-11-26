@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "erasmus_proje_yazma_atolyasi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda tamamlanan Erasmus+ Proje Yazma Atölyesi'nde neler öğrenildi?",
+            "answer": "İpek Yolu'nda gerçekleştirilen Erasmus+ Proje Yazma Atölyesi'nde, katılımcılar uluslararası kuruluşların hibe başvurularında önemli bir kısım olan Mantıksal Çerçeve Matrisi hazırlama sürecini uygulamalı olarak öğrendiler. Artık Erasmus+ Gençlik Değişimi alanında proje hazırlayabilecek, gençlik grupları olarak hibe ve fırsatlardan faydalanarak farklı kültürlerle proje yürütebilecekler ve yabancı dil, organizasyon, proje yazma ve yürütme becerilerini geliştirebilecekler.",
+            "category": "Atölye",
+            "keywords": [
+                "Erasmus+",
+                "proje yazma",
+                "atölye",
+                "gençlik değişimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus+ Gençlik Değişimi projeleri hangi alanlarda destekleniyor?",
+                "Mantıksal Çerçeve Matrisi nedir ve proje başvurularında neden önemlidir?",
+                "İpek Yolu'nda başka hangi atölye çalışmaları düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2024-11-17_200"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

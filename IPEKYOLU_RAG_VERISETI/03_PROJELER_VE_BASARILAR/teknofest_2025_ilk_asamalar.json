@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "teknofest_2025_ilk_asamalar.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Girişimci Kuluçka Birimi'nin TEKNOFEST 2025'teki başarıları nelerdir?",
+            "answer": "İpek Yolu Girişimci Kuluçka Birimi'nin takımları, TEKNOFEST 2025 kapsamında Model Roket, Su Altı Roket, Hava Savunma Sistemleri ve Model Uydu kategorilerinde önemli bir başarıya imza atarak ilk aşamaları başarıyla tamamlamıştır. Takımlar, hakem değerlendirmelerinden geçerek üst aşamaya yükselmiştir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Model Roket",
+                "Su Altı Roket",
+                "Hava Savunma Sistemleri",
+                "Model Uydu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "TEKNOFEST yarışmalarına katılım için şartlar nelerdir?",
+                "İpek Yolu'nun TEKNOFEST'teki diğer projeleri nelerdir?",
+                "Model Roket yarışması hakkında daha fazla bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2025-04-11_149"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

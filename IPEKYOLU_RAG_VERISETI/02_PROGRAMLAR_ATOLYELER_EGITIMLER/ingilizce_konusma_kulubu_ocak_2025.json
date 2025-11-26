@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "ingilizce_konusma_kulubu_ocak_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu İngilizce Konuşma Kulübü ne zaman ve saat kaçta?",
+            "answer": "İpek Yolu İngilizce Konuşma Kulübü 11 Ocak 2025 tarihinde saat 12:00'de başlayacaktır.",
+            "category": "Eğitim",
+            "keywords": [
+                "İngilizce konuşma kulübü",
+                "İngilizce eğitimi",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İngilizce konuşma kulübüne kimler katılabilir?",
+                "İngilizce konuşma kulübüne nasıl başvuru yapabilirim?",
+                "İpek Yolu'nda başka hangi eğitimler var?"
+            ],
+            "source_ids": [
+                "ig_2025-01-06_172"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

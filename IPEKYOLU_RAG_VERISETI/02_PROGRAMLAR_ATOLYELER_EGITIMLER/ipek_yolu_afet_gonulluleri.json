@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "file_name": "ipek_yolu_afet_gonulluleri.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ve Yeşilay işbirliği ile hangi proje yürütülmektedir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, Yeşilay ortaklığıyla \"Afetten Etkilenen Gençlerin Güçlendirilmesi Destek Programı\" kapsamında \"İpek Yolu Afet Gönüllüleri Projesi\"ni yürütmektedir. 2025-10-03 tarihinde AFAD yetkilileri tarafından afet eğitim sahasında uygulamalı eğitim verilmiştir.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "İpek Yolu",
+                "Yeşilay",
+                "Afet Gönüllüleri",
+                "AFAD",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Afet Gönüllüleri Projesi'nin amacı nedir?",
+                "Afet eğitimleri nerede verilmektedir?",
+                "Bu projeye nasıl gönüllü olunabilir?"
+            ],
+            "source_ids": [
+                "ig_2025-10-03_14"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ve Yeşilay ortaklığıyla hangi proje yürütülmektedir?",
+            "answer": "İpek Yolu ve Yeşilay ortaklığıyla \"Afetten Etkilenen Gençlerin Güçlendirilmesi Destek Programı\" kapsamında \"İpek Yolu Afet Gönüllüleri Projesi\" devam etmektedir (2025-10-02).",
+            "category": "Projeler",
+            "keywords": [
+                "İpek Yolu",
+                "Yeşilay",
+                "Afet Gönüllüleri",
+                "gençlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet Gönüllüleri Projesi'nin amacı nedir?",
+                "Bu projeye nasıl gönüllü olunabilir?"
+            ],
+            "source_ids": [
+                "ig_2025-10-02_15"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ve Yeşilay ortaklığıyla hangi proje başlatıldı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, Yeşilay işbirliği ile \"Afetten Etkilenen Gençlerin Güçlendirilmesi Destek Programı\" kapsamında \"İpek Yolu Afet Gönüllüleri Projesi\"ni başlatmıştır (2025-10-01).",
+            "category": "Projeler",
+            "keywords": [
+                "İpek Yolu",
+                "Yeşilay",
+                "afet",
+                "gönüllü"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet Gönüllüleri Projesi'nin amacı nedir?",
+                "Bu projeye nasıl gönüllü olunabilir?",
+                "Afet gönüllüsü olmak için hangi şartlar aranıyor?"
+            ],
+            "source_ids": [
+                "ig_2025-10-01_16"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

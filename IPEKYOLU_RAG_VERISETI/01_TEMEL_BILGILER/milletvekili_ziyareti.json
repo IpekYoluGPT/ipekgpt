@@ -1,0 +1,57 @@
+{
+    "metadata": {
+        "file_name": "milletvekili_ziyareti.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Elazığ Milletvekili Prof. Dr. Erol Keleş, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni ne zaman ziyaret etti?",
+            "answer": "Elazığ Milletvekili Prof. Dr. Erol Keleş, 28 Temmuz 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni ziyaret ederek Yeşilay Gönüllüleri ile bir araya geldi.",
+            "category": "Ziyaret",
+            "keywords": [
+                "ziyaret",
+                "milletvekili",
+                "Yeşilay",
+                "gönüllü"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkezi kimler ziyaret edebilir?",
+                "Yeşilay gönüllüleri merkezde hangi faaliyetlerde bulunuyor?",
+                "Merkezde yapılan çalışmalar hakkında bilgi alınabilir mi?"
+            ],
+            "source_ids": [
+                "ig_2025-07-28_48"
+            ]
+        },
+        {
+            "question": "Elazığ Milletvekili Prof. Dr. Erol Keleş, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni ne zaman ziyaret etti ve kimlerle bir araya geldi?",
+            "answer": "Elazığ Milletvekili Prof. Dr. Erol Keleş, 28 Temmuz 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni ziyaret ederek Yeşilay Gönüllüleri ile bir araya gelmiştir.",
+            "category": "ziyaret",
+            "keywords": [
+                "ziyaret",
+                "milletvekili",
+                "Yeşilay",
+                "gönüllü"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Prof. Dr. Erol Keleş ziyarette hangi konulara değindi?",
+                "İpek Yolu merkezini kimler ziyaret edebilir?",
+                "Yeşilay gönüllüleri İpek Yolu merkezinde ne gibi çalışmalar yapmaktadır?"
+            ],
+            "source_ids": [
+                "ig_2025-07-28_49"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

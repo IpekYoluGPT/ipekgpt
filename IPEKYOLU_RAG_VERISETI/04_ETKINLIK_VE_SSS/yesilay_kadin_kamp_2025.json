@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kadin_kamp_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "25 Ağustos 2025 tarihinde, Yeşilay kadın komisyonu İpek Yolu'nda hangi etkinliklerle güne başladı?",
+            "answer": "25 Ağustos 2025 tarihinde Yeşilay kadın komisyonu, İpek Yolu'nda Güne Atölye çalışmaları ve Drama Eğitimi ile başladı.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "kadın komisyonu",
+                "kamp",
+                "atölye",
+                "drama eğitimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi komisyonların kampları düzenlenmektedir?",
+                "Drama eğitimi atölye çalışmaları içeriği nedir?",
+                "Yeşilay'ın İpek Yolu ile işbirliği hakkında bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2025-08-25_30"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

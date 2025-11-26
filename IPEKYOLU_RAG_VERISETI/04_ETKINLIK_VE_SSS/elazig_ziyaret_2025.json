@@ -1,0 +1,57 @@
+{
+    "metadata": {
+        "file_name": "elazig_ziyaret_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 'Bir Yolculuk Bin Keşif' programı ne zaman gerçekleşti ve kimlerin katılımıyla desteklendi?",
+            "answer": "İpek Yolu'nun 'Bir Yolculuk Bin Keşif' programı, 22 Haziran 2025 tarihinde Elazığ Valiliği koordinasyonunda, İl Milli Eğitim Müdürlüğü ve Elazığ İl Özel İdaresi iş birliğiyle düzenlenmiştir. Elazığ Valisi Numan Hatipoğlu, İl Milli Eğitim Müdürü Mehmet Yiğit, İl Özel İdaresi Genel Sekreteri Cemil Yatkın ve birçok kurum temsilcisi programa katılarak destek vermiştir.",
+            "category": "etkinlik",
+            "keywords": [
+                "İpek Yolu",
+                "Bir Yolculuk Bin Keşif",
+                "Elazığ",
+                "ziyaret"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu programın amacı nedir?",
+                "İpek Yolu'nun benzer etkinlikleri nerelerde düzenleniyor?",
+                "Programa katılan kurum temsilcileri kimlerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-06-22_84"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nun \"Bir Yolculuk Bin Keşif\" programı ne zaman ve kimlerin katılımıyla gerçekleşti?",
+            "answer": "İpek Yolu'nun \"Bir Yolculuk Bin Keşif\" programı, 14 Haziran 2025 tarihinde Elazığ Valiliği koordinasyonunda, İl Milli Eğitim Müdürlüğü ve Elazığ İl Özel İdaresi iş birliğiyle gerçekleşti. Programa Elazığ Valisi Numan Hatipoğlu, İl Jandarma Komutanı Alpaslan Doğan, İl Milli Eğitim Müdürü Mehmet Yiğit, İl Özel İdaresi Genel Sekreteri Cemil Yatkın ve birçok kurum temsilcisi katıldı.",
+            "category": "etkinlik",
+            "keywords": [
+                "İpek Yolu",
+                "Elazığ",
+                "ziyaret",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "\"Bir Yolculuk Bin Keşif\" programının amacı nedir?",
+                "Programa katılan diğer kurum temsilcileri kimlerdir?",
+                "İpek Yolu'nun Elazığ'daki diğer faaliyetleri nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-06-14_98"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

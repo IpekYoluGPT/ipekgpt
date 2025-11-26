@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "uyulamali_sinema_atolyesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Uygulamalı sinema atölyesi eğitimi ne sunuyor?",
+            "answer": "İpek Yolu Uygulamalı sinema atölyesi eğitimi, teorik bilgilerin pratiğe döküldüğü bir öğrenme ortamı sunuyor. Kamera kullanımı, ışıklandırma ve senaryonun sahneye taşınması gibi teknik beceriler kazandırılıyor. Katılımcılar, kısa film projeleriyle deneyim kazanıyor ve yaratıcılıklarını ifade etme fırsatı buluyor. Grup çalışmaları, işbirliği ve iletişim becerilerini güçlendiriyor. Senaryo yazımı, kurgu ve post-prodüksiyon süreçleri de atölye çalışmasının önemli parçalarıdır. Bu atölye 2025-01-04 tarihinde yapılmıştır.",
+            "category": "Atölye",
+            "keywords": [
+                "sinema",
+                "atölye",
+                "film yapımı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sinema atölyesinde hangi beceriler kazanılır?",
+                "Atölyede grup çalışmaları nasıl bir rol oynar?",
+                "Atölye çalışmasının içeriği nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-01-04_176"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

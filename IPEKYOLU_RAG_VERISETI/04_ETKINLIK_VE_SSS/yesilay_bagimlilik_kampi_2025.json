@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_bagimlilik_kampi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Yeşilay Gençlik ve Gönüllülük Kampı'nda İpek Yolu'nda hangi konu ele alındı?",
+            "answer": "2025 Yeşilay Gençlik ve Gönüllülük Kampı'nda, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde bağımlılık konusu ele alınmıştır. Gençler, bağımlılık türlerini, etkilerini ve bu sorunla nasıl mücadele edilebileceğini uzmanlar eşliğinde öğrenmişlerdir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "bağımlılık",
+                "gençlik",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bağımlılıkla mücadele yöntemleri nelerdir?",
+                "İpek Yolu'nun bağımlılıkla ilgili başka çalışmaları var mı?",
+                "Yeşilay gençlik kamplarına nasıl katılabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-07-25_52"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

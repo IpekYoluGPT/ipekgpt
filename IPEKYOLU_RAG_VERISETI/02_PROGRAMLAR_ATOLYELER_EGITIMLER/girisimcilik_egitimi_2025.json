@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "file_name": "girisimcilik_egitimi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 11 Mayıs 2025 tarihinde gerçekleştirilen 'Fikirlerin Gücüyle Geleceğe Yön Ediyoruz! İpek Yolu'na Bir Yolculuk Bin Keşif' programında ne yapıldı?",
+            "answer": "11 Mayıs 2025 tarihinde İpek Yolu'nda 'Fikirlerin Gücüyle Geleceğe Yön Ediyoruz! İpek Yolu'na Bir Yolculuk Bin Keşif' programı kapsamında genç zihinlerle girişimcilik eğitimi gerçekleştirildi. Hayal kurmanın, risk almanın, çözüm üretmenin ve kendi yolunu çizmenin önemi konuşuldu. Öğrenciler, iş fikirlerini paylaştı.",
+            "category": "Eğitim",
+            "keywords": [
+                "girişimcilik",
+                "eğitim",
+                "gençlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda girişimcilik eğitimleri başka hangi tarihlerde yapılıyor?",
+                "Bu eğitimlere katılmak için başvuru şartları nelerdir?",
+                "Girişimcilik eğitiminde hangi konular üzerinde duruluyor?"
+            ],
+            "source_ids": [
+                "ig_2025-05-11_115"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda öğrencilere yönelik verilen Girişimcilik Eğitimi'nin amacı nedir?",
+            "answer": "İpek Yolu'ndaki Girişimcilik Eğitimi, öğrencilerin yaratıcı düşünme, fikir geliştirme ve problem çözme gibi becerilerini geliştirerek kendi başarı hikayelerini yazmalarına yardımcı olmayı amaçlar. Bu eğitim 2025-04-13 tarihinde duyurulmuştur.",
+            "category": "Eğitim",
+            "keywords": [
+                "girişimcilik",
+                "eğitim",
+                "öğrenci",
+                "beceri geliştirme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Girişimcilik eğitimi hangi tarihte duyuruldu?",
+                "Bu eğitim hangi becerileri geliştirmeye yöneliktir?",
+                "Girişimcilik eğitimine kimler katılabilir?"
+            ],
+            "source_ids": [
+                "ig_2025-04-13_139"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

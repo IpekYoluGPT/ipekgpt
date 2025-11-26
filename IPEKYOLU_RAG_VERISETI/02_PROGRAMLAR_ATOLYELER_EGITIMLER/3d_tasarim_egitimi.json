@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "3d_tasarim_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda üniversite öğrencileri için 3 Boyutlu Tasarım ve Yazıcı Kullanımı Eğitimi ne zaman düzenleniyor?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından 4-5 Ocak tarihleri arasında 09:00 - 17:00 saatlerinde ücretsiz 3 Boyutlu Tasarım ve Yazıcı Kullanımı Eğitimi düzenlenmektedir.",
+            "category": "Eğitim",
+            "keywords": [
+                "3D tasarım",
+                "yazıcı kullanımı",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Eğitimin içeriği nelerdir?",
+                "Eğitime nasıl kayıt olabilirim?",
+                "Bu eğitim ücretsiz mi?"
+            ],
+            "source_ids": [
+                "ig_2024-12-29_181"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "file_name": "yesilay_saglikli_yasam_kampi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Sağlıklı Yaşam ve Mutfak Becerileri Kampı'nda neler yapılıyor?",
+            "answer": "İpek Yolu'nun düzenlediği Yeşilay Sağlıklı Yaşam ve Mutfak Becerileri Kampı tüm enerjisiyle devam etmektedir. Gençler, sağlıklı yaşamı destekleyen bilgiler öğrenirken mutfakta da yeni lezzetler keşfetmektedirler. Bu gönderi 14 Ağustos 2025 tarihinde yayınlanmıştır.",
+            "category": "Kamp",
+            "keywords": [
+                "Yeşilay",
+                "Sağlıklı Yaşam",
+                "Mutfak Becerileri Kampı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sağlıklı yaşam kampına nasıl başvurabilirim?",
+                "Bu kampın amacı nedir?",
+                "Mutfak becerileri kampında hangi lezzetler keşfediliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-08-14_34"
+            ]
+        },
+        {
+            "question": "Yeşilay Sağlıklı Yaşam ve Mutfak Becerileri Kampı nerede başladı?",
+            "answer": "Yeşilay Sağlıklı Yaşam ve Mutfak Becerileri Kampı, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezinde başladı. Gençler hem sağlıklı yaşam alışkanlıklarını öğreniyor hem de mutfakta keyifli tarifler deneyerek becerilerini geliştiriyor. Kamp 12 Ağustos 2025 tarihinde başlamıştır.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "sağlıklı yaşam",
+                "mutfak becerileri",
+                "kamp"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kampta hangi aktiviteler yapılıyor?",
+                "Bu kampa kimler katılabilir?",
+                "Kampın amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-12_35"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

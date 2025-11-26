@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "kamera_arkasindan_hayata.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin 'Kamera Arkasından Hayata' projesi nedir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin 'Kamera Arkasından Hayata' projesi, depremden etkilenen 11 ilden gençlerin katılımıyla gerçekleşen bir medya eğitim projesidir. 15-21 Haziran tarihleri arasında düzenlenecek 7 günlük yoğun bir eğitim programında, katılımcılar kamera kullanımı, senaryo yazımı, ışık, ses, renk, çekim planları, görüntü yönetimi, kurgu ve post-prodüksiyon konularında eğitim alacaklardır. Her katılımcı, öğrendiklerini pratiğe dökerek kendi kısa filmini çekecek ve yarışma heyecanı yaşayacaktır. Son başvuru tarihi 14 Mayıs'tır.",
+            "category": "Eğitim Projesi",
+            "keywords": [
+                "medya eğitimi",
+                "kısa film",
+                "gençlik",
+                "depremzede"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Projeye kimler başvurabilir?",
+                "Eğitim programının içeriği nedir?",
+                "Projenin amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-04-17_131"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

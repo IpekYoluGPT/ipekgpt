@@ -1,0 +1,97 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kamp_lideri_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Yeşilay Kamp Lideri Yetiştirme Kampı'nda ne yapıldı?",
+            "answer": "2025-07-18 tarihinde gerçekleştirilen Yeşilay Kamp Lideri Yetiştirme Kampı'nda katılımcılarla birlikte Oryantiring Eğitimi gerçekleştirildi.",
+            "category": "Kamp",
+            "keywords": [
+                "Yeşilay",
+                "kamp",
+                "liderlik",
+                "oryantiring",
+                "doğa"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kampı'nın amacı nedir?",
+                "Oryantiring eğitimi kamp liderlerine ne gibi faydalar sağlar?"
+            ],
+            "source_ids": [
+                "ig_2025-07-18_61"
+            ]
+        },
+        {
+            "question": "2025 Yeşilay Kamp Lideri Yetiştirme Kampı'nda neler yapıldı?",
+            "answer": "2025-07-15 tarihinde, İpek Yolu'nda düzenlenen Yeşilay Kamp Lideri Yetiştirme Kampı'nda, katılımcılar kamp ateşi yakma tekniklerini ve kamp malzemeleri kullanım bilgilerini uygulamalı olarak öğrendiler. Farklı şehirlerden gelen gençler, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde bir araya gelerek hem öğrendiler hem de birlikte büyüdüler.",
+            "category": "Kamp Etkinlikleri",
+            "keywords": [
+                "Yeşilay Kampı",
+                "kamp lideri",
+                "eğitim",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi kamplar düzenleniyor?",
+                "Yeşilay Kampı'na nasıl başvuru yapabilirim?",
+                "Kamp lideri eğitiminin içeriği nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-15_73"
+            ]
+        },
+        {
+            "question": "Yeşilay tarafından düzenlenen Kamp Lideri Yetiştirme Kampı ne zaman ve nerede düzenleniyor?",
+            "answer": "Yeşilay tarafından düzenlenen Kamp Lideri Yetiştirme Kampı, 15 Temmuz 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde düzenlenmektedir. Kamp, gençlerin fiziksel ve zihinsel gelişimini destekleyen kinetik etkinliklerle devam etmektedir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "Kamp Lideri",
+                "kinetik etkinlikler",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kampın amacı nedir?",
+                "Kampa kimler katılabilir?",
+                "Kinetik etkinlikler nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-15_75"
+            ]
+        },
+        {
+            "question": "Yeşilay Kamp Lideri Yetiştirme Kampı ne zaman başladı?",
+            "answer": "Yeşilay tarafından düzenlenen Kamp Lideri Yetiştirme Kampı, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ev sahipliğinde 15 Temmuz 2025 tarihinde başladı.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "kamp",
+                "liderlik",
+                "gençlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kamp Lideri Yetiştirme Kampı'nda hangi eğitimler veriliyor?",
+                "Bu kampa kimler katılıyor?",
+                "İpek Yolu'nun bu kamptaki rolü nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-15_76"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

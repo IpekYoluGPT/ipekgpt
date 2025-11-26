@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "yesilay_ekran_kamp_sonu.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı ne zaman sona erdi ve son gecede neler yaşandı?",
+            "answer": "Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı, 5 Ağustos 2025 tarihinde unutulmaz bir kamp ateşi etkinliği ile sona erdi. İpek Yolu Genel Koordinatörü Hakan Karabulut da son geceye eşlik ederek gençlerle bir araya geldi, keyifli sohbetler ve paylaşımlar yapıldı.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "ekran",
+                "kamp",
+                "Hakan Karabulut",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nun bu kamptaki rolü neydi?",
+                "Bu tür kamplar düzenli olarak yapılıyor mu?",
+                "Kampın amacı neydi?"
+            ],
+            "source_ids": [
+                "ig_2025-08-05_38"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

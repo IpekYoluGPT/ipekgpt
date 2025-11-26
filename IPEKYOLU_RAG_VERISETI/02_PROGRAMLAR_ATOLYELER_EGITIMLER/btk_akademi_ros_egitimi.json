@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "btk_akademi_ros_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "BTK Akademi ve İpek Yolu iş birliğiyle hangi eğitim başladı?",
+            "answer": "BTK Akademi ve İpek Yolu iş birliğiyle ROS ile Robotik Sistem Geliştirme Eğitimi başladı. Bu eğitimde Robot Operating System (ROS) kullanılarak robotik sistemlerin temelleri öğrenilecek ve uygulamalı projelerle pratiğe dökülecektir. Eğitim içeriği ROS Temelleri, Robot Kontrol ve Simülasyon, Sensör ve Aktüatör Entegrasyonu, Uygulamalı Proje çalışmalarıdır.",
+            "category": "Eğitim",
+            "keywords": [
+                "ROS",
+                "Robotik Sistem",
+                "BTK Akademi",
+                "İpek Yolu",
+                "Eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "ROS eğitimi ne kadar sürecek?",
+                "Bu eğitime katılmak için ön koşullar nelerdir?",
+                "Eğitim sonunda hangi becerilere sahip olacağım?"
+            ],
+            "source_ids": [
+                "ig_2025-01-27_166"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

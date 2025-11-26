@@ -1,0 +1,178 @@
+{
+    "metadata": {
+        "file_name": "3.2_roket_ve_yarismalar.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024'te hangi başarıyı elde etti?",
+            "answer": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024 kapsamında gerçekleştirilen “Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması”nda Türkiye ikinciliğini kazanmıştır. 2024 yılında Elazığ Valisi Numan Hatipoğlu ve milletvekilleri takımı tebrik etmiştir. Robotun elektronik devre kartı ve yazılımı %100 yerli ve milli imkanlarla geliştirilmiştir.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Otonom Robot Takımı",
+                "Türkiye İkinciliği",
+                "2024",
+                "Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST'teki diğer başarıları nelerdir?",
+                "Otonom Robot Takımı'nın geliştirdiği robotun özellikleri nelerdir?",
+                "İpek Yolu'nun katıldığı diğer yarışmalar hangileridir?"
+            ],
+            "source_ids": [
+                "news_2024-09-24_1"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı'nın geliştirdiği SkyLogic kartı hakkında bilgi verir misiniz?",
+            "answer": "İpek Yolu Roket Takımı tarafından geliştirilen 'SkyLogic' uçuş kontrol kartı, ROKETSAN testlerinden başarıyla geçerek ticari ürün haline gelmiş ve ROKETSAN'ın onaylı ürün listesine 9. sıradan girmiştir. Bu kart, sivil havacılık sektöründe kullanılmak üzere Elazığ'da üretilmiştir. (2024-07-12)",
+            "category": "Ar-Ge Ürünleri",
+            "keywords": [
+                "SkyLogic",
+                "ROKETSAN",
+                "uçuş kontrol kartı",
+                "İpek Yolu Roket Takımı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic kartı hangi sektörde kullanılmaktadır?",
+                "SkyLogic kartı nerede üretilmiştir?",
+                "İpek Yolu Roket Takımı'nın başka hangi başarıları bulunmaktadır?"
+            ],
+            "source_ids": [
+                "news_2024-07-12_2"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı, TEKNOFEST 2022'de hangi ödülleri kazanmıştır?",
+            "answer": "İpek Yolu Roket Takımı, Samsun'da düzenlenen TEKNOFEST 2022'de Roket Yarışması Orta İrtifa Kategorisi'nde Türkiye 3.'sü olmuş ve 'En İyi Sunum Ödülü'nü kazanmıştır.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Roket Yarışması",
+                "İpek Yolu Roket Takımı",
+                "ödül"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST'teki diğer başarıları nelerdir?",
+                "İpek Yolu Roket Takımı hangi kategoride yarışmıştır?",
+                "Belediye Başkanı Şahin Şerifoğulları bu başarı hakkında ne söylemiştir?"
+            ],
+            "source_ids": [
+                "news_2022-09-04_3"
+            ]
+        },
+        {
+            "question": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2023'te hangi başarıyı elde etti?",
+            "answer": "İpek Yolu Otonom Robot Takımı, kuruluşunun ilk yılında katıldığı TEKNOFEST 2023'te 'Sanayide Dijital Teknolojiler' kategorisinde Türkiye 2.'si olarak büyük bir başarıya imza atmıştır. Robot 1.5 tona kadar yük kaldırabiliyor.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Otonom Robot",
+                "Türkiye 2.si"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Otonom Robot Takımı ne zaman kuruldu?",
+                "İpek Yolu'nun TEKNOFEST'teki diğer başarıları nelerdir?",
+                "Otonom Robot Takımı'nın kaldırabildiği maksimum yük miktarı nedir?"
+            ],
+            "source_ids": [
+                "news_2023-05-01_4"
+            ]
+        },
+        {
+            "question": "2022 yılında İpek Yolu mühendisleri hangi ürünü geliştirdi?",
+            "answer": "2022 yılında İpek Yolu mühendisleri, otonom araçlar ve akıllı şehir projelerinde kullanılmak üzere 'İpek Yolu Elektronik Geliştirme Kartı'nı (yerli devre kartı) üretti.",
+            "category": "Ar-Ge",
+            "keywords": [
+                "İpek Yolu",
+                "Elektronik Geliştirme Kartı",
+                "yerli devre kartı",
+                "otonom araç",
+                "akıllı şehir"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun geliştirdiği elektronik kart ne için kullanılacak?",
+                "İpek Yolu hangi alanda çalışmalar yürütmektedir?"
+            ],
+            "source_ids": [
+                "news_2022-01-06_6"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı, 2023 yılında hangi uluslararası etkinliğe katılmıştır?",
+            "answer": "İpek Yolu Roket Takımı, 2023 yılında TEKNOFEST ve T3 Vakfı'nın davetlisi olarak Azerbaycan'ın başkenti Bakü'de düzenlenen 74. Uluslararası Uzay Kongresi'ne (IAC) katılmıştır.",
+            "category": "Roket ve Yarışmalar",
+            "keywords": [
+                "İpek Yolu",
+                "Roket Takımı",
+                "TEKNOFEST",
+                "Uluslararası Uzay Kongresi",
+                "Bakü"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Roket Takımı'nın katıldığı Uluslararası Uzay Kongresi nerede düzenlenmiştir?",
+                "İpek Yolu Roket Takımı'nın projeleri nelerdir?",
+                "İpek Yolu'nun TEKNOFEST ile ilişkisi nedir?"
+            ],
+            "source_ids": [
+                "news_2023-10-02_7"
+            ]
+        },
+        {
+            "question": "İpek Yolu Merkezi, hangi proje ile çiftçilere destek vermektedir?",
+            "answer": "İpek Yolu Merkezi, Zirai İHA (Drone) ile Elazığ'daki çiftçilere ücretsiz ilaçlama desteği vermeye başlamıştır. Bu proje ile tarımda verimliliğin artırılması ve teknolojinin yaygınlaştırılması hedeflenmektedir (2022).",
+            "category": "Projeler",
+            "keywords": [
+                "Drone",
+                "ilaçlama",
+                "çiftçi",
+                "Zirai İHA"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Merkezinin tarım alanındaki hedefleri nelerdir?",
+                "Zirai İHA projesi hangi bölgede uygulanmaktadır?"
+            ],
+            "source_ids": [
+                "news_2022-03-23_8"
+            ]
+        },
+        {
+            "question": "Fırat Üniversitesi Fen Fakültesi öğrencileri 2024 yılında İpek Yolu Merkezi'nde ne inceledi?",
+            "answer": "Fırat Üniversitesi Fen Fakültesi öğrencileri, 2024 yılında İpek Yolu Merkezi'ne teknik gezi düzenleyerek, roket ve robotik atölyelerindeki ileri teknoloji altyapısını inceledi ve akademik kariyerleri hakkında bilgi aldı.",
+            "category": "Ziyaret",
+            "keywords": [
+                "Fırat Üniversitesi",
+                "teknik gezi",
+                "roket",
+                "robotik",
+                "atölye"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Merkezi'nde hangi atölyeler bulunmaktadır?",
+                "İpek Yolu Merkezi'nin Fırat Üniversitesi ile iş birliği var mı?",
+                "Öğrenciler İpek Yolu Merkezini neden ziyaret ediyor?"
+            ],
+            "source_ids": [
+                "news_2024-01-10_10"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

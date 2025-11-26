@@ -1,0 +1,59 @@
+{
+    "metadata": {
+        "file_name": "degerler_egitimi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu hangi değerler eğitimi programını uyguladı?",
+            "answer": "İpek Yolu, 'Değerlerle Güçlenen Bir Gelecek! İpek Yolu'na Bir Yolculuk Bin Keşif' programı kapsamında öğrencilere değerler eğitimi vermiştir. Bu eğitimde saygı, sorumluluk, dürüstlük, yardımlaşma ve vefa gibi temel değerler ele alınmıştır. Tarih: 2025-06-14",
+            "category": "Değerler Eğitimi",
+            "keywords": [
+                "değerler eğitimi",
+                "saygı",
+                "sorumluluk",
+                "dürüstlük",
+                "yardımlaşma",
+                "vefa"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitim programının amacı nedir?",
+                "Değerler eğitiminin gençlerin gelişimine katkıları nelerdir?",
+                "İpek Yolu'nun bu türden başka eğitim programları var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-06-14_96"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda 12 Nisan 2025 tarihinde gerçekleştirilen Değerler Eğitimi'nin amacı nedir?",
+            "answer": "12 Nisan 2025 tarihinde İpek Yolu'nda düzenlenen Değerler Eğitimi'nin amacı, toplumsal birlikteliğin temelini oluşturan ahlaki ve kültürel değerleri genç nesillere aktarmaktır. Öğrencilerin aktif katılımıyla gerçekleştirilen bu eğitimde saygı, sorumluluk, dürüstlük, yardımlaşma ve hoşgörü gibi temel insani değerler ele alınmıştır.",
+            "category": "Değerler Eğitimi",
+            "keywords": [
+                "değerler eğitimi",
+                "ahlaki değerler",
+                "kültürel değerler",
+                "toplumsal birliktelik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Değerler Eğitimi'nde hangi temel insani değerler ele alınmıştır?",
+                "Bu eğitimde bireysel farkındalık ve toplumsal duyarlılık konularında ne gibi kazanımlar elde edilmiştir?",
+                "İpek Yolu'nun değerler eğitimi haricinde başka eğitimleri var mıdır?"
+            ],
+            "source_ids": [
+                "ig_2025-04-12_143"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

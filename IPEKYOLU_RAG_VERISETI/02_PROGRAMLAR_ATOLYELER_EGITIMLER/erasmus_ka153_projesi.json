@@ -1,0 +1,99 @@
+{
+    "metadata": {
+        "file_name": "erasmus_ka153_projesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 20 Şubat 2025 tarihinde hangi Erasmus+ projesi gerçekleştirildi?",
+            "answer": "20 Şubat 2025 tarihinde İpek Yolu'nda Erasmus+ KA153 Gençlik Alanlarının Hareketliliği Projesi kapsamında 4 ülkeden 35 gençlik çalışanı ile permakültür, alternatif bitki kullanımı ve atık yönetimi üzerine bir eğitim gerçekleştirildi.",
+            "category": "Erasmus+ Projeleri",
+            "keywords": [
+                "Erasmus+",
+                "KA153",
+                "gençlik",
+                "permakültür",
+                "atık yönetimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus+ KA153 projesi nedir?",
+                "Bu projeye kaç ülkeden katılımcı dahil oldu?",
+                "Projede hangi konular üzerine eğitim verildi?"
+            ],
+            "source_ids": [
+                "ig_2025-02-20_153"
+            ]
+        },
+        {
+            "question": "2025-02-19 tarihinde İpek Yolu'nda hangi proje devam etmektedir?",
+            "answer": "2025-02-19 tarihi itibarıyla İpek Yolu'nda Erasmus+ KA153 Gençlik alanlarının Hareketliliği Projesi devam etmektedir.",
+            "category": "Erasmus+",
+            "keywords": [
+                "Erasmus+",
+                "KA153",
+                "gençlik",
+                "proje"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus+ KA153 projesi nedir?",
+                "Gençlik alanındaki hareketlilik projeleri nelerdir?",
+                "İpek Yolu'ndaki Erasmus+ projeleri hakkında daha fazla bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2025-02-19_155"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda devam eden Erasmus+ KA153 Gençlik Alanlarının Hareketliliği Projesi hangi ülkelerden katılımcıları içeriyor ve proje hangi konulara odaklanıyor?",
+            "answer": "19 Şubat 2025 tarihinde İpek Yolu'nda devam eden Erasmus+ KA153 Gençlik Alanlarının Hareketliliği Projesi Türkiye, Almanya, Romanya ve Slovenya'dan 35 gençlik alanıyla gençlik, yeterlilik, permakültür ve sürdürülebilirlik üzerine çalışmaktadır.",
+            "category": "Erasmus+ Projeleri",
+            "keywords": [
+                "Erasmus+",
+                "KA153",
+                "gençlik",
+                "permakültür",
+                "sürdürülebilirlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus+ KA153 projesi nedir ve amacı nedir?",
+                "İpek Yolu'nda daha önce hangi Erasmus+ projeleri gerçekleştirildi?",
+                "Bu projenin sonuçları nelerdir ve nerelerde paylaşılacak?"
+            ],
+            "source_ids": [
+                "ig_2025-02-19_156"
+            ]
+        },
+        {
+            "question": "2025 Şubat ayında İpek Yolu'nda hangi Erasmus+ projesi başladı?",
+            "answer": "17-25 Şubat 2025 tarihleri arasında İpek Yolu'nda Türkiye, Almanya, Romanya ve Slovenya'dan 35 gençlik alanının katılımıyla Erasmus+ KA153 Gençlik Alanlarının Hareketliliği Projesi başladı. Bu programda gençlik alanlarının yeterliliğinin artırılması, permakültür alanında spesifik çalışmalar yapılması ve sürdürülebilir tarım uygulamaları uluslararası boyutta ele alınacak.",
+            "category": "Erasmus+ Projeleri",
+            "keywords": [
+                "Erasmus+",
+                "gençlik",
+                "permakültür",
+                "sürdürülebilir tarım"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus+ KA153 projesinin temel amacı nedir?",
+                "Projeye hangi ülkelerden katılım oldu?",
+                "Permakültür nedir ve bu proje ile ilişkisi nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-02-18_157"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

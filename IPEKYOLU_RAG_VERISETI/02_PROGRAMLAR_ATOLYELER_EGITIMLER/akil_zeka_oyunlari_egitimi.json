@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "akil_zeka_oyunlari_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda düzenlenen Akıl ve Zeka Oyunları Eğitimi'nin amacı nedir?",
+            "answer": "İpek Yolu'nda düzenlenen Akıl ve Zeka Oyunları Eğitimi ile öğrencilerin stratejik düşünme, problem çözme ve hızlı karar alma becerilerini geliştirmek amaçlanmıştır. Bu eğitim, her hamlede öğrenen ve her oyunda gelişen bir nesil yetiştirmeyi hedeflemektedir. Etkinlik 13 Nisan 2025 tarihinde gerçekleşmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "akıl oyunları",
+                "zeka oyunları",
+                "eğitim",
+                "stratejik düşünme",
+                "problem çözme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Akıl ve Zeka Oyunları Eğitimi ne zaman düzenlendi?",
+                "Bu tür eğitimlerin öğrencilere ne gibi faydaları var?",
+                "İpek Yolu'nda başka hangi eğitimler düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-04-13_136"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "afet_gonullulugu_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Afet Gönüllülüğü eğitimine başvurular başladı mı? Eğitim tarihleri ve kontenjan bilgisi nedir?",
+            "answer": "Evet, İpek Yolu Afet Gönüllülüğü eğitimine başvurular başlamıştır. Eğitimler Elazığ'da gerçekleşecektir. 1. Grup: 19-23 Mayıs, 2. Grup: 26-30 Mayıs tarihleri arasındadır. Her grup için 50 kişilik kontenjan bulunmaktadır. Eğitimde konaklama yoktur ve Elazığ'dan katılımlar önceliklidir. Eğitim içeriği Arama-Kurtarma Temel Eğitimi, Afetlerde İlk Müdahale, Psiko-sosyal Destek Becerileri, Uygulamalı Tatbikatlar ve Sürpriz Etkinlikler şeklindedir. Katılım ücretsizdir ve eğitim sonunda katılım belgesi verilecektir.",
+            "category": "Eğitim",
+            "keywords": [
+                "afet",
+                "gönüllülük",
+                "eğitim",
+                "Elazığ"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Afet gönüllülüğü eğitiminin içeriği nedir?",
+                "Eğitime kimler başvurabilir ve başvuru şartları nelerdir?",
+                "Eğitim sonunda sertifika verilecek mi?"
+            ],
+            "source_ids": [
+                "ig_2025-04-15_133"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

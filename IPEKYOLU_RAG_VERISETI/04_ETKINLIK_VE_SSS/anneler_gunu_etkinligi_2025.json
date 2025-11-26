@@ -1,0 +1,95 @@
+{
+    "metadata": {
+        "file_name": "anneler_gunu_etkinligi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Anneler Günü'nde İpek Yolu'nda neler yapıldı?",
+            "answer": "2025-05-11 tarihinde İpek Yolu'nda Anneler Günü kutlaması yapıldı. Çocukların anneleri için hazırladığı küçük bir hatıra sunuldu.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Anneler Günü",
+                "etkinlik",
+                "kutlama"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi özel günler kutlanıyor?",
+                "Anneler Günü etkinliğine katılım şartları nelerdi?",
+                "İpek Yolu'nda çocuklara yönelik başka hangi etkinlikler düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-05-11_112"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi 2025 Anneler Günü etkinliğinde neler yapıldı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 11 Mayıs 2025 tarihinde anneler ve çocuklarıyla birlikte unutulmaz bir Anneler Günü geçirdi. Etkinlikte el ele sanat yapıldı, anılar biriktirildi, gülümsemeler karelere sığdırıldı ve duygular sözlere döküldü. Katılım gösteren tüm annelere, çocuklara ve emeği geçen herkese teşekkür edildi.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Anneler Günü",
+                "etkinlik",
+                "sanat",
+                "aile"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nun düzenlediği diğer etkinlikler nelerdir?",
+                "Bu tür etkinliklere nasıl katılabilirim?",
+                "Anneler Günü etkinliğine katılım şartları nelerdi?"
+            ],
+            "source_ids": [
+                "ig_2025-05-11_113"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda 2025 Anneler Günü'nde neler yapıldı?",
+            "answer": "2025 Anneler Günü'nde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde anneler ve çocuklar için sanat etkinlikleri, hatıra kutuları yapımı, fotoğraf çekimi ve çocuklardan annelere sıcak mesajlar içeren özel bir gün düzenlendi. Birlikte çizimler yapıldı, oyunlar oynandı ve anneler günü kutlandı.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Anneler Günü",
+                "etkinlik",
+                "çocuk",
+                "aile"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi özel günler kutlanıyor?",
+                "İpek Yolu'nun düzenlediği aile etkinliklerine nasıl katılabilirim?",
+                "Anneler Günü etkinliğine katılım ücretli miydi?"
+            ],
+            "source_ids": [
+                "ig_2025-05-11_114"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda 2025 Anneler Günü'ne özel hangi etkinlikler düzenlenecektir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 11 Mayıs 2025 tarihinde Anneler Günü'ne özel 'Benim Annem Atölyesi', 'Hatıra Kutusu', 'Fotoğraf Köşesi', 'Video Sürprizleri', 'Klasik Oyunlar', 'Büyüyünce Oku Mektuplar', 'Anne-Çocuk Röportajları' ve 'Ortak Kumaş Tablo' etkinlikleri düzenlenecektir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Anneler Günü",
+                "etkinlik",
+                "çocuk"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Anneler Günü etkinliği ne zaman ve nerede yapılacak?",
+                "Etkinliklere katılım için yaş sınırı var mı?",
+                "Etkinliklerin içeriği hakkında daha fazla bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2025-05-09_124"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

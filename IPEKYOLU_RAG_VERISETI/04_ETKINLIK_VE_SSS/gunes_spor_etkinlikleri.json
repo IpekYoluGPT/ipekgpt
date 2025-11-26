@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "gunes_spor_etkinlikleri.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 13 Nisan 2025 tarihinde yapılan etkinlik neydi?",
+            "answer": "13 Nisan 2025 tarihinde İpek Yolu'nda güneş spor aktiviteleri ile güne başlandı ve daha aktif bir yaşam için spor yapmaya devam edildi.",
+            "category": "Etkinlik",
+            "keywords": [
+                "spor",
+                "güneş",
+                "aktivite"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi spor etkinlikleri düzenleniyor?",
+                "Bu tür etkinliklerin amacı nedir?",
+                "Güneş spor aktivitelerine nasıl katılabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-04-13_141"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

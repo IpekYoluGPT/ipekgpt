@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "romanyali_gonullu_kedi_ziyareti.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Nisan ayında İpek Yolu'nda yaşanan anlamlı olay nedir?",
+            "answer": "2025 Nisan ayında, 'Avrupa'da Perma Kültürle Sürdürülebilirlik' projesi kapsamında İpek Yolu'nda ağırlanan Romen katılımcı Mihaela Elena Ioan, merkezde tanıştığı tekir kediyi sahiplenmek için Romanya'dan 2.500 km yol kat ederek geri dönmüştür. Mihaela, kediyi Romanya'ya götürerek eşsiz bir bağ kurmuştur.",
+            "category": "Proje Etkileşimi",
+            "keywords": [
+                "İpek Yolu",
+                "sahiplenme",
+                "kedi",
+                "Romanya",
+                "sürdürülebilirlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Perma Kültürle Sürdürülebilirlik projesi nedir?",
+                "İpek Yolu'na uluslararası katılım nasıl sağlanır?",
+                "İpek Yolu'nda hayvan sahiplenme imkanı var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-04-18_130"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

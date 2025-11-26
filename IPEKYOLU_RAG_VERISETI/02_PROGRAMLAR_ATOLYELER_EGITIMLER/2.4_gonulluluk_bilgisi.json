@@ -1,0 +1,58 @@
+{
+    "metadata": {
+        "file_name": "2.4_gonulluluk_bilgisi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2021 yılında İpek Yolu Gençlik Merkezi gönüllüleri tarafından Elazığ'da ne yapılmıştır?",
+            "answer": "2021 yılında İpek Yolu Gençlik Merkezi gönüllüleri tarafından Elazığ'da 30 dönümlük araziye 40 bin kök lavanta ekimi yapılmıştır. 'Tarımsal Ürünlerin Yetiştirilmesi ve Pazarlanması' eğitimi alan 200 gönüllü, merkezin arazisini mor bir cennete dönüştürmüştür. Elde edilen lavantalardan merkezdeki distilasyon ünitesinde yağ ve sabun üretilmesi hedeflenmektedir.",
+            "category": "Gönüllülük Projeleri",
+            "keywords": [
+                "gönüllülük",
+                "lavanta",
+                "Elazığ",
+                "İpek Yolu",
+                "tarımsal üretim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Gençlik Merkezi'nde gönüllüler hangi eğitimleri almıştır?",
+                "İpek Yolu Gençlik Merkezi gönüllülerinin lavanta projesindeki hedefleri nelerdir?",
+                "İpek Yolu'nun gönüllülük faaliyetleri nelerdir?"
+            ],
+            "source_ids": [
+                "news_2021-11-14_5"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi Erasmus+ projeleri kapsamında neler yapmıştır?",
+            "answer": "İpek Yolu, 2023 yılında 2. Erasmus+ Projesi kapsamında Almanya, Fransa, Hırvatistan ve Romanya'dan 40 genci Elazığ'da ağırlamıştır. Gençler merkezde kültürel etkileşimde bulunmuş ve atölye çalışmalarına katılmıştır. Daha önce de 6 ülkeden 60 genç ağırlanmıştır.",
+            "category": "Erasmus+ Projeleri",
+            "keywords": [
+                "Erasmus+",
+                "gençlik",
+                "kültürel etkileşim",
+                "Elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun daha önce yürüttüğü Erasmus+ projeleri var mı?",
+                "İpek Yolu'nun uluslararası projeleri nelerdir?",
+                "İpek Yolu'nun Elazığ'a getirdiği yabancı öğrenci sayısı kaçtır?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_11"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

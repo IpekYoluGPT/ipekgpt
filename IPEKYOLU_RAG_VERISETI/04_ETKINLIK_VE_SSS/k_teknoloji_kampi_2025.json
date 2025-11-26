@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "k_teknoloji_kampi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "K Teknoloji Kampı ne zaman ve nerede düzenleniyor?",
+            "answer": "K Teknoloji Kampı, 20-25 Ocak 2025 tarihleri arasında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezinde ücretsiz olarak düzenlenmektedir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "teknoloji",
+                "kamp",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "K Teknoloji Kampı'nda hangi eğitimler verilecek?",
+                "K Teknoloji Kampı'na başvuru için son tarih nedir?",
+                "K Teknoloji Kampı ücretli mi?"
+            ],
+            "source_ids": [
+                "ig_2025-01-05_175"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

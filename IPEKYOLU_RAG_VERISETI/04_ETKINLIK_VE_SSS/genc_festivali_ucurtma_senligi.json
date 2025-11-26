@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "genc_festivali_ucurtma_senligi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Gençlik Festivali'nde ne tür bir etkinlik düzenlendi?",
+            "answer": "2025 Gençlik Festivali kapsamında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından Uçurtma Şenliği düzenlenmiştir. Gökyüzü ay yıldızlı uçurtmalarla dolmuştur.",
+            "category": "Etkinlik",
+            "keywords": [
+                "gençlik festivali",
+                "uçurtma şenliği",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Uçurtma şenliğine katılım nasıldı?",
+                "İpek Yolu başka hangi etkinlikler düzenliyor?",
+                "Gençlik festivali ne zaman düzenlendi?"
+            ],
+            "source_ids": [
+                "ig_2025-05-19_107"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

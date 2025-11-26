@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "sinema_atolyesi_2024.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Sinema Atölyesi ne sunuyor?",
+            "answer": "İpek Yolu Sinema Atölyesi, katılımcılara sinemanın temel prensiplerini uygulamalı olarak öğretmeyi amaçlıyor. Deneyimli eğitmenler eşliğinde, senaryo yazımından film çekimine kadar birçok alanda bilgi ve beceri kazanma fırsatı sunuyor. Uygulamalı olarak kamera kullanımı, fotoğraf, video çekim teknikleri, kurgu ve kısa film alanlarında eğitimler veriliyor. Bu atölye, hayallerini beyaz perdeye taşımak isteyen herkesi bekliyor (2024-11-19).",
+            "category": "Atölye",
+            "keywords": [
+                "sinema",
+                "atölye",
+                "film",
+                "senaryo",
+                "kamera"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sinema Atölyesi'nde hangi konular işleniyor?",
+                "Atölyeye katılım için ön koşullar nelerdir?",
+                "Atölye ne zaman ve nerede düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2024-11-19_199"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

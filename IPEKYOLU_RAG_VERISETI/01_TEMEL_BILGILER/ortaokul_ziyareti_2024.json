@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "ortaokul_ziyareti_2024.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Arif Nihat Asya Ortaokulu öğrencileri İpek Yolu'nu ne zaman ziyaret etti?",
+            "answer": "Arif Nihat Asya Ortaokulu 8. sınıf öğrencileri, 27 Kasım 2024 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ni ziyaret etmişlerdir. Merkezde, öğrencilere yapılan çalışmalar hakkında bilgi verilmiş ve milli teknoloji hamlesinin önemi vurgulanmıştır.",
+            "category": "Ziyaret",
+            "keywords": [
+                "ziyaret",
+                "ortaokul",
+                "teknoloji",
+                "milli teknoloji hamlesi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Merkeze başka okullar da ziyaretlerde bulunuyor mu?",
+                "Milli teknoloji hamlesi hakkında daha fazla bilgi alabilir miyim?",
+                "Öğrencilere merkezde hangi çalışmalar hakkında bilgi verildi?"
+            ],
+            "source_ids": [
+                "ig_2024-11-27_193"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

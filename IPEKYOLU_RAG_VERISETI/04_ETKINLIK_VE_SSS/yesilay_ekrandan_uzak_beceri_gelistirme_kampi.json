@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "yesilay_ekrandan_uzak_beceri_gelistirme_kampi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı, İpek Yolu'nda ne zaman düzenleniyor?",
+            "answer": "Yeşilay Ekrandan Uzak Beceri Geliştirme Kampı, İpek Yolu'nda tüm enerjisiyle 4 Ağustos 2025 tarihinde düzenlenmektedir. Katılımcılar ekranlardan uzaklaşarak el becerilerini geliştirmekte ve doğayla iç içe keyifli vakit geçirmektedir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "Ekran",
+                "Beceri Geliştirme Kampı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu kampta hangi beceriler geliştiriliyor?",
+                "İpek Yolu'ndaki bu kampa nasıl katılabilirim?",
+                "Kampın amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-04_42"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

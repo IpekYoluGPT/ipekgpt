@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kampi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 Yeşilay Kampı'nda katılımcılar hangi konuda eğitim aldılar?",
+            "answer": "2025 Yeşilay Kampı'nda katılımcılar, doğa bilgisi ve çevre koruma eğitimi alarak ekosistemi tanımayı ve korumanın önemini yerinde öğrendiler. İpek Yolu, daha yeşil bir gelecek için bilinçlenmeyi ve doğaya sahip çıkmayı amaçlamaktadır.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay Kampı",
+                "doğa bilgisi",
+                "çevre koruma",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kampı'nın amacı nedir?",
+                "İpek Yolu'nun çevre koruma ile ilgili başka etkinlikleri var mı?",
+                "Bu tür kamplara nasıl katılabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-07-17_66"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

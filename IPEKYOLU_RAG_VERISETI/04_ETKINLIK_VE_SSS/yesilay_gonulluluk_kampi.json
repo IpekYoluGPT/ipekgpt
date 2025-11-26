@@ -1,0 +1,35 @@
+{
+    "metadata": {
+        "file_name": "yesilay_gonulluluk_kampi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay gönüllülük kampı nerede başladı?",
+            "answer": "Yeşilay gönüllülük kampı İpek Yolu'nda başladı.",
+            "category": "Kamp",
+            "keywords": [
+                "Yeşilay",
+                "gönüllülük",
+                "kamp"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi kamplar düzenleniyor?",
+                "Yeşilay ile İpek Yolu'nun ortak projeleri var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-07-28_50"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

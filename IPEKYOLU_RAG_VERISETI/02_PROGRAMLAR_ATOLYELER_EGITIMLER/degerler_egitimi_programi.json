@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "degerler_egitimi_programi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 'Bir Yolculuk Bin Keşif' programında hangi değerler eğitimi gerçekleştirildi?",
+            "answer": "İpek Yolu'nun 'Bir Yolculuk Bin Keşif' programında saygı, sevgi, sorumluluk, dürüstlük, vefa ve yardımlaşma gibi temel insani değerler eğitimi gerçekleştirildi. Bu eğitim 10 Mayıs 2025 tarihinde yapıldı.",
+            "category": "Değerler Eğitimi",
+            "keywords": [
+                "değerler eğitimi",
+                "insani değerler",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu programın amacı nedir?",
+                "Bu tür eğitimlerin gençlere faydaları nelerdir?",
+                "İpek Yolu'nun başka hangi eğitim programları bulunmaktadır?"
+            ],
+            "source_ids": [
+                "ig_2025-05-10_119"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

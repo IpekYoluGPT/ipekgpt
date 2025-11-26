@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "elazig_gezi_programi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 11 Nisan 2025 tarihinde başlayan 'Bir Yolculuk Bin Keşif' programının amacı nedir?",
+            "answer": "Elazığ Valiliği bünyesinde, İl Milli Eğitim Müdürlüğü ve Elazığ İl Özel İdaresi ortaklığıyla İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gerçekleştirilen program, öğrencilerin akademik, sosyal, kültürel, sanatsal, kariyer ve ahlaki gelişimlerini destekleyerek, milli ve manevi değerleri içselleştirmiş erdemli nesiller olmalarına katkı sunmayı amaçlamaktadır. Programın ilk misafirleri Karakoçan ilçesindeki öğrenciler olmuştur.",
+            "category": "Etkinlik",
+            "keywords": [
+                "eğitim",
+                "öğrenci",
+                "gelişim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu programa kimler katılabilir?",
+                "Program ne kadar sürecek?",
+                "Programda hangi aktiviteler yapılacak?"
+            ],
+            "source_ids": [
+                "ig_2025-04-11_148"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

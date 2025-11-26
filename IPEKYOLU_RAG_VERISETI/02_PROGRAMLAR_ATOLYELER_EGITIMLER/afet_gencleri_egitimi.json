@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "afet_gencleri_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından Yeşilay iş birliği ile düzenlenen 'Afetten Etkilenen Gençlerin Güçlendirilmesi Projesi'nin içeriği nedir?",
+            "answer": "Proje, sağlıklı yaşam, bilinçli alışkanlıklar ve afetlere karşı dayanıklılık konularında eğitimler sunarak gençlerin güçlenmesini amaçlamaktadır. Başvurular İpek Yolu'nun bio'daki link üzerinden yapılabilir.",
+            "category": "Eğitim",
+            "keywords": [
+                "afet",
+                "gençlik",
+                "eğitim",
+                "Yeşilay",
+                "sağlıklı yaşam"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitimlere kimler başvurabilir?",
+                "Eğitimlerin tarihleri ve yerleri nelerdir?",
+                "Proje sonunda katılımcılara ne gibi kazanımlar sağlanacaktır?"
+            ],
+            "source_ids": [
+                "ig_2025-09-23_18"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

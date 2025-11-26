@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "file_name": "3d_tasarim_egitimi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından üniversite öğrencilerine yönelik 3D Tasarım ve Yazıcı Eğitimi ne zaman başladı?",
+            "answer": "Üniversite öğrencilerine özel 3D Tasarım ve Yazıcı Eğitimi 25 Ekim 2025 tarihinde başladı. Bu eğitim, 3 boyutlu tasarımın temellerini öğretmeyi, model oluşturmayı ve 3D yazıcılarla üretim sürecini uygulamalı olarak deneyimlemeyi amaçlamaktadır.",
+            "category": "Eğitim",
+            "keywords": [
+                "3D tasarım",
+                "3D yazıcı",
+                "eğitim",
+                "üniversite öğrencileri"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitimde hangi konular işleniyor?",
+                "3D yazıcı eğitimi için başvuru şartları nelerdir?",
+                "İpek Yolu'nun başka hangi eğitimleri bulunmaktadır?"
+            ],
+            "source_ids": [
+                "ig_2025-10-25_4"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 3 Boyutlu Tasarım ve Yazıcı Kullanımı Eğitimi ne zaman düzenlenecektir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi / Elazığ'da, 25-26 Ekim 2025 tarihlerinde, 10:00-17:00 saatleri arasında Üniversite öğrencileri için 3 Boyutlu Tasarım ve Yazıcı Kullanımı Eğitimi düzenlenecektir. Son başvuru tarihi 24 Ekim 2025 saat 12:00'dir.",
+            "category": "Eğitim",
+            "keywords": [
+                "3D tasarım",
+                "yazıcı",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitim kimler için uygundur?",
+                "Eğitimin içeriği nelerdir?",
+                "Eğitime nasıl başvurabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-10-21_5"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda üniversite öğrencileri için 3D tasarım ve yazıcı eğitimi ne zaman başladı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde üniversite öğrencileri için 3D tasarım ve yazıcı eğitimi 4 Ocak 2025 tarihinde başlamıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "3D tasarım",
+                "3D yazıcı",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "3D tasarım eğitimi içeriği nelerdir?",
+                "3D yazıcılar hakkında hangi bilgiler öğretiliyor?",
+                "Bu eğitime kimler katılabilir?"
+            ],
+            "source_ids": [
+                "ig_2025-01-04_177"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

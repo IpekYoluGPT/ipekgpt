@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "file_name": "model_roketcilik_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 14 Haziran 2025 tarihinde gerçekleştirilen 'İpek Yolu'na Bir Yolculuk Bin Keşif' programında ne yapıldı?",
+            "answer": "14 Haziran 2025 tarihinde İpek Yolu'nda 'İpek Yolu'na Bir Yolculuk Bin Keşif' programı kapsamında öğrencilerle uygulamalı model roketçilik eğitimi gerçekleştirildi. Teorik bilgiler öğrenildi, parçalar birleştirildi ve kendi roketler gökyüzüyle buluşturuldu.",
+            "category": "Eğitim",
+            "keywords": [
+                "roketçilik",
+                "eğitim",
+                "uygulamalı eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Model roketçilik eğitiminin içeriği neydi?",
+                "Bu eğitimde hangi beceriler kazandırıldı?",
+                "İpek Yolu'nda başka hangi eğitimler düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-06-14_95"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda 10 Mayıs 2025 tarihinde hangi eğitim düzenlenmiştir?",
+            "answer": "10 Mayıs 2025 tarihinde İpek Yolu'nda 'İpek Yolu'na Bir Yolculuk Bin Keşif' programı kapsamında model roketçilik eğitimi düzenlenmiştir. Öğrenciler teorik ve uygulamalı eğitimlerle roketlerin dünyasını keşfetmişlerdir.",
+            "category": "Eğitim",
+            "keywords": [
+                "model roketçilik",
+                "eğitim",
+                "İpek Yolu",
+                "uygulamalı eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Model roketçilik eğitimi içeriği nelerdir?",
+                "İpek Yolu'nda başka hangi eğitimler düzenlenmektedir?",
+                "Bu tür eğitimlere nasıl katılabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-05-10_120"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

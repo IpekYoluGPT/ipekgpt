@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "model_ucak_simulasyon_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından düzenlenen Model Uçak ve Simülasyon Eğitimi ne zaman tamamlandı?",
+            "answer": "İpek Yolu tarafından lise öğrencilerine yönelik düzenlenen Model Uçak ve Simülasyon Eğitimi 26 Ocak 2025 tarihinde başarıyla tamamlanmıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "model uçak",
+                "simülasyon",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Model Uçak ve Simülasyon Eğitimi'nin içeriği nasıldı?",
+                "Bu eğitime kimler katılabilir?",
+                "İpek Yolu başka hangi eğitimler düzenliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-01-26_167"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

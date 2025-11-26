@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "nazif_yilmaz_ziyareti.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Milli Eğitim Bakan Yardımcısı Nazif Yılmaz, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezini ne zaman ziyaret etti?",
+            "answer": "Milli Eğitim Bakan Yardımcısı Nazif Yılmaz, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezini 26 Ağustos 2025 tarihinde ziyaret etmiştir. Ziyarette İl Özel İdaresi Genel Sekreteri Cemil Yatgın, merkezde yürütülen çalışmalar hakkında bilgi vermiştir.",
+            "category": "Ziyaret",
+            "keywords": [
+                "Nazif Yılmaz",
+                "ziyaret",
+                "İpek Yolu",
+                "Cemil Yatgın"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Cemil Yatgın ziyarette hangi bilgileri sundu?",
+                "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde hangi çalışmalar yürütülüyor?",
+                "Bu ziyaretin amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-26_27"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

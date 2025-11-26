@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "karakocan_ziyareti_2025.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025-04-12 tarihinde İpek Yolu'nu kimler ziyaret etti?",
+            "answer": "2025-04-12 tarihinde, 'Bir Yolculuk Bin Keşif' programı kapsamında Karakoçan ilçesinden gelen öğrenciler ve protokol üyeleri İpek Yolu'nu ziyaret etti. Etkinliğe; Elazığ Valisi Numan Hatipoğlu, Cumhuriyet Başsavcısı Akın Yegin, Fırat Üniversitesi Rektör Yardımcısı Prof. Dr. Mahmut Doğru, İl Jandarma Komutan Vekili Mehmet Serhan Aksoy, İl Emniyet Müdürü Adnan Karayel, Belediye Başkan Yardımcısı Nazif Bilginoğlu, İl Özel İdaresi Genel Sekreteri Cemil Yatkın, İl Milli Eğitim Müdürü Mehmet Yiğit, Gençlik ve Spor İl Müdürü Abdulsamet Eren, AFAD, Müftülük ve diğer kamu kurumlarının temsilcileri katılım sağladı.",
+            "category": "Ziyaret",
+            "keywords": [
+                "ziyaret",
+                "protokol",
+                "öğrenci"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nu ziyaret eden diğer gruplar kimlerdir?",
+                "Bu tür ziyaretlerin amacı nedir?",
+                "İpek Yolu'nda protokol ziyaretleri düzenleniyor mu?"
+            ],
+            "source_ids": [
+                "ig_2025-04-12_146"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

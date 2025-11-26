@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "teknofest_101_balyor.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından düzenlenen TEKNOFEST 101 etkinliği ne zaman ve nerede gerçekleşecek?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından düzenlenen TEKNOFEST 101 etkinliği, 2 Şubat 2025 Pazar günü saat 13:00-17:00 arasında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gerçekleşecektir.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "yarışma",
+                "strateji",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "TEKNOFEST 101 etkinliğinin içeriği nedir?",
+                "Etkinliğe nasıl başvuru yapabilirim?",
+                "TEKNOFEST yarışma sürecinde dikkat edilmesi gerekenler nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-01-24_169"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

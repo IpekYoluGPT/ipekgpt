@@ -1,0 +1,58 @@
+{
+    "metadata": {
+        "file_name": "afad_drone_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından AFAD personellerine verilen drone kullanım eğitimi ne zaman gerçekleştirildi?",
+            "answer": "İpek Yolu, AFAD personellerine yönelik drone kullanım eğitiminin ikinci gününde uçuş eğitimlerini 26 Aralık 2024 tarihinde gerçekleştirdi. Bu eğitimde arama kurtarma operasyonlarında dronların etkin kullanımını deneyimlediler.",
+            "category": "Eğitim",
+            "keywords": [
+                "drone",
+                "AFAD",
+                "eğitim",
+                "arama kurtarma"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitimde hangi konular işlendi?",
+                "İpek Yolu başka hangi kurumlara eğitimler veriyor?",
+                "Drone eğitimleri hakkında daha fazla bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2024-12-26_183"
+            ]
+        },
+        {
+            "question": "İpek Yolu tarafından AFAD personeline yönelik düzenlenen drone eğitiminin içeriği nedir?",
+            "answer": "İpek Yolu tarafından düzenlenen drone eğitimi, afet yönetimi ve arama-kurtarma süreçlerinde drone teknolojisinin kullanımı, temel uçuş becerileri, görüntü analiz yöntemleri ve operasyonel uygulamaları kapsamaktadır. Bu eğitim, AFAD personelinin afetlere hızlı ve etkili müdahalesini sağlamak amacıyla düzenlenmiştir. Eğitim tarihi 25 Aralık 2024'tür.",
+            "category": "Eğitim",
+            "keywords": [
+                "drone",
+                "AFAD",
+                "eğitim",
+                "arama-kurtarma",
+                "afet yönetimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu eğitim kimler için düzenlenmektedir?",
+                "Drone eğitiminin amacı nedir?",
+                "İpek Yolu başka hangi eğitimleri vermektedir?"
+            ],
+            "source_ids": [
+                "ig_2024-12-25_184"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

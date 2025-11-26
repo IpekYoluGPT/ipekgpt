@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "dogayla_yasayarak_ogrenme.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 'Doğayla Bir Parça Ol!' programı nedir ve kimler katılabilir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin 'Doğayla Bir Parça Ol!' programı, sürdürülebilir tarım ve hayvancılık faaliyetlerinde 'Yaşayarak Öğrenme' fırsatı sunmaktadır. Programa, doğayı seven, tarım ve hayvancılığa ilgi duyan ve yaş sınırı 28 olan gençler katılabilir. Başvurular, belirtilen linkteki form üzerinden yapılmaktadır. Etkinlik tarihi 21 Kasım 2024.",
+            "category": "Gönüllülük Programı",
+            "keywords": [
+                "gönüllülük",
+                "tarım",
+                "hayvancılık",
+                "yaşayarak öğrenme",
+                "doğa"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu gönüllülük programında hangi faaliyetler gerçekleştirilecek?",
+                "Programa başvuru için son tarih nedir?",
+                "Bu programa katılım için herhangi bir ücret talep ediliyor mu?"
+            ],
+            "source_ids": [
+                "ig_2024-11-21_198"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

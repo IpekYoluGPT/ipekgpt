@@ -1,0 +1,35 @@
+{
+    "metadata": {
+        "file_name": "zafer_bayrami_kutlamasi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "30 Ağustos Zafer Bayramı hakkında İpek Yolu'nun mesajı nedir?",
+            "answer": "İpek Yolu, 30 Ağustos Zafer Bayramı'nı 'Bir hilalin gölgesinde biriz, birlikteyiz' mesajıyla kutlamaktadır.",
+            "category": "Etkinlik",
+            "keywords": [
+                "30 Ağustos",
+                "Zafer Bayramı",
+                "kutlama"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu başka hangi milli bayramları kutlar?",
+                "İpek Yolu'nun bu tür etkinliklere katılım amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-08-30_25"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

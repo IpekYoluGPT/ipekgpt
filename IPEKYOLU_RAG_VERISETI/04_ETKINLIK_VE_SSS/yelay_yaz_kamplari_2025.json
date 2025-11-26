@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "yelay_yaz_kamplari_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay yaz kampları hakkında bilgi verir misiniz?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi tarafından düzenlenen Yeşilay Yaz Kampları 18-50 yaş aralığındaki katılımcılara yöneliktir. Kamplar ücretsizdir; konaklama ve yemek ücretleri Yeşilay tarafından karşılanacak olup, katılımcılar yalnızca ulaşım masraflarını üstlenecektir. Kamplarda eğitim faaliyetleri, kültür ve sanat etkinlikleri, sportif aktiviteler, doğa keşifleri, atölye ve beceri gelişimi, motivasyon ve eğlence gibi çeşitli aktiviteler bulunmaktadır. Kamp dönemi 26-30 Eylül tarihleri arasındadır. Başvurular bio üzerinden yapılmaktadır. Tarih: 2025-09-22",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "yaz kampı",
+                "ücretsiz"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yaz kamplarına başvuru nasıl yapılır?",
+                "Kamplarda hangi yaş aralığındaki kişiler katılabilir?",
+                "Konaklama ve yemek masrafları karşılanıyor mu?"
+            ],
+            "source_ids": [
+                "ig_2025-09-22_19"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

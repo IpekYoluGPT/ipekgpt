@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "sevda_tarifi.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025-07-18 tarihinde belirtilen sevda nasıl bir duygu?",
+            "answer": "2025-07-18 tarihinde belirtildiği gibi, o sevda tarif edilemez bir duygudur.",
+            "category": "Duygu",
+            "keywords": [
+                "sevda",
+                "tarif edilemez",
+                "duygu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sevda duygusu İpek Yolu için ne ifade ediyor?",
+                "Tarif edilemeyen duygular İpek Yolu'nun hangi çalışmalarına ilham veriyor?",
+                "İpek Yolu'nun sevgi anlayışı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-18_63"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "file_name": "ziyaret_ve_program_etabi.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Elazığ Valisi ve diğer kurum temsilcileri İpek Yolu'nu ne zaman ziyaret etti?",
+            "answer": "Elazığ Valisi Numan Hatipoğlu, Fırat Üniversitesi Rektörü Prof. Dr. Fahrettin Göktaş, İl Jandarma, İl Milli Eğitim ve çeşitli kurum temsilcileri 10 Mayıs 2025 tarihinde öğrencileriyle bir araya gelerek İpek Yolu'na desteklerini gösterdi. Aynı zamanda \"İpek Yolu'na Bir Yolculuk Bin Keşif\" programının ikinci etabı da başladı.",
+            "category": "Ziyaret ve Program",
+            "keywords": [
+                "Elazığ Valiliği",
+                "Fırat Üniversitesi",
+                "İpek Yolu",
+                "ziyaret",
+                "öğrenci",
+                "keşif programı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "\"İpek Yolu'na Bir Yolculuk Bin Keşif\" programının amacı nedir?",
+                "Programa katılan öğrenciler hangi ilçeden geldi?",
+                "İpek Yolu'nu destekleyen diğer kurumlar hangileridir?"
+            ],
+            "source_ids": [
+                "ig_2025-05-10_121"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "halk_oyunlari_sokak_oyunlari_kampi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "29 Temmuz 2025'te İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde Gençlik ve Gönüllülük Kampı'nda hangi etkinlikler yapıldı?",
+            "answer": "29 Temmuz 2025 tarihinde Yeşilay Gençlik ve Gönüllülük Kampı'nda İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde halk oyunları ve sokak oyunları istasyonları ile geleneksel kültür canlandırıldı. Gençler, halk ezgileriyle ritim duygularını güçlendirdi ve unutulmaya yüz tutmuş sokak oyunlarıyla geçmişin eğlencesini yeniden yaşadı.",
+            "category": "Etkinlik",
+            "keywords": [
+                "halk oyunları",
+                "sokak oyunları",
+                "geleneksel kültür",
+                "gençlik kampı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Kamp süresince başka hangi kültürel etkinlikler düzenlendi?",
+                "Halk oyunları ve sokak oyunları etkinliklerine katılım nasıldı?",
+                "Bu tür etkinliklerin gençlerin kültürel bilincine katkısı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-29_46"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

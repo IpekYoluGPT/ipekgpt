@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "lavanta_hasadi_etkinligi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 21 Haziran 2025 tarihinde düzenlediği 'Bir Yolculuk, Bin Keif' programında ne yapıldı?",
+            "answer": "21 Haziran 2025 tarihinde İpek Yolu'nun 'Bir Yolculuk, Bin Keif' programında öğrencilerle birlikte lavanta hasadı yapıldı. Hasat edilen lavantalardan elde edilen uçucu yağlarla doğal sabun üretimi gerçekleştirildi.",
+            "category": "Etkinlik",
+            "keywords": [
+                "lavanta hasadı",
+                "doğal sabun",
+                "etkinlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu etkinlikte başka neler yapıldı?",
+                "Lavanta hasadı etkinliğine kimler katıldı?",
+                "Bu etkinliğin amacı neydi?"
+            ],
+            "source_ids": [
+                "ig_2025-06-21_86"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

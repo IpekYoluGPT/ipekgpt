@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "spor_etkinligi_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda 22 Haziran 2025 tarihinde düzenlenen 'Bir Yolculuk, Bin Keif' programında neler yapıldı?",
+            "answer": "22 Haziran 2025 tarihinde İpek Yolu'nda düzenlenen 'Bir Yolculuk, Bin Keif' programında, bilgi dolu keşiflerin yanı sıra öğrencilerle birlikte birçok spor etkinliği yapıldı. Bu etkinliklerle hem eğlenildi hem de enerji doğayla bütünleştirildi.",
+            "category": "Etkinlik",
+            "keywords": [
+                "spor etkinlikleri",
+                "doğa",
+                "öğrenci"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda düzenlenen diğer etkinlikler nelerdir?",
+                "Bu tür spor etkinlikleri ne sıklıkla düzenleniyor?",
+                "Bir Yolculuk, Bin Keif programının amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-06-22_83"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

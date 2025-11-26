@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "yapay_zeka_egitimi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025-04-13 tarihinde İpek Yolu'nda düzenlenen Yapay Zeka Eğitimi'nin içeriği neydi?",
+            "answer": "2025-04-13 tarihinde İpek Yolu'nda düzenlenen Yapay Zeka Eğitimi ile algoritma mantığı, makine öğrenmesi ve etik kullanım ilkeleri öğrencilere aktarılmıştır. Öğrencilerin yaratıcı projeleri, analitik düşünme becerileri ve teknolojik merakları desteklenmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "yapay zeka",
+                "eğitim",
+                "algoritma",
+                "makine öğrenmesi",
+                "etik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi eğitimler düzenleniyor?",
+                "Yapay zeka eğitimi kimlere yönelikti?",
+                "Bu eğitimlerin amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-04-13_137"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

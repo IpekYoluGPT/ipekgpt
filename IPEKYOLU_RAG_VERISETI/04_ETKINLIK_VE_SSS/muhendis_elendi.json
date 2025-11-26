@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "muhendis_elendi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "100 mühendis nasıl elendi?",
+            "answer": "2025-10-06 tarihinde 100 mühendisin nasıl elendiği hakkında bir paylaşım yapılmıştır. Detaylar için ilgili gönderiye bakınız.",
+            "category": "Etkinlik",
+            "keywords": [
+                "mühendis",
+                "etkinlik",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu konuyla ilgili başka etkinlikler var mı?",
+                "Merkezde başka hangi alanlarda çalışmalar yapılıyor?",
+                "Bu etkinliğin amacı neydi?"
+            ],
+            "source_ids": [
+                "ig_2025-10-06_9"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

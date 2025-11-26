@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "ilhamdan_eyleme_projesi.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Merkezi'nin ev sahipliğinde tamamlanan İlhamdan Eyleme Sosyal Girişimcilik Altay projesi hakkında bilgi verir misiniz?",
+            "answer": "2025-07-11 tarihinde tamamlanan İlhamdan Eyleme Sosyal Girişimcilik Altay projesi, AB Bakanlığı Türkiye Ulusal Ajansı destekli olup, İpek Yolu Uluslararası Çocuk ve Gençlik Merkezi ev sahipliğinde 40 ilden 45 gencin katılımıyla gerçekleşmiştir. Gençler 5 gün boyunca sosyal girişimcilik üzerine fikirler ve politikalar geliştirmiştir. Sertifika törenine Elazığ İl Özel İdaresi Genel Sekreteri Sn. Cemil Yatkın ve çeşitli kamu kurumlarının temsilcileri katılmıştır.",
+            "category": "Proje",
+            "keywords": [
+                "sosyal girişimcilik",
+                "gençlik",
+                "AB projesi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nun sosyal girişimcilik projeleri nelerdir?",
+                "İlhamdan Eyleme projesinin amacı neydi?",
+                "Bu projeye kaç ilden katılım olmuştur?"
+            ],
+            "source_ids": [
+                "ig_2025-07-11_77"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

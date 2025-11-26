@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "iletisim_becerileri_egitimi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Gençlik ve Gönüllülük Kampı'nda hangi eğitim verildi?",
+            "answer": "24 Temmuz 2025 tarihinde Yeşilay Gençlik ve Gönüllülük Kampı'nda iletişim becerileri eğitimi verildi. Bu eğitimde etkili iletişimin yolları keşfedildi, empati, aktif dinleme ve doğru ifade teknikleri üzerine interaktif bir eğitim gerçekleştirildi.",
+            "category": "Etkinlik",
+            "keywords": [
+                "iletişim",
+                "gençlik",
+                "gönüllülük",
+                "eğitim",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İletişim becerileri eğitiminin içeriği neydi?",
+                "Bu tür eğitimler İpek Yolu tarafından düzenli olarak veriliyor mu?",
+                "Gönüllülük faaliyetlerinde iletişimin önemi nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-24_53"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

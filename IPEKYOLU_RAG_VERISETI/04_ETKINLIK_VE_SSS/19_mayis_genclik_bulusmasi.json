@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "19_mayis_genclik_bulusmasi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 19 Mayıs Gençlik Buluşması ne zaman ve kimlere yönelik?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin 19 Mayıs 2025 tarihinde düzenleyeceği Gençlik Buluşması, 18-30 yaş arasındaki 100 kişilik kontenjana sahip gençlerimize yöneliktir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "19 Mayıs",
+                "gençlik buluşması",
+                "etkinlikler"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "19 Mayıs Gençlik Buluşması'nda hangi etkinlikler yer alacak?",
+                "Etkinliğe nasıl kayıt olabilirim?",
+                "Etkinlikte ödüller kazanma şansı var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-05-10_118"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

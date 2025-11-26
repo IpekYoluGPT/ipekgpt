@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "dogayla_kesif_atolyesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 'Doğayla Bir Keşif, Bin Keyif' programında neler yapıldı?",
+            "answer": "İpek Yolu'nun 'Doğayla Bir Keşif, Bin Keyif' programında tıbbi aromatik bitkiler tanınarak doğanın şifalı yönleri keşfedildi. Lavantadan biberiyeye, hlamurdan kekik ve adaçayına kadar birçok bitkinin faydaları öğrenildi, koklandı ve deneyimlendi. Doğa ile buluşulan bu etkinlikte bilgi kazanıldı ve doğaya olan farkındalık artırıldı. Etkinlik 21 Haziran 2025 tarihinde yapılmıştır.",
+            "category": "Atölye",
+            "keywords": [
+                "tıbbi aromatik bitkiler",
+                "doğa",
+                "etkinlik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Hangi tıbbi aromatik bitkiler tanındı?",
+                "Bu etkinliğin amacı neydi?",
+                "İpek Yolu'nda bu tür başka atölyeler düzenleniyor mu?"
+            ],
+            "source_ids": [
+                "ig_2025-06-21_87"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

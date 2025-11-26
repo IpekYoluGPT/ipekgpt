@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "sinema_atolyesi_belgesel_film.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Sinema Atölyesi'nin ilk belgesel film çekimleri tamamlandı mı?",
+            "answer": "Evet, İpek Yolu Sinema Atölyesi, atölye katılımcılarından oluşan ekibin ilk belgesel filminin çekimlerini 8 Aralık 2024 tarihinde tamamladı.",
+            "category": "Atölyeler",
+            "keywords": [
+                "sinema",
+                "atölye",
+                "belgesel",
+                "film"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Sinema Atölyesi'ne nasıl katılabilirim?",
+                "Sinema atölyesinde ne tür eğitimler veriliyor?",
+                "Belgesel filmin konusu nedir?"
+            ],
+            "source_ids": [
+                "ig_2024-12-08_189"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

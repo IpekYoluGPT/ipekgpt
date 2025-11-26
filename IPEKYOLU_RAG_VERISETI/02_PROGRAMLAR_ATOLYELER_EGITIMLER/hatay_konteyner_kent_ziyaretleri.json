@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "hatay_konteyner_kent_ziyaretleri.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun Hatay'daki konteyner kentlerde çocuklara yönelik gerçekleştirdiği faaliyetler nelerdir?",
+            "answer": "İpek Yolu, Avrupa Dayanışma Programı kapsamında Hatay'daki konteyner kentlerde çocuklarla bir araya gelerek oyunlar oynuyor, resimler yapıyor, masallar anlatıyor ve psikososyal destek çalışmalarıyla çocukların yaralarını sarmaya çalışıyor. Bu faaliyetler, depremin ilk gününden itibaren kesintisiz olarak devam ediyor.",
+            "category": "Sosyal Sorumluluk",
+            "keywords": [
+                "Hatay",
+                "konteyner kent",
+                "çocuklar",
+                "psikososyal destek",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nun bu projede Avrupa Dayanışma Programı'nın rolü nedir?",
+                "Konteyner kentlerdeki çocuklara yönelik psikososyal destek çalışmalarının içeriği nedir?",
+                "İpek Yolu'nun benzer projeleri başka bölgelerde de bulunuyor mu?"
+            ],
+            "source_ids": [
+                "ig_2025-08-07_37"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

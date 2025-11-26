@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "file_name": "konteyner_kentler_umut_ve_iyilesme.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun 'Dayanışma Köprüleri' projesi neyi amaçlıyor?",
+            "answer": "İpek Yolu'nun 'Dayanışma Köprüleri' projesi, Nurdağı ve İslahiye'deki konteyner yaşam alanlarında çocuklarla yeniden umut inşa etmeyi amaçlamaktadır. Oyunlar oynanarak, hayaller çizilerek ve masalların iyileştirici gücünden yararlanılarak çocuklara psikososyal destek sağlanmaktadır. Proje, çocukların yaşadığı travmaları onarmayı ve dayanışma ile yaraları iyileştirmeyi hedeflemektedir. Proje 2024-1-TR01-ESC30-SOL-000228807 Avrupa Dayanışma Programı kapsamında yürütülmektedir.",
+            "category": "Proje",
+            "keywords": [
+                "Dayanışma Köprüleri",
+                "konteyner kent",
+                "psikososyal destek",
+                "çocuklar",
+                "travma",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Proje hangi şehirlerde uygulanıyor?",
+                "Proje hangi kurum tarafından destekleniyor?",
+                "Projede çocuklara ne tür etkinlikler düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-08-08_36"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

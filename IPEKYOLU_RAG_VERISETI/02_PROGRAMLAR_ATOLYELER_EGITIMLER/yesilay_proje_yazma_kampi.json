@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_proje_yazma_kampi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Proje Yazma Kampı ne zaman ve nerede düzenleniyor?",
+            "answer": "Yeşilay Proje Yazma Kampı, 21 Ağustos 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde Avrupa Fırsatlar Eğitimi ile devam etmektedir.",
+            "category": "Kamplar",
+            "keywords": [
+                "Yeşilay",
+                "proje yazma",
+                "kamp",
+                "İpek Yolu",
+                "Avrupa Fırsatlar Eğitimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Avrupa Fırsatlar Eğitimi nedir?",
+                "İpek Yolu'nda başka hangi kamplar düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-08-21_31"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

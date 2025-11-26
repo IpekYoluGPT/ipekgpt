@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "minik_kalpler_ziyareti.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Minik Kalpler Kreşi tesisi ne zaman ziyaret etti?",
+            "answer": "Minik Kalpler Kreşi'nin öğrencileri, 5 Şubat 2025 tarihinde İpek Yolu tesisini ziyaret ettiler. Çocukların doğru bilgilendirilmesi ve gelişimlerine katkı sunulması merkezin önceliklerindendir.",
+            "category": "Ziyaret",
+            "keywords": [
+                "ziyaret",
+                "kreş",
+                "çocuklar",
+                "eğitim"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'na okul grupları ziyaret için nasıl başvurabilir?",
+                "Merkezin ziyaretçilere sunduğu olanaklar nelerdir?"
+            ],
+            "source_ids": [
+                "ig_2025-02-05_159"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

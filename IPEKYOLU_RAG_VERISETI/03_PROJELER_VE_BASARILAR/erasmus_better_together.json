@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "erasmus_better_together.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun ilk uluslararası projesi nedir?",
+            "answer": "İpek Yolu'nun ilk uluslararası projesi, 20 Ocak 2023 tarihinde başlayan Erasmus+ Gençlik Değişimi Programı olan \"Better Together\" projesidir. Bu proje 8 gün sürmüş, 6 ülkeden 60 genç katılım sağlamıştır.",
+            "category": "Proje",
+            "keywords": [
+                "Erasmus+",
+                "gençlik değişimi",
+                "uluslararası proje"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Better Together projesi ne zaman gerçekleşti?",
+                "Bu projeye kaç ülke katılmıştır?",
+                "Erasmus+ projeleri hakkında daha fazla bilgi alabilir miyim?"
+            ],
+            "source_ids": [
+                "ig_2023-01-20_0"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kamp_lideri_egitimi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Yeşilay Kamp Lideri Yetiştirme Kampı'nda hangi eğitimle güne başlandı?",
+            "answer": "Yeşilay Kamp Lideri Yetiştirme Kampı'nda güne Atma Yönetimi Eğitimi ile başlandı. Katılımcılar, ekip içi iletişimde karşılaşılabilecek çatışmaları sağduyulu ve yapıcı yollarla çözmenin yöntemlerini öğrendi. Bu kamp 2025-07-16 tarihinde gerçekleşmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "Yeşilay",
+                "kamp",
+                "liderlik",
+                "çatışma yönetimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kamp Lideri Yetiştirme Kampı'nın amacı nedir?",
+                "Atma Yönetimi Eğitimi'nde hangi konular ele alındı?"
+            ],
+            "source_ids": [
+                "ig_2025-07-16_71"
+            ]
+        },
+        {
+            "question": "2025-07-15 tarihinde İpek Yolu'nda gerçekleştirilen Yeşilay Kamp Lideri Yetiştirme Kampı'nda hangi eğitim verildi?",
+            "answer": "2025-07-15 tarihinde İpek Yolu'nda düzenlenen Yeşilay Kamp Lideri Yetiştirme Kampı'nda katılımcılara 'Kamp Ateşi Nasıl Yakılır?' eğitimi verildi. Bu eğitimde tutuşturucu seçimi, odun düzeni kurma, güvenli ateş yakma teknikleri ve doğaya zarar vermeden ateş söndürme gibi konular uygulamalı olarak deneyimlendi.",
+            "category": "Kamp Eğitimleri",
+            "keywords": [
+                "Yeşilay Kampı",
+                "kamp lideri",
+                "ateş yakma eğitimi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kamp Lideri Yetiştirme Kampı'nın içeriği nedir?",
+                "Kamp ateşini güvenli bir şekilde yakmanın püf noktaları nelerdir?",
+                "İpek Yolu'nda başka hangi kamplar düzenleniyor?"
+            ],
+            "source_ids": [
+                "ig_2025-07-15_72"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

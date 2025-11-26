@@ -1,0 +1,55 @@
+{
+    "metadata": {
+        "file_name": "sifir_atik_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda verilen Sıfır Atık Eğitimi'nde neler öğrenildi?",
+            "answer": "İpek Yolu'nda düzenlenen 'Bir Yolculuk Bin Keşif' programı çerçevesinde öğrencilere Sıfır Atık Eğitimi verildi. Bu eğitimde atıkların nasıl ayrıştırılacağı, doğanın nasıl korunacağı ve geri dönüşümün önemi öğrenildi. Küçük adımların büyük etkiler yarattığı fark edildi.",
+            "category": "Eğitim",
+            "keywords": [
+                "Sıfır Atık",
+                "geri dönüşüm",
+                "çevre"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sıfır Atık eğitiminin amacı nedir?",
+                "İpek Yolu'nda başka hangi çevre eğitimleri verilmektedir?"
+            ],
+            "source_ids": [
+                "ig_2025-06-14_94"
+            ]
+        },
+        {
+            "question": "Sıfır Atık Eğitimi'nin amacı nedir?",
+            "answer": "Sıfır Atık Eğitimi, çevre bilincinin artırılması ve sürdürülebilir yaşam alışkanlıklarının kazandırılması amacıyla düzenlenmiştir. Eğitimde atıkların kaynağında ayrıştırılması, geri dönüşümün önemi, çevresel etkiler ve sıfır atık yaklaşımının bireysel ve toplumsal faydaları ele alınmaktadır. İpek Yolu, daha temiz bir gelecek için atığımızı azaltıyor ve doğaya sahip çıkıyor.",
+            "category": "Eğitim",
+            "keywords": [
+                "sıfır atık",
+                "geri dönüşüm",
+                "çevre bilinci",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Sıfır atık yaklaşımının faydaları nelerdir?",
+                "Geri dönüşüm neden önemlidir?",
+                "İpek Yolu'nun çevre bilinci ile ilgili başka eğitimleri var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-04-12_144"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

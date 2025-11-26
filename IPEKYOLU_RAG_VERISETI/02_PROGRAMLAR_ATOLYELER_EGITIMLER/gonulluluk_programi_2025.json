@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "gonulluluk_programi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Tarımsal Kuluçka Gönüllülük Programı nedir ve kimler başvurabilir?",
+            "answer": "İpek Yolu Tarımsal Kuluçka Gönüllülük Programı, toprağa dokunmak, üretmek, öğrenmek ve geleceği birlikte şekillendirmek isteyenler için tasarlanmış bir programdır. Tıbbi aromatik bitkiler, kompost üretimi, topraksız tarım, sebze bahçesi çalışmaları ve sıfır atık uygulamaları gibi alanlarda faaliyetler sunmaktadır. Programa sadece Elazığ'dan katılımlar değerlendirilecek olup, 30 yaş altı genç gönüllüler başvurabilir. Kontenjan sınırlıdır.",
+            "category": "Gönüllülük Programı",
+            "keywords": [
+                "gönüllülük",
+                "tarım",
+                "eğitim",
+                "Elazığ"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu gönüllülük programında hangi faaliyetler yer almaktadır?",
+                "Programa başvuru için yaş sınırı var mıdır?",
+                "Programa katılım için Elazığ'da ikamet etmek şart mı?"
+            ],
+            "source_ids": [
+                "ig_2025-04-16_132"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

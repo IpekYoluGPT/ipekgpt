@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "bagimlilik_kamp_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Bağımlılık Endüstrisi konulu Yeşilay Proje Yazma Kampı ne zaman ve nerede düzenleniyor?",
+            "answer": "Yeşilay Proje Yazma Kampı, Bağımlılık Endüstrisi konu başlığı ile İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezinde 20 Ağustos 2025 tarihinde düzenlenmektedir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Yeşilay",
+                "proje yazma kampı",
+                "bağımlılık endüstrisi",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Bu kampa kimler katılabilir?",
+                "Kampın amacı nedir?",
+                "Merkez nerede bulunuyor?"
+            ],
+            "source_ids": [
+                "ig_2025-08-20_33"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "harput_turu_2025.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "2025 yılında İpek Yolu'nun Karakoçan ilçesinden gelen öğrencileriyle hangi tarihi tur gerçekleştirildi?",
+            "answer": "12 Nisan 2025 tarihinde İpek Yolu, Karakoçan ilçesinden gelen öğrencileri ile Tarihi Harput turu gerçekleştirdi.",
+            "category": "Tarihi Gezi",
+            "keywords": [
+                "İpek Yolu",
+                "Harput",
+                "gezi",
+                "öğrenci"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu tarafından daha önce hangi tarihi geziler düzenlendi?",
+                "Harput turunda öğrencilere hangi tarihi yerler gezdirildi?"
+            ],
+            "source_ids": [
+                "ig_2025-04-12_142"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

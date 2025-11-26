@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "model_roket_egitimi_2025.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda düzenlenen Model Roketçilik Eğitimi'nin amacı nedir?",
+            "answer": "İpek Yolu'nda düzenlenen Model Roketçilik Eğitimi, gençlerin bilim ve teknolojiyle buluşmasını sağlamak amacıyla düzenlenmektedir. Eğitimde teorik ve uygulamalı oturumlarla katılımcılara temel roketçilik bilgileri, güvenli fırlatma teknikleri ve mühendislik süreçleri hakkında bilgi verilmektedir. Ayrıca Teknofest süreci hakkında da bilgilendirme yapılmaktadır.",
+            "category": "Eğitim",
+            "keywords": [
+                "roketçilik",
+                "eğitim",
+                "Teknofest",
+                "bilim",
+                "teknoloji"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Model Roketçilik Eğitimi'nde hangi konular ele alınmaktadır?",
+                "Bu eğitime kimler katılabilir?",
+                "Teknofest ile ilgili hangi bilgiler veriliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-04-12_145"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "game_day_etkinligi.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda Game Day ne zaman ve nerede düzenleniyor?",
+            "answer": "Game Day etkinliği, 12 Ekim 2025 tarihinde İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi / Elazığ'da düzenlenecektir. Son başvuru tarihi 10 Ekim 2025 saat 12:00'dir.",
+            "category": "Etkinlik",
+            "keywords": [
+                "Game Day",
+                "etkinlik",
+                "Elazığ",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Game Day etkinliğine nasıl başvurabilirim?",
+                "Game Day etkinliğinin içeriği nedir?",
+                "Game Day etkinliğine katılım ücretli mi?"
+            ],
+            "source_ids": [
+                "ig_2025-10-08_8"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

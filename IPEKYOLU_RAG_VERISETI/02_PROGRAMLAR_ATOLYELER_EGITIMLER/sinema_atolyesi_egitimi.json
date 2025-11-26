@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "sinema_atolyesi_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Sinema Atölyesi'nin ilk eğitiminde hangi konular işlendi?",
+            "answer": "İpek Yolu Sinema Atölyesi'nin ilk eğitiminde fotoğrafın temel unsurları olan ISO, Diyafram, Enstantane, Doğru pozlama, WB (White Balance) ve fotoğraf açıları uygulamalı olarak işlenmiştir. Eğitim 23 Kasım 2024 tarihinde gerçekleştirilmiştir.",
+            "category": "Atölye",
+            "keywords": [
+                "sinema",
+                "atölye",
+                "eğitim",
+                "fotoğraf"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda başka hangi atölyeler düzenleniyor?",
+                "Sinema atölyesine nasıl katılabilirim?",
+                "Fotoğrafçılık eğitiminin içeriği nedir?"
+            ],
+            "source_ids": [
+                "ig_2024-11-23_195"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

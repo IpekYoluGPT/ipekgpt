@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "yesilay_kamp_sabun_atolyesi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu tarafından 16 Temmuz 2025 tarihinde Yeşilay Kamp Lideri Yetiştirme Kampı'nda hangi atölye gerçekleştirildi?",
+            "answer": "16 Temmuz 2025 tarihinde Yeşilay Kamp Lideri Yetiştirme Kampı Tıbbi aromatik bitki eğitimi kapsamında sabun yapımı atölyesi gerçekleştirildi.",
+            "category": "Atölye",
+            "keywords": [
+                "Yeşilay Kampı",
+                "sabun yapımı",
+                "atölye",
+                "tıbbi aromatik bitki"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Yeşilay Kampı'nda başka hangi eğitimler verilmektedir?",
+                "Sabun yapımı atölyesinde hangi malzemeler kullanıldı?",
+                "Bu atölyenin amacı nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-07-16_68"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

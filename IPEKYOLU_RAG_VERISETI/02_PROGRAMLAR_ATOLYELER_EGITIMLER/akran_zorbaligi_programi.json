@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "akran_zorbaligi_programi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda akran zorbalığı ile ilgili yapılan programın içeriği nedir?",
+            "answer": "İpek Yolu'nda 11 Nisan 2025 tarihinde gerçekleştirilen 'Akran Zorbalığına Bir Yolculuk Bin Keşif' programı, akran zorbalığı konusunu ele almaktadır. Akran zorbalığı, okullarda çocuklar arasında güç dengesizliğinin olduğu durumlarda tekrarlayan saldırgan davranışlar olarak tanımlanır. Bu davranışlar fiziksel, sözel veya sosyal izolasyon şeklinde olabilir ve mağdur üzerinde derin etkiler bırakabilir. Program, zorbalığın hem zorbalık yapan hem de maruz kalan çocuklar için ciddi sonuçlar doğurduğunu vurgulayarak, bu sorunun çözümü için okulda, evde ve toplumda farkındalık yaratmanın ve önleyici tedbirler almanın önemini belirtmektedir. Çocuklara empati, saygı ve sağlıklı iletişim becerileri kazandırmak, zorbalıkla mücadelede etkili bir yöntem olarak sunulmaktadır.",
+            "category": "Eğitim",
+            "keywords": [
+                "akran zorbalığı",
+                "çocuklar",
+                "empati"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Akran zorbalığı ile mücadelede ailelerin rolü nedir?",
+                "Okullarda akran zorbalığını önlemek için hangi programlar uygulanabilir?",
+                "Akran zorbalığına maruz kalan çocuklar nasıl desteklenmelidir?"
+            ],
+            "source_ids": [
+                "ig_2025-04-11_147"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

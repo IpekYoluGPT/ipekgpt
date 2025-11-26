@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "afad_arama_kurtarma_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda AFAD tarafından verilen 'Hafif Arama Kurtarma' eğitimi ne zaman gerçekleşti?",
+            "answer": "İpek Yolu'nda, Afet Gönüllüleri projesi kapsamında, AFAD görevlileri tarafından verilen 'Hafif Arama Kurtarma' eğitimi 20 Mayıs 2025 tarihinde gerçekleşti. Katılımcılar, afet anlarında nasıl doğru ve etkili müdahale edileceğini uygulamalı olarak öğrendi.",
+            "category": "Eğitim",
+            "keywords": [
+                "AFAD",
+                "arama kurtarma",
+                "eğitim",
+                "afet gönüllüleri"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Hafif Arama Kurtarma eğitimi kimler tarafından verildi?",
+                "Bu eğitimde hangi konular işlendi?",
+                "İpek Yolu'nda başka hangi AFAD eğitimleri planlanıyor?"
+            ],
+            "source_ids": [
+                "ig_2025-05-20_102"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

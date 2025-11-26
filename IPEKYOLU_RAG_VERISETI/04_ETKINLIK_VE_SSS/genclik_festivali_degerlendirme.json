@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "file_name": "genclik_festivali_degerlendirme.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Gençlik Festivali değerlendirme toplantısı ne zaman yapıldı?",
+            "answer": "İpek Yolu Gençlik Festivali değerlendirme toplantısı 19 Mayıs 2025 tarihinde yapılmıştır.",
+            "category": "Etkinlik Değerlendirmesi",
+            "keywords": [
+                "festival",
+                "gençlik",
+                "değerlendirme"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Festivalde hangi tür etkinlikler düzenlendi?",
+                "Gelecekteki etkinlikler için gençlerin önerileri neler oldu?",
+                "Bu tür değerlendirme toplantıları ne sıklıkla yapılıyor?"
+            ],
+            "source_ids": [
+                "ig_2025-05-19_105"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

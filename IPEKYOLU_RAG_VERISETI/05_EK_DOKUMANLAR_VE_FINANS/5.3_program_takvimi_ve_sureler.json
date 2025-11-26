@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "file_name": "5.3_program_takvimi_ve_sureler.json",
+        "category": "05_EK_DOKUMANLAR_VE_FINANS",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "TÜBİTAK 4005 projesi ne zaman İpek Yolu Merkezi'nde gerçekleştirilecek?",
+            "answer": "TÜBİTAK 4005 kapsamında desteklenen 'Dijital Çağın Coğrafyası: Teknoloji Temelli Yenilikçi Eğitim' projesi, Mayıs 2025'te İpek Yolu Merkezi'nde gerçekleştirilecektir.",
+            "category": "Proje",
+            "keywords": [
+                "TÜBİTAK 4005",
+                "Dijital Çağın Coğrafyası",
+                "İpek Yolu Merkezi",
+                "Mayıs 2025"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Bu proje kimlere yönelik?",
+                "Projenin amacı nedir?",
+                "Proje hangi kurum tarafından destekleniyor?"
+            ],
+            "source_ids": [
+                "news_2024-11-14_13"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

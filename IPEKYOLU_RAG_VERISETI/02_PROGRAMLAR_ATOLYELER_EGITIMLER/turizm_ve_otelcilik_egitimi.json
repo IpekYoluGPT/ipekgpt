@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "file_name": "turizm_ve_otelcilik_egitimi.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-11-26",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde UNDP tarafından yürütülen Turizm ve Otelcilik Eğitimi ne zaman tamamlandı?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde UNDP tarafından yürütülen Turizm ve Otelcilik Eğitimi 22 Kasım 2024 tarihinde tamamlanmıştır. Bu eğitim, öğrencilere sektörde ihtiyaç duyulan teorik bilgi ve pratik becerileri kazandırmayı amaçlamaktadır. Eğitim programında ön büro yönetimi, kat hizmetleri, yiyecek-içecek hizmetleri, konaklama işletmeciliği, turizm pazarlaması gibi konularda eğitim verilmiştir. Ayrıca, öğrencilere iletişim, kriz yönetimi ve müşteri ilişkileri gibi alanlarda da bilgi verilmiştir. Program sonunda katılımcılara belgeleri takdim edilmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "turizm",
+                "otelcilik",
+                "eğitim",
+                "UNDP",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Turizm ve Otelcilik Eğitimi'nin içeriği nelerdir?",
+                "Bu eğitim programına kimler katılabilir?",
+                "Eğitim sonunda hangi belgeler verilmektedir?"
+            ],
+            "source_ids": [
+                "ig_2024-11-22_197"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}
