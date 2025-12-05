@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="İpekGPT - İpek Yolu AI Asistanı">
+    <title>İpekGPT</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <button class="exit-button" id="exitButton" title="Çıkış">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <polyline points="16,17 21,12 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <line x1="21" y1="12" x2="9" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="logo">
+                <img src="/static/logo.png" alt="İpekGPT Logo" class="logo-img">
+                <h1>İpekGPT</h1>
+            </div>
+            <p class="subtitle">İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi</p>
+        </header>
+
+        <!-- Chat Container -->
+        <main class="chat-container">
+            <div class="chat-box" id="chatBox">
+                <!-- Welcome message -->
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Merhaba! 👋 Ben İpekGPT.</p>
+                        <p>Size merkez hakkında bilgi verebilir, sorularınızı yanıtlayabilirim.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea id="messageInput" placeholder="Mesajınızı yazın..." rows="1" maxlength="2000"></textarea>
+                    <button id="sendButton" class="send-button" title="Gönder">
+                        <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="warning-text">İpekGPT hata yapabilir, önemli bilgileri kontrol ediniz.</span>
+                    <span class="rate-limit-info" id="rateLimitInfo"></span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner"></div>
+            <p>Yanıt hazırlanıyor...</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

@@ -6,14 +6,11 @@ from tqdm import tqdm
 from datetime import datetime
 
 # ================= AYARLAR =================
-# 1. API ANAHTARINI BURAYA YAPIŞTIR
-API_KEY = "AIzaSyCFjVAq-g4Q8iV3G7BZNbGfvtJsk1hnTeE"
-
-# 2. Dosya Yolları (Senin yüklediğin dosya)
+# 1. Dosya Yolları (Senin yüklediğin dosya)
 GIRIS_DOSYASI = 'haberler.json'
 ANA_KLASOR = "IPEKYOLU_RAG_VERISETI"
 
-# 3. Model (Hızlı ve Ücretsiz)
+# 2. Model (Hızlı ve Ücretsiz)
 MODEL_NAME = 'models/gemini-2.0-flash'
 
 # ================= GEMINI AYARLARI =================
