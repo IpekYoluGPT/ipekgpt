@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="İpekGPT - İpek Yolu AI Asistanı">
     <title>İpekGPT</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,6 +16,13 @@
     <div class="app-container">
         <!-- Header -->
         <header class="header">
+            <div class="header-content">
+                <img src="/static/logo.png" alt="İpek Yolu Logo" class="logo-img">
+                <div class="header-text">
+                    <h1>İpekGPT</h1>
+                    <p class="subtitle">İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi</p>
+                </div>
+            </div>
             <button class="exit-button" id="exitButton" title="Çıkış">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"
@@ -26,11 +33,6 @@
                         stroke-linejoin="round" />
                 </svg>
             </button>
-            <div class="logo">
-                <img src="/static/logo.png" alt="İpekGPT Logo" class="logo-img">
-                <h1>İpekGPT</h1>
-            </div>
-            <p class="subtitle">İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi</p>
         </header>
 
         <!-- Chat Container -->

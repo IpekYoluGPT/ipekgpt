@@ -60,21 +60,54 @@ body {
 }
 
 /* ============================================================================
-   Header - Simple
+   Header - Logo left, title right (Corporate Minimal)
    ============================================================================ */
 .header {
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
     border-bottom: 1px solid var(--input-border);
     margin-bottom: 20px;
-    position: relative;
+    background: var(--bg-color);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-text h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--chat-bubble-bg);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.header-text .subtitle {
+    color: #666666;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 400;
 }
 
 /* Exit Button */
 .exit-button {
-    position: absolute;
-    top: 20px;
-    right: 0;
     width: 40px;
     height: 40px;
     background: none;
@@ -86,6 +119,7 @@ body {
     justify-content: center;
     color: var(--text-muted);
     transition: all 0.15s ease;
+    flex-shrink: 0;
 }
 
 .exit-button:hover {
@@ -97,31 +131,6 @@ body {
 .exit-button svg {
     width: 20px;
     height: 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.logo-img {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-}
-
-.logo h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--chat-bubble-bg);
-}
-
-.subtitle {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    margin-top: 5px;
 }
 
 /* ============================================================================
@@ -190,10 +199,55 @@ body {
     margin-bottom: 0;
 }
 
+/* Markdown headers in messages */
+.message-content h2,
+.message-content h3,
+.message-content h4 {
+    margin: 12px 0 8px 0;
+    font-weight: 600;
+}
+
+.message-content h2 {
+    font-size: 1.2em;
+}
+
+.message-content h3 {
+    font-size: 1.1em;
+}
+
+.message-content h4 {
+    font-size: 1em;
+}
+
+.message-content h2:first-child,
+.message-content h3:first-child,
+.message-content h4:first-child {
+    margin-top: 0;
+}
+
 .message-content ul,
 .message-content ol {
     margin: 8px 0;
     padding-left: 20px;
+}
+
+/* Links in messages */
+.message-content a {
+    color: #90CAF9;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.message-content a:hover {
+    color: #BBDEFB;
+}
+
+.user-message .message-content a {
+    color: #1565C0;
+}
+
+.user-message .message-content a:hover {
+    color: #0D47A1;
 }
 
 /* ============================================================================

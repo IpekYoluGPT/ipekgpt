@@ -104,10 +104,11 @@ function setLoading(isLoading) {
     elements.messageInput.disabled = isLoading;
 
     if (isLoading) {
-        elements.loadingOverlay.classList.add('active');
+        // Loading overlay disabled - user requested removal
+        // elements.loadingOverlay.classList.add('active');
         addTypingIndicator();
     } else {
-        elements.loadingOverlay.classList.remove('active');
+        // elements.loadingOverlay.classList.remove('active');
         removeTypingIndicator();
     }
 }
@@ -165,19 +166,34 @@ function addMessage(content, isUser, messageId = null) {
 function formatMessage(content) {
     // Convert markdown-like formatting to HTML
     let formatted = content
+        // Headers: ### h3, ## h2, # h1 (must be at start of line)
+        .replace(/^### (.*)$/gm, '<h4>$1</h4>')
+        .replace(/^## (.*)$/gm, '<h3>$1</h3>')
+        .replace(/^# (.*)$/gm, '<h2>$1</h2>')
         // Bold: **text** or __text__
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/__(.*?)__/g, '<strong>$1</strong>')
+        // Italic: *text* or _text_
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+        .replace(/_([^_]+)_/g, '<em>$1</em>')
+        // URLs: Convert to clickable links
+        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
         // Bullet points
         .replace(/^[\s]*[-•*]\s+(.*)$/gm, '<li>$1</li>')
         // Numbered lists
         .replace(/^[\s]*(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-        // Line breaks
+        // Line breaks (but not after headers)
+        .replace(/<\/h[234]>\n/g, '</h4>')
         .replace(/\n\n/g, '</p><p>')
         .replace(/\n/g, '<br>');
 
-    // Wrap in paragraphs
+    // Wrap in paragraphs (but not headers)
     formatted = `<p>${formatted}</p>`;
+
+    // Clean up empty paragraphs around headers
+    formatted = formatted.replace(/<p>(<h[234]>)/g, '$1');
+    formatted = formatted.replace(/(<\/h[234]>)<\/p>/g, '$1');
+    formatted = formatted.replace(/<p><\/p>/g, '');
 
     // Wrap list items in ul
     formatted = formatted.replace(/(<li>.*?<\/li>)+/gs, '<ul>$&</ul>');
