@@ -11,7 +11,8 @@ const state = {
     recaptchaEnabled: false,
     recaptchaSiteKey: null,
     isLoading: false,
-    messages: []
+    messages: [],
+    maxMessageLength: 400
 };
 
 // ============================================================================
@@ -25,7 +26,8 @@ const elements = {
     exitButton: document.getElementById('exitButton'),
     loadingOverlay: document.getElementById('loadingOverlay'),
     rateLimitInfo: document.getElementById('rateLimitInfo'),
-    recaptchaContainer: document.getElementById('recaptchaContainer')
+    recaptchaContainer: document.getElementById('recaptchaContainer'),
+    charCounter: document.getElementById('charCounter')
 };
 
 // ============================================================================
@@ -58,7 +60,7 @@ const api = {
             body.recaptcha_token = recaptchaToken;
         }
 
-        const response = await fetch(`${this.baseUrl}/api/chat`, {
+        const response = await fetch(`${this.baseUrl}/ipekgpt/chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body)
@@ -242,7 +244,10 @@ function addErrorMessage(message) {
 }
 
 function scrollToBottom() {
-    elements.chatBox.scrollTop = elements.chatBox.scrollHeight;
+    elements.chatBox.scrollTo({
+        top: elements.chatBox.scrollHeight,
+        behavior: 'smooth'
+    });
 }
 
 function updateRateLimitInfo(remaining) {
@@ -336,6 +341,23 @@ function autoResizeTextarea() {
     textarea.style.height = Math.min(textarea.scrollHeight, 150) + 'px';
 }
 
+function updateCharCounter() {
+    const currentLength = elements.messageInput.value.length;
+    const maxLength = state.maxMessageLength;
+
+    elements.charCounter.textContent = `${currentLength} / ${maxLength}`;
+
+    // Remove all classes first
+    elements.charCounter.classList.remove('warning', 'limit');
+
+    // Add appropriate class based on character count
+    if (currentLength >= maxLength) {
+        elements.charCounter.classList.add('limit');
+    } else if (currentLength >= maxLength * 0.8) {
+        elements.charCounter.classList.add('warning');
+    }
+}
+
 // ============================================================================
 // Event Listeners
 // ============================================================================
@@ -359,8 +381,14 @@ function setupEventListeners() {
         }
     });
 
-    // Auto-resize textarea
-    elements.messageInput.addEventListener('input', autoResizeTextarea);
+    // Auto-resize textarea and update character counter
+    elements.messageInput.addEventListener('input', () => {
+        autoResizeTextarea();
+        updateCharCounter();
+    });
+
+    // Initialize character counter
+    updateCharCounter();
 }
 
 async function init() {
@@ -370,6 +398,10 @@ async function init() {
         // Get configuration
         const config = await api.getConfig();
         state.recaptchaEnabled = config.recaptcha_enabled;
+        state.maxMessageLength = config.max_message_length || 400;
+
+        // Update textarea maxlength
+        elements.messageInput.setAttribute('maxlength', state.maxMessageLength);
 
         // Load reCAPTCHA if enabled
         if (state.recaptchaEnabled && config.recaptcha_site_key) {

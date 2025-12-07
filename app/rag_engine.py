@@ -1,22 +1,18 @@
 """
 RAG Engine - Simplified for İpekGPT Web Application
-Uses existing ChromaDB and pre-downloads Turkish Gemma model
+Uses existing ChromaDB and Gemini API for LLM responses
 """
 import os
-import re
 import time
 from typing import Dict, Optional, Any
 
 # LangChain imports
 from langchain_core.prompts import PromptTemplate
-from langchain_core.language_models.llms import LLM
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-# Llama CPP
-from llama_cpp import Llama
-
 from .config import settings
+from .gemini_api import gemini_manager
 
 
 # ============================================================================
@@ -37,7 +33,7 @@ class VectorStore:
     
     def _init_embeddings(self):
         """Initialize the embedding model"""
-        print("⏳ Initializing Turkish embedding model...")
+        print("Initializing Turkish embedding model...")
         
         import torch
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -47,18 +43,18 @@ class VectorStore:
             model_name=self.embedding_model_name,
             model_kwargs={'device': device}
         )
-        print("✅ Embedding model ready!")
+        print("Embedding model ready!")
     
     def load_existing(self):
         """Load existing vector store from disk"""
-        print("⏳ Loading existing vector store from chroma_db...")
+        print("Loading existing vector store from chroma_db...")
         
         import chromadb
         from chromadb.config import Settings as ChromaSettings
         
         if not os.path.exists(self.db_path):
             raise FileNotFoundError(
-                f"❌ ChromaDB not found at: {self.db_path}\n"
+                f"ChromaDB not found at: {self.db_path}\n"
                 "Please ensure the chroma_db folder exists with your vector data."
             )
         
@@ -76,86 +72,18 @@ class VectorStore:
             embedding_function=self.embeddings
         )
         
-        print("✅ Vector store loaded!")
+        print("Vector store loaded!")
         return self.vectorstore
 
 
 # ============================================================================
-# Turkish Gemma LLM Wrapper
-# ============================================================================
-
-class TurkishGemmaLLM(LLM):
-    """Custom LLM wrapper for Turkish Gemma model"""
-    
-    model: Any = None
-    
-    def __init__(self, repo_id: str = None, filename: str = None, **kwargs):
-        super().__init__()
-        
-        repo_id = repo_id or settings.GEMMA_REPO_ID
-        filename = filename or settings.GEMMA_FILENAME
-        
-        print("⏳ Downloading and loading Turkish Gemma model...")
-        print("   (This may take several minutes on first run)")
-        
-        self.model = Llama.from_pretrained(
-            repo_id=repo_id,
-            filename=filename,
-            verbose=False,
-            **settings.GEMMA_PARAMS
-        )
-        
-        print("✅ Turkish Gemma model loaded!")
-        
-        if settings.GEMMA_PARAMS.get('n_gpu_layers', 0) > 0 or settings.GEMMA_PARAMS.get('n_gpu_layers') == -1:
-            print("   🚀 Model is using GPU acceleration!")
-    
-    @property
-    def _llm_type(self) -> str:
-        return "turkish_gemma"
-    
-    def _call(self, prompt: str, stop=None) -> str:
-        """Generate response from the model"""
-        response = self.model(
-            prompt,
-            stop=["<end_of_turn>", "</s>"],
-            max_tokens=settings.GEMMA_PARAMS['n_predict'],
-            temperature=settings.GEMMA_PARAMS['temp'],
-            top_p=settings.GEMMA_PARAMS['top_p'],
-            top_k=settings.GEMMA_PARAMS['top_k'],
-            repeat_penalty=settings.GEMMA_PARAMS['repeat_penalty']
-        )
-        
-        raw_text = response['choices'][0]['text']
-        
-        # Clean up response
-        cleaned_text = re.sub(r'<think>.*?(?:</think>|$)', '', raw_text, flags=re.DOTALL)
-        cleaned_text = re.sub(r'\[cite.*?\]', '', cleaned_text, flags=re.DOTALL)
-        cleaned_text = re.sub(r'\\', '', cleaned_text)
-        
-        disclaimer_patterns = [
-            r'\*\(Not:.*?\)',
-            r'\(Not:.*?\)',
-            r'\* Bilgi tabanımızda.*',
-            r'Verilen bilgiler arasında.*',
-            r'Bağlamda.*',
-        ]
-        
-        for pattern in disclaimer_patterns:
-            cleaned_text = re.sub(pattern, '', cleaned_text, flags=re.DOTALL)
-        
-        return cleaned_text.strip()
-
-
-# ============================================================================
-# RAG Chatbot
+# RAG Chatbot (Using Gemini API)
 # ============================================================================
 
 class TurkishRAGChatbot:
-    """RAG chatbot using Turkish Gemma model"""
+    """RAG chatbot using Gemini API for Turkish responses"""
     
-    PROMPT_TEMPLATE = """<bos><start_of_turn>user
-Sen İpekyolu Girişimci Kuluçka Merkezi'nin resmi yapay zeka asistanısın.
+    PROMPT_TEMPLATE = """Sen İpekyolu Girişimci Kuluçka Merkezi'nin resmi yapay zeka asistanısın.
 Adın: İpekGPT.
 
 GÖREVİN:
@@ -166,28 +94,28 @@ KURALLAR:
 2. Doğrudan cevabı ver.
 3. Listeleri madde işaretleri ile düzenle.
 4. Bilgi VERİLER kısmında yoksa, "Bu konuda şu an güncel bilgim bulunmuyor" de.
+5. Türkçe yanıt ver.
 
 VERİLER:
 {context}
 
-SORU: {question}<end_of_turn>
-<start_of_turn>model
-"""
+SORU: {question}
+
+CEVAP:"""
     
-    def __init__(self, vectorstore=None, llm=None):
+    def __init__(self, vectorstore=None):
         """Initialize the RAG chatbot"""
         self.vectorstore = vectorstore
-        self.llm = llm or TurkishGemmaLLM()
         
         self.PROMPT = PromptTemplate(
             template=self.PROMPT_TEMPLATE,
             input_variables=["context", "question"]
         )
         
-        print("✅ Turkish RAG Chatbot initialized and ready!")
+        print("Turkish RAG Chatbot initialized with Gemini API!")
     
-    def ask(self, question: str, show_sources: bool = False) -> Dict:
-        """Ask a question and get a response"""
+    async def ask_async(self, question: str, show_sources: bool = False) -> Dict:
+        """Ask a question and get a response (async version)"""
         start_time = time.time()
         
         try:
@@ -203,17 +131,26 @@ SORU: {question}<end_of_turn>
             # Create prompt
             prompt = self.PROMPT.format(context=context, question=question)
             
-            # Generate response
-            answer = self.llm._call(prompt)
+            # Generate response using Gemini API
+            result = await gemini_manager.generate_response(prompt)
             
             # Calculate response time
             response_time_ms = int((time.time() - start_time) * 1000)
+            
+            if result['error']:
+                return {
+                    'answer': result['error'],
+                    'num_sources': 0,
+                    'categories_used': [],
+                    'response_time_ms': response_time_ms,
+                    'error': result['error']
+                }
             
             # Get categories used
             categories = list(set(doc.metadata.get('category', 'Unknown') for doc in docs))
             
             return {
-                'answer': answer,
+                'answer': result['text'],
                 'num_sources': len(docs),
                 'categories_used': categories,
                 'response_time_ms': response_time_ms,
@@ -221,7 +158,7 @@ SORU: {question}<end_of_turn>
             }
             
         except Exception as e:
-            print(f"Error in ask(): {e}")
+            print(f"Error in ask_async(): {e}")
             return {
                 'answer': "Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.",
                 'num_sources': 0,
@@ -229,6 +166,22 @@ SORU: {question}<end_of_turn>
                 'response_time_ms': int((time.time() - start_time) * 1000),
                 'error': str(e)
             }
+    
+    def ask(self, question: str, show_sources: bool = False) -> Dict:
+        """Synchronous wrapper for ask_async (for compatibility)"""
+        import asyncio
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                # If loop is running, create a new task
+                import concurrent.futures
+                with concurrent.futures.ThreadPoolExecutor() as executor:
+                    future = executor.submit(asyncio.run, self.ask_async(question, show_sources))
+                    return future.result()
+            else:
+                return loop.run_until_complete(self.ask_async(question, show_sources))
+        except RuntimeError:
+            return asyncio.run(self.ask_async(question, show_sources))
 
 
 # ============================================================================
@@ -255,13 +208,13 @@ class RAGSystem:
         self.vector_store_manager = None
     
     def initialize(self):
-        """Initialize the RAG system - loads existing ChromaDB and pre-downloads model"""
+        """Initialize the RAG system - loads existing ChromaDB"""
         if RAGSystem._initialized:
             print("RAG System already initialized!")
             return self.chatbot
         
         print("=" * 70)
-        print("🚀 İPEKYOLU RAG SİSTEMİ BAŞLATILIYOR")
+        print("IPEKYOLU RAG SISTEMI BASLATILIYOR")
         print("=" * 70)
         
         # Initialize vector store manager and load existing ChromaDB
@@ -269,16 +222,16 @@ class RAGSystem:
         self.vectorstore = self.vector_store_manager.load_existing()
         
         if not self.vectorstore:
-            print("❌ Vector store yüklenemedi!")
+            print("Vector store yuklenemedi!")
             return None
         
-        print("\n🤖 Turkish Gemma RAG chatbot başlatılıyor...")
+        print("\nTurkish Gemini RAG chatbot baslatiliyor...")
         self.chatbot = TurkishRAGChatbot(vectorstore=self.vectorstore)
         
         RAGSystem._initialized = True
         
         print("\n" + "=" * 70)
-        print("✅ İPEKYOLU RAG SİSTEMİ HAZIR!")
+        print("IPEKYOLU RAG SISTEMI HAZIR!")
         print("=" * 70)
         
         return self.chatbot
@@ -289,8 +242,20 @@ class RAGSystem:
             return self.initialize()
         return self.chatbot
     
+    async def ask_async(self, question: str) -> Dict:
+        """Async method to ask a question"""
+        chatbot = self.get_chatbot()
+        if not chatbot:
+            return {
+                'answer': "Sistem henüz hazır değil, lütfen bekleyin.",
+                'num_sources': 0,
+                'categories_used': [],
+                'response_time_ms': 0
+            }
+        return await chatbot.ask_async(question)
+    
     def ask(self, question: str) -> Dict:
-        """Convenience method to ask a question"""
+        """Convenience method to ask a question (sync)"""
         chatbot = self.get_chatbot()
         if not chatbot:
             return {

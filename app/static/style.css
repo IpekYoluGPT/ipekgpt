@@ -368,6 +368,29 @@ body {
     font-size: 0.75rem;
 }
 
+/* Character Counter */
+.char-counter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.char-counter {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.char-counter.warning {
+    color: #F57C00;
+    font-weight: 500;
+}
+
+.char-counter.limit {
+    color: #D32F2F;
+    font-weight: 600;
+}
+
 /* ============================================================================
    Loading Overlay
    ============================================================================ */
