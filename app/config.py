@@ -1,9 +1,14 @@
 """
 Configuration settings for İpekGPT Web Application
+Loads sensitive data from environment variables (.env file)
 """
 import os
 from pathlib import Path
 from datetime import date
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 class Settings:
@@ -17,16 +22,28 @@ class Settings:
     DATABASE_URL = f"sqlite:///{BASE_DIR}/ipekgpt.db"
     
     # ==========================================================================
-    # Gemini API Configuration
+    # Gemini API Configuration (loaded from .env)
     # ==========================================================================
     
+<<<<<<< HEAD
     # ADD YOUR API KEYS HERE - Get them from: https://aistudio.google.com/app/apikey
     GEMINI_API_KEYS = [
         "AIzaSyB4iJccs7HObOzSE-ovz42f8ftypxKMRtg",
     ]
+=======
+    # API keys loaded from environment variable (comma-separated if multiple)
+    @property
+    def GEMINI_API_KEYS(self):
+        keys_str = os.getenv("GEMINI_API_KEYS", "")
+        if not keys_str:
+            return []
+        return [key.strip() for key in keys_str.split(",") if key.strip()]
+>>>>>>> 1f0db8a27df12f32d14def153133638260a95b4e
     
-    # Model to use
-    GEMINI_MODEL = "gemini-2.0-flash"
+    # Model loaded from environment variable
+    @property
+    def GEMINI_MODEL(self):
+        return os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     
     # Delay between API requests in milliseconds (to prevent rate limiting)
     REQUEST_DELAY_MS = 500
@@ -44,7 +61,7 @@ class Settings:
     # ==========================================================================
     
     DAILY_REQUEST_LIMIT = 100  # Total AI requests per day for the server
-    MAX_MESSAGE_LENGTH = 400   # Maximum characters per user message
+    MAX_MESSAGE_LENGTH = 300   # Maximum characters per user message
     USER_TOKEN_LIMIT = 1024    # Max tokens in user context window
     
     # ==========================================================================

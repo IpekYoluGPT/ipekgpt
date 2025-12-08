@@ -12,7 +12,7 @@ const state = {
     recaptchaSiteKey: null,
     isLoading: false,
     messages: [],
-    maxMessageLength: 400
+    maxMessageLength: 300
 };
 
 // ============================================================================
@@ -26,7 +26,7 @@ const elements = {
     exitButton: document.getElementById('exitButton'),
     loadingOverlay: document.getElementById('loadingOverlay'),
     rateLimitInfo: document.getElementById('rateLimitInfo'),
-    recaptchaContainer: document.getElementById('recaptchaContainer'),
+    recaptchaContainer: document.getElementById('recaptchaContainer') || null,
     charCounter: document.getElementById('charCounter')
 };
 
@@ -246,10 +246,13 @@ function addErrorMessage(message) {
 }
 
 function scrollToBottom() {
-    elements.chatBox.scrollTo({
-        top: elements.chatBox.scrollHeight,
-        behavior: 'smooth'
-    });
+    // Use setTimeout to ensure DOM is updated before scrolling
+    setTimeout(() => {
+        elements.chatBox.scrollTo({
+            top: elements.chatBox.scrollHeight,
+            behavior: 'smooth'
+        });
+    }, 100);
 }
 
 function updateRateLimitInfo(remaining) {
@@ -368,11 +371,9 @@ function setupEventListeners() {
     // Send button click
     elements.sendButton.addEventListener('click', sendMessage);
 
-    // Exit button click - reload page to start new session
+    // Exit button click - redirect to main website
     elements.exitButton.addEventListener('click', () => {
-        if (confirm('Oturumdan çıkmak istediğinize emin misiniz?')) {
-            window.location.reload();
-        }
+        window.location.href = 'https://ipekyolugkm.com/';
     });
 
     // Enter key to send (Shift+Enter for new line)
