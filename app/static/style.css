@@ -43,7 +43,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-dark);
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     line-height: 1.6;
 }
 
@@ -51,12 +52,13 @@ body {
    App Container
    ============================================================================ */
 .app-container {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
+    overflow: hidden;
 }
 
 /* ============================================================================
@@ -66,10 +68,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 20px 0;
     border-bottom: 1px solid var(--input-border);
-    margin-bottom: 20px;
     background: var(--bg-color);
+    flex-shrink: 0;
 }
 
 .header-content {
@@ -141,6 +143,8 @@ body {
     display: flex;
     flex-direction: column;
     background: var(--bg-color);
+    overflow: hidden;
+    min-height: 0;
 }
 
 .chat-box {
@@ -150,7 +154,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    min-height: 400px;
 }
 
 /* ============================================================================
@@ -192,7 +195,7 @@ body {
 }
 
 .message-content p {
-    margin-bottom: 8px;
+    margin: 0 0 4px 0;
 }
 
 .message-content p:last-child {
@@ -203,16 +206,16 @@ body {
 .message-content h2,
 .message-content h3,
 .message-content h4 {
-    margin: 12px 0 8px 0;
+    margin: 8px 0 4px 0;
     font-weight: 600;
 }
 
 .message-content h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .message-content h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 .message-content h4 {
@@ -227,8 +230,12 @@ body {
 
 .message-content ul,
 .message-content ol {
-    margin: 8px 0;
+    margin: 4px 0;
     padding-left: 20px;
+}
+
+.message-content li {
+    margin: 2px 0;
 }
 
 /* Links in messages */
@@ -285,8 +292,10 @@ body {
    Input Container
    ============================================================================ */
 .input-container {
-    padding: 20px 0;
+    padding: 16px 0;
     border-top: 1px solid var(--input-border);
+    background: var(--bg-color);
+    flex-shrink: 0;
 }
 
 .input-wrapper {
@@ -352,20 +361,47 @@ body {
 /* Input Footer - Warning message */
 .input-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    font-size: 0.75rem;
+    margin-top: 8px;
+    padding-top: 8px;
+    font-size: 0.7rem;
     color: var(--text-muted);
 }
 
 .warning-text {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
+    text-align: center;
 }
 
 .rate-limit-info {
+    font-size: 0.7rem;
+    margin-left: 12px;
+}
+
+/* Character Counter */
+.char-counter-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.char-counter {
     font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.char-counter.warning {
+    color: #F57C00;
+    font-weight: 500;
+}
+
+.char-counter.limit {
+    color: #D32F2F;
+    font-weight: 600;
 }
 
 /* ============================================================================

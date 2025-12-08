@@ -23,6 +23,7 @@ from .models import (
 )
 from .recaptcha import verify_recaptcha, is_captcha_configured
 from .rate_limiter import rate_limiter
+from .request_queue import request_queue
 
 
 # ============================================================================
@@ -32,22 +33,33 @@ from .rate_limiter import rate_limiter
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan - initialize resources on startup"""
-    print("🚀 Starting İpekGPT Web Application...")
+    print("Starting IpekGPT Web Application...")
     
     # Initialize database
     init_db()
-    print("✅ Database initialized")
+    print("Database initialized")
     
-    # Pre-load RAG system (downloads Turkish Gemma model if needed)
-    print("⏳ Loading RAG system and Turkish Gemma model...")
-    print("   (This may take several minutes on first run)")
+    # Initialize RAG system (loads ChromaDB - no heavy model download needed anymore)
+    print("Loading RAG system...")
     from .rag_engine import rag_system
     rag_system.initialize()
-    print("✅ RAG system ready!")
+    print("RAG system ready!")
+    
+    # Set up request queue handler
+    async def process_chat_request(session_id: str, message: str, history: list):
+        """Handler for queued chat requests with conversation history"""
+        result = await rag_system.ask_async(message, history=history)
+        return result
+    
+    request_queue.set_handler(process_chat_request)
+    await request_queue.start_processor()
+    print("Request queue processor started")
     
     yield
     
-    print("👋 Shutting down İpekGPT Web Application...")
+    # Cleanup
+    await request_queue.stop_processor()
+    print("Shutting down IpekGPT Web Application...")
 
 
 # ============================================================================
@@ -57,14 +69,14 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="İpekGPT API",
     description="RAG-based AI Assistant for İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi",
-    version="1.0.0",
+    version="2.0.0",
     lifespan=lifespan
 )
 
-# CORS middleware for local development
+# CORS middleware - use configured origins for production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for local development
+    allow_origins=settings.ALLOWED_ORIGINS if not settings.DEBUG else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -95,7 +107,8 @@ async def get_config():
     return {
         "recaptcha_site_key": settings.RECAPTCHA_SITE_KEY,
         "recaptcha_enabled": is_captcha_configured(),
-        "daily_limit": settings.DAILY_REQUEST_LIMIT
+        "daily_limit": settings.DAILY_REQUEST_LIMIT,
+        "max_message_length": settings.MAX_MESSAGE_LENGTH
     }
 
 
@@ -109,11 +122,12 @@ async def create_new_session(db: DBSession = Depends(get_db)):
     )
 
 
-@app.post("/api/chat", response_model=ChatResponse)
+@app.post("/ipekgpt/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     """
     Send a message and get AI response
     Protected by rate limiting and optional reCAPTCHA
+    Uses FIFO queue for request ordering
     """
     # Check rate limit
     allowed, remaining = check_rate_limit(db)
@@ -144,16 +158,19 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     # Update session activity
     update_session_activity(db, request.session_id)
     
+    # Fetch conversation history BEFORE adding the new message
+    from .database import get_session_messages
+    past_messages = get_session_messages(db, request.session_id, limit=6)  # Last 6 messages (3 exchanges)
+    history = [{"role": msg.role, "content": msg.content} for msg in past_messages]
+    
     # Save user message
     add_message(db, request.session_id, "user", request.message)
     
     # Increment rate limit counter
     increment_request_count(db)
     
-    # Get AI response
-    from .rag_engine import rag_system
-    
-    result = rag_system.ask(request.message)
+    # Process through FIFO queue with history
+    result = await request_queue.enqueue(request.session_id, request.message, history)
     
     # Save assistant message
     assistant_message = add_message(
@@ -168,7 +185,8 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
         message_id=assistant_message.id,
         response=result['answer'],
         response_time_ms=result.get('response_time_ms', 0),
-        sources_count=result.get('num_sources', 0)
+        sources_count=result.get('num_sources', 0),
+        rating=0  # New message, no vote yet
     )
 
 
@@ -176,12 +194,15 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
 async def submit_feedback(request: FeedbackRequest, db: DBSession = Depends(get_db)):
     """Submit feedback (thumbs up/down) for an AI response"""
     try:
-        add_feedback(db, request.message_id, request.rating)
+        print(f"[FEEDBACK] Received: message_id={request.message_id}, rating={request.rating}")
+        result = add_feedback(db, request.message_id, request.rating)
+        print(f"[FEEDBACK] Saved: feedback_id={result.id}")
         return FeedbackResponse(
             success=True,
             message="Feedback submitted successfully"
         )
     except Exception as e:
+        print(f"[FEEDBACK] Error: {e}")
         return FeedbackResponse(
             success=False,
             message=str(e)
@@ -205,6 +226,12 @@ async def get_rate_limit_status(db: DBSession = Depends(get_db)):
         "daily_limit": settings.DAILY_REQUEST_LIMIT,
         "reset_time": rate_limiter.get_reset_time()
     }
+
+
+@app.get("/api/queue-status")
+async def get_queue_status():
+    """Get request queue status"""
+    return request_queue.get_status()
 
 
 # ============================================================================
@@ -234,7 +261,14 @@ async def general_exception_handler(request: Request, exc: Exception):
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
+    from .gemini_api import gemini_manager
+    
+    return {
+        "status": "healthy",
+        "timestamp": datetime.utcnow().isoformat(),
+        "api_keys_status": gemini_manager.get_status(),
+        "queue_status": request_queue.get_status()
+    }
 
 
 if __name__ == "__main__":

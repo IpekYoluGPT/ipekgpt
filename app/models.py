@@ -13,7 +13,7 @@ from datetime import datetime
 class ChatRequest(BaseModel):
     """Request model for chat endpoint"""
     session_id: str = Field(..., description="Session ID for the conversation")
-    message: str = Field(..., min_length=1, max_length=2000, description="User message")
+    message: str = Field(..., min_length=1, max_length=300, description="User message (max 300 characters)")
     recaptcha_token: Optional[str] = Field(None, description="reCAPTCHA verification token")
 
 
@@ -44,6 +44,7 @@ class ChatResponse(BaseModel):
     response: str
     response_time_ms: int
     sources_count: int
+    rating: int = Field(default=0, description="Rating: 0 = no vote, 1 = positive, -1 = negative")
 
 
 class FeedbackResponse(BaseModel):

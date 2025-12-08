@@ -1,22 +1,18 @@
 """
 RAG Engine - Simplified for İpekGPT Web Application
-Uses existing ChromaDB and pre-downloads Turkish Gemma model
+Uses existing ChromaDB and Gemini API for LLM responses
 """
 import os
-import re
 import time
 from typing import Dict, Optional, Any
 
 # LangChain imports
 from langchain_core.prompts import PromptTemplate
-from langchain_core.language_models.llms import LLM
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-# Llama CPP
-from llama_cpp import Llama
-
 from .config import settings
+from .gemini_api import gemini_manager
 
 
 # ============================================================================
@@ -37,7 +33,7 @@ class VectorStore:
     
     def _init_embeddings(self):
         """Initialize the embedding model"""
-        print("⏳ Initializing Turkish embedding model...")
+        print("Initializing Turkish embedding model...")
         
         import torch
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -47,18 +43,18 @@ class VectorStore:
             model_name=self.embedding_model_name,
             model_kwargs={'device': device}
         )
-        print("✅ Embedding model ready!")
+        print("Embedding model ready!")
     
     def load_existing(self):
         """Load existing vector store from disk"""
-        print("⏳ Loading existing vector store from chroma_db...")
+        print("Loading existing vector store from chroma_db...")
         
         import chromadb
         from chromadb.config import Settings as ChromaSettings
         
         if not os.path.exists(self.db_path):
             raise FileNotFoundError(
-                f"❌ ChromaDB not found at: {self.db_path}\n"
+                f"ChromaDB not found at: {self.db_path}\n"
                 "Please ensure the chroma_db folder exists with your vector data."
             )
         
@@ -76,144 +72,146 @@ class VectorStore:
             embedding_function=self.embeddings
         )
         
-        print("✅ Vector store loaded!")
+        print("Vector store loaded!")
         return self.vectorstore
 
 
 # ============================================================================
-# Turkish Gemma LLM Wrapper
-# ============================================================================
-
-class TurkishGemmaLLM(LLM):
-    """Custom LLM wrapper for Turkish Gemma model"""
-    
-    model: Any = None
-    
-    def __init__(self, repo_id: str = None, filename: str = None, **kwargs):
-        super().__init__()
-        
-        repo_id = repo_id or settings.GEMMA_REPO_ID
-        filename = filename or settings.GEMMA_FILENAME
-        
-        print("⏳ Downloading and loading Turkish Gemma model...")
-        print("   (This may take several minutes on first run)")
-        
-        self.model = Llama.from_pretrained(
-            repo_id=repo_id,
-            filename=filename,
-            verbose=False,
-            **settings.GEMMA_PARAMS
-        )
-        
-        print("✅ Turkish Gemma model loaded!")
-        
-        if settings.GEMMA_PARAMS.get('n_gpu_layers', 0) > 0 or settings.GEMMA_PARAMS.get('n_gpu_layers') == -1:
-            print("   🚀 Model is using GPU acceleration!")
-    
-    @property
-    def _llm_type(self) -> str:
-        return "turkish_gemma"
-    
-    def _call(self, prompt: str, stop=None) -> str:
-        """Generate response from the model"""
-        response = self.model(
-            prompt,
-            stop=["<end_of_turn>", "</s>"],
-            max_tokens=settings.GEMMA_PARAMS['n_predict'],
-            temperature=settings.GEMMA_PARAMS['temp'],
-            top_p=settings.GEMMA_PARAMS['top_p'],
-            top_k=settings.GEMMA_PARAMS['top_k'],
-            repeat_penalty=settings.GEMMA_PARAMS['repeat_penalty']
-        )
-        
-        raw_text = response['choices'][0]['text']
-        
-        # Clean up response
-        cleaned_text = re.sub(r'<think>.*?(?:</think>|$)', '', raw_text, flags=re.DOTALL)
-        cleaned_text = re.sub(r'\[cite.*?\]', '', cleaned_text, flags=re.DOTALL)
-        cleaned_text = re.sub(r'\\', '', cleaned_text)
-        
-        disclaimer_patterns = [
-            r'\*\(Not:.*?\)',
-            r'\(Not:.*?\)',
-            r'\* Bilgi tabanımızda.*',
-            r'Verilen bilgiler arasında.*',
-            r'Bağlamda.*',
-        ]
-        
-        for pattern in disclaimer_patterns:
-            cleaned_text = re.sub(pattern, '', cleaned_text, flags=re.DOTALL)
-        
-        return cleaned_text.strip()
-
-
-# ============================================================================
-# RAG Chatbot
+# RAG Chatbot (Using Gemini API)
 # ============================================================================
 
 class TurkishRAGChatbot:
-    """RAG chatbot using Turkish Gemma model"""
+    """RAG chatbot using Gemini API for Turkish responses"""
     
-    PROMPT_TEMPLATE = """<bos><start_of_turn>user
-Sen İpekyolu Girişimci Kuluçka Merkezi'nin resmi yapay zeka asistanısın.
+    PROMPT_TEMPLATE = """Sen İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin resmi yapay zeka asistanısın.
 Adın: İpekGPT.
 
-GÖREVİN:
-Sana verilen bilgileri (Aşağıdaki VERİLER kısmını) *kendi bilginmiş gibi* kabul et ve kullanıcıya doğrudan cevap ver.
+KİMLİĞİN:
+- Samimi, yardımsever ve profesyonel bir asistansın.
+- İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi hakkında bilgi veriyorsun.
+- Elazığ'da bulunan bu merkezin AI asistanısın.
 
-KURALLAR:
-1. "Bağlamdaki bilgilere göre", "Verilere göre", "Bilgi tabanına göre", "Metinde yazdığı gibi" gibi ifadeler KESİNLİKLE KULLANMA.
-2. Doğrudan cevabı ver.
-3. Listeleri madde işaretleri ile düzenle.
-4. Bilgi VERİLER kısmında yoksa, "Bu konuda şu an güncel bilgim bulunmuyor" de.
+SOHBET KURALLARI:
+1. Selamlaşmalara uygun şekilde karşılık ver:
+   - "Sa", "Selam", "Selamün aleyküm", "as", "selamın aleyküm" → "Aleykümselam! Size nasıl yardımcı olabilirim?"
+   - "Merhaba", "Mrb", "meraba" → "Merhaba! Size nasıl yardımcı olabilirim?"
+   - "Günaydın" → "Günaydın! Bugün size nasıl yardımcı olabilirim?"
+   - "İyi günler" → "İyi günler! Size nasıl yardımcı olabilirim?"
+   - "İyi akşamlar" → "İyi akşamlar! Size nasıl yardımcı olabilirim?"
+   - "Hey", "Selam naber", "Nbr" → "Selam! İyiyim, size nasıl yardımcı olabilirim?"
 
-VERİLER:
+2. Kişisel sorulara samimi yanıtlar ver:
+   - "Nasılsın?", "Naber", "Nasıl gidiyor" → "İyiyim, teşekkür ederim! Size nasıl yardımcı olabilirim?"
+   - "Kimsin?", "Sen kimsin", "Sen nesin?" → "Ben İpekGPT, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin AI asistanıyım. Merkez hakkında her türlü sorunuzu yanıtlayabilirim!"
+   - "Ben kimim?", "Beni tanıyor musun" → "Siz şu an benimle sohbet eden değerli bir ziyaretçisiniz! Size merkez hakkında bilgi vermekten mutluluk duyarım."
+   - "Ne kadar zekisin?", "Akıllı mısın" → "Sorularınızı cevaplayacak kadar zekiyim! Size İpek Yolu Merkezi hakkında her türlü bilgiyi verebilirim."
+   - "Nerelisin?", "Nereden geliyorsun" → "Has Elazığlıyım! İpek Yolu Merkezi Elazığ'da bulunuyor ve ben de buranın AI asistanıyım."
+   - "Ne yapıyorsun?", "Ne iş yaparsın" → "Sizin sorularınızı yanıtlamak için buradayım! Merkez hakkında bilgi almak ister misiniz?"
+   - "Adın ne?", "İsmin ne" → "Benim adım İpekGPT! İpek Yolu Merkezi'nin yapay zeka asistanıyım."
+   - "Teşekkürler", "Sağol", "Eyvallah" → "Rica ederim! Başka bir sorunuz varsa yardımcı olmaktan memnuniyet duyarım."
+   - "Görüşürüz", "Hoşça kal", "Bb", "Bay bay" → "Görüşmek üzere! İyi günler dilerim."
+
+ÖNEMLİ TALİMATLAR:
+1. MERKEZ HAKKINDA SORULAR: Aşağıdaki SORU-CEVAP çiftlerini kullanarak yanıtla.
+2. Birden fazla bilgi varsa, bunları birleştirip kapsamlı bir cevap oluştur.
+3. "Bağlamdaki bilgilere göre", "Verilere göre" gibi ifadeler KULLANMA - doğrudan cevabı ver.
+4. Listeleri madde işaretleri ile düzenle.
+5. ÖNCEKİ KONUŞMAYA dikkat et ve bağlamı koru.
+
+GENEL BİLGİ SORULARI:
+- Basit matematik soruları (2+2, 5*3 vb.) → Doğrudan hesapla ve cevapla.
+- Genel kültür soruları (tarih, coğrafya, bilim vb.) → Bilgine dayanarak cevapla.
+  Örnek: "Cumhuriyet ne zaman kuruldu?" → "Türkiye Cumhuriyeti 29 Ekim 1923'te kuruldu."
+  Örnek: "Dünyanın en büyük okyanusu hangisi?" → "Pasifik Okyanusu dünyanın en büyük okyanusudur."
+- Bu tür genel sorulara kısa ve net cevaplar ver.
+
+SINIRLAR:
+- Merkez hakkında bilgi YOKSA ve genel bilgi de DEĞİLSE: "Bu konuda şu an bilgim yok. Başka bir konuda yardımcı olabilir miyim?" de.
+- Zararlı, uygunsuz veya etik dışı içeriklere cevap verme.
+
+MERKEZ HAKKINDAKİ BİLGİLER:
 {context}
 
-SORU: {question}<end_of_turn>
-<start_of_turn>model
-"""
+ÖNCEKİ KONUŞMA:
+{history}
+
+KULLANICININ ŞİMDİKİ SORUSU: {question}
+
+YANITIM:"""
     
-    def __init__(self, vectorstore=None, llm=None):
+    def __init__(self, vectorstore=None):
         """Initialize the RAG chatbot"""
         self.vectorstore = vectorstore
-        self.llm = llm or TurkishGemmaLLM()
         
         self.PROMPT = PromptTemplate(
             template=self.PROMPT_TEMPLATE,
-            input_variables=["context", "question"]
+            input_variables=["context", "history", "question"]
         )
         
-        print("✅ Turkish RAG Chatbot initialized and ready!")
+        print("Turkish RAG Chatbot initialized with Gemini API!")
     
-    def ask(self, question: str, show_sources: bool = False) -> Dict:
-        """Ask a question and get a response"""
+    async def ask_async(self, question: str, history: list = None, show_sources: bool = False) -> Dict:
+        """Ask a question and get a response (async version)
+        
+        Args:
+            question: The user's question
+            history: List of previous messages [{"role": "user"/"assistant", "content": "..."}]
+            show_sources: Whether to include source documents in response
+        """
         start_time = time.time()
         
         try:
             # Retrieve relevant documents
+            print(f"[RAG] Searching for: '{question[:50]}...'")
             docs = self.vectorstore.similarity_search(question, k=settings.TOP_K_RESULTS)
+            print(f"[RAG] Retrieved {len(docs)} documents")
             
             # Build context from retrieved documents
             context_parts = []
-            for doc in docs:
-                context_parts.append(doc.page_content)
+            for i, doc in enumerate(docs):
+                content = doc.page_content
+                print(f"[RAG] Doc {i+1}: {len(content)} chars - '{content[:80]}...'")
+                context_parts.append(content)
             context = "\n\n".join(context_parts)
             
-            # Create prompt
-            prompt = self.PROMPT.format(context=context, question=question)
+            print(f"[RAG] Total context: {len(context)} characters")
             
-            # Generate response
-            answer = self.llm._call(prompt)
+            # Format conversation history
+            history_text = ""
+            if history:
+                history_parts = []
+                for msg in history[-6:]:  # Last 6 messages (3 exchanges)
+                    role = "Kullanıcı" if msg.get("role") == "user" else "İpekGPT"
+                    history_parts.append(f"{role}: {msg.get('content', '')}")
+                history_text = "\n".join(history_parts)
+                print(f"[RAG] Including {len(history[-6:])} messages in history")
+            else:
+                history_text = "(İlk mesaj - önceki konuşma yok)"
+            
+            # Create prompt
+            prompt = self.PROMPT.format(context=context, history=history_text, question=question)
+            print(f"[RAG] Prompt created: {len(prompt)} characters")
+            
+            # Generate response using Gemini API
+            result = await gemini_manager.generate_response(prompt)
             
             # Calculate response time
             response_time_ms = int((time.time() - start_time) * 1000)
+            
+            if result['error']:
+                return {
+                    'answer': result['error'],
+                    'num_sources': 0,
+                    'categories_used': [],
+                    'response_time_ms': response_time_ms,
+                    'error': result['error']
+                }
             
             # Get categories used
             categories = list(set(doc.metadata.get('category', 'Unknown') for doc in docs))
             
             return {
-                'answer': answer,
+                'answer': result['text'],
                 'num_sources': len(docs),
                 'categories_used': categories,
                 'response_time_ms': response_time_ms,
@@ -221,7 +219,7 @@ SORU: {question}<end_of_turn>
             }
             
         except Exception as e:
-            print(f"Error in ask(): {e}")
+            print(f"Error in ask_async(): {e}")
             return {
                 'answer': "Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.",
                 'num_sources': 0,
@@ -229,6 +227,22 @@ SORU: {question}<end_of_turn>
                 'response_time_ms': int((time.time() - start_time) * 1000),
                 'error': str(e)
             }
+    
+    def ask(self, question: str, show_sources: bool = False) -> Dict:
+        """Synchronous wrapper for ask_async (for compatibility)"""
+        import asyncio
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                # If loop is running, create a new task
+                import concurrent.futures
+                with concurrent.futures.ThreadPoolExecutor() as executor:
+                    future = executor.submit(asyncio.run, self.ask_async(question, show_sources))
+                    return future.result()
+            else:
+                return loop.run_until_complete(self.ask_async(question, show_sources))
+        except RuntimeError:
+            return asyncio.run(self.ask_async(question, show_sources))
 
 
 # ============================================================================
@@ -255,13 +269,13 @@ class RAGSystem:
         self.vector_store_manager = None
     
     def initialize(self):
-        """Initialize the RAG system - loads existing ChromaDB and pre-downloads model"""
+        """Initialize the RAG system - loads existing ChromaDB"""
         if RAGSystem._initialized:
             print("RAG System already initialized!")
             return self.chatbot
         
         print("=" * 70)
-        print("🚀 İPEKYOLU RAG SİSTEMİ BAŞLATILIYOR")
+        print("IPEKYOLU RAG SISTEMI BASLATILIYOR")
         print("=" * 70)
         
         # Initialize vector store manager and load existing ChromaDB
@@ -269,16 +283,16 @@ class RAGSystem:
         self.vectorstore = self.vector_store_manager.load_existing()
         
         if not self.vectorstore:
-            print("❌ Vector store yüklenemedi!")
+            print("Vector store yuklenemedi!")
             return None
         
-        print("\n🤖 Turkish Gemma RAG chatbot başlatılıyor...")
+        print("\nTurkish Gemini RAG chatbot baslatiliyor...")
         self.chatbot = TurkishRAGChatbot(vectorstore=self.vectorstore)
         
         RAGSystem._initialized = True
         
         print("\n" + "=" * 70)
-        print("✅ İPEKYOLU RAG SİSTEMİ HAZIR!")
+        print("IPEKYOLU RAG SISTEMI HAZIR!")
         print("=" * 70)
         
         return self.chatbot
@@ -289,8 +303,20 @@ class RAGSystem:
             return self.initialize()
         return self.chatbot
     
+    async def ask_async(self, question: str, history: list = None) -> Dict:
+        """Async method to ask a question with conversation history"""
+        chatbot = self.get_chatbot()
+        if not chatbot:
+            return {
+                'answer': "Sistem henüz hazır değil, lütfen bekleyin.",
+                'num_sources': 0,
+                'categories_used': [],
+                'response_time_ms': 0
+            }
+        return await chatbot.ask_async(question, history=history)
+    
     def ask(self, question: str) -> Dict:
-        """Convenience method to ask a question"""
+        """Convenience method to ask a question (sync)"""
         chatbot = self.get_chatbot()
         if not chatbot:
             return {

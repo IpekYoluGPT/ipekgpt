@@ -11,7 +11,8 @@ const state = {
     recaptchaEnabled: false,
     recaptchaSiteKey: null,
     isLoading: false,
-    messages: []
+    messages: [],
+    maxMessageLength: 300
 };
 
 // ============================================================================
@@ -25,7 +26,8 @@ const elements = {
     exitButton: document.getElementById('exitButton'),
     loadingOverlay: document.getElementById('loadingOverlay'),
     rateLimitInfo: document.getElementById('rateLimitInfo'),
-    recaptchaContainer: document.getElementById('recaptchaContainer')
+    recaptchaContainer: document.getElementById('recaptchaContainer') || null,
+    charCounter: document.getElementById('charCounter')
 };
 
 // ============================================================================
@@ -58,7 +60,7 @@ const api = {
             body.recaptcha_token = recaptchaToken;
         }
 
-        const response = await fetch(`${this.baseUrl}/api/chat`, {
+        const response = await fetch(`${this.baseUrl}/ipekgpt/chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body)
@@ -104,11 +106,8 @@ function setLoading(isLoading) {
     elements.messageInput.disabled = isLoading;
 
     if (isLoading) {
-        // Loading overlay disabled - user requested removal
-        // elements.loadingOverlay.classList.add('active');
         addTypingIndicator();
     } else {
-        // elements.loadingOverlay.classList.remove('active');
         removeTypingIndicator();
     }
 }
@@ -164,41 +163,83 @@ function addMessage(content, isUser, messageId = null) {
 }
 
 function formatMessage(content) {
-    // Convert markdown-like formatting to HTML
-    let formatted = content
-        // Headers: ### h3, ## h2, # h1 (must be at start of line)
-        .replace(/^### (.*)$/gm, '<h4>$1</h4>')
-        .replace(/^## (.*)$/gm, '<h3>$1</h3>')
-        .replace(/^# (.*)$/gm, '<h2>$1</h2>')
+    // Trim and normalize
+    let text = content.trim().replace(/\r\n/g, '\n');
+
+    // Split into lines
+    const lines = text.split('\n');
+    let html = '';
+    let inList = false;
+
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+
+        // Skip empty lines
+        if (line.trim() === '') {
+            if (inList) {
+                html += '</ul>';
+                inList = false;
+            }
+            continue;
+        }
+
+        // Headers
+        if (line.match(/^### /)) {
+            if (inList) { html += '</ul>'; inList = false; }
+            html += '<h4>' + formatInline(line.slice(4)) + '</h4>';
+            continue;
+        }
+        if (line.match(/^## /)) {
+            if (inList) { html += '</ul>'; inList = false; }
+            html += '<h3>' + formatInline(line.slice(3)) + '</h3>';
+            continue;
+        }
+        if (line.match(/^# /)) {
+            if (inList) { html += '</ul>'; inList = false; }
+            html += '<h2>' + formatInline(line.slice(2)) + '</h2>';
+            continue;
+        }
+
+        // List items
+        const bulletMatch = line.match(/^[\s]*[-•*]\s+(.*)$/);
+        const numberedMatch = line.match(/^[\s]*\d+\.\s+(.*)$/);
+
+        if (bulletMatch || numberedMatch) {
+            if (!inList) {
+                html += '<ul>';
+                inList = true;
+            }
+            const itemContent = bulletMatch ? bulletMatch[1] : numberedMatch[1];
+            html += '<li>' + formatInline(itemContent) + '</li>';
+            continue;
+        }
+
+        // Regular text
+        if (inList) {
+            html += '</ul>';
+            inList = false;
+        }
+        html += '<p>' + formatInline(line) + '</p>';
+    }
+
+    // Close any open list
+    if (inList) {
+        html += '</ul>';
+    }
+
+    return html;
+}
+
+function formatInline(text) {
+    return text
         // Bold: **text** or __text__
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/__(.*?)__/g, '<strong>$1</strong>')
         // Italic: *text* or _text_
-        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+        .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
         .replace(/_([^_]+)_/g, '<em>$1</em>')
-        // URLs: Convert to clickable links
-        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
-        // Bullet points
-        .replace(/^[\s]*[-•*]\s+(.*)$/gm, '<li>$1</li>')
-        // Numbered lists
-        .replace(/^[\s]*(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-        // Line breaks (but not after headers)
-        .replace(/<\/h[234]>\n/g, '</h4>')
-        .replace(/\n\n/g, '</p><p>')
-        .replace(/\n/g, '<br>');
-
-    // Wrap in paragraphs (but not headers)
-    formatted = `<p>${formatted}</p>`;
-
-    // Clean up empty paragraphs around headers
-    formatted = formatted.replace(/<p>(<h[234]>)/g, '$1');
-    formatted = formatted.replace(/(<\/h[234]>)<\/p>/g, '$1');
-    formatted = formatted.replace(/<p><\/p>/g, '');
-
-    // Wrap list items in ul
-    formatted = formatted.replace(/(<li>.*?<\/li>)+/gs, '<ul>$&</ul>');
-
-    return formatted;
+        // URLs
+        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
 }
 
 function createFeedbackButtons(messageId) {
@@ -236,18 +277,23 @@ async function handleFeedbackClick(event) {
 function addErrorMessage(message) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'message assistant-message';
-    errorDiv.innerHTML = `<div class="error-message">${message}</div>`;
+    errorDiv.innerHTML = '<div class="error-message">' + message + '</div>';
     elements.chatBox.appendChild(errorDiv);
     scrollToBottom();
 }
 
 function scrollToBottom() {
-    elements.chatBox.scrollTop = elements.chatBox.scrollHeight;
+    setTimeout(() => {
+        elements.chatBox.scrollTo({
+            top: elements.chatBox.scrollHeight,
+            behavior: 'smooth'
+        });
+    }, 100);
 }
 
 function updateRateLimitInfo(remaining) {
     if (remaining !== undefined) {
-        elements.rateLimitInfo.textContent = `Günlük kalan istek: ${remaining}`;
+        elements.rateLimitInfo.textContent = 'Günlük kalan istek: ' + remaining;
     }
 }
 
@@ -258,9 +304,8 @@ function updateRateLimitInfo(remaining) {
 function loadRecaptcha(siteKey) {
     if (!siteKey) return;
 
-    // Create script element
     const script = document.createElement('script');
-    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    script.src = 'https://www.google.com/recaptcha/api.js?render=' + siteKey;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
@@ -290,9 +335,10 @@ async function sendMessage() {
 
     if (!message || state.isLoading) return;
 
-    // Clear input
+    // Clear input and reset counter
     elements.messageInput.value = '';
     autoResizeTextarea();
+    updateCharCounter();
 
     // Add user message to chat
     addMessage(message, true);
@@ -300,16 +346,10 @@ async function sendMessage() {
     setLoading(true);
 
     try {
-        // Get reCAPTCHA token if enabled
         const recaptchaToken = await getRecaptchaToken();
-
-        // Send message to API
         const response = await api.sendMessage(state.sessionId, message, recaptchaToken);
-
-        // Add assistant response
         addMessage(response.response, false, response.message_id);
 
-        // Update rate limit info
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
 
@@ -319,7 +359,7 @@ async function sendMessage() {
         if (error.message === 'RATE_LIMIT_EXCEEDED') {
             addErrorMessage('Günlük istek limitine ulaşıldı. Lütfen yarın tekrar deneyin.');
         } else {
-            addErrorMessage(`Bir hata oluştu: ${error.message}`);
+            addErrorMessage('Bir hata oluştu: ' + error.message);
         }
     } finally {
         setLoading(false);
@@ -336,22 +376,38 @@ function autoResizeTextarea() {
     textarea.style.height = Math.min(textarea.scrollHeight, 150) + 'px';
 }
 
+function updateCharCounter() {
+    // Ensure we have the charCounter element
+    if (!elements.charCounter) {
+        elements.charCounter = document.getElementById('charCounter');
+    }
+    if (!elements.charCounter) return;
+
+    const currentLength = elements.messageInput.value.length;
+    const maxLength = state.maxMessageLength;
+
+    elements.charCounter.textContent = currentLength + ' / ' + maxLength;
+
+    elements.charCounter.classList.remove('warning', 'limit');
+
+    if (currentLength >= maxLength) {
+        elements.charCounter.classList.add('limit');
+    } else if (currentLength >= maxLength * 0.8) {
+        elements.charCounter.classList.add('warning');
+    }
+}
+
 // ============================================================================
 // Event Listeners
 // ============================================================================
 
 function setupEventListeners() {
-    // Send button click
     elements.sendButton.addEventListener('click', sendMessage);
 
-    // Exit button click - reload page to start new session
     elements.exitButton.addEventListener('click', () => {
-        if (confirm('Oturumdan çıkmak istediğinize emin misiniz?')) {
-            window.location.reload();
-        }
+        window.location.href = 'https://ipekyolugkm.com/';
     });
 
-    // Enter key to send (Shift+Enter for new line)
     elements.messageInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
@@ -359,45 +415,44 @@ function setupEventListeners() {
         }
     });
 
-    // Auto-resize textarea
-    elements.messageInput.addEventListener('input', autoResizeTextarea);
+    elements.messageInput.addEventListener('input', () => {
+        autoResizeTextarea();
+        updateCharCounter();
+    });
+
+    updateCharCounter();
 }
 
 async function init() {
-    console.log('🚀 Initializing İpekGPT...');
+    console.log('Initializing IpekGPT...');
 
     try {
-        // Get configuration
         const config = await api.getConfig();
         state.recaptchaEnabled = config.recaptcha_enabled;
+        state.maxMessageLength = config.max_message_length || 400;
 
-        // Load reCAPTCHA if enabled
+        elements.messageInput.setAttribute('maxlength', state.maxMessageLength);
+
         if (state.recaptchaEnabled && config.recaptcha_site_key) {
             loadRecaptcha(config.recaptcha_site_key);
         }
 
-        // Create session
         const session = await api.createSession();
         state.sessionId = session.session_id;
-        console.log('✅ Session created:', state.sessionId);
+        console.log('Session created:', state.sessionId);
 
-        // Get rate limit status
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
 
-        // Setup event listeners
         setupEventListeners();
-
-        // Focus on input
         elements.messageInput.focus();
 
-        console.log('✅ İpekGPT initialized successfully!');
+        console.log('IpekGPT initialized successfully!');
 
     } catch (error) {
-        console.error('❌ Initialization error:', error);
+        console.error('Initialization error:', error);
         addErrorMessage('Sistem başlatılırken bir hata oluştu. Lütfen sayfayı yenileyin.');
     }
 }
 
-// Start initialization when DOM is ready
 document.addEventListener('DOMContentLoaded', init);
