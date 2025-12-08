@@ -22,9 +22,7 @@ class Settings:
     
     # ADD YOUR API KEYS HERE - Get them from: https://aistudio.google.com/app/apikey
     GEMINI_API_KEYS = [
-        # "your-api-key-1",
-        # "your-api-key-2",
-        # "your-api-key-3",
+        "AIzaSyB4iJccs7HObOzSE-ovz42f8ftypxKMRtg",
     ]
     
     # Model to use

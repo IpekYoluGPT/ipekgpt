@@ -167,23 +167,25 @@ function addMessage(content, isUser, messageId = null) {
 
 function formatMessage(content) {
     // Convert markdown-like formatting to HTML
+    // IMPORTANT: Order matters! Process block elements first, then inline
+
     let formatted = content
         // Headers: ### h3, ## h2, # h1 (must be at start of line)
         .replace(/^### (.*)$/gm, '<h4>$1</h4>')
         .replace(/^## (.*)$/gm, '<h3>$1</h3>')
         .replace(/^# (.*)$/gm, '<h2>$1</h2>')
-        // Bold: **text** or __text__
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/__(.*?)__/g, '<strong>$1</strong>')
-        // Italic: *text* or _text_
-        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-        .replace(/_([^_]+)_/g, '<em>$1</em>')
-        // URLs: Convert to clickable links
-        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
-        // Bullet points
+        // Bullet points (MUST be before italic processing to avoid * being treated as italic)
         .replace(/^[\s]*[-•*]\s+(.*)$/gm, '<li>$1</li>')
         // Numbered lists
         .replace(/^[\s]*(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
+        // Bold: **text** or __text__
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/__(.*?)__/g, '<strong>$1</strong>')
+        // Italic: *text* or _text_ (only when not at line start, avoid matching list items)
+        .replace(/(?<!^)(?<!\n)\*([^*\n]+)\*/g, '<em>$1</em>')
+        .replace(/_([^_]+)_/g, '<em>$1</em>')
+        // URLs: Convert to clickable links
+        .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
         // Line breaks (but not after headers)
         .replace(/<\/h[234]>\n/g, '</h4>')
         .replace(/\n\n/g, '</p><p>')
