@@ -42,7 +42,7 @@ class RequestQueue:
         self._request_handler: Callable[[str, str], Awaitable[Dict[str, Any]]] = None
         
         RequestQueue._initialized = True
-        print("✅ Request Queue initialized (FIFO)")
+        print("[OK] Request Queue initialized (FIFO)")
     
     def set_handler(self, handler: Callable[[str, str], Awaitable[Dict[str, Any]]]):
         """
@@ -58,7 +58,7 @@ class RequestQueue:
         
         self._processing = True
         self._processor_task = asyncio.create_task(self._process_queue())
-        print("🚀 Queue processor started")
+        print("[START] Queue processor started")
     
     async def stop_processor(self):
         """Stop the queue processor"""
@@ -69,7 +69,7 @@ class RequestQueue:
                 await self._processor_task
             except asyncio.CancelledError:
                 pass
-        print("⏹️ Queue processor stopped")
+        print("[STOP] Queue processor stopped")
     
     async def _process_queue(self):
         """Main queue processing loop (FIFO)"""

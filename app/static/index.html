@@ -50,7 +50,7 @@
             <!-- Input Area -->
             <div class="input-container">
                 <div class="input-wrapper">
-                    <textarea id="messageInput" placeholder="Mesajınızı yazın..." rows="1" maxlength="400"></textarea>
+                    <textarea id="messageInput" placeholder="Mesajınızı yazın..." rows="1" maxlength="300"></textarea>
                     <button id="sendButton" class="send-button" title="Gönder">
                         <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -60,12 +60,10 @@
                         </svg>
                     </button>
                 </div>
-                <div class="char-counter-container">
-                    <span class="char-counter" id="charCounter">0 / 400</span>
-                </div>
                 <div class="input-footer">
                     <span class="warning-text">İpekGPT hata yapabilir, önemli bilgileri kontrol ediniz.</span>
                     <span class="rate-limit-info" id="rateLimitInfo" style="display:none;"></span>
+                    <span class="char-counter" id="charCounter">0 / 300</span>
                 </div>
             </div>
         </main>
