@@ -14,6 +14,7 @@ class QueuedRequest:
     request_id: str
     session_id: str
     message: str
+    history: list = field(default_factory=list)
     timestamp: datetime = field(default_factory=datetime.utcnow)
     result_future: asyncio.Future = field(default_factory=lambda: asyncio.get_event_loop().create_future())
 
@@ -44,10 +45,10 @@ class RequestQueue:
         RequestQueue._initialized = True
         print("[OK] Request Queue initialized (FIFO)")
     
-    def set_handler(self, handler: Callable[[str, str], Awaitable[Dict[str, Any]]]):
+    def set_handler(self, handler: Callable[[str, str, list], Awaitable[Dict[str, Any]]]):
         """
         Set the handler function for processing requests.
-        Handler should be async and take (session_id, message) -> Dict
+        Handler should be async and take (session_id, message, history) -> Dict
         """
         self._request_handler = handler
     
@@ -83,8 +84,8 @@ class RequestQueue:
                 
                 try:
                     if self._request_handler:
-                        # Process the request
-                        result = await self._request_handler(request.session_id, request.message)
+                        # Process the request with history
+                        result = await self._request_handler(request.session_id, request.message, request.history)
                         request.result_future.set_result(result)
                     else:
                         request.result_future.set_exception(
@@ -101,7 +102,7 @@ class RequestQueue:
             except asyncio.CancelledError:
                 break
     
-    async def enqueue(self, session_id: str, message: str) -> Dict[str, Any]:
+    async def enqueue(self, session_id: str, message: str, history: list = None) -> Dict[str, Any]:
         """
         Add a request to the queue and wait for its result.
         Returns the result from the handler.
@@ -114,7 +115,8 @@ class RequestQueue:
         request = QueuedRequest(
             request_id=str(uuid.uuid4()),
             session_id=session_id,
-            message=message
+            message=message,
+            history=history or []
         )
         
         # Add to queue

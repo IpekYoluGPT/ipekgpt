@@ -145,41 +145,60 @@ def get_session_messages(db, session_id: str, limit: int = 50) -> List[Message]:
 # Feedback Operations
 def add_feedback(db, message_id: int, rating: int) -> Feedback:
     """Add or update feedback for a message"""
-    existing = db.query(Feedback).filter(Feedback.message_id == message_id).first()
-    if existing:
-        existing.rating = rating
-        existing.created_at = datetime.utcnow()
+    try:
+        existing = db.query(Feedback).filter(Feedback.message_id == message_id).first()
+        if existing:
+            existing.rating = rating
+            existing.created_at = datetime.utcnow()
+            db.commit()
+            db.refresh(existing)
+            print(f"[DB] Updated feedback for message {message_id}: rating={rating}")
+            return existing
+        
+        feedback = Feedback(message_id=message_id, rating=rating)
+        db.add(feedback)
         db.commit()
-        return existing
-    
-    feedback = Feedback(message_id=message_id, rating=rating)
-    db.add(feedback)
-    db.commit()
-    db.refresh(feedback)
-    return feedback
+        db.refresh(feedback)
+        print(f"[DB] Created feedback for message {message_id}: rating={rating}, id={feedback.id}")
+        return feedback
+    except Exception as e:
+        db.rollback()
+        print(f"[DB ERROR] add_feedback failed: {e}")
+        raise
 
 
 # Rate Limit Operations
 def get_today_request_count(db) -> int:
     """Get today's request count"""
-    today = date.today()
-    rate_limit = db.query(RateLimit).filter(RateLimit.date == today).first()
-    return rate_limit.request_count if rate_limit else 0
+    try:
+        today = date.today()
+        rate_limit = db.query(RateLimit).filter(RateLimit.date == today).first()
+        count = rate_limit.request_count if rate_limit else 0
+        return count
+    except Exception as e:
+        print(f"[DB ERROR] get_today_request_count failed: {e}")
+        return 0
 
 
 def increment_request_count(db) -> int:
     """Increment today's request count and return new count"""
-    today = date.today()
-    rate_limit = db.query(RateLimit).filter(RateLimit.date == today).first()
-    
-    if rate_limit:
-        rate_limit.request_count += 1
-    else:
-        rate_limit = RateLimit(date=today, request_count=1)
-        db.add(rate_limit)
-    
-    db.commit()
-    return rate_limit.request_count
+    try:
+        today = date.today()
+        rate_limit = db.query(RateLimit).filter(RateLimit.date == today).first()
+        
+        if rate_limit:
+            rate_limit.request_count += 1
+        else:
+            rate_limit = RateLimit(date=today, request_count=1)
+            db.add(rate_limit)
+        
+        db.commit()
+        print(f"[DB] Rate limit for {today}: count={rate_limit.request_count}")
+        return rate_limit.request_count
+    except Exception as e:
+        db.rollback()
+        print(f"[DB ERROR] increment_request_count failed: {e}")
+        raise
 
 
 def check_rate_limit(db) -> tuple[bool, int]:
@@ -187,3 +206,4 @@ def check_rate_limit(db) -> tuple[bool, int]:
     current_count = get_today_request_count(db)
     remaining = settings.DAILY_REQUEST_LIMIT - current_count
     return remaining > 0, max(0, remaining)
+

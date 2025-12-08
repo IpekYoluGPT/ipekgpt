@@ -25,12 +25,6 @@ class Settings:
     # Gemini API Configuration (loaded from .env)
     # ==========================================================================
     
-<<<<<<< HEAD
-    # ADD YOUR API KEYS HERE - Get them from: https://aistudio.google.com/app/apikey
-    GEMINI_API_KEYS = [
-        "AIzaSyB4iJccs7HObOzSE-ovz42f8ftypxKMRtg",
-    ]
-=======
     # API keys loaded from environment variable (comma-separated if multiple)
     @property
     def GEMINI_API_KEYS(self):
@@ -38,7 +32,6 @@ class Settings:
         if not keys_str:
             return []
         return [key.strip() for key in keys_str.split(",") if key.strip()]
->>>>>>> 1f0db8a27df12f32d14def153133638260a95b4e
     
     # Model loaded from environment variable
     @property

@@ -134,6 +134,8 @@ class GeminiAPIManager:
             # Create model instance
             model = genai.GenerativeModel(settings.GEMINI_MODEL)
             
+            print(f"[GEMINI] Sending prompt ({len(prompt)} chars) to {settings.GEMINI_MODEL}")
+            
             # Generate response
             response = await asyncio.to_thread(
                 model.generate_content,
@@ -142,10 +144,14 @@ class GeminiAPIManager:
             
             # Check if response has valid text
             if not response.parts:
+                print("[GEMINI] WARNING: Empty response from API")
                 return {
                     'error': 'API boş yanıt döndürdü. Lütfen tekrar deneyin.',
                     'text': None
                 }
+            
+            print(f"[GEMINI] Response received: {len(response.text)} chars")
+            print(f"[GEMINI] Response preview: '{response.text[:100]}...'")
             
             # Rotate key for next request (distribute load)
             self._rotate_key()

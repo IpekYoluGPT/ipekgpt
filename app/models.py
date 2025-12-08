@@ -44,6 +44,7 @@ class ChatResponse(BaseModel):
     response: str
     response_time_ms: int
     sources_count: int
+    rating: int = Field(default=0, description="Rating: 0 = no vote, 1 = positive, -1 = negative")
 
 
 class FeedbackResponse(BaseModel):

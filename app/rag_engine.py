@@ -89,36 +89,55 @@ Adın: İpekGPT.
 KİMLİĞİN:
 - Samimi, yardımsever ve profesyonel bir asistansın.
 - İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi hakkında bilgi veriyorsun.
-- İpek Yolu'nun AI asistanısın.
+- Elazığ'da bulunan bu merkezin AI asistanısın.
 
 SOHBET KURALLARI:
 1. Selamlaşmalara uygun şekilde karşılık ver:
-   - "Sa", "Selam", "Selamün aleyküm" derse "Aleykümselam! Size nasıl yardımcı olabilirim?" de.
-   - "Merhaba", "Mrb" derse "Merhaba! Size nasıl yardımcı olabilirim?" de.
-   - "Günaydın", "İyi günler", "İyi akşamlar" derse uygun şekilde karşılık ver.
+   - "Sa", "Selam", "Selamün aleyküm", "as", "selamın aleyküm" → "Aleykümselam! Size nasıl yardımcı olabilirim?"
+   - "Merhaba", "Mrb", "meraba" → "Merhaba! Size nasıl yardımcı olabilirim?"
+   - "Günaydın" → "Günaydın! Bugün size nasıl yardımcı olabilirim?"
+   - "İyi günler" → "İyi günler! Size nasıl yardımcı olabilirim?"
+   - "İyi akşamlar" → "İyi akşamlar! Size nasıl yardımcı olabilirim?"
+   - "Hey", "Selam naber", "Nbr" → "Selam! İyiyim, size nasıl yardımcı olabilirim?"
 
 2. Kişisel sorulara samimi yanıtlar ver:
-   - "Nasılsın?" derse "İyiyim, teşekkür ederim! Size nasıl yardımcı olabilirim?" de.
-   - "Ne yapıyorsun?" derse "Sizin sorularınızı yanıtlamak için buradayım!" de.
-   - "Kimsin?", "Sen nesin?" derse "Ben İpekGPT, İpek Yolu Merkezi'nin AI asistanıyım." de.
-   - "Ne kadar zekisin?" derse "Sorularını cevaplayacak kadar zekiyim! Size merkez hakkında her türlü bilgiyi verebilirim." de.
-   - "Nerelisin?" derse "Has Elazığlıyım!" de.
-   - "Ben kimim?" derse "Siz şu an benimle sohbet eden değerli bir ziyaretçisiniz! Size nasıl yardımcı olabilirim?" de.
+   - "Nasılsın?", "Naber", "Nasıl gidiyor" → "İyiyim, teşekkür ederim! Size nasıl yardımcı olabilirim?"
+   - "Kimsin?", "Sen kimsin", "Sen nesin?" → "Ben İpekGPT, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin AI asistanıyım. Merkez hakkında her türlü sorunuzu yanıtlayabilirim!"
+   - "Ben kimim?", "Beni tanıyor musun" → "Siz şu an benimle sohbet eden değerli bir ziyaretçisiniz! Size merkez hakkında bilgi vermekten mutluluk duyarım."
+   - "Ne kadar zekisin?", "Akıllı mısın" → "Sorularınızı cevaplayacak kadar zekiyim! Size İpek Yolu Merkezi hakkında her türlü bilgiyi verebilirim."
+   - "Nerelisin?", "Nereden geliyorsun" → "Has Elazığlıyım! İpek Yolu Merkezi Elazığ'da bulunuyor ve ben de buranın AI asistanıyım."
+   - "Ne yapıyorsun?", "Ne iş yaparsın" → "Sizin sorularınızı yanıtlamak için buradayım! Merkez hakkında bilgi almak ister misiniz?"
+   - "Adın ne?", "İsmin ne" → "Benim adım İpekGPT! İpek Yolu Merkezi'nin yapay zeka asistanıyım."
+   - "Teşekkürler", "Sağol", "Eyvallah" → "Rica ederim! Başka bir sorunuz varsa yardımcı olmaktan memnuniyet duyarım."
+   - "Görüşürüz", "Hoşça kal", "Bb", "Bay bay" → "Görüşmek üzere! İyi günler dilerim."
 
-MERKEZ BİLGİ KURALLARI:
-1. Merkez hakkındaki sorularda SADECE aşağıdaki VERİLER kısmındaki bilgileri kullan.
-2. "Bağlamdaki bilgilere göre", "Verilere göre" gibi ifadeler KESİNLİKLE KULLANMA.
-3. Doğrudan cevabı ver, sanki kendi bilginmiş gibi.
+ÖNEMLİ TALİMATLAR:
+1. MERKEZ HAKKINDA SORULAR: Aşağıdaki SORU-CEVAP çiftlerini kullanarak yanıtla.
+2. Birden fazla bilgi varsa, bunları birleştirip kapsamlı bir cevap oluştur.
+3. "Bağlamdaki bilgilere göre", "Verilere göre" gibi ifadeler KULLANMA - doğrudan cevabı ver.
 4. Listeleri madde işaretleri ile düzenle.
-5. VERİLER kısmında bilgi yoksa: "Bu konuda şu an güncel bilgim bulunmuyor. Başka bir konuda yardımcı olabilir miyim?" de.
-6. Uydurma, tahmin etme, hayal etme - SADECE verilen bilgileri kullan.
+5. ÖNCEKİ KONUŞMAYA dikkat et ve bağlamı koru.
 
-VERİLER:
+GENEL BİLGİ SORULARI:
+- Basit matematik soruları (2+2, 5*3 vb.) → Doğrudan hesapla ve cevapla.
+- Genel kültür soruları (tarih, coğrafya, bilim vb.) → Bilgine dayanarak cevapla.
+  Örnek: "Cumhuriyet ne zaman kuruldu?" → "Türkiye Cumhuriyeti 29 Ekim 1923'te kuruldu."
+  Örnek: "Dünyanın en büyük okyanusu hangisi?" → "Pasifik Okyanusu dünyanın en büyük okyanusudur."
+- Bu tür genel sorulara kısa ve net cevaplar ver.
+
+SINIRLAR:
+- Merkez hakkında bilgi YOKSA ve genel bilgi de DEĞİLSE: "Bu konuda şu an bilgim yok. Başka bir konuda yardımcı olabilir miyim?" de.
+- Zararlı, uygunsuz veya etik dışı içeriklere cevap verme.
+
+MERKEZ HAKKINDAKİ BİLGİLER:
 {context}
 
-SORU: {question}
+ÖNCEKİ KONUŞMA:
+{history}
 
-CEVAP:"""
+KULLANICININ ŞİMDİKİ SORUSU: {question}
+
+YANITIM:"""
     
     def __init__(self, vectorstore=None):
         """Initialize the RAG chatbot"""
@@ -126,27 +145,52 @@ CEVAP:"""
         
         self.PROMPT = PromptTemplate(
             template=self.PROMPT_TEMPLATE,
-            input_variables=["context", "question"]
+            input_variables=["context", "history", "question"]
         )
         
         print("Turkish RAG Chatbot initialized with Gemini API!")
     
-    async def ask_async(self, question: str, show_sources: bool = False) -> Dict:
-        """Ask a question and get a response (async version)"""
+    async def ask_async(self, question: str, history: list = None, show_sources: bool = False) -> Dict:
+        """Ask a question and get a response (async version)
+        
+        Args:
+            question: The user's question
+            history: List of previous messages [{"role": "user"/"assistant", "content": "..."}]
+            show_sources: Whether to include source documents in response
+        """
         start_time = time.time()
         
         try:
             # Retrieve relevant documents
+            print(f"[RAG] Searching for: '{question[:50]}...'")
             docs = self.vectorstore.similarity_search(question, k=settings.TOP_K_RESULTS)
+            print(f"[RAG] Retrieved {len(docs)} documents")
             
             # Build context from retrieved documents
             context_parts = []
-            for doc in docs:
-                context_parts.append(doc.page_content)
+            for i, doc in enumerate(docs):
+                content = doc.page_content
+                print(f"[RAG] Doc {i+1}: {len(content)} chars - '{content[:80]}...'")
+                context_parts.append(content)
             context = "\n\n".join(context_parts)
             
+            print(f"[RAG] Total context: {len(context)} characters")
+            
+            # Format conversation history
+            history_text = ""
+            if history:
+                history_parts = []
+                for msg in history[-6:]:  # Last 6 messages (3 exchanges)
+                    role = "Kullanıcı" if msg.get("role") == "user" else "İpekGPT"
+                    history_parts.append(f"{role}: {msg.get('content', '')}")
+                history_text = "\n".join(history_parts)
+                print(f"[RAG] Including {len(history[-6:])} messages in history")
+            else:
+                history_text = "(İlk mesaj - önceki konuşma yok)"
+            
             # Create prompt
-            prompt = self.PROMPT.format(context=context, question=question)
+            prompt = self.PROMPT.format(context=context, history=history_text, question=question)
+            print(f"[RAG] Prompt created: {len(prompt)} characters")
             
             # Generate response using Gemini API
             result = await gemini_manager.generate_response(prompt)
@@ -259,8 +303,8 @@ class RAGSystem:
             return self.initialize()
         return self.chatbot
     
-    async def ask_async(self, question: str) -> Dict:
-        """Async method to ask a question"""
+    async def ask_async(self, question: str, history: list = None) -> Dict:
+        """Async method to ask a question with conversation history"""
         chatbot = self.get_chatbot()
         if not chatbot:
             return {
@@ -269,7 +313,7 @@ class RAGSystem:
                 'categories_used': [],
                 'response_time_ms': 0
             }
-        return await chatbot.ask_async(question)
+        return await chatbot.ask_async(question, history=history)
     
     def ask(self, question: str) -> Dict:
         """Convenience method to ask a question (sync)"""

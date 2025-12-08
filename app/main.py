@@ -46,9 +46,9 @@ async def lifespan(app: FastAPI):
     print("RAG system ready!")
     
     # Set up request queue handler
-    async def process_chat_request(session_id: str, message: str):
-        """Handler for queued chat requests"""
-        result = await rag_system.ask_async(message)
+    async def process_chat_request(session_id: str, message: str, history: list):
+        """Handler for queued chat requests with conversation history"""
+        result = await rag_system.ask_async(message, history=history)
         return result
     
     request_queue.set_handler(process_chat_request)
@@ -158,14 +158,19 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     # Update session activity
     update_session_activity(db, request.session_id)
     
+    # Fetch conversation history BEFORE adding the new message
+    from .database import get_session_messages
+    past_messages = get_session_messages(db, request.session_id, limit=6)  # Last 6 messages (3 exchanges)
+    history = [{"role": msg.role, "content": msg.content} for msg in past_messages]
+    
     # Save user message
     add_message(db, request.session_id, "user", request.message)
     
     # Increment rate limit counter
     increment_request_count(db)
     
-    # Process through FIFO queue
-    result = await request_queue.enqueue(request.session_id, request.message)
+    # Process through FIFO queue with history
+    result = await request_queue.enqueue(request.session_id, request.message, history)
     
     # Save assistant message
     assistant_message = add_message(
@@ -180,7 +185,8 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
         message_id=assistant_message.id,
         response=result['answer'],
         response_time_ms=result.get('response_time_ms', 0),
-        sources_count=result.get('num_sources', 0)
+        sources_count=result.get('num_sources', 0),
+        rating=0  # New message, no vote yet
     )
 
 
@@ -188,12 +194,15 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
 async def submit_feedback(request: FeedbackRequest, db: DBSession = Depends(get_db)):
     """Submit feedback (thumbs up/down) for an AI response"""
     try:
-        add_feedback(db, request.message_id, request.rating)
+        print(f"[FEEDBACK] Received: message_id={request.message_id}, rating={request.rating}")
+        result = add_feedback(db, request.message_id, request.rating)
+        print(f"[FEEDBACK] Saved: feedback_id={result.id}")
         return FeedbackResponse(
             success=True,
             message="Feedback submitted successfully"
         )
     except Exception as e:
+        print(f"[FEEDBACK] Error: {e}")
         return FeedbackResponse(
             success=False,
             message=str(e)
