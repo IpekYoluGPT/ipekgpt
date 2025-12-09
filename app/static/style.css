@@ -1,31 +1,53 @@
-/* İpekGPT Chat Interface - Minimal Design */
+/* İpekGPT Chat Interface - Enhanced Design with Dark Mode */
 
 /* ============================================================================
-   CSS Variables
+   CSS Variables - Light Theme (Default)
    ============================================================================ */
 :root {
     --bg-color: #FFFFFF;
-    /* Pure White background */
+    --bg-secondary: #F8F9FA;
     --chat-bubble-bg: #000080;
-    /* Navy Blue - only for chat bubbles */
     --text-white: #FFFFFF;
-    /* White text in bubbles */
     --text-dark: #333333;
-    /* Dark text */
     --text-muted: #666666;
-    /* Muted text */
-    --btn-bg: #00FFFF;
-    /* Cyan Blue - send button */
-    --btn-arrow: #FFA500;
-    /* Orange - arrow */
+    --btn-bg: #000080;
+    --btn-arrow: #FFFFFF;
     --input-border: #E0E0E0;
-    /* Light gray border */
     --user-bubble-bg: #E3F2FD;
-    /* Light blue for user messages */
+    --suggestion-bg: #F0F4F8;
+    --suggestion-hover: #E3E8EE;
+    --offline-bg: #FEE2E2;
+    --offline-text: #991B1B;
+    --copy-btn-bg: rgba(255, 255, 255, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.1);
 
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 20px;
+
+    --transition-speed: 0.3s;
+}
+
+/* ============================================================================
+   Dark Theme
+   ============================================================================ */
+[data-theme="dark"] {
+    --bg-color: #1A1A2E;
+    --bg-secondary: #16213E;
+    --chat-bubble-bg: #0F3460;
+    --text-white: #FFFFFF;
+    --text-dark: #E8E8E8;
+    --text-muted: #A0A0A0;
+    --btn-bg: #1E88E5;
+    --btn-arrow: #FFFFFF;
+    --input-border: #3A3A5E;
+    --user-bubble-bg: #2A2A4E;
+    --suggestion-bg: #252545;
+    --suggestion-hover: #303055;
+    --offline-bg: #7F1D1D;
+    --offline-text: #FEE2E2;
+    --copy-btn-bg: rgba(255, 255, 255, 0.2);
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================================================
@@ -46,6 +68,48 @@ body {
     height: 100vh;
     overflow: hidden;
     line-height: 1.6;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* ============================================================================
+   Offline Banner
+   ============================================================================ */
+.offline-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--offline-bg);
+    color: var(--offline-text);
+    padding: 10px 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 2000;
+    animation: slideDown 0.3s ease;
+}
+
+.offline-banner.active {
+    display: flex;
+}
+
+.offline-banner svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* ============================================================================
@@ -59,10 +123,15 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden;
+    transition: padding-top var(--transition-speed);
+}
+
+body.offline .app-container {
+    padding-top: 50px;
 }
 
 /* ============================================================================
-   Header - Logo left, title right (Corporate Minimal)
+   Header
    ============================================================================ */
 .header {
     display: flex;
@@ -72,6 +141,7 @@ body {
     border-bottom: 1px solid var(--input-border);
     background: var(--bg-color);
     flex-shrink: 0;
+    transition: background-color var(--transition-speed), border-color var(--transition-speed);
 }
 
 .header-content {
@@ -99,13 +169,68 @@ body {
     color: var(--chat-bubble-bg);
     margin: 0;
     letter-spacing: -0.5px;
+    transition: color var(--transition-speed);
+}
+
+[data-theme="dark"] .header-text h1 {
+    color: #64B5F6;
 }
 
 .header-text .subtitle {
-    color: #666666;
+    color: var(--text-muted);
     font-size: 0.9rem;
     margin: 0;
     font-weight: 400;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-btn {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: all 0.15s ease;
+    flex-shrink: 0;
+}
+
+.header-btn:hover {
+    border-color: var(--btn-bg);
+    color: var(--btn-bg);
+    background: rgba(0, 0, 128, 0.05);
+}
+
+[data-theme="dark"] .header-btn:hover {
+    background: rgba(100, 181, 246, 0.1);
+}
+
+.header-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Dark Mode Toggle Icons */
+#darkModeBtn .moon-icon {
+    display: none;
+}
+
+[data-theme="dark"] #darkModeBtn .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] #darkModeBtn .moon-icon {
+    display: block;
 }
 
 /* Exit Button */
@@ -136,7 +261,7 @@ body {
 }
 
 /* ============================================================================
-   Chat Container - Simple white background
+   Chat Container
    ============================================================================ */
 .chat-container {
     flex: 1;
@@ -145,6 +270,7 @@ body {
     background: var(--bg-color);
     overflow: hidden;
     min-height: 0;
+    transition: background-color var(--transition-speed);
 }
 
 .chat-box {
@@ -157,12 +283,46 @@ body {
 }
 
 /* ============================================================================
-   Messages - Only bubbles are colored
+   Suggested Questions
+   ============================================================================ */
+.suggested-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+    animation: fadeIn 0.3s ease;
+}
+
+.suggestion-btn {
+    background: var(--suggestion-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.suggestion-btn:hover {
+    background: var(--suggestion-hover);
+    border-color: var(--btn-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.suggested-questions.hidden {
+    display: none;
+}
+
+/* ============================================================================
+   Messages with Avatars
    ============================================================================ */
 .message {
-    max-width: 80%;
-    padding: 12px 16px;
-    border-radius: var(--radius-md);
+    display: flex;
+    gap: 12px;
+    max-width: 85%;
     animation: fadeIn 0.2s ease;
 }
 
@@ -178,22 +338,124 @@ body {
     }
 }
 
-/* User message - light background */
+/* Message Avatar */
+.message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-avatar svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-muted);
+}
+
+/* Message Body */
+.message-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.message-content {
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    position: relative;
+}
+
+/* User message */
 .user-message {
     align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.user-message .message-content {
     background: var(--user-bubble-bg);
     color: var(--text-dark);
     border-bottom-right-radius: 4px;
 }
 
-/* Assistant message - Navy blue */
+.user-message .message-avatar {
+    background: var(--user-bubble-bg);
+}
+
+/* Assistant message */
 .assistant-message {
     align-self: flex-start;
+}
+
+.assistant-message .message-content {
     background: var(--chat-bubble-bg);
     color: var(--text-white);
     border-bottom-left-radius: 4px;
 }
 
+/* Message Time */
+.message-time {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    padding: 0 4px;
+}
+
+.user-message .message-time {
+    text-align: right;
+}
+
+/* ============================================================================
+   Copy Button
+   ============================================================================ */
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    background: var(--copy-btn-bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.message-content:hover .copy-btn {
+    opacity: 1;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.copy-btn svg {
+    width: 16px;
+    height: 16px;
+    color: var(--text-white);
+}
+
+.copy-btn.copied svg {
+    color: #4CAF50;
+}
+
+/* ============================================================================
+   Message Content Formatting
+   ============================================================================ */
 .message-content p {
     margin: 0 0 4px 0;
 }
@@ -202,7 +464,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Markdown headers in messages */
 .message-content h2,
 .message-content h3,
 .message-content h4 {
@@ -238,7 +499,6 @@ body {
     margin: 2px 0;
 }
 
-/* Links in messages */
 .message-content a {
     color: #90CAF9;
     text-decoration: underline;
@@ -296,6 +556,7 @@ body {
     border-top: 1px solid var(--input-border);
     background: var(--bg-color);
     flex-shrink: 0;
+    transition: background-color var(--transition-speed), border-color var(--transition-speed);
 }
 
 .input-wrapper {
@@ -316,6 +577,7 @@ body {
     resize: none;
     min-height: 48px;
     max-height: 120px;
+    transition: background-color var(--transition-speed), border-color var(--transition-speed), color var(--transition-speed);
 }
 
 #messageInput::placeholder {
@@ -324,7 +586,7 @@ body {
 
 #messageInput:focus {
     outline: none;
-    border-color: var(--chat-bubble-bg);
+    border-color: var(--btn-bg);
 }
 
 /* Send Button */
@@ -344,7 +606,11 @@ body {
 
 .send-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 128, 0.4);
+}
+
+[data-theme="dark"] .send-button:hover {
+    box-shadow: 0 4px 12px rgba(30, 136, 229, 0.4);
 }
 
 .send-button:disabled {
@@ -358,7 +624,7 @@ body {
     color: var(--btn-arrow);
 }
 
-/* Input Footer - Warning message */
+/* Input Footer */
 .input-footer {
     display: flex;
     justify-content: center;
@@ -423,6 +689,10 @@ body {
     color: var(--text-dark);
 }
 
+[data-theme="dark"] .loading-overlay {
+    background: rgba(26, 26, 46, 0.9);
+}
+
 .loading-overlay.active {
     display: flex;
 }
@@ -431,7 +701,7 @@ body {
     width: 40px;
     height: 40px;
     border: 3px solid var(--input-border);
-    border-top-color: var(--chat-bubble-bg);
+    border-top-color: var(--btn-bg);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -442,14 +712,35 @@ body {
     }
 }
 
-/* Typing Indicator */
-.typing-indicator {
-    display: flex;
-    gap: 4px;
-    padding: 8px;
+/* ============================================================================
+   Typing Indicator
+   ============================================================================ */
+.typing-indicator-container {
+    align-self: flex-start;
 }
 
-.typing-indicator span {
+.typing-indicator-container .message-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: var(--chat-bubble-bg);
+    border-radius: var(--radius-md);
+    border-bottom-left-radius: 4px;
+}
+
+.typing-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.typing-dots span {
     width: 8px;
     height: 8px;
     background: rgba(255, 255, 255, 0.6);
@@ -457,12 +748,18 @@ body {
     animation: bounce 1.4s infinite ease-in-out both;
 }
 
-.typing-indicator span:nth-child(1) {
+.typing-dots span:nth-child(1) {
     animation-delay: -0.32s;
 }
 
-.typing-indicator span:nth-child(2) {
+.typing-dots span:nth-child(2) {
     animation-delay: -0.16s;
+}
+
+.typing-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    margin-left: 4px;
 }
 
 @keyframes bounce {
@@ -478,13 +775,41 @@ body {
     }
 }
 
-/* Error */
+/* ============================================================================
+   Streaming Text Animation
+   ============================================================================ */
+.streaming-cursor::after {
+    content: '▋';
+    animation: blink 1s infinite;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Error Message */
 .error-message {
     background: #FFEBEE;
     border: 1px solid #FFCDD2;
     color: #C62828;
     padding: 12px;
     border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] .error-message {
+    background: #5C2121;
+    border-color: #7F2D2D;
+    color: #FFCDD2;
 }
 
 /* ============================================================================
@@ -496,10 +821,33 @@ body {
     }
 
     .message {
-        max-width: 90%;
+        max-width: 95%;
     }
 
-    .logo h1 {
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-text h1 {
         font-size: 1.25rem;
+    }
+
+    .header-text .subtitle {
+        font-size: 0.75rem;
+    }
+
+    .suggested-questions {
+        gap: 6px;
+    }
+
+    .suggestion-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .message-avatar {
+        width: 28px;
+        height: 28px;
     }
 }
