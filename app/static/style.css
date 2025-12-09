@@ -14,10 +14,10 @@
     /* Dark text */
     --text-muted: #666666;
     /* Muted text */
-    --btn-bg: #00FFFF;
-    /* Cyan Blue - send button */
-    --btn-arrow: #FFA500;
-    /* Orange - arrow */
+    --btn-bg: #000080;
+    /* Navy Blue - send button */
+    --btn-arrow: #FFFFFF;
+    /* White - arrow */
     --input-border: #E0E0E0;
     /* Light gray border */
     --user-bubble-bg: #E3F2FD;
@@ -344,7 +344,7 @@ body {
 
 .send-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 128, 0.4);
 }
 
 .send-button:disabled {
