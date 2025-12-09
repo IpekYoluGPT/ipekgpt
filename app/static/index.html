@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="İpekGPT - İpek Yolu AI Asistanı">
     <title>İpekGPT</title>
-    <link rel="stylesheet" href="/static/style.css?v=3">
+    <link rel="stylesheet" href="/static/style.css?v=4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Offline Banner -->
+    <div class="offline-banner" id="offlineBanner">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1 1L23 23M9 9C9.93254 8.36761 11.0114 8 12.1271 8C14.6695 8 16.8457 9.84334 17.2687 12.3183M4.24936 12.2499C4.79779 11.4189 5.48279 10.6838 6.27692 10.0769M20 16.2C20.6335 15.6396 21.1935 14.9992 21.6641 14.2916M16.7295 16.7296C15.4055 18.0535 13.6061 18.8744 11.6274 18.8744C7.76455 18.8744 4.62744 15.7373 4.62744 11.8744C4.62744 9.89577 5.44837 8.09633 6.77225 6.77246"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Bağlantı kesildi. Lütfen internet bağlantınızı kontrol edin.</span>
+    </div>
+
     <div class="app-container">
         <!-- Header -->
         <header class="header">
@@ -23,16 +33,36 @@
                     <p class="subtitle">İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi</p>
                 </div>
             </div>
-            <button class="exit-button" id="exitButton" title="Çıkış">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <polyline points="16,17 21,12 16,7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <line x1="21" y1="12" x2="9" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
+            <div class="header-actions">
+                <button class="header-btn" id="newChatBtn" title="Yeni Sohbet">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="header-btn" id="darkModeBtn" title="Karanlık Mod">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                        <path
+                            d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="exit-button" id="exitButton" title="Çıkış">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <polyline points="16,17 21,12 16,7" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="21" y1="12" x2="9" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
         </header>
 
         <!-- Chat Container -->
@@ -40,10 +70,32 @@
             <div class="chat-box" id="chatBox">
                 <!-- Welcome message -->
                 <div class="message assistant-message">
-                    <div class="message-content">
-                        <p>Merhaba! 👋 Ben İpekGPT.</p>
-                        <p>Size merkez hakkında bilgi verebilir, sorularınızı yanıtlayabilirim.</p>
+                    <div class="message-avatar">
+                        <img src="/static/logo.png" alt="İpekGPT">
                     </div>
+                    <div class="message-body">
+                        <div class="message-content">
+                            <p>Merhaba! İpek Yolu Uluslararası Çocuk ve Gençlik Merkezi'ne hoş geldiniz.</p>
+                            <p>Size nasıl yardımcı olabilirim?</p>
+                        </div>
+                        <span class="message-time" data-time="welcome">Şimdi</span>
+                    </div>
+                </div>
+
+                <!-- Suggested Questions -->
+                <div class="suggested-questions" id="suggestedQuestions">
+                    <button class="suggestion-btn" data-question="İpek Yolu hakkında bilgi verir misin?">
+                        🏛️ İpek Yolu hakkında bilgi ver
+                    </button>
+                    <button class="suggestion-btn" data-question="Hangi programlar düzenleniyor?">
+                        📚 Programlar nelerdir?
+                    </button>
+                    <button class="suggestion-btn" data-question="Eğitimlere nasıl başvurabilirim?">
+                        ✍️ Başvuru nasıl yapılır?
+                    </button>
+                    <button class="suggestion-btn" data-question="Merkez nerede bulunuyor?">
+                        📍 Merkez nerede?
+                    </button>
                 </div>
             </div>
 
@@ -77,7 +129,7 @@
         </div>
     </div>
 
-    <script src="/static/script.js"></script>
+    <script src="/static/script.js?v=2"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 /**
- * İpekGPT Chat Interface - Frontend JavaScript
+ * İpekGPT Chat Interface - Enhanced Frontend JavaScript
  */
 
 // ============================================================================
@@ -12,7 +12,9 @@ const state = {
     recaptchaSiteKey: null,
     isLoading: false,
     messages: [],
-    maxMessageLength: 300
+    maxMessageLength: 300,
+    isOnline: navigator.onLine,
+    darkMode: localStorage.getItem('darkMode') === 'true'
 };
 
 // ============================================================================
@@ -27,7 +29,11 @@ const elements = {
     loadingOverlay: document.getElementById('loadingOverlay'),
     rateLimitInfo: document.getElementById('rateLimitInfo'),
     recaptchaContainer: document.getElementById('recaptchaContainer') || null,
-    charCounter: document.getElementById('charCounter')
+    charCounter: document.getElementById('charCounter'),
+    newChatBtn: document.getElementById('newChatBtn'),
+    darkModeBtn: document.getElementById('darkModeBtn'),
+    offlineBanner: document.getElementById('offlineBanner'),
+    suggestedQuestions: document.getElementById('suggestedQuestions')
 };
 
 // ============================================================================
@@ -97,6 +103,57 @@ const api = {
 };
 
 // ============================================================================
+// Theme Management
+// ============================================================================
+
+function initTheme() {
+    if (state.darkMode) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+}
+
+function toggleDarkMode() {
+    state.darkMode = !state.darkMode;
+    localStorage.setItem('darkMode', state.darkMode);
+
+    if (state.darkMode) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+}
+
+// ============================================================================
+// Offline Detection
+// ============================================================================
+
+function updateOnlineStatus() {
+    state.isOnline = navigator.onLine;
+
+    if (state.isOnline) {
+        elements.offlineBanner.classList.remove('active');
+        document.body.classList.remove('offline');
+    } else {
+        elements.offlineBanner.classList.add('active');
+        document.body.classList.add('offline');
+    }
+}
+
+// ============================================================================
+// Time Formatting
+// ============================================================================
+
+function formatTime(date) {
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
+}
+
+function getCurrentTime() {
+    return formatTime(new Date());
+}
+
+// ============================================================================
 // UI Functions
 // ============================================================================
 
@@ -119,10 +176,18 @@ function addTypingIndicator() {
     const indicator = document.createElement('div');
     indicator.className = 'message assistant-message typing-indicator-container';
     indicator.innerHTML = `
-        <div class="typing-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="message-avatar">
+            <img src="/static/logo.png" alt="İpekGPT">
+        </div>
+        <div class="message-body">
+            <div class="typing-indicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="typing-text">İpekGPT yazıyor...</span>
+            </div>
         </div>
     `;
     elements.chatBox.appendChild(indicator);
@@ -136,22 +201,48 @@ function removeTypingIndicator() {
     }
 }
 
-function addMessage(content, isUser, messageId = null) {
+function addMessage(content, isUser, messageId = null, streaming = false) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${isUser ? 'user-message' : 'assistant-message'}`;
 
-    // Process markdown-like formatting
+    const timestamp = getCurrentTime();
     const formattedContent = formatMessage(content);
+    const avatarHtml = isUser
+        ? `<div class="message-avatar">
+               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                   <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+               </svg>
+           </div>`
+        : `<div class="message-avatar">
+               <img src="/static/logo.png" alt="İpekGPT">
+           </div>`;
+
+    const copyButtonHtml = !isUser ? `
+        <button class="copy-btn" title="Kopyala" data-content="${escapeHtml(content)}">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    ` : '';
 
     messageDiv.innerHTML = `
-        <div class="message-content">${formattedContent}</div>
-        ${!isUser && messageId ? createFeedbackButtons(messageId) : ''}
+        ${avatarHtml}
+        <div class="message-body">
+            <div class="message-content${streaming ? ' streaming-cursor' : ''}">
+                ${formattedContent}
+                ${copyButtonHtml}
+            </div>
+            ${!isUser && messageId ? createFeedbackButtons(messageId) : ''}
+            <span class="message-time">${timestamp}</span>
+        </div>
     `;
 
     elements.chatBox.appendChild(messageDiv);
     scrollToBottom();
 
-    // Add event listeners to feedback buttons
+    // Add event listeners
     if (!isUser && messageId) {
         const feedbackBtns = messageDiv.querySelectorAll('.feedback-btn');
         feedbackBtns.forEach(btn => {
@@ -159,14 +250,128 @@ function addMessage(content, isUser, messageId = null) {
         });
     }
 
+    // Add copy button listener
+    const copyBtn = messageDiv.querySelector('.copy-btn');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', handleCopyClick);
+    }
+
     return messageDiv;
 }
 
-function formatMessage(content) {
-    // Trim and normalize
-    let text = content.trim().replace(/\r\n/g, '\n');
+// Streaming message effect with live formatting
+async function addStreamingMessage(content, messageId = null) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message assistant-message';
 
-    // Split into lines
+    const timestamp = getCurrentTime();
+
+    messageDiv.innerHTML = `
+        <div class="message-avatar">
+            <img src="/static/logo.png" alt="İpekGPT">
+        </div>
+        <div class="message-body">
+            <div class="message-content streaming-cursor">
+            </div>
+            <span class="message-time">${timestamp}</span>
+        </div>
+    `;
+
+    elements.chatBox.appendChild(messageDiv);
+
+    const contentEl = messageDiv.querySelector('.message-content');
+
+    // Stream the content character by character with live formatting
+    let displayedText = '';
+    let index = 0;
+    const streamSpeed = 12; // ms per character
+    const formatUpdateInterval = 3; // Update formatting every N characters
+
+    await new Promise(resolve => {
+        const streamInterval = setInterval(() => {
+            if (index < content.length) {
+                displayedText += content[index];
+                index++;
+
+                // Update formatted content periodically for smoother performance
+                if (index % formatUpdateInterval === 0 || index === content.length) {
+                    contentEl.innerHTML = formatMessage(displayedText);
+                }
+                scrollToBottom();
+            } else {
+                clearInterval(streamInterval);
+                resolve();
+            }
+        }, streamSpeed);
+    });
+
+    // After streaming complete, finalize content with copy button
+    contentEl.classList.remove('streaming-cursor');
+    contentEl.innerHTML = formatMessage(content) + `
+        <button class="copy-btn" title="Kopyala" data-content="${escapeHtml(content)}">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    `;
+
+    // Add feedback buttons if messageId exists
+    if (messageId) {
+        const messageBody = messageDiv.querySelector('.message-body');
+        const timeSpan = messageBody.querySelector('.message-time');
+        const feedbackDiv = document.createElement('div');
+        feedbackDiv.innerHTML = createFeedbackButtons(messageId);
+        messageBody.insertBefore(feedbackDiv.firstElementChild, timeSpan);
+
+        const feedbackBtns = messageDiv.querySelectorAll('.feedback-btn');
+        feedbackBtns.forEach(btn => {
+            btn.addEventListener('click', handleFeedbackClick);
+        });
+    }
+
+    // Re-attach copy listener
+    const newCopyBtn = messageDiv.querySelector('.copy-btn');
+    if (newCopyBtn) {
+        newCopyBtn.addEventListener('click', handleCopyClick);
+    }
+
+    return messageDiv;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML.replace(/"/g, '&quot;');
+}
+
+async function handleCopyClick(event) {
+    const btn = event.currentTarget;
+    const content = btn.dataset.content;
+
+    try {
+        await navigator.clipboard.writeText(content);
+        btn.classList.add('copied');
+
+        // Show checkmark briefly
+        const originalSvg = btn.innerHTML;
+        btn.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        `;
+
+        setTimeout(() => {
+            btn.innerHTML = originalSvg;
+            btn.classList.remove('copied');
+        }, 2000);
+    } catch (err) {
+        console.error('Failed to copy:', err);
+    }
+}
+
+function formatMessage(content) {
+    let text = content.trim().replace(/\r\n/g, '\n');
     const lines = text.split('\n');
     let html = '';
     let inList = false;
@@ -174,7 +379,6 @@ function formatMessage(content) {
     for (let i = 0; i < lines.length; i++) {
         let line = lines[i];
 
-        // Skip empty lines
         if (line.trim() === '') {
             if (inList) {
                 html += '</ul>';
@@ -222,7 +426,6 @@ function formatMessage(content) {
         html += '<p>' + formatInline(line) + '</p>';
     }
 
-    // Close any open list
     if (inList) {
         html += '</ul>';
     }
@@ -232,13 +435,10 @@ function formatMessage(content) {
 
 function formatInline(text) {
     return text
-        // Bold: **text** or __text__
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/__(.*?)__/g, '<strong>$1</strong>')
-        // Italic: *text* or _text_
         .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
         .replace(/_([^_]+)_/g, '<em>$1</em>')
-        // URLs
         .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
 }
 
@@ -261,10 +461,7 @@ async function handleFeedbackClick(event) {
     const rating = parseInt(btn.dataset.rating);
     const container = btn.closest('.feedback-container');
 
-    // Remove active state from all buttons in this container
     container.querySelectorAll('.feedback-btn').forEach(b => b.classList.remove('active'));
-
-    // Add active state to clicked button
     btn.classList.add('active');
 
     try {
@@ -277,7 +474,15 @@ async function handleFeedbackClick(event) {
 function addErrorMessage(message) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'message assistant-message';
-    errorDiv.innerHTML = '<div class="error-message">' + message + '</div>';
+    errorDiv.innerHTML = `
+        <div class="message-avatar">
+            <img src="/static/logo.png" alt="İpekGPT">
+        </div>
+        <div class="message-body">
+            <div class="error-message">${message}</div>
+            <span class="message-time">${getCurrentTime()}</span>
+        </div>
+    `;
     elements.chatBox.appendChild(errorDiv);
     scrollToBottom();
 }
@@ -295,6 +500,55 @@ function updateRateLimitInfo(remaining) {
     if (remaining !== undefined) {
         elements.rateLimitInfo.textContent = 'Günlük kalan istek: ' + remaining;
     }
+}
+
+function hideSuggestedQuestions() {
+    if (elements.suggestedQuestions) {
+        elements.suggestedQuestions.classList.add('hidden');
+    }
+}
+
+// ============================================================================
+// New Chat Function
+// ============================================================================
+
+async function startNewChat() {
+    // Clear chat box except welcome message
+    const messages = elements.chatBox.querySelectorAll('.message:not(:first-child), .suggested-questions');
+    messages.forEach(msg => msg.remove());
+
+    // Re-add suggested questions
+    const suggestionsHtml = `
+        <div class="suggested-questions" id="suggestedQuestions">
+            <button class="suggestion-btn" data-question="İpek Yolu hakkında bilgi verir misin?">
+                🏛️ İpek Yolu hakkında bilgi ver
+            </button>
+            <button class="suggestion-btn" data-question="Hangi programlar düzenleniyor?">
+                📚 Programlar nelerdir?
+            </button>
+            <button class="suggestion-btn" data-question="Eğitimlere nasıl başvurabilirim?">
+                ✍️ Başvuru nasıl yapılır?
+            </button>
+            <button class="suggestion-btn" data-question="Merkez nerede bulunuyor?">
+                📍 Merkez nerede?
+            </button>
+        </div>
+    `;
+    elements.chatBox.insertAdjacentHTML('beforeend', suggestionsHtml);
+    elements.suggestedQuestions = document.getElementById('suggestedQuestions');
+    setupSuggestionListeners();
+
+    // Create new session
+    try {
+        const session = await api.createSession();
+        state.sessionId = session.session_id;
+        state.messages = [];
+        console.log('New session created:', state.sessionId);
+    } catch (error) {
+        console.error('Failed to create new session:', error);
+    }
+
+    elements.messageInput.focus();
 }
 
 // ============================================================================
@@ -330,15 +584,24 @@ async function getRecaptchaToken() {
 // Message Handling
 // ============================================================================
 
-async function sendMessage() {
-    const message = elements.messageInput.value.trim();
+async function sendMessage(messageText = null) {
+    const message = messageText || elements.messageInput.value.trim();
 
     if (!message || state.isLoading) return;
+
+    // Check if online
+    if (!state.isOnline) {
+        addErrorMessage('Bağlantı yok. Lütfen internet bağlantınızı kontrol edin.');
+        return;
+    }
 
     // Clear input and reset counter
     elements.messageInput.value = '';
     autoResizeTextarea();
     updateCharCounter();
+
+    // Hide suggested questions on first message
+    hideSuggestedQuestions();
 
     // Add user message to chat
     addMessage(message, true);
@@ -348,7 +611,9 @@ async function sendMessage() {
     try {
         const recaptchaToken = await getRecaptchaToken();
         const response = await api.sendMessage(state.sessionId, message, recaptchaToken);
-        addMessage(response.response, false, response.message_id);
+
+        // Use streaming for the response
+        await addStreamingMessage(response.response, response.message_id);
 
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
@@ -377,7 +642,6 @@ function autoResizeTextarea() {
 }
 
 function updateCharCounter() {
-    // Ensure we have the charCounter element
     if (!elements.charCounter) {
         elements.charCounter = document.getElementById('charCounter');
     }
@@ -401,8 +665,18 @@ function updateCharCounter() {
 // Event Listeners
 // ============================================================================
 
+function setupSuggestionListeners() {
+    const suggestionBtns = document.querySelectorAll('.suggestion-btn');
+    suggestionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const question = btn.dataset.question;
+            sendMessage(question);
+        });
+    });
+}
+
 function setupEventListeners() {
-    elements.sendButton.addEventListener('click', sendMessage);
+    elements.sendButton.addEventListener('click', () => sendMessage());
 
     elements.exitButton.addEventListener('click', () => {
         window.location.href = 'https://ipekyolugkm.com/';
@@ -420,11 +694,30 @@ function setupEventListeners() {
         updateCharCounter();
     });
 
+    // New Chat button
+    elements.newChatBtn.addEventListener('click', startNewChat);
+
+    // Dark Mode toggle
+    elements.darkModeBtn.addEventListener('click', toggleDarkMode);
+
+    // Suggested Questions
+    setupSuggestionListeners();
+
+    // Online/Offline events
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+
     updateCharCounter();
 }
 
 async function init() {
     console.log('Initializing IpekGPT...');
+
+    // Initialize theme
+    initTheme();
+
+    // Check online status
+    updateOnlineStatus();
 
     try {
         const config = await api.getConfig();
