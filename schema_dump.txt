@@ -1,0 +1,40 @@
+TABLE: sessions
+CREATE TABLE sessions (
+	id VARCHAR(36) NOT NULL, 
+	created_at DATETIME, 
+	last_activity DATETIME, 
+	PRIMARY KEY (id)
+)
+--------------------------------------------------
+TABLE: rate_limits
+CREATE TABLE rate_limits (
+	id INTEGER NOT NULL, 
+	date DATE NOT NULL, 
+	request_count INTEGER, 
+	PRIMARY KEY (id), 
+	UNIQUE (date)
+)
+--------------------------------------------------
+TABLE: messages
+CREATE TABLE messages (
+	id INTEGER NOT NULL, 
+	session_id VARCHAR(36) NOT NULL, 
+	role VARCHAR(20) NOT NULL, 
+	content TEXT NOT NULL, 
+	created_at DATETIME, 
+	response_time_ms INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(session_id) REFERENCES sessions (id)
+)
+--------------------------------------------------
+TABLE: feedback
+CREATE TABLE feedback (
+	id INTEGER NOT NULL, 
+	message_id INTEGER NOT NULL, 
+	rating INTEGER NOT NULL, 
+	created_at DATETIME, 
+	PRIMARY KEY (id), 
+	UNIQUE (message_id), 
+	FOREIGN KEY(message_id) REFERENCES messages (id)
+)
+--------------------------------------------------
