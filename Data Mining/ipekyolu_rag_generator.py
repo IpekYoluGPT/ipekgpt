@@ -1,61 +1,53 @@
 import json
 import os
 import time
+import re
 import google.generativeai as genai
 from tqdm import tqdm
 from datetime import datetime
 
 # ================= AYARLAR =================
-# 1. Dosya Yolları (Senin yüklediğin dosya)
-GIRIS_DOSYASI = 'haberler.json'
-ANA_KLASOR = "IPEKYOLU_RAG_VERISETI"
+GIRIS_DOSYASI = r'C:\Users\Atakan\Documents\GitHub\ipekgpt\Data Mining\ek_soru_cevap (1).txt'
+CIKIS_KLASORU = r'C:\Users\Atakan\Documents\GitHub\ipekgpt\IPEKYOLU_RAG_VERISETI'
 
-# 2. Model (Hızlı ve Ücretsiz)
-MODEL_NAME = 'models/gemini-2.0-flash'
-
-# ================= GEMINI AYARLARI =================
-genai.configure(api_key=API_KEY)
+# Model Ayarları
+MODEL_NAME = 'models/gemini-2.5-flash'
+genai.configure(api_key="AIzaSyA8iETrS_zkxCemGZgUvBcQLPQDcILBBWs")
 model = genai.GenerativeModel(MODEL_NAME)
 
 # ================= HEDEF DOSYA HARİTASI =================
 DOSYA_HARITASI = """
-1. "01_TEMEL_BILGILER/1.3_merkez_ozellikleri.json": Genel merkez tanıtımı, tarihçe, açılış, protokol ziyaretleri.
-2. "03_PROJELER_VE_BASARILAR/3.2_roket_ve_yarismalar.json": TEKNOFEST, yarışma dereceleri, ödüller, Ar-Ge ürünleri (SkyLogic vb.).
-3. "04_ETKINLIK_VE_SSS/4.1_kariyer_ve_etkinlik_turleri.json": Festivaller, kamplar, sosyal etkinlikler.
-4. "02_PROGRAMLAR_ATOLYELER_EGITIMLER/2.4_gonulluluk_bilgisi.json": Gönüllülük, uluslararası projeler, Erasmus.
-5. "05_EK_DOKUMANLAR_VE_FINANS/5.3_program_takvimi_ve_sureler.json": Tarihli duyurular.
+Metne göre en uygun dosyayı seç:
+1. "01_TEMEL_BILGILER/genel_bilgiler.json" → Merkez tanıtımı, çalışma saatleri, ulaşım, kurucu bilgisi
+2. "02_PROGRAMLAR_ATOLYELER_EGITIMLER/egitim_bilgileri.json" → Eğitimler, yaş grupları, drone, 3D yazıcı
+3. "02_PROGRAMLAR_ATOLYELER_EGITIMLER/gonulluluk.json" → Gönüllülük, staj, başvuru şartları
+4. "03_PROJELER_VE_BASARILAR/teknofest.json" → TEKNOFEST, yarışmalar, ödüller, roket
+5. "04_ETKINLIK_VE_SSS/sohbet_kurallari.json" → Selamlaşma, kişisel sorular, vedalaşma
 """
 
 # ================= SİSTEM PROMPTU =================
 SYSTEM_PROMPT = f"""
-Sen "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi" için veri işleyen uzman bir asistansın.
-Sana bir Haber Metni verilecek.
+Sen "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi" için RAG veri seti oluşturan bir asistansın.
+Sana verilen metni analiz edip yapılandırılmış soru-cevap verisi üreteceksin.
 
-🔴 KURALLAR:
-1. Kurum adını her zaman **"İpek Yolu"** (ayrı) yaz.
-2. Cevaplar metne sadık kalmalı.
-3. Tarih bilgisi varsa mutlaka kullan (Örn: "2021 yılında...").
-4. "related_questions" alanına mutlaka 2-3 adet ilgili soru ekle.
+KURALLAR:
+- Kurum adı: "İpek Yolu" (iki kelime ayrı)
+- Cevap sadece metindeki bilgiye dayansın
+- Eğer metinde "=>" varsa, sol taraf soru, sağ taraf cevap
 
-GÖREVLERİN:
-1. Metni analiz et ve aşağıdaki dosya yollarından hangisine EN UYGUN olduğuna karar ver:
+DOSYA SEÇİMİ:
 {DOSYA_HARITASI}
 
-2. Metne dayalı 1 adet Soru-Cevap oluştur.
-
-YANIT FORMATI (Sadece JSON):
+JSON FORMATI (sadece bu formatı döndür):
 {{
-  "hedef_dosya": "SECILEN_DOSYA_YOLU",
+  "hedef_dosya": "DOSYA_YOLU",
   "qa_data": {{
-      "question": "...",
-      "answer": "...",
-      "category": "...",
-      "keywords": ["anahtar1", "anahtar2"],
-      "priority": "high",
-      "related_questions": [
-          "İlgili soru 1?",
-          "İlgili soru 2?"
-      ]
+      "question": "Soru?",
+      "answer": "Cevap.",
+      "category": "Kategori",
+      "keywords": ["kelime1", "kelime2", "kelime3"],
+      "priority": "high veya medium veya low",
+      "related_questions": ["İlgili soru 1?", "İlgili soru 2?", "İlgili soru 3?"]
   }}
 }}
 """
@@ -63,92 +55,127 @@ YANIT FORMATI (Sadece JSON):
 # Standart Notlar
 STANDART_NOTES = {
     "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
-    "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+    "augmentation_notes": "TXT verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
     "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
     "context_inclusion": "Her cevap kendi başına anlamlıdır."
 }
 
-def ai_analiz_et(metin, tarih):
-    prompt = f"{SYSTEM_PROMPT}\n\nANALİZ EDİLECEK VERİ:\nTARİH: {tarih}\nMETİN: {metin}"
+def ai_analiz_et(metin):
+    """Gemini API ile metni analiz et ve soru-cevap üret"""
+    prompt = f"{SYSTEM_PROMPT}\n\nMETİN:\n{metin}"
     try:
         response = model.generate_content(
             prompt,
             generation_config={"response_mime_type": "application/json"}
         )
         return json.loads(response.text)
-    except:
+    except Exception as e:
+        print(f"  ⚠️ API Hatası: {e}")
         return None
 
-def main():
-    # Klasörleri oluştur (Garanti olsun)
-    for path_str in DOSYA_HARITASI.split('\n'):
-        if '"' in path_str:
-            rel_path = path_str.split('"')[1]
-            klasor = os.path.dirname(os.path.join(ANA_KLASOR, rel_path))
-            os.makedirs(klasor, exist_ok=True)
-
-    # Veriyi Oku (Senin oluşturduğun dosya)
-    try:
-        with open(GIRIS_DOSYASI, 'r', encoding='utf-8') as f:
-            posts = json.load(f)
-    except:
-        print(f"HATA: '{GIRIS_DOSYASI}' dosyası bulunamadı! Dosya ismini kontrol et.")
-        return
-
-    print(f"🚀 {len(posts)} haber işleniyor... (Haber Kaynaklı Veri)")
+def metinleri_ayir(dosya_yolu):
+    """TXT dosyasını anlamlı parçalara ayır"""
+    with open(dosya_yolu, 'r', encoding='utf-8') as f:
+        icerik = f.read()
     
-    basarili_sayac = 0
+    # Çift veya daha fazla boş satırla ayır
+    parcalar = re.split(r'\n\s*\n+', icerik)
+    
+    # Boş ve çok kısa olanları filtrele
+    metinler = []
+    for p in parcalar:
+        temiz = p.strip()
+        if temiz and len(temiz) > 15:
+            metinler.append(temiz)
+    
+    return metinler
 
-    for i, post in tqdm(enumerate(posts), total=len(posts)): 
-        icerik = post.get('icerik', '')
-        tarih = post.get('tarih', '')
+def dosyaya_kaydet(hedef_dosya, qa_veri, index):
+    """Soru-cevabı hedef JSON dosyasına ekle"""
+    tam_yol = os.path.join(CIKIS_KLASORU, hedef_dosya)
+    
+    # Klasörü oluştur
+    os.makedirs(os.path.dirname(tam_yol), exist_ok=True)
+    
+    # Kaynak ID ekle
+    qa_veri['source_ids'] = [f"txt_import_{index}"]
+    
+    # Mevcut veriyi oku veya yeni oluştur
+    if os.path.exists(tam_yol):
+        try:
+            with open(tam_yol, 'r', encoding='utf-8') as f:
+                mevcut = json.load(f)
+        except:
+            mevcut = {"metadata": {}, "data": [], "notes": STANDART_NOTES}
+    else:
+        mevcut = {
+            "metadata": {
+                "file_name": os.path.basename(hedef_dosya),
+                "category": os.path.dirname(hedef_dosya),
+                "sub_category": "TXT Kaynaklı Veri",
+                "last_updated": datetime.now().strftime("%Y-%m-%d"),
+                "version": "1.0"
+            },
+            "data": [],
+            "notes": STANDART_NOTES
+        }
+    
+    # Yeni veriyi ekle
+    mevcut["data"].append(qa_veri)
+    mevcut["metadata"]["last_updated"] = datetime.now().strftime("%Y-%m-%d")
+    
+    # Kaydet
+    with open(tam_yol, 'w', encoding='utf-8') as f:
+        json.dump(mevcut, f, ensure_ascii=False, indent=4)
+    
+    return tam_yol
 
-        if len(icerik) < 20: continue
-
-        sonuc = ai_analiz_et(icerik, tarih)
-
-        if sonuc:
-            hedef_dosya = sonuc.get("hedef_dosya")
-            qa_veri = sonuc.get("qa_data")
-            
-            if hedef_dosya and qa_veri:
-                # Kaynak ID
-                qa_veri['source_ids'] = [f"news_{tarih}_{i}"]
-
-                tam_yol = os.path.join(ANA_KLASOR, hedef_dosya)
-                
-                # Dosya Yönetimi
-                mevcut_veri = {
-                    "metadata": {
-                        "file_name": os.path.basename(hedef_dosya),
-                        "category": os.path.dirname(hedef_dosya),
-                        "sub_category": "Haber Kaynaklı Veri",
-                        "last_updated": datetime.now().strftime("%Y-%m-%d"),
-                        "version": "1.0"
-                    },
-                    "data": [],
-                    "notes": STANDART_NOTES
-                }
-                
-                if os.path.exists(tam_yol):
-                    try:
-                        with open(tam_yol, 'r', encoding='utf-8') as f:
-                            okunan = json.load(f)
-                            if "data" in okunan:
-                                mevcut_veri = okunan
-                    except: pass
-
-                mevcut_veri["data"].append(qa_veri)
-                
-                with open(tam_yol, 'w', encoding='utf-8') as f:
-                    json.dump(mevcut_veri, f, ensure_ascii=False, indent=4)
-                
-                basarili_sayac += 1
+def main():
+    print("=" * 60)
+    print("İPEK YOLU RAG VERİ SETİ OLUŞTURUCU")
+    print("=" * 60)
+    
+    # Metinleri oku
+    try:
+        metinler = metinleri_ayir(GIRIS_DOSYASI)
+        print(f"\n📄 {len(metinler)} adet metin parçası bulundu.\n")
+    except Exception as e:
+        print(f"❌ Dosya okunamadı: {e}")
+        return
+    
+    basarili = 0
+    hatali = 0
+    
+    for i, metin in enumerate(tqdm(metinler, desc="İşleniyor")):
+        # Kısa bilgi göster
+        kisaltilmis = metin[:50].replace('\n', ' ') + "..." if len(metin) > 50 else metin
+        print(f"\n[{i+1}/{len(metinler)}] {kisaltilmis}")
         
-        # Hız Sınırı Koruması
-        time.sleep(4)
-
-    print(f"\n✅ İŞLEM TAMAMLANDI! Toplam {basarili_sayac} haber verisi sisteme eklendi.")
+        # AI ile analiz et
+        sonuc = ai_analiz_et(metin)
+        
+        if sonuc and sonuc.get("hedef_dosya") and sonuc.get("qa_data"):
+            hedef = sonuc["hedef_dosya"]
+            qa = sonuc["qa_data"]
+            
+            # Kaydet
+            dosya_yolu = dosyaya_kaydet(hedef, qa, i)
+            print(f"  ✅ Kaydedildi: {hedef}")
+            print(f"     Soru: {qa.get('question', '')[:60]}...")
+            basarili += 1
+        else:
+            print(f"  ❌ İşlenemedi")
+            hatali += 1
+        
+        # API rate limit - 20 saniye bekle
+        time.sleep(20)
+    
+    print("\n" + "=" * 60)
+    print(f"✅ TAMAMLANDI!")
+    print(f"   Başarılı: {basarili}")
+    print(f"   Hatalı: {hatali}")
+    print(f"   Çıktı klasörü: {CIKIS_KLASORU}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()

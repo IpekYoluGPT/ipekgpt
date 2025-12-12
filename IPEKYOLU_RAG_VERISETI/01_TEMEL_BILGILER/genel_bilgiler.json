@@ -1,0 +1,81 @@
+{
+    "metadata": {
+        "file_name": "genel_bilgiler.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "TXT Kaynaklı Veri",
+        "last_updated": "2025-12-12",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Merkezin en yoğun olduğu zamanlar hangileri?",
+            "answer": "Yazın Yeşilay, AFAD ve benzeri kuruluşların yaptığı kamplar dolayısıyla merkezimizin en yoğun zamanları yaz ayları diyebilirim.",
+            "category": "Merkez Bilgileri",
+            "keywords": [
+                "yoğun zamanlar",
+                "yaz ayları",
+                "Yeşilay",
+                "AFAD",
+                "kamplar",
+                "İpek Yolu Merkezi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Merkezi yaz aylarında neden yoğun oluyor?",
+                "İpek Yolu Merkezi'nde hangi kuruluşlar kamp düzenliyor?",
+                "İpek Yolu Merkezi'nin çalışma saatleri yazın değişiyor mu?"
+            ],
+            "source_ids": [
+                "txt_import_6"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin çalışma saatleri nedir?",
+            "answer": "Merkez 08.00 ile 17.00 arasında hizmet vermektedir.",
+            "category": "Çalışma Saatleri",
+            "keywords": [
+                "merkez",
+                "çalışma saatleri",
+                "hizmet",
+                "saatler",
+                "açık"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu Merkezi hangi saatlerde açıktır?",
+                "Merkez kaça kadar hizmet veriyor?",
+                "İpek Yolu Merkezi'nin hizmet saatleri nedir?"
+            ],
+            "source_ids": [
+                "txt_import_7"
+            ]
+        },
+        {
+            "question": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin düşünce fikrini sağlayan ve kurulmasında büyük emekler veren kişi kimdir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin düşünce fikrini sağlayan ve kurulmasında büyük emekler veren kişi Hakan Karabulut'tur.",
+            "category": "Kurucu Bilgisi",
+            "keywords": [
+                "Hakan Karabulut",
+                "kurucu",
+                "emek veren",
+                "düşünce fikri",
+                "İpek Yolu"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nu kim kurdu?",
+                "Hakan Karabulut'un İpek Yolu'ndaki rolü nedir?",
+                "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin kuruluş süreci nasıl gerçekleşti?"
+            ],
+            "source_ids": [
+                "txt_import_10"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "TXT verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

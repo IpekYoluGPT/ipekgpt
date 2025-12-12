@@ -53,7 +53,7 @@ class Settings:
     # Rate Limiting & Limits
     # ==========================================================================
     
-    DAILY_REQUEST_LIMIT = 100  # Total AI requests per day for the server
+    DAILY_REQUEST_LIMIT = 300  # Total AI requests per day for the server
     MAX_MESSAGE_LENGTH = 300   # Maximum characters per user message
     USER_TOKEN_LIMIT = 1024    # Max tokens in user context window
     

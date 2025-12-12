@@ -11,7 +11,7 @@
 | **Backend Framework** | FastAPI |
 | **Database** | SQLite (SQLAlchemy ORM) |
 | **Vector Database** | ChromaDB |
-| **LLM** | Turkish-Gemma-9b-T1-GGUF (llama-cpp-python) |
+| **LLM** | Google Gemini API (gemini-2.5-flash) |
 | **Embeddings** | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 |
 | **Frontend** | Vanilla HTML/CSS/JavaScript |
 
@@ -25,9 +25,11 @@ ipekgpt/
 │   ├── __init__.py              # Paket tanımı
 │   ├── config.py                # Konfigürasyon ayarları
 │   ├── database.py              # SQLite veritabanı işlemleri
+│   ├── gemini_api.py            # Google Gemini API entegrasyonu
 │   ├── main.py                  # FastAPI uygulama giriş noktası
 │   ├── models.py                # Pydantic request/response modelleri
-│   ├── rag_engine.py            # RAG sistemi (ChromaDB + Gemma LLM)
+│   ├── rag_engine.py            # RAG sistemi (ChromaDB + Gemini)
+│   ├── request_queue.py         # FIFO istek kuyruğu
 │   ├── rate_limiter.py          # Günlük istek limitleme
 │   ├── recaptcha.py             # Google reCAPTCHA doğrulama
 │   └── static/                  # Frontend dosyaları
@@ -35,15 +37,39 @@ ipekgpt/
 │       ├── style.css            # CSS stilleri
 │       ├── script.js            # JavaScript mantığı
 │       ├── logo.png             # Logo resmi
-│       └── logo.svg             # SVG logo
+│       └── logo.svg             # SVG logo (favicon)
 ├── chroma_db/                   # ChromaDB vektör veritabanı
 │   └── chroma.sqlite3           # Vektörleştirilmiş Q&A verileri
 ├── IPEKYOLU_RAG_VERISETI/       # Ham Q&A JSON dosyaları
 ├── data/                        # Eski format veri dosyaları
 ├── ipekgpt.db                   # SQLite veritabanı (sessions, messages)
+├── .env                         # Ortam değişkenleri (API keys)
 ├── requirements.txt             # Python bağımlılıkları
 └── İpekGPT.ipynb               # Orijinal Jupyter notebook
 ```
+
+---
+
+## Önemli Özellikler
+
+### 1. Konuşma Hafızası
+- AI son 6 mesajı (3 kullanıcı-asistan değişimi) hatırlar
+- Bağlam korunarak takip sorularına yanıt verilir
+
+### 2. Genel Bilgi Desteği
+- Basit matematik soruları (2+2, 5*3 vb.)
+- Genel kültür soruları (tarih, coğrafya, bilim)
+- Selamlaşma ve kişisel sorulara samimi yanıtlar
+
+### 3. Sabit Layout
+- Üst header sabit (scroll etmez)
+- Alt mesaj girişi sabit
+- Sadece orta chat alanı scroll eder
+
+### 4. Rating Sistemi
+- 0 = Oy verilmemiş
+- 1 = Olumlu (👍)
+- -1 = Olumsuz (👎)
 
 ---
 
@@ -51,20 +77,18 @@ ipekgpt/
 
 ### 1. config.py - Konfigürasyon
 
-Tüm uygulama ayarlarını içerir:
-
 ```python
 class Settings:
     # Veritabanı
     DATABASE_URL = "sqlite:///ipekgpt.db"
     
-    # reCAPTCHA (opsiyonel)
-    RECAPTCHA_SITE_KEY = os.getenv("RECAPTCHA_SITE_KEY", "")
-    RECAPTCHA_SECRET_KEY = os.getenv("RECAPTCHA_SECRET_KEY", "")
+    # Gemini API (from .env)
+    GEMINI_API_KEYS = os.getenv("GEMINI_API_KEYS", "")
+    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     
     # Rate Limiting
-    DAILY_REQUEST_LIMIT = 100  # Günlük maksimum AI isteği
-    USER_TOKEN_LIMIT = 1024    # Kullanıcı bağlam penceresi
+    DAILY_REQUEST_LIMIT = 300
+    MAX_MESSAGE_LENGTH = 300
     
     # Vector Database
     VECTOR_DB_PATH = "chroma_db"
@@ -73,35 +97,13 @@ class Settings:
     # Embedding Model
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     
-    # LLM (Turkish Gemma)
-    GEMMA_REPO_ID = "ytu-ce-cosmos/Turkish-Gemma-9b-T1-GGUF"
-    GEMMA_FILENAME = "*Q4_K.gguf"
-    
-    # Gemma parametreleri
-    GEMMA_PARAMS = {
-        "n_gpu_layers": -1,   # Tüm katmanları GPU'da çalıştır
-        "n_threads": 4,
-        "n_ctx": 8192,        # Context window
-        "n_predict": 2048,    # Maksimum çıktı tokeni
-        "top_k": 40,
-        "top_p": 0.90,
-        "temp": 0.1,
-        "repeat_penalty": 1.1,
-    }
-    
     # Retrieval
-    TOP_K_RESULTS = 10  # Benzer doküman sayısı
-    
-    # Server
-    HOST = "127.0.0.1"
-    PORT = 8000
+    TOP_K_RESULTS = 10
 ```
 
 ---
 
-### 2. database.py - Veritabanı Katmanı
-
-SQLite veritabanı şeması ve CRUD operasyonları:
+### 2. database.py - Veritabanı
 
 **Tablolar:**
 
@@ -109,19 +111,27 @@ SQLite veritabanı şeması ve CRUD operasyonları:
 |-------|----------|
 | `sessions` | Sohbet oturumları (UUID, created_at, last_activity) |
 | `messages` | Mesajlar (session_id, role, content, response_time_ms) |
-| `feedback` | Kullanıcı geri bildirimi (message_id, rating: 1/-1) |
+| `feedback` | Kullanıcı geri bildirimi (message_id, rating: -1/0/1) |
 | `rate_limits` | Günlük istek sayısı (date, request_count) |
 
 **Fonksiyonlar:**
 - `create_session()` - Yeni oturum oluştur
 - `add_message()` - Mesaj ekle
-- `add_feedback()` - Geri bildirim ekle
+- `get_session_messages()` - Oturum geçmişi al (son 6 mesaj)
+- `add_feedback()` - Geri bildirim ekle/güncelle
 - `check_rate_limit()` - Limit kontrolü
-- `increment_request_count()` - İstek sayacını artır
 
 ---
 
-### 3. main.py - FastAPI Uygulama
+### 3. gemini_api.py - Gemini API Yönetimi
+
+- Birden fazla API key desteği (rotation)
+- Başarısız key'leri günlük sıfırlama
+- Rate limiting ve hata yönetimi
+
+---
+
+### 4. main.py - FastAPI Uygulama
 
 **API Endpoints:**
 
@@ -130,20 +140,10 @@ SQLite veritabanı şeması ve CRUD operasyonları:
 | `/` | GET | Frontend HTML sayfası |
 | `/api/config` | GET | Frontend konfigürasyonu |
 | `/api/session` | POST | Yeni oturum oluştur |
-| `/api/chat` | POST | AI'a mesaj gönder |
+| `/ipekgpt/chat` | POST | AI'a mesaj gönder |
 | `/api/feedback` | POST | Geri bildirim gönder |
 | `/api/rate-limit` | GET | Rate limit durumu |
-| `/api/verify-captcha` | POST | reCAPTCHA doğrula |
 | `/health` | GET | Sağlık kontrolü |
-
-**Chat Request:**
-```json
-{
-    "session_id": "uuid-string",
-    "message": "Kullanıcı mesajı",
-    "recaptcha_token": "optional-token"
-}
-```
 
 **Chat Response:**
 ```json
@@ -151,121 +151,65 @@ SQLite veritabanı şeması ve CRUD operasyonları:
     "message_id": 123,
     "response": "AI yanıtı",
     "response_time_ms": 1500,
-    "sources_count": 5
+    "sources_count": 5,
+    "rating": 0
 }
 ```
 
 ---
 
-### 4. rag_engine.py - RAG Sistemi
+### 5. rag_engine.py - RAG Sistemi
 
 **Bileşenler:**
 
 1. **VectorStore** - ChromaDB yönetimi
-   - Mevcut vektör veritabanını yükler
-   - HuggingFace embeddings kullanır
+2. **TurkishRAGChatbot** - RAG zinciri + konuşma hafızası
+3. **RAGSystem** - Singleton orkestratör
 
-2. **TurkishGemmaLLM** - LLM wrapper
-   - llama-cpp-python ile Gemma modeli
-   - Türkçe yanıt temizleme
-
-3. **TurkishRAGChatbot** - RAG zinciri
-   - Soru → Benzer doküman bulma → Prompt oluşturma → LLM yanıtı
-
-4. **RAGSystem** - Singleton orkestratör
-   - Tüm bileşenleri yönetir
-   - `ask(question)` metodu ile soru yanıtlama
-
-**Prompt Template:**
-```
-<bos><start_of_turn>user
-Sen İpekyolu Girişimci Kuluçka Merkezi'nin resmi yapay zeka asistanısın.
-Adın: İpekGPT.
-
-GÖREVİN:
-Sana verilen bilgileri *kendi bilginmiş gibi* kabul et ve kullanıcıya doğrudan cevap ver.
-
-KURALLAR:
-1. "Bağlamdaki bilgilere göre" gibi ifadeler KESİNLİKLE KULLANMA.
-2. Doğrudan cevabı ver.
-3. Listeleri madde işaretleri ile düzenle.
-4. Bilgi yoksa, "Bu konuda şu an güncel bilgim bulunmuyor" de.
-
-VERİLER:
-{context}
-
-SORU: {question}<end_of_turn>
-<start_of_turn>model
-```
+**Prompt Template Özellikleri:**
+- Selamlaşma yanıtları (Sa, Merhaba, Günaydın vb.)
+- Kişisel sorular (Kimsin, Nerelisin, Ben kimim)
+- Genel bilgi soruları (matematik, tarih, coğrafya)
+- Merkez bilgileri (RAG context)
+- Konuşma geçmişi (son 6 mesaj)
 
 ---
 
-### 5. models.py - Pydantic Modeller
+### 6. request_queue.py - FIFO Kuyruk
 
-**Request Modelleri:**
-- `ChatRequest` - session_id, message, recaptcha_token
-- `FeedbackRequest` - message_id, rating (-1, 1)
-- `RecaptchaVerifyRequest` - token
-
-**Response Modelleri:**
-- `SessionResponse` - session_id, created_at
-- `ChatResponse` - message_id, response, response_time_ms, sources_count
-- `FeedbackResponse` - success, message
-- `RateLimitResponse` - remaining_requests, reset_time
-
----
-
-### 6. rate_limiter.py - Rate Limiting
-
-- Günlük 100 istek limiti
-- Gece yarısı sıfırlanır
-- `get_reset_time()` - Sonraki sıfırlama zamanı
-
-### 7. recaptcha.py - reCAPTCHA
-
-- Google reCAPTCHA v3 entegrasyonu
-- `verify_recaptcha(token)` - Token doğrulama
-- `is_captcha_configured()` - Aktif mi kontrolü
+- Sıralı istek işleme
+- Konuşma geçmişi desteği
+- Async işleme
 
 ---
 
 ## Frontend
 
 ### index.html
-- Semantic HTML5 yapısı
 - Responsive tasarım
-- Erişilebilirlik özellikleri
+- Favicon: logo.svg
+- Sabit header ve input
 
 ### style.css
 - Modern minimalist tasarım
-- Beyaz arka plan
-- Navy mavi asistan mesaj baloncukları
-- Açık mavi kullanıcı mesaj baloncukları
-- Cyan gönder butonu
+- Navy mavi asistan mesajları
+- Açık mavi kullanıcı mesajları
+- Karakter sayacı (sağ alt)
 
 ### script.js
-- Session yönetimi
-- API çağrıları (`fetch`)
-- Mesaj gönderme/alma
-- Geri bildirim (thumbs up/down)
-- reCAPTCHA entegrasyonu
-- Rate limit gösterimi
-- Typing indicator animasyonu
+- Markdown formatlaması (headers, lists, bold, italic, links)
+- Karakter sayacı (mesaj gönderince sıfırlanır)
+- Konuşma geçmişi yönetimi
+- Otomatik scroll
 
 ---
 
 ## Çalıştırma
 
-### Gereksinimler
-```bash
-pip install fastapi uvicorn sqlalchemy langchain langchain-core langchain-chroma langchain-huggingface chromadb sentence-transformers llama-cpp-python
+### .env Dosyası
 ```
-
-### GPU Desteği (Opsiyonel)
-CUDA 12.4 + Visual Studio 2022 Build Tools gerekli:
-```bash
-$env:CMAKE_ARGS="-DGGML_CUDA=on"
-pip install llama-cpp-python --no-cache-dir
+GEMINI_API_KEYS=key1,key2,key3
+GEMINI_MODEL=gemini-2.5-flash
 ```
 
 ### Başlatma
@@ -283,97 +227,39 @@ Tarayıcıda: http://127.0.0.1:8000
 ```
 1. Kullanıcı mesaj yazar
    ↓
-2. Frontend POST /api/chat
+2. Frontend POST /ipekgpt/chat
    ↓
 3. Rate limit kontrolü
    ↓
-4. reCAPTCHA doğrulama (aktifse)
+4. Session doğrulama
    ↓
-5. Session doğrulama
+5. Konuşma geçmişi al (son 6 mesaj)
    ↓
 6. Kullanıcı mesajı DB'ye kaydet
    ↓
-7. RAG sistemi:
-   a. ChromaDB'den benzer dokümanlar bul (top-k)
-   b. Prompt oluştur (context + soru)
-   c. Turkish Gemma LLM'e gönder
-   d. Yanıtı temizle
+7. FIFO kuyruğa ekle
    ↓
-8. AI yanıtı DB'ye kaydet
+8. RAG sistemi:
+   a. ChromaDB'den benzer dokümanlar bul
+   b. Prompt oluştur (context + history + soru)
+   c. Gemini API'ye gönder
    ↓
-9. Response döndür
+9. AI yanıtı DB'ye kaydet
    ↓
-10. Frontend mesajı göster
+10. Response döndür (rating: 0)
+   ↓
+11. Frontend mesajı göster
 ```
 
 ---
 
 ## Güvenlik
 
-1. **SQL Injection Koruması** - SQLAlchemy ORM ile parametrik sorgular
-2. **Rate Limiting** - Günlük 100 istek limiti
+1. **SQL Injection Koruması** - SQLAlchemy ORM
+2. **Rate Limiting** - Günlük 300 istek
 3. **reCAPTCHA** - Bot koruması (opsiyonel)
-4. **Input Validation** - Pydantic ile veri doğrulama
-5. **CORS** - Geliştirme için açık, production'da kısıtlanmalı
-
----
-
-## Önemli Notlar
-
-1. **İlk çalıştırma** - Turkish Gemma modeli (~5.76GB) indirilir
-2. **ChromaDB** - Önceden oluşturulmuş olmalı (`chroma_db/` klasörü)
-3. **GPU kullanımı** - `n_gpu_layers: -1` tüm katmanları GPU'da çalıştırır
-4. **CPU modu** - GPU yoksa CPU'da çalışır (yavaş)
-
----
-
-## Dosya İlişkileri
-
-```
-main.py
-  ├── imports: config, database, models, recaptcha, rate_limiter
-  └── lazy import: rag_engine (ilk chat isteğinde)
-
-rag_engine.py
-  ├── imports: config
-  ├── uses: langchain, chromadb, llama_cpp
-  └── loads: chroma_db/, Turkish Gemma model
-
-database.py
-  ├── imports: config
-  └── creates: ipekgpt.db (sessions, messages, feedback, rate_limits)
-```
-
----
-
-## API Kullanım Örneği
-
-```javascript
-// 1. Session oluştur
-const session = await fetch('/api/session', { method: 'POST' });
-const { session_id } = await session.json();
-
-// 2. Mesaj gönder
-const response = await fetch('/api/chat', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-        session_id: session_id,
-        message: "Merkez ne zaman kuruldu?"
-    })
-});
-const { response: answer, message_id } = await response.json();
-
-// 3. Geri bildirim gönder
-await fetch('/api/feedback', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-        message_id: message_id,
-        rating: 1  // Thumbs up
-    })
-});
-```
+4. **Input Validation** - Pydantic + max 300 karakter
+5. **API Key Rotation** - Birden fazla Gemini key
 
 ---
 
@@ -381,8 +267,7 @@ await fetch('/api/feedback', {
 
 | Sorun | Çözüm |
 |-------|-------|
-| UnicodeEncodeError | Print ifadelerindeki emoji'leri kaldır |
-| CUDA toolset not found | Visual Studio 2022 Build Tools kur |
+| API key hatası | .env dosyasında GEMINI_API_KEYS kontrol et |
 | ChromaDB not found | `chroma_db/` klasörünün var olduğundan emin ol |
-| Model indirme yavaş | İlk çalıştırmada ~5.76GB indirilir, bekle |
-| Out of memory | `n_gpu_layers` değerini düşür veya CPU kullan |
+| Rate limit | Günde 100 istek limiti, gece yarısı sıfırlanır |
+| Feedback kaydedilmiyor | Console'da [DB] loglarını kontrol et |
