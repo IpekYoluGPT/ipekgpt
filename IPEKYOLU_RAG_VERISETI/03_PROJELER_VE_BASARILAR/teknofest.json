@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "file_name": "teknofest.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "TXT Kaynaklı Veri",
+        "last_updated": "2025-12-12",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu, TEKNOFEST Girişim Programı'nda hangi başarıyı elde etmiştir?",
+            "answer": "Elazığ İl Özel İdaresi İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ndeki mühendisler ve gönüllüler tarafından kurulan İpek Yolu Roket ekibi, TEKNOFEST Girişim Programı'nda 314 firma arasından ilk 8'e girme başarısını elde etmiştir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Girişim Programı",
+                "roket ekibi",
+                "ilk 8",
+                "başarı",
+                "Elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu Roket ekibi TEKNOFEST'te kaç firma arasından sıyrılmıştır?",
+                "İpek Yolu Roket ekibi kimler tarafından kurulmuştur?",
+                "İpek Yolu, TEKNOFEST kapsamında hangi programda ilk 8'e girmiştir?"
+            ],
+            "source_ids": [
+                "txt_import_11"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "TXT verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

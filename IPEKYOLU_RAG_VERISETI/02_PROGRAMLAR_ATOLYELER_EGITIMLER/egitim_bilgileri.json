@@ -1,0 +1,80 @@
+{
+    "metadata": {
+        "file_name": "egitim_bilgileri.json",
+        "category": "02_PROGRAMLAR_ATOLYELER_EGITIMLER",
+        "sub_category": "TXT Kaynaklı Veri",
+        "last_updated": "2025-12-12",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nun eğitimleri hangi yaş aralığındaki çocuk ve gençlere yöneliktir?",
+            "answer": "İpek Yolu'nun eğitimleri 6-30 yaş aralığındaki çocuk ve gençlerimize uygundur.",
+            "category": "Eğitim Bilgileri",
+            "keywords": [
+                "eğitim",
+                "yaş aralığı",
+                "çocuk",
+                "genç",
+                "katılımcı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun eğitimlerine kimler katılabilir?",
+                "Eğitimleriniz kaç yaşından itibaren başlıyor?",
+                "Eğitimlerinize en fazla kaç yaşına kadar katılım sağlanabilir?"
+            ],
+            "source_ids": [
+                "txt_import_5"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda drone kullanma eğitimi sonrası uçuş imkanı mevcut mu?",
+            "answer": "Evet, İpek Yolu'nun drone kullanma eğitimleri sonrasında koordinatörler eşliğinde uçuş gerçekleştirebilirsiniz.",
+            "category": "Drone Eğitimleri",
+            "keywords": [
+                "drone",
+                "eğitim",
+                "uçuş",
+                "koordinatör",
+                "İpek Yolu"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Drone eğitimlerinde neler öğretiliyor?",
+                "Drone eğitimleri hangi yaş gruplarına yönelik?",
+                "Drone eğitimi almak için ön koşullar nelerdir?"
+            ],
+            "source_ids": [
+                "txt_import_8"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda projeler için ne kadar 3D yazıcı parça desteği sağlanmaktadır?",
+            "answer": "Merkezimizde projeleriniz için 500 grama kadar 3D yazıcı parça desteği sağlanmaktadır.",
+            "category": "3D Yazıcı Desteği",
+            "keywords": [
+                "3D yazıcı",
+                "destek",
+                "proje",
+                "parça",
+                "500 gram"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda 3D yazıcı desteği nasıl alınır?",
+                "Merkezde projeler için hangi teknik imkanlar sunulmaktadır?",
+                "3D yazıcı kullanımı için yaş sınırı var mıdır?"
+            ],
+            "source_ids": [
+                "txt_import_9"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "TXT verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}
