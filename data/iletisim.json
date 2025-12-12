@@ -1,4 +1,4 @@
-{
+﻿{
     "metadata": {
         "file_name": "1.2_iletisim_bilgileri.json",
         "category": "TEMEL_BILGILER",
@@ -166,7 +166,7 @@
         },
         {
             "question": "Tüm sosyal medya hesaplarınıza tek bir yerden nasıl ulaşabilirim?",
-            "answer": "Tüm resmi sosyal medya hesaplarımıza ve önemli bağlantılarımıza (başvuru formları, web sitesi vb.) tek bir noktadan kolayca erişmek için Linktree sayfamızı kullanabilirsiniz. Bu sayfa üzerinden Instagram, LinkedIn ve diğer tüm platformlarımıza yönlenebilirsiniz. Güncel bağlantı listemiz için Linktree adresimiz: https://linktr.ee/girisimcikulucka",
+            "answer": "Tüm resmi sosyal medya hesaplarımıza ve önemli bağlantılarımıza (başvuru formları, web sitesi vb.) tek bir noktadan kolayca erişmek için Linktree sayfamızı kullanabilirsiniz. Bu sayfa üzerinden Instagram, LinkedIn ve diğer tüm platformlarımıza yönlenebilirsiniz. Güncel bağlantı listemiz için Linktree adresimiz: https://linktr.ee/ipekyolugenclik",
             "source_ids": ["10"],
             "category": "Sosyal Medya",
             "keywords": [
@@ -221,7 +221,7 @@
         },
         {
             "question": "Twitter (X) veya Facebook hesabınız var mı?",
-            "answer": "Merkezimizin Instagram, LinkedIn ve tüm bağlantılarını içeren Linktree (https://linktr.ee/girisimcikulucka) üzerinde resmi hesapları bulunmaktadır. Ancak, Twitter (X), Facebook veya diğer sosyal medya platformlarındaki en güncel sosyal medya listesi için Linktree sayfamızı kontrol edebilirsiniz.",
+            "answer": "Merkezimizin Instagram, LinkedIn ve tüm bağlantılarını içeren Linktree (https://linktr.ee/ipekyolugenclik) üzerinde resmi hesapları bulunmaktadır. Ancak, Twitter (X), Facebook veya diğer sosyal medya platformlarındaki en güncel sosyal medya listesi için Linktree sayfamızı kontrol edebilirsiniz.",
             "source_ids": ["10"],
             "category": "Negatif Test",
             "keywords": [

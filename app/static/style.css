@@ -6,7 +6,7 @@
 :root {
     --bg-color: #FFFFFF;
     --bg-secondary: #F8F9FA;
-    --chat-bubble-bg: #000080;
+    --chat-bubble-bg: #305ab4;
     --text-white: #FFFFFF;
     --text-dark: #333333;
     --text-muted: #666666;
@@ -16,7 +16,7 @@
     --user-bubble-bg: #E3F2FD;
     --suggestion-bg: #F0F4F8;
     --suggestion-hover: #E3E8EE;
-    --offline-bg: #FEE2E2;
+    --offline-bg: #fee2f9;
     --offline-text: #991B1B;
     --copy-btn-bg: rgba(255, 255, 255, 0.3);
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -535,7 +535,7 @@ body.offline .app-container {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: all 0.2s ease;
     font-size: 0.9rem;
 }
 
@@ -545,6 +545,46 @@ body.offline .app-container {
 }
 
 .feedback-btn.active {
+    background: rgba(255, 255, 255, 0.4);
+    animation: feedbackPulse 0.4s ease;
+}
+
+/* Feedback tıklama animasyonu */
+@keyframes feedbackPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Açık tema için feedback butonları */
+:root .feedback-btn {
+    background: rgba(0, 0, 128, 0.15);
+}
+
+:root .feedback-btn:hover {
+    background: rgba(0, 0, 128, 0.25);
+}
+
+:root .feedback-btn.active {
+    background: rgba(0, 0, 128, 0.35);
+}
+
+/* Dark tema için feedback butonları (override) */
+[data-theme="dark"] .feedback-btn {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .feedback-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .feedback-btn.active {
     background: rgba(255, 255, 255, 0.4);
 }
 

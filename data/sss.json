@@ -1,4 +1,4 @@
-{
+﻿{
     "metadata": {
         "file_name": "4.1_sikca_sorulan_sorular.json",
         "category": "ETKINLIK_VE_SSS",
@@ -251,7 +251,7 @@
         },
         {
             "question": "Online eğitim var mı?",
-            "answer": "Hayır, merkezimizdeki eğitimlerin tamamı yüz yüze (fiziksel) olarak gerçekleştirilmektedir. Katılımcılarımızın atölye ve laboratuvar imkanlarından tam olarak faydalanabilmesi için eğitimlerimiz bu şekilde planlanmıştır. Mevcutta bir çevrimiçi (online) veya uzaktan eğitim programları için https://linktr.ee/girisimcikulucka",
+            "answer": "Hayır, merkezimizdeki eğitimlerin tamamı yüz yüze (fiziksel) olarak gerçekleştirilmektedir. Katılımcılarımızın atölye ve laboratuvar imkanlarından tam olarak faydalanabilmesi için eğitimlerimiz bu şekilde planlanmıştır. Mevcutta bir çevrimiçi (online) veya uzaktan eğitim programları için https://linktr.ee/ipekyolugenclik",
             "source_ids": ["38"],
             "category": "Eğitimler (Genel)",
             "keywords": [
