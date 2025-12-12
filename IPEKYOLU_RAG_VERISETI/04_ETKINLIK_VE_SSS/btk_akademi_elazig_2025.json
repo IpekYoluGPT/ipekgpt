@@ -1,0 +1,78 @@
+{
+    "metadata": {
+        "file_name": "btk_akademi_elazig_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-12-12",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "BTK Akademi Elazığ'da hangi eğitimler düzenlendi?",
+            "answer": "BTK Akademi, 6 Aralık 2025 tarihinde Elazığ'da İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 5 farklı alanda yüz yüze eğitim başlattı. Açılan eğitimler: Üretken Yapay Zekâ Araçları, İnsansız Hava Araçları Kullanımı, ROS2 ile AMR (Otonom Mobil Robot) Geliştirme, Python ile Uygulama Geliştirme ve Elektronik Geliştirme Kartı ile IoT eğitimleridir.",
+            "category": "Eğitim",
+            "keywords": [
+                "BTK Akademi",
+                "yapay zeka",
+                "drone",
+                "ROS2",
+                "Python",
+                "IoT",
+                "Elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "BTK Akademi eğitimleri ücretli mi?",
+                "İpek Yolu'nda hangi teknoloji eğitimleri veriliyor?",
+                "Yapay zeka eğitimi İpek Yolu'nda var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-12-06_01"
+            ]
+        },
+        {
+            "question": "BTK Akademi İpek Yolu'nda eğitim veriyor mu?",
+            "answer": "Evet, BTK Akademi İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde yüz yüze eğitimler düzenlemektedir. 6 Aralık 2025'te Elazığ'da başlayan eğitimlerde Üretken Yapay Zekâ Araçları, İnsansız Hava Araçları (Drone), ROS2 ile Otonom Mobil Robot Geliştirme, Python ile Uygulama Geliştirme ve Elektronik Geliştirme Kartı ile IoT konularında kapsamlı eğitimler sunulmaktadır.",
+            "category": "Eğitim",
+            "keywords": [
+                "BTK Akademi",
+                "İpek Yolu",
+                "eğitim",
+                "teknoloji"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "BTK Akademi eğitimlerine nasıl başvurabilirim?",
+                "İpek Yolu hangi kurumlarla işbirliği yapıyor?"
+            ],
+            "source_ids": [
+                "ig_2025-12-06_01"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda ROS2 ve robotik eğitimi var mı?",
+            "answer": "Evet, İpek Yolu'nda BTK Akademi işbirliğiyle ROS2 ile AMR (Otonom Mobil Robot) Geliştirme eğitimi verilmektedir. Bu eğitim 6 Aralık 2025 tarihinde başlayan 5 farklı teknoloji eğitiminden biridir.",
+            "category": "Eğitim",
+            "keywords": [
+                "ROS2",
+                "robotik",
+                "AMR",
+                "otonom robot"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nda hangi robotik eğitimleri veriliyor?",
+                "Otonom mobil robot nedir?"
+            ],
+            "source_ids": [
+                "ig_2025-12-06_01"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

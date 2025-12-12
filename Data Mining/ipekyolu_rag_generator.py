@@ -12,7 +12,7 @@ CIKIS_KLASORU = r'C:\Users\Atakan\Documents\GitHub\ipekgpt\IPEKYOLU_RAG_VERISETI
 
 # Model Ayarları
 MODEL_NAME = 'models/gemini-2.5-flash'
-genai.configure(api_key="AIzaSyA8iETrS_zkxCemGZgUvBcQLPQDcILBBWs")
+genai.configure(api_key="")
 model = genai.GenerativeModel(MODEL_NAME)
 
 # ================= HEDEF DOSYA HARİTASI =================

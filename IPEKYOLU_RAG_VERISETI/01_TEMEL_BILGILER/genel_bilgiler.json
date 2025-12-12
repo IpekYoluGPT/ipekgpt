@@ -70,6 +70,202 @@
             "source_ids": [
                 "txt_import_10"
             ]
+        },
+        {
+            "question": "Gönüllü olmak için ne yapmalıyım?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gönüllüler mühendislik bölümlerinde okuyan üniversite öğrencileri arasından seçilir. Başvuru için Linktree linkimiz https://linktr.ee/ipekyolugenclik üzerinden veya Instagram hesabımız https://www.instagram.com/ipekyolugenclik/ üzerinden ulaşabilirsiniz.",
+            "category": "Gönüllülük",
+            "keywords": [
+                "gönüllü",
+                "başvuru",
+                "mühendislik",
+                "üniversite",
+                "öğrenci",
+                "linktree",
+                "instagram"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Gönüllü başvurusu nasıl yapılır?",
+                "Gönüllü olmak için hangi bölümde okumak gerekiyor?",
+                "İpek Yolu'nda gönüllü olmak için şartlar neler?"
+            ],
+            "source_ids": [
+                "txt_import_11"
+            ]
+        },
+        {
+            "question": "Gönüllü başvurusu nasıl yapılır?",
+            "answer": "Gönüllü başvurusu için Linktree sayfamız https://linktr.ee/ipekyolugenclik veya Instagram hesabımız https://www.instagram.com/ipekyolugenclik/ üzerinden başvuru formlarına ulaşabilirsiniz. Gönüllü adaylarının mühendislik bölümlerinde okuyan üniversite öğrencisi olması gerekmektedir.",
+            "category": "Gönüllülük",
+            "keywords": [
+                "başvuru",
+                "gönüllü",
+                "form",
+                "linktree",
+                "instagram"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Gönüllü olmak için ne yapmalıyım?",
+                "Kimler gönüllü olabilir?"
+            ],
+            "source_ids": [
+                "txt_import_12"
+            ]
+        },
+        {
+            "question": "Kimler gönüllü olabilir?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gönüllüler mühendislik bölümlerinde okuyan üniversite öğrencileri arasından seçilmektedir.",
+            "category": "Gönüllülük",
+            "keywords": [
+                "gönüllü",
+                "mühendislik",
+                "üniversite",
+                "öğrenci",
+                "şart"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Gönüllü olmak için ne yapmalıyım?",
+                "Gönüllü başvurusu nasıl yapılır?"
+            ],
+            "source_ids": [
+                "txt_import_13"
+            ]
+        },
+        {
+            "question": "Staj programınız var mı?",
+            "answer": "Hayır, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde staj programımız bulunmamaktadır.",
+            "category": "Staj",
+            "keywords": [
+                "staj",
+                "staj programı",
+                "intern",
+                "stajyer"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Stajyer alıyor musunuz?",
+                "Staj yapabilir miyim?",
+                "Gönüllü olmak için ne yapmalıyım?"
+            ],
+            "source_ids": [
+                "txt_import_14"
+            ]
+        },
+        {
+            "question": "Stajyer alıyor musunuz?",
+            "answer": "Hayır, merkezimizde staj programı bulunmamaktadır. Ancak mühendislik bölümlerinde okuyan üniversite öğrencileri gönüllü olarak aramıza katılabilir.",
+            "category": "Staj",
+            "keywords": [
+                "stajyer",
+                "staj",
+                "gönüllü"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Staj programınız var mı?",
+                "Gönüllü olmak için ne yapmalıyım?"
+            ],
+            "source_ids": [
+                "txt_import_15"
+            ]
+        },
+        {
+            "question": "Instagram hesaplarınız neler?",
+            "answer": "İpek Yolu'nun üç resmi Instagram hesabı bulunmaktadır:\n1. Genel Merkez hesabı: https://www.instagram.com/ipekyolugenclik/ - Gönüllülük başvuruları ve genel merkez duyuruları için\n2. Girişimci Kuluçka Birimi hesabı: https://www.instagram.com/ipekyolugirisimcikulucka/ - Eğitimler, etkinlikler ve Teknofest takımları için\n3. Tarımsal Kuluçka Birimi hesabı: https://www.instagram.com/ipekyolutarimsalkulucka/ - Tarım ve hayvancılık eğitimleri için",
+            "category": "İletişim",
+            "keywords": [
+                "instagram",
+                "sosyal medya",
+                "hesap",
+                "takip"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Sosyal medya hesaplarınız neler?",
+                "Sizi nasıl takip edebilirim?"
+            ],
+            "source_ids": [
+                "txt_import_16"
+            ]
+        },
+        {
+            "question": "Eğitim duyurularını nereden takip edebilirim?",
+            "answer": "Eğitim duyurularını ve etkinlikleri takip etmek için Girişimci Kuluçka Birimi'nin Instagram hesabını takip edebilirsiniz: https://www.instagram.com/ipekyolugirisimcikulucka/",
+            "category": "İletişim",
+            "keywords": [
+                "eğitim",
+                "duyuru",
+                "instagram",
+                "takip"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Instagram hesaplarınız neler?",
+                "Yeni eğitimlerden nasıl haberdar olurum?"
+            ],
+            "source_ids": [
+                "txt_import_17"
+            ]
+        },
+        {
+            "question": "Tarımsal Kuluçka Birimi nedir?",
+            "answer": "İpek Yolu Tarımsal Kuluçka Birimi, tarım ve hayvancılık alanında eğitimler ve etkinlikler düzenleyen bir birimdir. Tarımsal Kuluçka Birimi'nin etkinliklerini Instagram hesabımızdan takip edebilirsiniz: https://www.instagram.com/ipekyolutarimsalkulucka/",
+            "category": "Birimler",
+            "keywords": [
+                "tarımsal kuluçka",
+                "tarım",
+                "hayvancılık",
+                "birim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Tarımsal Kuluçka Birimi etkinlikleri neler?",
+                "Tarım eğitimleri var mı?"
+            ],
+            "source_ids": [
+                "txt_import_18"
+            ]
+        },
+        {
+            "question": "Tarımsal Kuluçka Birimi etkinlikleri neler?",
+            "answer": "Tarımsal Kuluçka Birimi'nin güncel etkinliklerini ve duyurularını Instagram hesabımızdan takip edebilirsiniz: https://www.instagram.com/ipekyolutarimsalkulucka/",
+            "category": "Birimler",
+            "keywords": [
+                "tarımsal kuluçka",
+                "etkinlik",
+                "tarım",
+                "instagram"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Tarımsal Kuluçka Birimi nedir?",
+                "Tarım eğitimleri var mı?"
+            ],
+            "source_ids": [
+                "txt_import_19"
+            ]
+        },
+        {
+            "question": "Tarım eğitimleri var mı?",
+            "answer": "Evet, İpek Yolu Tarımsal Kuluçka Birimi tarım ve hayvancılık alanında eğitimler düzenlemektedir. Güncel eğitimler için Tarımsal Kuluçka Birimi Instagram hesabını takip edebilirsiniz: https://www.instagram.com/ipekyolutarimsalkulucka/",
+            "category": "Eğitimler",
+            "keywords": [
+                "tarım",
+                "eğitim",
+                "hayvancılık",
+                "tarımsal kuluçka"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Tarımsal Kuluçka Birimi nedir?",
+                "Hangi eğitimler veriliyor?"
+            ],
+            "source_ids": [
+                "txt_import_20"
+            ]
         }
     ],
     "notes": {

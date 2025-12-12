@@ -628,6 +628,7 @@ async function sendMessage(messageText = null) {
         }
     } finally {
         setLoading(false);
+        elements.messageInput.focus();
     }
 }
 
@@ -679,7 +680,7 @@ function setupEventListeners() {
     elements.sendButton.addEventListener('click', () => sendMessage());
 
     elements.exitButton.addEventListener('click', () => {
-        window.location.href = 'https://ipekyolugkm.com/';
+        window.location.href = 'https://ipekyolugkm.com.tr/';
     });
 
     elements.messageInput.addEventListener('keydown', (e) => {
@@ -706,6 +707,18 @@ function setupEventListeners() {
     // Online/Offline events
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
+
+    // Sayfa tıklamalarında input'a focus'u koru
+    document.addEventListener('click', (e) => {
+        // Butonlara veya özel elementlere tıklanmadıysa input'a odaklan
+        const isButton = e.target.closest('button');
+        const isLink = e.target.closest('a');
+        const isInput = e.target.closest('input, textarea');
+        
+        if (!isButton && !isLink && !isInput && !state.isLoading) {
+            elements.messageInput.focus();
+        }
+    });
 
     updateCharCounter();
 }

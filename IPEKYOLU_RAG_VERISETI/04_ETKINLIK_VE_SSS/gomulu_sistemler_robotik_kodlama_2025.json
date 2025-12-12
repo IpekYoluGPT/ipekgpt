@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "file_name": "gomulu_sistemler_robotik_kodlama_2025.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Otomatik Veri Seti",
+        "last_updated": "2025-12-12",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda gömülü sistemler ve robotik kodlama eğitimi var mı?",
+            "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde 29-30 Kasım 2025 tarihlerinde 'Kodlar Harekete Geçiyor: Gömülü Sistemler ve Robotik Kodlama Eğitimi' düzenlenmiştir. Bu eğitim lise seviyesine özel olarak hazırlanmıştır.",
+            "category": "Eğitim",
+            "keywords": [
+                "gömülü sistemler",
+                "robotik kodlama",
+                "lise",
+                "eğitim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Bu eğitimde neler öğretiliyor?",
+                "Lise öğrencilerine yönelik başka eğitimler var mı?",
+                "Robotik kodlama eğitimine nasıl başvurabilirim?"
+            ],
+            "source_ids": [
+                "ig_2025-11-29_01"
+            ]
+        },
+        {
+            "question": "Gömülü sistemler eğitiminde neler öğretiliyor?",
+            "answer": "İpek Yolu'ndaki Gömülü Sistemler ve Robotik Kodlama Eğitimi'nde şunlar öğretilmektedir: Gömülü sistemlerin temelleri ve çalışma prensipleri, sensörler ve motorların kontrolü, algoritmik düşünme ve robotik kodlama pratiği, sıfırdan proje geliştirme deneyimi. Bu eğitim yazılımı donanımla konuşturmayı ve kodları fiziksel bir güce dönüştürmeyi hedeflemektedir.",
+            "category": "Eğitim",
+            "keywords": [
+                "gömülü sistemler",
+                "sensör",
+                "motor kontrolü",
+                "algoritmik düşünme",
+                "proje geliştirme"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Bu eğitim hangi yaş grubuna yönelik?",
+                "İpek Yolu'nda kodlama eğitimleri var mı?"
+            ],
+            "source_ids": [
+                "ig_2025-11-29_01"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda lise öğrencilerine yönelik eğitimler var mı?",
+            "answer": "Evet, İpek Yolu'nda lise seviyesine özel eğitimler düzenlenmektedir. Örneğin, 29-30 Kasım 2025 tarihlerinde 'Gömülü Sistemler ve Robotik Kodlama Eğitimi' lise öğrencilerine yönelik olarak gerçekleştirilmiştir. Bu eğitimde gömülü sistemlerin temelleri, sensör ve motor kontrolü, algoritmik düşünme ve proje geliştirme konuları işlenmiştir.",
+            "category": "Eğitim",
+            "keywords": [
+                "lise",
+                "öğrenci",
+                "eğitim",
+                "robotik"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Üniversite öğrencilerine yönelik eğitimler var mı?",
+                "İpek Yolu'nda hangi yaş gruplarına eğitim veriliyor?"
+            ],
+            "source_ids": [
+                "ig_2025-11-29_01"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

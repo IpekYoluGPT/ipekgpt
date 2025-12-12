@@ -86,6 +86,8 @@ class TurkishRAGChatbot:
     PROMPT_TEMPLATE = """Sen İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin resmi yapay zeka asistanısın.
 Adın: İpekGPT.
 
+GÜNCEL TARİH VE SAAT: {current_datetime}
+
 KİMLİĞİN:
 - Samimi, yardımsever ve profesyonel bir asistansın.
 - İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi hakkında bilgi veriyorsun.
@@ -96,6 +98,8 @@ TALİMATLAR:
 3. "Verilere göre", "Bağlama göre" gibi ifadeler KULLANMA - doğrudan cevap ver.
 4. Listeleri madde işaretleri ile düzenle.
 5. ÖNCEKİ KONUŞMAYA dikkat et ve bağlamı koru.
+6. Tarih ve saat soruları için yukarıdaki GÜNCEL TARİH VE SAAT bilgisini kullan.
+7. "En son eğitimler", "güncel etkinlikler" gibi sorularda tarihleri karşılaştırarak en yakın tarihlileri bul.
 
 GENEL BİLGİ SORULARI:
 - Basit matematik (2+2, 5*3 vb.) → Hesapla ve cevapla.
@@ -103,7 +107,7 @@ GENEL BİLGİ SORULARI:
 
 SINIRLAR:
 - Siyaset, din, tartışmalı konular → "Ben sadece İpek Yolu Merkezi hakkında bilgi verebiliyorum." de.
-- Merkez hakkında bilgi yoksa: "Bu konuda bilgim yok, başka bir konuda yardımcı olabilir miyim?" de.
+- Merkez hakkında bilgi yoksa: Önce "Belki konuyu biraz daha açarsanız hatırlayabilirim." de. Eğer hâlâ cevap veremiyorsan "Bu konuda bilgim yok, başka bir konuda yardımcı olabilir miyim?" de.
 - Zararlı, uygunsuz veya etik dışı içeriklere kesinlikle cevap verme.
 
 MERKEZ HAKKINDAKİ BİLGİLER:
@@ -122,7 +126,7 @@ YANITIM:"""
         
         self.PROMPT = PromptTemplate(
             template=self.PROMPT_TEMPLATE,
-            input_variables=["context", "history", "question"]
+            input_variables=["context", "history", "question", "current_datetime"]
         )
         
         print("Turkish RAG Chatbot initialized with Gemini API!")
@@ -165,8 +169,19 @@ YANITIM:"""
             else:
                 history_text = "(İlk mesaj - önceki konuşma yok)"
             
-            # Create prompt
-            prompt = self.PROMPT.format(context=context, history=history_text, question=question)
+            # Create prompt with current datetime
+            from datetime import datetime
+            current_dt = datetime.now().strftime("%d %B %Y, %A, Saat: %H:%M")
+            # Turkish day/month names
+            tr_days = {"Monday": "Pazartesi", "Tuesday": "Salı", "Wednesday": "Çarşamba", 
+                       "Thursday": "Perşembe", "Friday": "Cuma", "Saturday": "Cumartesi", "Sunday": "Pazar"}
+            tr_months = {"January": "Ocak", "February": "Şubat", "March": "Mart", "April": "Nisan",
+                         "May": "Mayıs", "June": "Haziran", "July": "Temmuz", "August": "Ağustos",
+                         "September": "Eylül", "October": "Ekim", "November": "Kasım", "December": "Aralık"}
+            for eng, tr in {**tr_days, **tr_months}.items():
+                current_dt = current_dt.replace(eng, tr)
+            
+            prompt = self.PROMPT.format(context=context, history=history_text, question=question, current_datetime=current_dt)
             print(f"[RAG] Prompt created: {len(prompt)} characters")
             
             # Generate response using Gemini API
