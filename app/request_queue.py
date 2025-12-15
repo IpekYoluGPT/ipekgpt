@@ -1,11 +1,16 @@
 """
-Request Queue Manager - FIFO queue for chat requests
+Request Queue Manager - Concurrent processing for chat requests
+Allows multiple requests to be processed in parallel with a configurable limit
 """
 import asyncio
 from datetime import datetime
 from typing import Dict, Any, Callable, Awaitable
 from dataclasses import dataclass, field
 import uuid
+
+
+# Maximum number of concurrent requests to process
+MAX_CONCURRENT_REQUESTS = 5
 
 
 @dataclass
@@ -21,8 +26,8 @@ class QueuedRequest:
 
 class RequestQueue:
     """
-    FIFO request queue for chat messages.
-    Ensures requests are processed in order of submission.
+    Concurrent request processor for chat messages.
+    Allows multiple requests to be processed in parallel (up to MAX_CONCURRENT_REQUESTS).
     """
     
     _instance = None
@@ -37,13 +42,13 @@ class RequestQueue:
         if RequestQueue._initialized:
             return
         
-        self._queue: asyncio.Queue[QueuedRequest] = asyncio.Queue()
+        self._semaphore: asyncio.Semaphore = None  # Will be initialized on first use
         self._processing = False
-        self._processor_task = None
-        self._request_handler: Callable[[str, str], Awaitable[Dict[str, Any]]] = None
+        self._active_requests = 0
+        self._request_handler: Callable[[str, str, list], Awaitable[Dict[str, Any]]] = None
         
         RequestQueue._initialized = True
-        print("[OK] Request Queue initialized (FIFO)")
+        print(f"[OK] Request Queue initialized (max concurrent: {MAX_CONCURRENT_REQUESTS})")
     
     def set_handler(self, handler: Callable[[str, str, list], Awaitable[Dict[str, Any]]]):
         """
@@ -58,60 +63,51 @@ class RequestQueue:
             return
         
         self._processing = True
-        self._processor_task = asyncio.create_task(self._process_queue())
-        print("[START] Queue processor started")
+        self._semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+        print("[START] Concurrent request processor started")
     
     async def stop_processor(self):
         """Stop the queue processor"""
         self._processing = False
-        if self._processor_task:
-            self._processor_task.cancel()
-            try:
-                await self._processor_task
-            except asyncio.CancelledError:
-                pass
-        print("[STOP] Queue processor stopped")
+        # Wait for active requests to complete (with timeout)
+        timeout = 30
+        while self._active_requests > 0 and timeout > 0:
+            await asyncio.sleep(0.5)
+            timeout -= 0.5
+        print("[STOP] Request processor stopped")
     
-    async def _process_queue(self):
-        """Main queue processing loop (FIFO)"""
-        while self._processing:
+    async def _handle_request(self, request: QueuedRequest):
+        """Handle a single request with semaphore-based concurrency control"""
+        async with self._semaphore:
+            self._active_requests += 1
             try:
-                # Wait for next request
-                request = await asyncio.wait_for(
-                    self._queue.get(),
-                    timeout=1.0  # Check every second if we should stop
-                )
-                
-                try:
-                    if self._request_handler:
-                        # Process the request with history
-                        result = await self._request_handler(request.session_id, request.message, request.history)
-                        request.result_future.set_result(result)
-                    else:
-                        request.result_future.set_exception(
-                            Exception("No request handler configured")
-                        )
-                except Exception as e:
-                    request.result_future.set_exception(e)
-                finally:
-                    self._queue.task_done()
-                    
-            except asyncio.TimeoutError:
-                # No request in queue, continue loop
-                continue
-            except asyncio.CancelledError:
-                break
+                if self._request_handler:
+                    result = await self._request_handler(
+                        request.session_id, 
+                        request.message, 
+                        request.history
+                    )
+                    request.result_future.set_result(result)
+                else:
+                    request.result_future.set_exception(
+                        Exception("No request handler configured")
+                    )
+            except Exception as e:
+                request.result_future.set_exception(e)
+            finally:
+                self._active_requests -= 1
     
     async def enqueue(self, session_id: str, message: str, history: list = None) -> Dict[str, Any]:
         """
-        Add a request to the queue and wait for its result.
+        Process a request with concurrent execution.
         Returns the result from the handler.
+        Multiple requests can be processed in parallel (up to MAX_CONCURRENT_REQUESTS).
         """
         # Ensure processor is running
         if not self._processing:
             await self.start_processor()
         
-        # Create queued request
+        # Create request
         request = QueuedRequest(
             request_id=str(uuid.uuid4()),
             session_id=session_id,
@@ -119,21 +115,22 @@ class RequestQueue:
             history=history or []
         )
         
-        # Add to queue
-        await self._queue.put(request)
+        # Start processing immediately (don't wait for others to complete)
+        asyncio.create_task(self._handle_request(request))
         
-        # Wait for result
+        # Wait for THIS request's result
         result = await request.result_future
         return result
     
-    def get_queue_size(self) -> int:
-        """Get current queue size"""
-        return self._queue.qsize()
+    def get_active_count(self) -> int:
+        """Get number of currently active requests"""
+        return self._active_requests
     
     def get_status(self) -> Dict:
-        """Get queue status"""
+        """Get processor status"""
         return {
-            'queue_size': self._queue.qsize(),
+            'active_requests': self._active_requests,
+            'max_concurrent': MAX_CONCURRENT_REQUESTS,
             'is_processing': self._processing,
             'has_handler': self._request_handler is not None
         }

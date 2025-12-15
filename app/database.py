@@ -3,10 +3,10 @@ Database layer for İpekGPT - SQLite with SQLAlchemy ORM
 Protects against SQL injection using parameterized queries
 """
 from datetime import datetime, date
-from typing import Optional, List
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, Date, ForeignKey, Float
+from typing import Optional
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, Date
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import sessionmaker
 import uuid
 
 from .config import settings
@@ -30,44 +30,25 @@ Base = declarative_base()
 # ============================================================================
 
 class Session(Base):
-    """Chat session - one per dialog"""
+    """Chat session - one per dialog (messages not stored for privacy)"""
     __tablename__ = "sessions"
     
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     created_at = Column(DateTime, default=datetime.utcnow)
     last_activity = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    
-    # Relationship to messages
-    messages = relationship("Message", back_populates="session", cascade="all, delete-orphan")
 
 
-class Message(Base):
-    """Individual message in a conversation"""
-    __tablename__ = "messages"
-    
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    session_id = Column(String(36), ForeignKey("sessions.id"), nullable=False)
-    role = Column(String(20), nullable=False)  # 'user' or 'assistant'
-    content = Column(Text, nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    response_time_ms = Column(Integer, nullable=True)  # Only for assistant messages
-    
-    # Relationships
-    session = relationship("Session", back_populates="messages")
-    feedback = relationship("Feedback", back_populates="message", uselist=False)
+# NOTE: Message model removed for privacy - messages are not stored
 
 
 class Feedback(Base):
-    """User feedback on AI responses (thumbs up/down)"""
+    """User feedback on AI responses (thumbs up/down) - message_id references in-memory counter"""
     __tablename__ = "feedback"
     
     id = Column(Integer, primary_key=True, autoincrement=True)
-    message_id = Column(Integer, ForeignKey("messages.id"), nullable=False, unique=True)
+    message_id = Column(Integer, nullable=False, unique=True)  # In-memory ID, no FK
     rating = Column(Integer, nullable=False)  # 1 for thumbs up, -1 for thumbs down
     created_at = Column(DateTime, default=datetime.utcnow)
-    
-    # Relationship
-    message = relationship("Message", back_populates="feedback")
 
 
 class RateLimit(Base):
@@ -120,26 +101,9 @@ def update_session_activity(db, session_id: str):
         db.commit()
 
 
-# Message Operations
-def add_message(db, session_id: str, role: str, content: str, response_time_ms: Optional[int] = None) -> Message:
-    """Add a message to a session"""
-    message = Message(
-        session_id=session_id,
-        role=role,
-        content=content,
-        response_time_ms=response_time_ms
-    )
-    db.add(message)
-    db.commit()
-    db.refresh(message)
-    return message
 
-
-def get_session_messages(db, session_id: str, limit: int = 50) -> List[Message]:
-    """Get messages for a session (for context)"""
-    return db.query(Message).filter(
-        Message.session_id == session_id
-    ).order_by(Message.created_at.desc()).limit(limit).all()[::-1]
+# NOTE: add_message and get_session_messages removed for privacy
+# Messages are not stored in the database
 
 
 # Feedback Operations
