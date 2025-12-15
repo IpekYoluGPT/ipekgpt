@@ -13,9 +13,11 @@ from sqlalchemy.orm import Session as DBSession
 from .config import settings
 from .database import (
     init_db, get_db, create_session, get_session, update_session_activity,
-    add_message, get_session_messages, add_feedback, check_rate_limit,
-    increment_request_count
+    add_feedback, check_rate_limit, increment_request_count
 )
+
+# In-memory message ID counter for feedback (no message content stored)
+_message_id_counter = 0
 from .models import (
     ChatRequest, ChatResponse, SessionResponse, FeedbackRequest,
     FeedbackResponse, RecaptchaVerifyRequest, RecaptchaVerifyResponse,
@@ -158,31 +160,22 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     # Update session activity
     update_session_activity(db, request.session_id)
     
-    # Fetch conversation history BEFORE adding the new message
-    from .database import get_session_messages
-    past_messages = get_session_messages(db, request.session_id, limit=6)  # Last 6 messages (3 exchanges)
-    history = [{"role": msg.role, "content": msg.content} for msg in past_messages]
-    
-    # Save user message
-    add_message(db, request.session_id, "user", request.message)
+    # NOTE: Messages are NOT stored for privacy. No conversation history.
+    history = []  # Empty history - each request is independent
     
     # Increment rate limit counter
     increment_request_count(db)
     
-    # Process through FIFO queue with history
+    # Process through FIFO queue (no history for privacy)
     result = await request_queue.enqueue(request.session_id, request.message, history)
     
-    # Save assistant message
-    assistant_message = add_message(
-        db,
-        request.session_id,
-        "assistant",
-        result['answer'],
-        result.get('response_time_ms', 0)
-    )
+    # Generate message ID for feedback tracking (no content stored)
+    global _message_id_counter
+    _message_id_counter += 1
+    message_id = _message_id_counter
     
     return ChatResponse(
-        message_id=assistant_message.id,
+        message_id=message_id,
         response=result['answer'],
         response_time_ms=result.get('response_time_ms', 0),
         sources_count=result.get('num_sources', 0),

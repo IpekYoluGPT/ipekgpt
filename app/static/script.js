@@ -159,8 +159,10 @@ function getCurrentTime() {
 
 function setLoading(isLoading) {
     state.isLoading = isLoading;
+    // Don't disable input - allow concurrent messages
+    // Only disable send button while a request is in flight
     elements.sendButton.disabled = isLoading;
-    elements.messageInput.disabled = isLoading;
+    // Keep input enabled for better UX - user can type while waiting
 
     if (isLoading) {
         addTypingIndicator();
@@ -513,6 +515,10 @@ function hideSuggestedQuestions() {
 // ============================================================================
 
 async function startNewChat() {
+    // IMPORTANT: Reset loading state when starting new chat
+    state.isLoading = false;
+    removeTypingIndicator();
+
     // Clear chat box except welcome message
     const messages = elements.chatBox.querySelectorAll('.message:not(:first-child), .suggested-questions');
     messages.forEach(msg => msg.remove());
@@ -548,6 +554,9 @@ async function startNewChat() {
         console.error('Failed to create new session:', error);
     }
 
+    // Re-enable input and focus
+    elements.sendButton.disabled = false;
+    elements.messageInput.disabled = false;
     elements.messageInput.focus();
 }
 
@@ -587,6 +596,7 @@ async function getRecaptchaToken() {
 async function sendMessage(messageText = null) {
     const message = messageText || elements.messageInput.value.trim();
 
+    // Block same-session duplicate requests - user must wait for response
     if (!message || state.isLoading) return;
 
     // Check if online
@@ -594,6 +604,9 @@ async function sendMessage(messageText = null) {
         addErrorMessage('Bağlantı yok. Lütfen internet bağlantınızı kontrol edin.');
         return;
     }
+
+    // Capture the session ID at the time of sending
+    const requestSessionId = state.sessionId;
 
     // Clear input and reset counter
     elements.messageInput.value = '';
@@ -606,20 +619,44 @@ async function sendMessage(messageText = null) {
     // Add user message to chat
     addMessage(message, true);
 
-    setLoading(true);
+    // Set loading state - disable input until response comes
+    state.isLoading = true;
+    elements.sendButton.disabled = true;
+    elements.messageInput.disabled = true;
+
+    // Add typing indicator
+    addTypingIndicator();
 
     try {
         const recaptchaToken = await getRecaptchaToken();
-        const response = await api.sendMessage(state.sessionId, message, recaptchaToken);
+        const response = await api.sendMessage(requestSessionId, message, recaptchaToken);
 
-        // Use streaming for the response
+        // Check if session changed while waiting for response
+        if (state.sessionId !== requestSessionId) {
+            console.log('Session changed, discarding response from old session');
+            return; // Don't display response - user switched to new chat
+        }
+
+        // Remove typing indicator
+        removeTypingIndicator();
+
+        // Add the response (use streaming)
         await addStreamingMessage(response.response, response.message_id);
 
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
 
     } catch (error) {
+        // Check if session changed - don't show error in new session
+        if (state.sessionId !== requestSessionId) {
+            console.log('Session changed, discarding error from old session');
+            return;
+        }
+
         console.error('Error sending message:', error);
+
+        // Remove typing indicator
+        removeTypingIndicator();
 
         if (error.message === 'RATE_LIMIT_EXCEEDED') {
             addErrorMessage('Günlük istek limitine ulaşıldı. Lütfen yarın tekrar deneyin.');
@@ -627,8 +664,13 @@ async function sendMessage(messageText = null) {
             addErrorMessage('Bir hata oluştu: ' + error.message);
         }
     } finally {
-        setLoading(false);
-        elements.messageInput.focus();
+        // Only re-enable input if still in the same session
+        if (state.sessionId === requestSessionId) {
+            state.isLoading = false;
+            elements.sendButton.disabled = false;
+            elements.messageInput.disabled = false;
+            elements.messageInput.focus();
+        }
     }
 }
 
@@ -714,7 +756,7 @@ function setupEventListeners() {
         const isButton = e.target.closest('button');
         const isLink = e.target.closest('a');
         const isInput = e.target.closest('input, textarea');
-        
+
         if (!isButton && !isLink && !isInput && !state.isLoading) {
             elements.messageInput.focus();
         }

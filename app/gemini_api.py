@@ -98,15 +98,12 @@ class GeminiAPIManager:
             self.current_key_index = (self.current_key_index + 1) % len(current_keys)
     
     async def _apply_rate_limit(self):
-        """Apply rate limiting between requests"""
-        current_time = time.time()
-        time_since_last = current_time - self.last_request_time
-        
-        if time_since_last < self.request_delay:
-            wait_time = self.request_delay - time_since_last
-            await asyncio.sleep(wait_time)
-        
-        self.last_request_time = time.time()
+        """
+        Note: Global rate limiting removed to allow concurrent requests.
+        The Gemini API handles its own rate limiting via 429 responses,
+        which we handle by rotating to the next API key.
+        """
+        pass  # No blocking - allow concurrent requests
     
     async def generate_response(self, prompt: str) -> Dict[str, Any]:
         """
