@@ -262,9 +262,13 @@ function addMessage(content, isUser, messageId = null, streaming = false) {
 }
 
 // Streaming message effect with live formatting
-async function addStreamingMessage(content, messageId = null) {
+async function addStreamingMessage(content, messageId = null, sessionId = null) {
+    // Capture the session at start of streaming
+    const streamSessionId = sessionId || state.sessionId;
+
     const messageDiv = document.createElement('div');
     messageDiv.className = 'message assistant-message';
+    messageDiv.dataset.sessionId = streamSessionId; // Mark with session ID
 
     const timestamp = getCurrentTime();
 
@@ -288,9 +292,20 @@ async function addStreamingMessage(content, messageId = null) {
     let index = 0;
     const streamSpeed = 12; // ms per character
     const formatUpdateInterval = 3; // Update formatting every N characters
+    let aborted = false;
 
     await new Promise(resolve => {
         const streamInterval = setInterval(() => {
+            // Check if session changed during streaming
+            if (state.sessionId !== streamSessionId) {
+                console.log('Session changed during streaming, aborting');
+                clearInterval(streamInterval);
+                messageDiv.remove(); // Remove from DOM
+                aborted = true;
+                resolve();
+                return;
+            }
+
             if (index < content.length) {
                 displayedText += content[index];
                 index++;
@@ -306,6 +321,11 @@ async function addStreamingMessage(content, messageId = null) {
             }
         }, streamSpeed);
     });
+
+    // If aborted, don't add feedback buttons etc.
+    if (aborted) {
+        return null;
+    }
 
     // After streaming complete, finalize content with copy button
     contentEl.classList.remove('streaming-cursor');
@@ -640,8 +660,8 @@ async function sendMessage(messageText = null) {
         // Remove typing indicator
         removeTypingIndicator();
 
-        // Add the response (use streaming)
-        await addStreamingMessage(response.response, response.message_id);
+        // Add the response (use streaming with session check)
+        await addStreamingMessage(response.response, response.message_id, requestSessionId);
 
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
