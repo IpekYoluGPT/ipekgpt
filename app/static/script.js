@@ -770,14 +770,17 @@ function setupEventListeners() {
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
 
-    // Sayfa tıklamalarında input'a focus'u koru
+    // Sayfa tıklamalarında input'a focus'u koru (metin seçimini engelleme)
     document.addEventListener('click', (e) => {
         // Butonlara veya özel elementlere tıklanmadıysa input'a odaklan
         const isButton = e.target.closest('button');
         const isLink = e.target.closest('a');
         const isInput = e.target.closest('input, textarea');
+        const isMessageContent = e.target.closest('.message-content, .message-body');
+        const hasSelection = window.getSelection().toString().length > 0;
 
-        if (!isButton && !isLink && !isInput && !state.isLoading) {
+        // Don't focus input if clicking on message content (for text selection) or if text is selected
+        if (!isButton && !isLink && !isInput && !isMessageContent && !hasSelection && !state.isLoading) {
             elements.messageInput.focus();
         }
     });

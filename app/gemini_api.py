@@ -105,13 +105,16 @@ class GeminiAPIManager:
         """
         pass  # No blocking - allow concurrent requests
     
-    async def generate_response(self, prompt: str) -> Dict[str, Any]:
+    async def generate_response(self, prompt: str, retry_count: int = 0) -> Dict[str, Any]:
         """
         Generate a response using Gemini API with key rotation and error handling
         
         Returns:
             Dict with 'text' (response) or 'error' (error message)
         """
+        MAX_RETRIES = 3
+        RETRY_DELAY_SECONDS = 2
+        
         # Apply rate limiting
         await self._apply_rate_limit()
         
@@ -119,10 +122,17 @@ class GeminiAPIManager:
         api_key = self._get_available_key()
         
         if not api_key:
-            return {
-                'error': 'Tüm API anahtarları geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin.',
-                'text': None
-            }
+            # No available keys - try resetting failed keys if this is a retry scenario
+            if self.failed_keys:
+                print("[GEMINI] All keys marked as failed, resetting for retry...")
+                self.failed_keys.clear()
+                api_key = self._get_available_key()
+            
+            if not api_key:
+                return {
+                    'error': 'API anahtarı yapılandırılmamış. Lütfen .env dosyasını kontrol edin.',
+                    'text': None
+                }
         
         try:
             # Configure Gemini with current key
@@ -163,13 +173,19 @@ class GeminiAPIManager:
             
             # Check for rate limit or quota errors
             if any(err in error_str for err in ['429', 'too many requests', 'quota', 'resource exhausted']):
-                self._mark_key_failed(api_key)
+                print(f"[GEMINI] Rate limit hit (attempt {retry_count + 1}/{MAX_RETRIES + 1}): {str(e)[:100]}")
                 
-                # Try again with next key (only if there are other keys)
-                available = self._get_available_key()
-                if available and available != api_key:
-                    return await self.generate_response(prompt)
+                # Retry with exponential backoff instead of marking key as failed for the whole day
+                # retry_count starts at 0, so we retry when retry_count < MAX_RETRIES (0, 1, 2 = 3 retries)
+                if retry_count < MAX_RETRIES:
+                    delay = RETRY_DELAY_SECONDS * (retry_count + 1)
+                    print(f"[GEMINI] Waiting {delay}s before retry...")
+                    await asyncio.sleep(delay)
+                    self._rotate_key()
+                    return await self.generate_response(prompt, retry_count + 1)
                 else:
+                    # All retries exhausted - don't mark as failed, just return error
+                    print(f"[GEMINI] All {MAX_RETRIES + 1} attempts failed, giving up.")
                     return {
                         'error': 'API kota limiti aşıldı. Lütfen birkaç dakika bekleyip tekrar deneyin.',
                         'text': None
