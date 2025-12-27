@@ -67,7 +67,7 @@ class Settings:
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     
     # Retrieval settings
-    TOP_K_RESULTS = 5
+    TOP_K_RESULTS = 10
     
     # ==========================================================================
     # Server & CORS Settings
