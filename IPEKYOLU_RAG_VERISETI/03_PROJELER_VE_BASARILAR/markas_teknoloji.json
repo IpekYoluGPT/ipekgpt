@@ -1,0 +1,120 @@
+{
+    "metadata": {
+        "file_name": "markas_teknoloji.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-27",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Markas Teknoloji nedir?",
+            "answer": "Markas Teknoloji, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ndeki mühendisler ve gönüllüler tarafından kurulan İpek Yolu Roket Takımı'nın yaptığı çalışmalar sonucunda ortaya çıkan bir girişimdir. TEKNOFEST Girişim Programı'na seçilerek 314 firma arasından 8 firma arasına girmeyi başarmıştır. Markas Teknoloji, özelleştirilmiş elektronik tasarım, IoT çözümleri ve uçtan uca üretim hizmetleri sunmaktadır.",
+            "category": "Girişimcilik",
+            "keywords": [
+                "Markas Teknoloji",
+                "startup",
+                "girişim",
+                "TEKNOFEST",
+                "elektronik tasarım"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Markas Teknoloji hangi hizmetleri sunuyor?",
+                "Markas Teknoloji nasıl kuruldu?",
+                "İpek Yolu'ndan çıkan girişimler neler?"
+            ],
+            "source_ids": [
+                "news_markas_teknoloji"
+            ]
+        },
+        {
+            "question": "Markas Teknoloji hangi hizmetleri sunuyor?",
+            "answer": "Markas Teknoloji, endüstriyel, savunma, otomasyon ve aydınlatma sektörlerine yönelik yüksek kalite standartlarında çözümler geliştirmektedir. Sunulan hizmetler arasında özelleştirilmiş elektronik tasarım, IoT (Nesnelerin İnterneti) çözümleri ve uçtan uca üretim hizmetleri bulunmaktadır. Ayrıca Ar-Ge, donanım tasarımı, gömülü yazılım ve seri üretim süreçlerinde uzmanlık sunarak müşterilerin projelerini gerçeğe dönüştürmelerine yardımcı olmaktadır.",
+            "category": "Girişimcilik",
+            "keywords": [
+                "Markas Teknoloji",
+                "IoT",
+                "elektronik tasarım",
+                "gömülü yazılım",
+                "Ar-Ge"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Markas Teknoloji hangi sektörlere hizmet veriyor?",
+                "IoT çözümleri nedir?",
+                "Elektronik tasarım hizmeti alabilir miyim?"
+            ],
+            "source_ids": [
+                "news_markas_teknoloji"
+            ]
+        },
+        {
+            "question": "Markas Teknoloji hangi sektörlere hizmet veriyor?",
+            "answer": "Markas Teknoloji, dört ana sektöre yönelik çözümler geliştirmektedir: Endüstriyel sektör, savunma sanayi, otomasyon ve aydınlatma. Bu sektörlerde yüksek kalite standartlarında, güvenilir ve yenilikçi elektronik çözümler sunulmaktadır.",
+            "category": "Girişimcilik",
+            "keywords": [
+                "endüstriyel",
+                "savunma",
+                "otomasyon",
+                "aydınlatma",
+                "Markas Teknoloji"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Markas Teknoloji nedir?",
+                "Savunma sanayine yönelik hangi hizmetler veriliyor?",
+                "Otomasyon çözümleri neler?"
+            ],
+            "source_ids": [
+                "news_markas_teknoloji"
+            ]
+        },
+        {
+            "question": "Markas Teknoloji TEKNOFEST'te hangi başarıyı elde etti?",
+            "answer": "Markas Teknoloji, TEKNOFEST Girişim Programı'na seçilerek 314 firma arasından ilk 8 firma arasına girmeyi başarmıştır. Bu başarı, İpek Yolu Roket Takımı'nın yaptığı çalışmalar sonucunda elde edilmiştir.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "girişim programı",
+                "314 firma",
+                "ilk 8"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "Girişim programına nasıl başvurulur?",
+                "Markas Teknoloji nasıl kuruldu?"
+            ],
+            "source_ids": [
+                "news_markas_teknoloji"
+            ]
+        },
+        {
+            "question": "İpek Yolu'ndan çıkan startup'lar neler?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nden çıkan en önemli startup'lardan biri Markas Teknoloji'dir. Roket Takımı mühendisleri ve gönüllüleri tarafından kurulan bu girişim, TEKNOFEST Girişim Programı'nda 314 firma arasından 8 firma arasına girmiştir. Şirket elektronik tasarım, IoT çözümleri ve gömülü yazılım alanlarında faaliyet göstermektedir.",
+            "category": "Girişimcilik",
+            "keywords": [
+                "startup",
+                "girişim",
+                "Markas Teknoloji",
+                "İpek Yolu"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Markas Teknoloji nedir?",
+                "İpek Yolu Girişimci Kuluçka Birimi ne yapıyor?",
+                "Startup kurmak için destek alabilir miyim?"
+            ],
+            "source_ids": [
+                "news_markas_teknoloji"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Şirket detayları ve başarılar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

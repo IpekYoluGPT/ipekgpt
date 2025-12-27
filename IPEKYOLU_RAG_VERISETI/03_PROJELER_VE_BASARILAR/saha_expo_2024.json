@@ -1,0 +1,141 @@
+{
+    "metadata": {
+        "file_name": "saha_expo_2024.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-27",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Roket Takımı SAHA EXPO 2024'e katıldı mı?",
+            "answer": "Evet, İpek Yolu Roket Takımı, Avrupa'nın en büyük savunma ve havacılık fuarlarından biri olan SAHA EXPO 2024 Savunma ve Havacılık Fuarı'na T3 Vakfı'nın davetiyle katılmıştır. Fuar 22-26 Ekim 2024 tarihleri arasında İstanbul Fuar Merkezi'nde düzenlenmiş ve 1.478 şirket ile 120'den fazla ülkeden katılımcıları ağırlamıştır. Fuarda yerli üretim SkyLogic Uçuş Kontrol Kartı sergilenmiştir.",
+            "category": "Fuar ve Etkinlikler",
+            "keywords": [
+                "SAHA EXPO",
+                "2024",
+                "savunma",
+                "havacılık",
+                "fuar",
+                "SkyLogic"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SAHA EXPO nedir?",
+                "SkyLogic kartı nedir?",
+                "İpek Yolu Roket Takımı hangi fuarlara katıldı?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "SAHA EXPO 2024'te kaç şirket ve ülke katılım gösterdi?",
+            "answer": "SAHA EXPO 2024, 22-26 Ekim 2024 tarihleri arasında İstanbul Fuar Merkezi'nde düzenlenmiş ve 1.478 şirket ile 120'den fazla ülkeden katılımcıları ağırlamıştır. Fuar boyunca yerli ve yabancı firmalar arasında toplam değeri 6,2 milyar dolar olan çeşitli iş anlaşmaları imzalanmıştır.",
+            "category": "Fuar ve Etkinlikler",
+            "keywords": [
+                "SAHA EXPO",
+                "1478 şirket",
+                "120 ülke",
+                "6.2 milyar dolar"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "SAHA EXPO ne zaman düzenlendi?",
+                "Fuarda hangi anlaşmalar imzalandı?",
+                "İpek Yolu fuarda ne sergiledi?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "SkyLogic Uçuş Kontrol Kartı nedir?",
+            "answer": "SkyLogic, İpek Yolu Roket Takımı tarafından 3 yıllık Ar-Ge çalışması sonucunda geliştirilen yerli ve milli bir uçuş kontrol kartıdır (aviyonik kart). Bu kart, alçak, orta ve yüksek irtifa roketlerde ve insansız hava araçlarında çevresel verileri toplamak amacıyla kullanılmaktadır. ROKETSAN'ın gerekli testlerinden başarıyla geçmiş ve Türkiye'nin ilk, dünyadaki dokuz lisanslı üreticisinden biri olarak kayıtlara geçmiştir.",
+            "category": "Ar-Ge Ürünleri",
+            "keywords": [
+                "SkyLogic",
+                "uçuş kontrol kartı",
+                "aviyonik",
+                "ROKETSAN",
+                "yerli üretim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic kartı nerede üretiliyor?",
+                "Kartın piyasa değeri nedir?",
+                "Kaç adet kart üretildi?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "SkyLogic kartının piyasa değeri nedir?",
+            "answer": "ROKETSAN, T3 Vakfı ve Elazığ İl Özel İdaresi iş birliğiyle üretilen SkyLogic uçuş kontrol kartlarının piyasa değeri yaklaşık 2 milyon Türk Lirasıdır. İlk etapta 50 adet uçuş kontrol kartı üretilmiş ve bu kartlar T3 Vakfı ve ROKETSAN aracılığıyla ücretsiz olarak dağıtılmıştır.",
+            "category": "Ar-Ge Ürünleri",
+            "keywords": [
+                "SkyLogic",
+                "2 milyon TL",
+                "50 adet",
+                "ücretsiz dağıtım"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic kartı nedir?",
+                "Kart ücretsiz mi dağıtılıyor?",
+                "Kaç adet kart üretildi?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı 'Milli Teknoloji Hamlesi' kapsamında ne yapıyor?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, 'Milli Teknoloji Hamlesi' kapsamında çalışmalarına devam etmektedir. İpek Yolu Roket Takımı, 2024 yılı Temmuz ayında alçak, orta ve yüksek irtifa roketlerde ve insansız hava araçlarında çevresel verileri toplamak amacıyla kullanılan uçuş kontrol kartını (aviyonik kart) yerli ve milli imkânlarla 3 yıllık Ar-Ge sonucunda üretmeyi başarmıştır.",
+            "category": "Ar-Ge",
+            "keywords": [
+                "Milli Teknoloji Hamlesi",
+                "yerli üretim",
+                "Ar-Ge",
+                "aviyonik kart"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Milli Teknoloji Hamlesi nedir?",
+                "İpek Yolu hangi alanlarda Ar-Ge yapıyor?",
+                "SkyLogic kartı nedir?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "Safa Kaya ve Onurcan Sarı TUSAŞ saldırısı hakkında ne söyledi?",
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi Birim Koordinatörü Mekatronik Mühendisi Safa Kaya ve Roket Takımı üyelerinden Bilgisayar Mühendisliği Öğrencisi Onurcan Sarı şu açıklamayı yapmıştır: 'İpek Yolu Çocuk ve Gençlik Çalışmaları Merkezi'nde faaliyet gösteren gençler olarak, teknoloji ve savunma sanayi alanındaki çalışmalarımıza kararlılıkla devam ediyoruz. Son dönemde milli firmalarımıza yönelik gerçekleştirilen hain saldırılar, yerli teknolojiye olan inancımızı daha da güçlendirdi. TUSAŞ'a yapılan terör saldırısı biz gençleri daha çok çalışmaya teşvik edecek ve yerli ve milli teknoloji yolundaki adımlarımızı hızlandıracaktır.'",
+            "category": "Basın Açıklaması",
+            "keywords": [
+                "Safa Kaya",
+                "Onurcan Sarı",
+                "TUSAŞ",
+                "yerli teknoloji",
+                "savunma sanayi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Safa Kaya kimdir?",
+                "İpek Yolu savunma sanayine nasıl katkı sağlıyor?",
+                "Girişimci Kuluçka Birimi ne yapıyor?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. SAHA EXPO 2024 ve SkyLogic detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

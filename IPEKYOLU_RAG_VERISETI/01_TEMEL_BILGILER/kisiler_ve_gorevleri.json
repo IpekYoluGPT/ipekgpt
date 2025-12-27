@@ -1,0 +1,199 @@
+{
+    "metadata": {
+        "file_name": "kisiler_ve_gorevleri.json",
+        "category": "01_TEMEL_BILGILER",
+        "sub_category": "Personel Bilgileri",
+        "last_updated": "2025-12-27",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "Safa Kaya kimdir?",
+            "answer": "Safa Kaya, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi Girişimci Kuluçka Merkezi Birim Koordinatörü ve Mekatronik Mühendisidir. Aynı zamanda İpek Yolu Roket Takımı'nın lideridir. Safa Kaya, TEKNOFEST Girişim Programı'nda 314 firma arasından 8 firma arasına giren ekibin başında yer almış ve Selçuk Bayraktar'dan ödül almıştır. SkyLogic uçuş kontrol kartının geliştirilmesinde önemli rol oynamıştır.",
+            "category": "Personel",
+            "keywords": [
+                "Safa Kaya",
+                "Girişimci Kuluçka",
+                "Roket Takımı",
+                "mekatronik mühendisi",
+                "koordinatör"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Girişimci Kuluçka Birimi koordinatörü kim?",
+                "Roket Takımı lideri kim?",
+                "SkyLogic'i kim geliştirdi?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest",
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "Beytullah Türk kimdir?",
+            "answer": "Beytullah Türk, İpek Yolu Girişimci Kuluçka Biriminde aktif olarak çalışan, gönüllüleri yönlendiren ve Teknofest gibi ulusal yarışmalara hazırlayan kişidir. Merkezdeki gönüllülerin koordinasyonunda ve yarışma hazırlıklarında önemli görevler üstlenmektedir.",
+            "category": "Personel",
+            "keywords": [
+                "Beytullah Türk",
+                "gönüllü koordinatörü",
+                "Teknofest",
+                "Girişimci Kuluçka"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Teknofest'e kim hazırlıyor?",
+                "Gönüllüleri kim yönlendiriyor?",
+                "Girişimci Kuluçka Birimi'nde kimler çalışıyor?"
+            ],
+            "source_ids": [
+                "internal_personel"
+            ]
+        },
+        {
+            "question": "Hakan Karabulut kimdir?",
+            "answer": "Hakan Karabulut, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin fikir babası ve kurulmasında büyük emekler veren kişidir. Merkezin düşünce fikrini sağlayan ve hayata geçirilmesinde öncü rol oynayan isimdir.",
+            "category": "Kurucu",
+            "keywords": [
+                "Hakan Karabulut",
+                "kurucu",
+                "fikir babası",
+                "İpek Yolu"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nu kim kurdu?",
+                "Merkezin kurucusu kim?",
+                "İpek Yolu nasıl kuruldu?"
+            ],
+            "source_ids": [
+                "internal_kurucu"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nu kim kurdu?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin fikir babası ve kurulmasında büyük emekler veren kişi Hakan Karabulut'tur. Merkezin düşünce fikrini sağlayan ve hayata geçirilmesinde öncü rol oynayan isimdir.",
+            "category": "Kurucu",
+            "keywords": [
+                "kurucu",
+                "Hakan Karabulut",
+                "İpek Yolu",
+                "kuruluş"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Hakan Karabulut kimdir?",
+                "Merkez ne zaman kuruldu?",
+                "Merkez nerede bulunuyor?"
+            ],
+            "source_ids": [
+                "internal_kurucu"
+            ]
+        },
+        {
+            "question": "Girişimci Kuluçka Birimi koordinatörü kim?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi Girişimci Kuluçka Birimi Koordinatörü Mekatronik Mühendisi Safa Kaya'dır. Aynı zamanda İpek Yolu Roket Takımı'nın lideridir.",
+            "category": "Personel",
+            "keywords": [
+                "Safa Kaya",
+                "koordinatör",
+                "Girişimci Kuluçka",
+                "mekatronik"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Safa Kaya kimdir?",
+                "Roket Takımı lideri kim?",
+                "Girişimci Kuluçka ne yapıyor?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı lideri kim?",
+            "answer": "İpek Yolu Roket Takımı'nın lideri Safa Kaya'dır. Safa Kaya aynı zamanda Girişimci Kuluçka Merkezi Birim Koordinatörü ve Mekatronik Mühendisidir. TEKNOFEST Girişim Programı'nda başarı elde etmiş ve Selçuk Bayraktar'dan ödül almıştır.",
+            "category": "Personel",
+            "keywords": [
+                "Safa Kaya",
+                "Roket Takımı",
+                "takım lideri",
+                "TEKNOFEST"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Safa Kaya kimdir?",
+                "Roket Takımı'nın başarıları neler?",
+                "Selçuk Bayraktar'dan kim ödül aldı?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "Muhammed Mustafa Palta kimdir?",
+            "answer": "Muhammed Mustafa Palta, İpek Yolu Roket Takımı'nda görev alan bir mekatronik mühendisidir. TEKNOFEST Girişim Programı'nda yer alan ekibin üyesidir. Palta, İpek Yolu'nun kendilerine sağladığı imkanlar sayesinde kendi firmalarında geliştirdikleri ürünlerle ticaret hayatına atılma ve ülkeye hizmet imkanı sunduğunu belirtmiştir.",
+            "category": "Personel",
+            "keywords": [
+                "Muhammed Mustafa Palta",
+                "mekatronik mühendisi",
+                "Roket Takımı",
+                "TEKNOFEST"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Roket Takımı'nda kimler var?",
+                "TEKNOFEST ekibinde kimler yer alıyor?",
+                "Markas Teknoloji'yi kimler kurdu?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "Onurcan Sarı kimdir?",
+            "answer": "Onurcan Sarı, İpek Yolu Roket Takımı üyelerinden Bilgisayar Mühendisliği öğrencisidir. SAHA EXPO 2024 Savunma ve Havacılık Fuarı'na katılmış ve basın açıklamalarında yer almıştır.",
+            "category": "Personel",
+            "keywords": [
+                "Onurcan Sarı",
+                "bilgisayar mühendisliği",
+                "Roket Takımı",
+                "SAHA EXPO"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Roket Takımı'nda kimler var?",
+                "SAHA EXPO'ya kimler katıldı?",
+                "Bilgisayar mühendisliği öğrencileri merkezde ne yapıyor?"
+            ],
+            "source_ids": [
+                "news_2024-11-01_saha_expo"
+            ]
+        },
+        {
+            "question": "Arif Coşkun kimdir?",
+            "answer": "Arif Coşkun, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi Avrupa Birliği ve Dış İlişkiler Koordinatörü'dür. Erasmus Plus projeleri ve uluslararası organizasyonların koordinasyonunda görev almaktadır.",
+            "category": "Personel",
+            "keywords": [
+                "Arif Coşkun",
+                "AB koordinatörü",
+                "dış ilişkiler",
+                "Erasmus"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus projelerini kim koordine ediyor?",
+                "AB ilişkilerinden kim sorumlu?",
+                "Uluslararası projeler nasıl yürütülüyor?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_erasmus_2"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Personel bilgileri haber kaynaklarından derlenerek oluşturuldu.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

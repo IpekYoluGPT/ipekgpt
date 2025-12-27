@@ -1,0 +1,184 @@
+{
+    "metadata": {
+        "file_name": "erasmus_projeleri_detay.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-27",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu'nda gerçekleştirilen ilk Erasmus Plus projesi hakkında bilgi verir misiniz?",
+            "answer": "İpek Yolu Vakfı tarafından gerçekleştirilen ilk uluslararası Erasmus Plus projesi 21 Ocak 2023 tarihinde tamamlanmıştır. Bu projede Türkiye, Fransa, Almanya, Avusturya, Slovakya ve Letonya'dan toplam 60 genç İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde bir araya gelmiştir. Katılımcılar 8 gün boyunca merkezde kalarak hem ülkemizi ve Elazığ'ı tanımış, hem de uluslararası birçok konuda eğitimler alarak çalışmalarını tamamlamışlardır.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Erasmus Plus",
+                "ilk proje",
+                "6 ülke",
+                "60 genç",
+                "Ocak 2023",
+                "uluslararası eğitim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nda hangi ülkelerden gençler ağırlandı?",
+                "Erasmus Plus projesine kaç genç katıldı?",
+                "İpek Yolu'nun ikinci Erasmus projesi ne zaman gerçekleşti?"
+            ],
+            "source_ids": [
+                "news_2023-01-21_erasmus_1"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda kaç ülkeden kaç genç Erasmus Plus projesiyle bir araya geldi?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde farklı Erasmus Plus projeleri kapsamında çeşitli ülkelerden gençler ağırlanmıştır. İlk projede (Ocak 2023) Türkiye, Fransa, Almanya, Avusturya, Slovakya ve Letonya'dan 60 genç, ikinci projede (Haziran 2023) ise Almanya, Fransa, Hırvatistan, Romanya ve Türkiye'den 40 genç katılım sağlamıştır.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Erasmus Plus",
+                "ülke sayısı",
+                "katılımcı sayısı",
+                "uluslararası gençlik"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Erasmus Plus projelerinde hangi ülkeler yer aldı?",
+                "İpek Yolu kaç tane Erasmus projesi gerçekleştirdi?",
+                "Gençler projede hangi aktivitelere katıldı?"
+            ],
+            "source_ids": [
+                "news_2023-01-21_erasmus_1",
+                "news_2023-06-03_erasmus_2"
+            ]
+        },
+        {
+            "question": "İpek Yolu'ndaki Erasmus Plus projesinde gençler hangi eğitimleri aldı?",
+            "answer": "İpek Yolu'ndaki Erasmus Plus projelerinde gençler çeşitli eğitimler ve aktiviteler ile buluşturulmuştur. Haziran 2023'teki projede katılımcılar okçuluk, binicilik (at binme) ve diğer eğitici aktiviteler öğrenmiştir. Projenin amacı gençlerde özgüven oluşturmak, sosyal hayata aktif katılımlarını sağlamak ve yaygın öğrenme metotlarıyla öğrenme-öğretme olanaklarını aktivitelerle sunmaktır.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Erasmus Plus",
+                "okçuluk",
+                "binicilik",
+                "at binme",
+                "eğitim",
+                "aktiviteler"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nda okçuluk eğitimi var mı?",
+                "At binme eğitimi nereden alabilirim?",
+                "Erasmus projelerinin amacı nedir?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_erasmus_2"
+            ]
+        },
+        {
+            "question": "İpek Yolu'ndaki ikinci Erasmus Plus projesi ne zaman gerçekleşti?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ndeki ikinci Erasmus Plus projesi 3 Haziran 2023 tarihinde gerçekleştirilmiştir. Projede Almanya, Fransa, Hırvatistan, Romanya ve Türkiye'den 40 genç 10 gün boyunca merkezde konaklayarak eğitim ve öğretim süreçlerine katılmışlardır.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "ikinci proje",
+                "Erasmus Plus",
+                "Haziran 2023",
+                "5 ülke",
+                "40 genç"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İlk Erasmus projesi ne zaman gerçekleşti?",
+                "Projede kaç gün konaklama yapıldı?",
+                "Hangi ülkelerden gençler geldi?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_erasmus_2"
+            ]
+        },
+        {
+            "question": "Avrupa Birliği ve Dış İlişkiler Koordinatörü Arif Coşkun Erasmus projesi hakkında ne söyledi?",
+            "answer": "Avrupa Birliği ve Dış İlişkiler Koordinatörü Arif Coşkun, Erasmus Plus projesi hakkında şunları söylemiştir: 'Projenin amacı gençlerde özgüven oluşturma, gençlerin sosyal hayata aktif katılımlarını sağlamak ve her türlü öğrenme-öğretme olanaklarını aktivitelerle sunmaktır. 5 ülkeden 40 gencimiz 10 gün boyunca merkezimizde eğitim ve öğretim süreçlerine devam edecektir. Yaygın öğrenme metotlarıyla okçuluk, at binme gibi etkinliklerle gençleri buluşturup kültürel diplomasi hakkında bilgiler verdik.' Coşkun ayrıca bu tür organizasyonların devam edeceğini belirtmiştir.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Arif Coşkun",
+                "AB koordinatörü",
+                "Erasmus Plus",
+                "kültürel diplomasi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'nun uluslararası projeleri devam edecek mi?",
+                "Kültürel diplomasi nedir?",
+                "Erasmus projelerinin amacı ne?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_erasmus_2"
+            ]
+        },
+        {
+            "question": "Kaya Karakaya Güzel Sanatlar Lisesi Erasmus projesi hakkında bilgi verir misiniz?",
+            "answer": "Kaya Karakaya Güzel Sanatlar Lisesi öncülüğünde 'Geleceğinizi Sanat İle İcra Edin' adlı Erasmus Projesi hayata geçirilmiştir. Proje 16-21 Ekim tarihleri arasında İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi ev sahipliğinde gerçekleştirilmiştir. Projeye İtalya, Litvanya, Portekiz ve Polonya'dan 10 öğretmen ve 16 öğrenci olmak üzere toplam 26 kişi katılım göstermiştir. Proje kapsamında eğitim, kültür, sanat ve gezi programları organize edilmiştir.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Kaya Karakaya Güzel Sanatlar Lisesi",
+                "Geleceğinizi Sanat İle İcra Edin",
+                "sanat projesi",
+                "Erasmus"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Projeye hangi ülkelerden öğretmenler katıldı?",
+                "Sanat Erasmus projesi ne zaman gerçekleşti?",
+                "Projede kaç öğrenci yer aldı?"
+            ],
+            "source_ids": [
+                "news_ekim_2023_sanat_erasmus"
+            ]
+        },
+        {
+            "question": "Geleceğinizi Sanat İle İcra Edin Erasmus projesine hangi ülkeler katıldı?",
+            "answer": "Kaya Karakaya Güzel Sanatlar Lisesi öncülüğünde gerçekleştirilen 'Geleceğinizi Sanat İle İcra Edin' Erasmus Projesine İtalya, Litvanya, Portekiz ve Polonya'dan katılımcılar gelmiştir. Toplam 10 öğretmen ve 16 öğrenci olmak üzere 26 kişi projeye dahil olmuştur.",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "İtalya",
+                "Litvanya",
+                "Portekiz",
+                "Polonya",
+                "sanat projesi"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Projede kaç kişi yer aldı?",
+                "Proje hangi lisede gerçekleşti?",
+                "Sanat Erasmus projesinin amacı neydi?"
+            ],
+            "source_ids": [
+                "news_ekim_2023_sanat_erasmus"
+            ]
+        },
+        {
+            "question": "İpek Yolu Erasmus projelerinden nasıl faydalanabilirim?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin Erasmus Plus projelerinden faydalanmak için merkezi takip etmeniz gerekmektedir. Eğer uluslararası faaliyetlerde yer almak, yeni kültürler edinmek ve CV'nize değerli bir deneyim eklemek istiyorsanız İpek Yolu'nun sunduğu fırsatlardan yararlanabilirsiniz. Duyurular için Instagram hesaplarını takip edebilirsiniz: @ipekyolugenclik",
+            "category": "Uluslararası Projeler",
+            "keywords": [
+                "Erasmus katılım",
+                "başvuru",
+                "fırsat",
+                "uluslararası deneyim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Erasmus projelerine nasıl başvururum?",
+                "İpek Yolu'nu nereden takip edebilirim?",
+                "Hangi uluslararası fırsatlar var?"
+            ],
+            "source_ids": [
+                "news_2023-06-03_erasmus_2"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

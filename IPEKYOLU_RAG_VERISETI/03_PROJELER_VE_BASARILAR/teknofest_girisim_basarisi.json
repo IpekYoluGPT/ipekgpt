@@ -1,0 +1,139 @@
+{
+    "metadata": {
+        "file_name": "teknofest_girisim_basarisi.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-27",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "İpek Yolu Roket Takımı TEKNOFEST Girişim Programı'nda nasıl bir başarı elde etti?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'ndeki mühendisler ve gönüllüler tarafından kurulan İpek Yolu Roket Takımı, TEKNOFEST Girişim Programı'na seçilerek 314 firma arasından ilk 8 firma arasına girmeyi başarmıştır. Ekip başarılı çalışmaları sonucunda 150 bin TL hibe desteği kazanmış ve T3 Vakfı'nın dikkatini çekerek ROKETSAN'la ticari ürün çalışmalarına başlamıştır.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "Girişim Programı",
+                "314 firma",
+                "8 firma",
+                "150 bin TL",
+                "T3 Vakfı"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST Girişim Programı nedir?",
+                "İpek Yolu ne kadar hibe aldı?",
+                "Roket Takımı'nın başarıları neler?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı TEKNOFEST'te kaç TL hibe kazandı?",
+            "answer": "İpek Yolu Roket Takımı, TEKNOFEST 2021 ve 2022 yıllarında düzenlenen Orta İrtifa Roket yarışmalarında dereceye girerek dikkat çekmiş ve kurdukları startup ile 150 bin TL hibe desteği kazanmıştır. Bu başarı, T3 Vakfı'nın dikkatini çekmiş ve TEKNOFEST Girişim Programı'na dahil edilmelerine vesile olmuştur.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "150 bin TL",
+                "hibe",
+                "startup",
+                "TEKNOFEST"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST'te nasıl hibe alınır?",
+                "Roket Takımı hangi yarışmalarda dereceye girdi?",
+                "T3 Vakfı nedir?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "Selçuk Bayraktar İpek Yolu Roket Takımı'na ödül verdi mi?",
+            "answer": "Evet, İpek Yolu Roket Takımı Lideri Safa Kaya, ekibin TEKNOFEST Girişim Programı'ndaki başarısı sonrasında Selçuk Bayraktar ve beraberindeki heyete sunum yaparak ödülünü Selçuk Bayraktar'dan almıştır. Bu başarı, 314 firma arasından ilk 8 firma arasına girmeleriyle elde edilmiştir.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "Selçuk Bayraktar",
+                "ödül",
+                "Safa Kaya",
+                "TEKNOFEST"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Safa Kaya kimdir?",
+                "TEKNOFEST Girişim Programı başarısı nedir?",
+                "Ödül töreni nerede yapıldı?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı ROKETSAN ile işbirliği yapıyor mu?",
+            "answer": "Evet, İpek Yolu Roket Takımı TEKNOFEST Girişim Programı'na dahil edildikten sonra ROKETSAN'la ticari ürün çalışmalarına başlamıştır. Geliştirdikleri SkyLogic uçuş kontrol kartı ROKETSAN testlerinden başarıyla geçmiş ve ROKETSAN'ın onaylı ürün listesine 9. sıradan girmiştir.",
+            "category": "İşbirlikleri",
+            "keywords": [
+                "ROKETSAN",
+                "işbirliği",
+                "ticari ürün",
+                "SkyLogic"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "SkyLogic kartı nedir?",
+                "ROKETSAN testleri nasıl geçildi?",
+                "Hangi ticari ürünler geliştirildi?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nun misyonu nedir?",
+            "answer": "İpek Yolu Roket Takımı Lideri ve Girişimci Kuluçka Merkezi Koordinatörü Safa Kaya'nın belirttiğine göre, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin misyonu gençleri en iyi şekilde yetiştirmektir. Merkez, sunduğu fırsat ve eğitimlerle gençlerin kendi firmalarında geliştirdikleri ürünlerle ticaret hayatına atılmalarına ve ülkeye hizmet etmelerine imkan sağlamaktadır.",
+            "category": "Merkez Bilgileri",
+            "keywords": [
+                "misyon",
+                "gençleri yetiştirme",
+                "eğitim",
+                "fırsat"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu ne iş yapar?",
+                "Gençlere hangi fırsatlar sunuluyor?",
+                "Merkez hangi eğitimleri veriyor?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        },
+        {
+            "question": "Vali Ömer Toraman İpek Yolu Roket Takımı'na destek veriyor mu?",
+            "answer": "Evet, Elazığ Valisi Ömer Toraman ve İl Özel İdaresi, İpek Yolu Roket Takımı'na sürekli destek vermektedir. Ekip üyeleri, TEKNOFEST Girişim Programı'ndaki başarıları sonrasında Vali Ömer Toraman'a ve İl Özel İdaresi'ne desteklerinden dolayı teşekkürlerini iletmiştir.",
+            "category": "Destekçiler",
+            "keywords": [
+                "Ömer Toraman",
+                "vali",
+                "İl Özel İdaresi",
+                "destek"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "İpek Yolu'na kimler destek veriyor?",
+                "İl Özel İdaresi'nin rolü nedir?",
+                "Valilik ile işbirliği var mı?"
+            ],
+            "source_ids": [
+                "news_2023-05-03_teknofest"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Mayıs 2023 TEKNOFEST başarısı detayları eklendi.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

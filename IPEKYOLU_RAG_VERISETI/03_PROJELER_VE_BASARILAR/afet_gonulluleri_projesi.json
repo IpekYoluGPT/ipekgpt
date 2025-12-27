@@ -2,9 +2,9 @@
     "metadata": {
         "file_name": "afet_gonulluleri_projesi.json",
         "category": "03_PROJELER_VE_BASARILAR",
-        "sub_category": "Otomatik Veri Seti",
-        "last_updated": "2025-11-26",
-        "version": "1.0"
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-27",
+        "version": "2.0"
     },
     "data": [
         {
@@ -25,11 +25,155 @@
             "source_ids": [
                 "ig_2025-10-04_13"
             ]
+        },
+        {
+            "question": "İpek Yolu Ulusal Gönüllü AFET Destek Takımı Projesi nedir?",
+            "answer": "İpek Yolu Ulusal Gönüllü AFET Destek Takımı Projesi, 1-11 Ekim 2023 tarihleri arasında düzenlenen kapsamlı bir afet eğitim programıdır. Proje kapsamında 60 gönüllü Temel AFAD Gönüllüsü olabilmek için gerekli tüm eğitim süreçlerinden geçmiştir. Eğitimlerin tamamlanmasının ardından katılımcılar, Afet ve Acil Durum Yönetimi Başkanlığı (AFAD) tarafından akredite edilerek 'AFAD Gönüllüsü' unvanını almıştır.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "AFAD",
+                "afet gönüllüsü",
+                "60 gönüllü",
+                "Ekim 2023",
+                "sertifika"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "AFAD gönüllüsü olmak için hangi eğitimler alınıyor?",
+                "Kaç kişi afet eğitimi aldı?",
+                "Sertifika töreni ne zaman yapıldı?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "AFAD gönüllüsü olmak için hangi eğitimler alınıyor?",
+            "answer": "İpek Yolu'ndaki AFAD gönüllüsü eğitim programında şu eğitimler verilmektedir: Temel İlk Yardım Eğitimi, TAMP-AYDES Eğitimi, Hafif Arama Kurtarma, Temel Malzeme Kullanımı, KBRN Farkındalık, İnsani Yardım, İpler ve Düğümler, AFET Farkındalık, Çadır Kurma, Gönüllülük ve Liderlik eğitimleri. Bu eğitimleri tamamlayan katılımcılar AFAD tarafından akredite edilerek resmi 'AFAD Gönüllüsü' unvanını almaktadır.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "ilk yardım",
+                "arama kurtarma",
+                "KBRN",
+                "çadır kurma",
+                "AFAD eğitimi"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "AFAD gönüllüsü nasıl olunur?",
+                "İlk yardım eğitimi nereden alınır?",
+                "Arama kurtarma eğitimi var mı?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nda afet eğitimi ücretsiz mi?",
+            "answer": "Evet, İpek Yolu Ulusal Gönüllü AFET Destek Takımı Projesi kapsamında katılımcıların yeme içme, konaklama ve eğitim masrafları İpek Yolu Çocuk ve Gençlik Vakfı tarafından karşılanmaktadır. Katılımcılar Türkiye'nin farklı şehir ve bölgelerinden gelerek bu ücretsiz eğitimden faydalanmaktadır.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "ücretsiz eğitim",
+                "konaklama",
+                "yeme içme",
+                "vakıf desteği"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Afet eğitimine nasıl katılırım?",
+                "Konaklama ücretsiz mi?",
+                "Hangi masraflar karşılanıyor?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "AFAD sertifika töreni ne zaman ve nerede yapıldı?",
+            "answer": "AFAD gönüllüsü sertifika töreni 11 Ekim 2023 tarihinde saat 14:30'da İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nde gerçekleştirilmiştir. Törene İl Özel İdare Genel Sekreteri Ali Şiş, Fırat Kalkınma Ajansı Genel Sekreteri Abdulvahap Yoğunlu, AFAD Müdürü Osman Pıhtılı, AK Parti Milletvekili Mahmut Rıdvan Nazırlı ve Vali Dr. Ömer Toraman katılmıştır. Törende önce bir tatbikat gerçekleştirilmiş, ardından eğitimlerini başarıyla tamamlayan 60 kursiyere sertifikaları verilmiştir.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "sertifika töreni",
+                "Ekim 2023",
+                "Vali Ömer Toraman",
+                "tatbikat"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Törene hangi yetkililer katıldı?",
+                "Tatbikat nasıl yapıldı?",
+                "Kaç kişi sertifika aldı?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "Afet eğitimine hangi kurumlar destek verdi?",
+            "answer": "İpek Yolu Ulusal Gönüllü AFET Destek Takımı Projesi'ne Elazığ Valiliği, İl Özel İdaresi, Fırat Kalkınma Ajansı, AFAD İl Müdürlüğü, Elazığ İtfaiye Müdürlüğü ve 112 Acil Birimi katılımcı kuruluşlar olarak destek vermiştir.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "Elazığ Valiliği",
+                "AFAD",
+                "İtfaiye",
+                "112 Acil",
+                "Fırat Kalkınma Ajansı"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "AFAD ile işbirliği var mı?",
+                "Hangi kurumlarla çalışılıyor?",
+                "İtfaiye eğitimi var mı?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "AFAD sertifika törenine uluslararası katılımcılar da geldi mi?",
+            "answer": "Evet, AFAD sertifika törenine Avusturya, Romanya, Litvanya, Fransa ve Türkiye Erasmus ekibinden 41 katılımcı da yer almıştır. Bu durum İpek Yolu'nun hem ulusal hem de uluslararası boyutta etkinlikler düzenlediğini göstermektedir.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "uluslararası katılım",
+                "Erasmus",
+                "Avusturya",
+                "Romanya",
+                "Litvanya"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "Erasmus projelerinde afet eğitimi var mı?",
+                "Hangi ülkelerden katılımcılar geldi?",
+                "Uluslararası gönüllüler var mı?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
+        },
+        {
+            "question": "AFAD gönüllüsü unvanının faydaları nelerdir?",
+            "answer": "AFAD Gönüllüsü unvanı, katılımcıların afet ve acil durumlarla ilgili çalışmalara etkin bir şekilde katılmalarını ve bu alandaki gönüllü çabalarını resmi bir şekilde belgelemelerini sağlamaktadır. Bu unvan AFAD tarafından akredite edilmekte ve katılımcılara resmi bir sertifika verilmektedir.",
+            "category": "Afet Eğitimi",
+            "keywords": [
+                "AFAD gönüllüsü",
+                "akreditasyon",
+                "sertifika",
+                "resmi belge"
+            ],
+            "priority": "medium",
+            "related_questions": [
+                "AFAD gönüllüsü ne yapar?",
+                "Sertifika neye yarar?",
+                "Afet durumunda nasıl yardımcı olabilirim?"
+            ],
+            "source_ids": [
+                "news_2023-10-11_afad"
+            ]
         }
     ],
     "notes": {
         "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
-        "augmentation_notes": "Instagram verileri kullanılarak zenginleştirildi. Tarih, yer ve içerik detayları eklendi.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Ekim 2023 AFAD projesi detayları eklendi.",
         "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
         "context_inclusion": "Her cevap kendi başına anlamlıdır."
     }
