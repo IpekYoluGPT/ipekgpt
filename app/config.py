@@ -39,15 +39,7 @@ class Settings:
         return os.getenv("GEMINI_MODEL", "gemini-3-flash-preview")
     
     # Delay between API requests in milliseconds (to prevent rate limiting)
-    REQUEST_DELAY_MS = 500
-    
-    # ==========================================================================
-    # reCAPTCHA Configuration (Optional)
-    # ==========================================================================
-    
-    RECAPTCHA_SITE_KEY = os.getenv("RECAPTCHA_SITE_KEY", "")
-    RECAPTCHA_SECRET_KEY = os.getenv("RECAPTCHA_SECRET_KEY", "")
-    RECAPTCHA_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify"
+    REQUEST_DELAY_MS = 100
     
     # ==========================================================================
     # Rate Limiting & Limits
@@ -67,7 +59,7 @@ class Settings:
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     
     # Retrieval settings
-    TOP_K_RESULTS = 10
+    TOP_K_RESULTS = 5
     
     # ==========================================================================
     # Server & CORS Settings

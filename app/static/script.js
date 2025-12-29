@@ -8,8 +8,6 @@
 
 const state = {
     sessionId: null,
-    recaptchaEnabled: false,
-    recaptchaSiteKey: null,
     isLoading: false,
     messages: [],
     maxMessageLength: 300,
@@ -28,7 +26,6 @@ const elements = {
     exitButton: document.getElementById('exitButton'),
     loadingOverlay: document.getElementById('loadingOverlay'),
     rateLimitInfo: document.getElementById('rateLimitInfo'),
-    recaptchaContainer: document.getElementById('recaptchaContainer') || null,
     charCounter: document.getElementById('charCounter'),
     newChatBtn: document.getElementById('newChatBtn'),
     darkModeBtn: document.getElementById('darkModeBtn'),
@@ -56,15 +53,12 @@ const api = {
         return response.json();
     },
 
-    async sendMessage(sessionId, message, recaptchaToken = null) {
+    async sendMessage(sessionId, message, history = []) {
         const body = {
             session_id: sessionId,
-            message: message
+            message: message,
+            history: history
         };
-
-        if (recaptchaToken) {
-            body.recaptcha_token = recaptchaToken;
-        }
 
         const response = await fetch(`${this.baseUrl}/ipekgpt/chat`, {
             method: 'POST',
@@ -290,7 +284,7 @@ async function addStreamingMessage(content, messageId = null, sessionId = null) 
     // Stream the content character by character with live formatting
     let displayedText = '';
     let index = 0;
-    const streamSpeed = 12; // ms per character
+    const streamSpeed = 6; // ms per character (optimized)
     const formatUpdateInterval = 3; // Update formatting every N characters
     let aborted = false;
 
@@ -581,35 +575,6 @@ async function startNewChat() {
 }
 
 // ============================================================================
-// reCAPTCHA Functions
-// ============================================================================
-
-function loadRecaptcha(siteKey) {
-    if (!siteKey) return;
-
-    const script = document.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js?render=' + siteKey;
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
-
-    state.recaptchaSiteKey = siteKey;
-}
-
-async function getRecaptchaToken() {
-    if (!state.recaptchaEnabled || !state.recaptchaSiteKey) {
-        return null;
-    }
-
-    try {
-        return await grecaptcha.execute(state.recaptchaSiteKey, { action: 'chat' });
-    } catch (error) {
-        console.error('reCAPTCHA error:', error);
-        return null;
-    }
-}
-
-// ============================================================================
 // Message Handling
 // ============================================================================
 
@@ -636,7 +601,10 @@ async function sendMessage(messageText = null) {
     // Hide suggested questions on first message
     hideSuggestedQuestions();
 
-    // Add user message to chat
+    // Add user message to state and chat
+    state.messages.push({ role: 'user', content: message });
+    if (state.messages.length > 4) state.messages.shift(); // Keep only last 4
+
     addMessage(message, true);
 
     // Set loading state - disable input until response comes
@@ -648,8 +616,10 @@ async function sendMessage(messageText = null) {
     addTypingIndicator();
 
     try {
-        const recaptchaToken = await getRecaptchaToken();
-        const response = await api.sendMessage(requestSessionId, message, recaptchaToken);
+        // Send history (messages before the current one) to give context
+        const historyToSend = state.messages.slice(0, -1);
+        console.log('[HISTORY] Sending history:', historyToSend);
+        const responseData = await api.sendMessage(requestSessionId, message, historyToSend);
 
         // Check if session changed while waiting for response
         if (state.sessionId !== requestSessionId) {
@@ -660,8 +630,12 @@ async function sendMessage(messageText = null) {
         // Remove typing indicator
         removeTypingIndicator();
 
+        // Add assistant response to state
+        state.messages.push({ role: 'assistant', content: responseData.response });
+        if (state.messages.length > 4) state.messages.shift();
+
         // Add the response (use streaming with session check)
-        await addStreamingMessage(response.response, response.message_id, requestSessionId);
+        await addStreamingMessage(responseData.response, responseData.message_id, requestSessionId);
 
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);
@@ -799,14 +773,9 @@ async function init() {
 
     try {
         const config = await api.getConfig();
-        state.recaptchaEnabled = config.recaptcha_enabled;
-        state.maxMessageLength = config.max_message_length || 400;
+        state.maxMessageLength = config.max_message_length || 300;
 
         elements.messageInput.setAttribute('maxlength', state.maxMessageLength);
-
-        if (state.recaptchaEnabled && config.recaptcha_site_key) {
-            loadRecaptcha(config.recaptcha_site_key);
-        }
 
         const session = await api.createSession();
         state.sessionId = session.session_id;

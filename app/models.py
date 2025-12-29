@@ -14,7 +14,7 @@ class ChatRequest(BaseModel):
     """Request model for chat endpoint"""
     session_id: str = Field(..., description="Session ID for the conversation")
     message: str = Field(..., min_length=1, max_length=300, description="User message (max 300 characters)")
-    recaptcha_token: Optional[str] = Field(None, description="reCAPTCHA verification token")
+    history: Optional[List[dict]] = Field(default_factory=list, description="Last 4 messages for context")
 
 
 class FeedbackRequest(BaseModel):
@@ -22,10 +22,6 @@ class FeedbackRequest(BaseModel):
     message_id: int = Field(..., description="ID of the AI message to rate")
     rating: int = Field(..., ge=-1, le=1, description="Rating: 1 for thumbs up, -1 for thumbs down")
 
-
-class RecaptchaVerifyRequest(BaseModel):
-    """Request model for reCAPTCHA verification"""
-    token: str = Field(..., description="reCAPTCHA token from frontend")
 
 
 # ============================================================================
@@ -52,11 +48,6 @@ class FeedbackResponse(BaseModel):
     success: bool
     message: str
 
-
-class RecaptchaVerifyResponse(BaseModel):
-    """Response model for reCAPTCHA verification"""
-    success: bool
-    score: Optional[float] = None
 
 
 class ErrorResponse(BaseModel):

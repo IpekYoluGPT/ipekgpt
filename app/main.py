@@ -20,10 +20,8 @@ from .database import (
 _message_id_counter = 0
 from .models import (
     ChatRequest, ChatResponse, SessionResponse, FeedbackRequest,
-    FeedbackResponse, RecaptchaVerifyRequest, RecaptchaVerifyResponse,
-    ErrorResponse, RateLimitResponse
+    FeedbackResponse, ErrorResponse, RateLimitResponse
 )
-from .recaptcha import verify_recaptcha, is_captcha_configured
 from .rate_limiter import rate_limiter
 from .request_queue import request_queue
 
@@ -107,8 +105,6 @@ async def serve_index():
 async def get_config():
     """Get frontend configuration"""
     return {
-        "recaptcha_site_key": settings.RECAPTCHA_SITE_KEY,
-        "recaptcha_enabled": is_captcha_configured(),
         "daily_limit": settings.DAILY_REQUEST_LIMIT,
         "max_message_length": settings.MAX_MESSAGE_LENGTH
     }
@@ -143,15 +139,6 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
             ).model_dump()
         )
     
-    # Verify reCAPTCHA if configured
-    if is_captcha_configured():
-        if not request.recaptcha_token:
-            raise HTTPException(status_code=400, detail="reCAPTCHA token required")
-        
-        success, score = await verify_recaptcha(request.recaptcha_token)
-        if not success:
-            raise HTTPException(status_code=400, detail="reCAPTCHA verification failed")
-    
     # Verify session exists
     session = get_session(db, request.session_id)
     if not session:
@@ -160,14 +147,8 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     # Update session activity
     update_session_activity(db, request.session_id)
     
-    # NOTE: Messages are NOT stored for privacy. No conversation history.
-    history = []  # Empty history - each request is independent
-    
-    # Increment rate limit counter
-    increment_request_count(db)
-    
-    # Process through FIFO queue (no history for privacy)
-    result = await request_queue.enqueue(request.session_id, request.message, history)
+    # Process through FIFO queue with history
+    result = await request_queue.enqueue(request.session_id, request.message, request.history)
     
     # Generate message ID for feedback tracking (no content stored)
     global _message_id_counter
@@ -201,12 +182,6 @@ async def submit_feedback(request: FeedbackRequest, db: DBSession = Depends(get_
             message=str(e)
         )
 
-
-@app.post("/api/verify-captcha", response_model=RecaptchaVerifyResponse)
-async def verify_captcha(request: RecaptchaVerifyRequest):
-    """Verify reCAPTCHA token"""
-    success, score = await verify_recaptcha(request.token)
-    return RecaptchaVerifyResponse(success=success, score=score)
 
 
 @app.get("/api/rate-limit")

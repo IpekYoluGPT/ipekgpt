@@ -152,29 +152,28 @@ YANITIM:
         
         try:
             # Retrieve relevant documents
+            perf_start = time.time()
             print(f"[RAG] Searching for: '{question[:50]}...'")
             docs = self.vectorstore.similarity_search(question, k=settings.TOP_K_RESULTS)
-            print(f"[RAG] Retrieved {len(docs)} documents")
+            search_time = int((time.time() - perf_start) * 1000)
+            print(f"[PERF] Vector Search: {search_time}ms (k={settings.TOP_K_RESULTS})")
             
             # Build context from retrieved documents
             context_parts = []
             for i, doc in enumerate(docs):
                 content = doc.page_content
-                print(f"[RAG] Doc {i+1}: {len(content)} chars - '{content[:80]}...'")
                 context_parts.append(content)
             context = "\n\n".join(context_parts)
-            
-            print(f"[RAG] Total context: {len(context)} characters")
             
             # Format conversation history
             history_text = ""
             if history:
                 history_parts = []
-                for msg in history[-6:]:  # Last 6 messages (3 exchanges)
+                for msg in history:
                     role = "Kullanıcı" if msg.get("role") == "user" else "İpekGPT"
                     history_parts.append(f"{role}: {msg.get('content', '')}")
                 history_text = "\n".join(history_parts)
-                print(f"[RAG] Including {len(history[-6:])} messages in history")
+                print(f"[RAG] Including {len(history)} messages in history")
             else:
                 history_text = "(İlk mesaj - önceki konuşma yok)"
             
@@ -191,13 +190,16 @@ YANITIM:
                 current_dt = current_dt.replace(eng, tr)
             
             prompt = self.PROMPT.format(context=context, history=history_text, question=question, current_datetime=current_dt)
-            print(f"[RAG] Prompt created: {len(prompt)} characters")
             
             # Generate response using Gemini API
+            perf_start = time.time()
             result = await gemini_manager.generate_response(prompt)
+            llm_time = int((time.time() - perf_start) * 1000)
+            print(f"[PERF] Gemini LLM: {llm_time}ms")
             
-            # Calculate response time
+            # Calculate total response time
             response_time_ms = int((time.time() - start_time) * 1000)
+            print(f"[PERF] Total RAG Cycle: {response_time_ms}ms")
             
             if result['error']:
                 return {
