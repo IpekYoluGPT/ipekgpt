@@ -23,7 +23,7 @@ from .models import (
     FeedbackResponse, RecaptchaVerifyRequest, RecaptchaVerifyResponse,
     ErrorResponse, RateLimitResponse
 )
-from .recaptcha import verify_recaptcha, is_captcha_configured
+from .recaptcha import is_captcha_configured
 from .rate_limiter import rate_limiter
 from .request_queue import request_queue
 
@@ -107,8 +107,6 @@ async def serve_index():
 async def get_config():
     """Get frontend configuration"""
     return {
-        "recaptcha_site_key": settings.RECAPTCHA_SITE_KEY,
-        "recaptcha_enabled": is_captcha_configured(),
         "daily_limit": settings.DAILY_REQUEST_LIMIT,
         "max_message_length": settings.MAX_MESSAGE_LENGTH
     }
@@ -142,15 +140,6 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
                 reset_time=reset_time
             ).model_dump()
         )
-    
-    # Verify reCAPTCHA if configured
-    if is_captcha_configured():
-        if not request.recaptcha_token:
-            raise HTTPException(status_code=400, detail="reCAPTCHA token required")
-        
-        success, score = await verify_recaptcha(request.recaptcha_token)
-        if not success:
-            raise HTTPException(status_code=400, detail="reCAPTCHA verification failed")
     
     # Verify session exists
     session = get_session(db, request.session_id)
@@ -201,12 +190,6 @@ async def submit_feedback(request: FeedbackRequest, db: DBSession = Depends(get_
             message=str(e)
         )
 
-
-@app.post("/api/verify-captcha", response_model=RecaptchaVerifyResponse)
-async def verify_captcha(request: RecaptchaVerifyRequest):
-    """Verify reCAPTCHA token"""
-    success, score = await verify_recaptcha(request.token)
-    return RecaptchaVerifyResponse(success=success, score=score)
 
 
 @app.get("/api/rate-limit")
