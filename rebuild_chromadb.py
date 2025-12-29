@@ -9,6 +9,24 @@ Usage:
 4. Download the chroma_db folder
 """
 
+# ============================================================================
+# Install required packages (for Colab)
+# ============================================================================
+import subprocess
+import sys
+
+def install_packages():
+    packages = ["chromadb", "google-genai"]
+    for pkg in packages:
+        print(f"📦 Installing {pkg}...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", pkg])
+    print("✅ All packages installed!\n")
+
+install_packages()
+
+# ============================================================================
+# Imports
+# ============================================================================
 import os
 import json
 from pathlib import Path
@@ -86,10 +104,29 @@ def load_qa_pairs():
         
         for json_file in Path(data_dir).glob("**/*.json"):
             try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
+                # Try utf-8-sig first (handles BOM), fallback to utf-8
+                try:
+                    with open(json_file, 'r', encoding='utf-8-sig') as f:
+                        data = json.load(f)
+                except:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
                 
-                if isinstance(data, list):
+                count = 0
+                
+                # New format: {"metadata": {...}, "data": [{question, answer}, ...]}
+                if isinstance(data, dict) and 'data' in data:
+                    for item in data['data']:
+                        if 'question' in item and 'answer' in item:
+                            qa_pairs.append({
+                                'question': item['question'],
+                                'answer': item['answer'],
+                                'source': json_file.name
+                            })
+                            count += 1
+                
+                # Old format: [{"soru": ..., "cevap": ...}, ...]
+                elif isinstance(data, list):
                     for item in data:
                         if 'soru' in item and 'cevap' in item:
                             qa_pairs.append({
@@ -97,6 +134,16 @@ def load_qa_pairs():
                                 'answer': item['cevap'],
                                 'source': json_file.name
                             })
+                            count += 1
+                        elif 'question' in item and 'answer' in item:
+                            qa_pairs.append({
+                                'question': item['question'],
+                                'answer': item['answer'],
+                                'source': json_file.name
+                            })
+                            count += 1
+                
+                # Single Q&A dict
                 elif isinstance(data, dict):
                     if 'soru' in data and 'cevap' in data:
                         qa_pairs.append({
@@ -104,8 +151,20 @@ def load_qa_pairs():
                             'answer': data['cevap'],
                             'source': json_file.name
                         })
+                        count = 1
+                    elif 'question' in data and 'answer' in data:
+                        qa_pairs.append({
+                            'question': data['question'],
+                            'answer': data['answer'],
+                            'source': json_file.name
+                        })
+                        count = 1
                 
-                print(f"  ✅ {json_file.name}")
+                if count > 0:
+                    print(f"  ✅ {json_file.name} ({count} pairs)")
+                else:
+                    print(f"  ⚠️ {json_file.name} (no Q&A found)")
+                    
             except Exception as e:
                 print(f"  ❌ {json_file.name}: {e}")
     

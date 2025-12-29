@@ -4,15 +4,69 @@ Uses existing ChromaDB and Gemini API for LLM responses
 """
 import os
 import time
-from typing import Dict, Optional, Any
+from typing import Dict, Optional, Any, List
 
 # LangChain imports
 from langchain_core.prompts import PromptTemplate
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.embeddings import Embeddings
 from langchain_chroma import Chroma
+
+# Google Generative AI for embeddings
+from google import genai
+from google.genai import types
 
 from .config import settings
 from .gemini_api import gemini_manager
+
+
+# ============================================================================
+# Google Gemini Embeddings Wrapper for LangChain
+# ============================================================================
+
+class GeminiEmbeddings(Embeddings):
+    """Custom LangChain Embeddings wrapper for Google Gemini API"""
+    
+    def __init__(self, model: str = "gemini-embedding-001", dimension: int = 768):
+        self.model = model
+        self.dimension = dimension
+        self.client = None
+        self._init_client()
+    
+    def _init_client(self):
+        """Initialize Gemini client with API key"""
+        api_keys = settings.GEMINI_API_KEYS
+        if api_keys:
+            self.client = genai.Client(api_key=api_keys[0])
+            print(f"[OK] Gemini Embeddings initialized (model={self.model}, dim={self.dimension})")
+        else:
+            raise ValueError("No GEMINI_API_KEYS configured!")
+    
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        """Embed a list of documents"""
+        if not texts:
+            return []
+        
+        result = self.client.models.embed_content(
+            model=self.model,
+            contents=texts,
+            config=types.EmbedContentConfig(
+                task_type="RETRIEVAL_DOCUMENT",
+                output_dimensionality=self.dimension
+            )
+        )
+        return [list(e.values) for e in result.embeddings]
+    
+    def embed_query(self, text: str) -> List[float]:
+        """Embed a single query"""
+        result = self.client.models.embed_content(
+            model=self.model,
+            contents=text,
+            config=types.EmbedContentConfig(
+                task_type="RETRIEVAL_QUERY",
+                output_dimensionality=self.dimension
+            )
+        )
+        return list(result.embeddings[0].values)
 
 
 # ============================================================================
@@ -20,10 +74,9 @@ from .gemini_api import gemini_manager
 # ============================================================================
 
 class VectorStore:
-    """Loads existing ChromaDB vector store with HuggingFace embeddings"""
+    """Loads existing ChromaDB vector store with Google Gemini embeddings"""
     
-    def __init__(self, embedding_model_name: str = None, db_path: str = None, collection_name: str = None):
-        self.embedding_model_name = embedding_model_name or settings.EMBEDDING_MODEL
+    def __init__(self, db_path: str = None, collection_name: str = None):
         self.db_path = db_path or settings.VECTOR_DB_PATH
         self.collection_name = collection_name or settings.COLLECTION_NAME
         self.vectorstore = None
@@ -32,18 +85,10 @@ class VectorStore:
         self._init_embeddings()
     
     def _init_embeddings(self):
-        """Initialize the embedding model"""
-        print("Initializing Turkish embedding model...")
-        
-        import torch
-        device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        print(f"  (Using device: {device} for embeddings)")
-        
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name=self.embedding_model_name,
-            model_kwargs={'device': device}
-        )
-        print("Embedding model ready!")
+        """Initialize the Google Gemini embedding model"""
+        print("Initializing Google Gemini Embeddings API...")
+        self.embeddings = GeminiEmbeddings(model="gemini-embedding-001", dimension=768)
+        print("Embeddings ready!")
     
     def load_existing(self):
         """Load existing vector store from disk"""
