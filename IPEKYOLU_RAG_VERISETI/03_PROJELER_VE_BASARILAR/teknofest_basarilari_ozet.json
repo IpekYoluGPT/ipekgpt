@@ -1,0 +1,277 @@
+{
+    "metadata": {
+        "file_name": "teknofest_basarilari_ozet.json",
+        "category": "03_PROJELER_VE_BASARILAR",
+        "sub_category": "Haber Kaynaklı Veri",
+        "last_updated": "2025-12-29",
+        "version": "2.0"
+    },
+    "data": [
+        {
+            "question": "TEKNOFEST'e hazırlanıyor musunuz?",
+            "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi olarak TEKNOFEST yarışmalarına hazırlık çalışmalarımız devam etmektedir.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "hazırlık",
+                "yarışma"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "TEKNOFEST'te hangi ödülleri aldınız?"
+            ],
+            "source_ids": [
+                "internal_teknofest"
+            ]
+        },
+        {
+            "question": "Hangi TEKNOFEST yarışmalarına hazırlanıyorsunuz?",
+            "answer": "Üzgünüm, şu an hazırlandığımız yarışmalar hakkında detaylı bilgi paylaşamıyorum. Ancak İpek Yolu Merkezi hakkındaki diğer sorularınızı seve seve yanıtlarım. Geçmiş başarılarımız hakkında bilgi almak isterseniz yardımcı olabilirim.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "yarışma",
+                "hazırlık",
+                "kategori"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST'e hazırlanıyor musunuz?",
+                "İpek Yolu'nun TEKNOFEST başarıları neler?"
+            ],
+            "source_ids": [
+                "internal_teknofest"
+            ]
+        },
+        {
+            "question": "TEKNOFEST'te hangi kategorilerde yarışıyorsunuz?",
+            "answer": "Üzgünüm, şu an yarıştığımız kategoriler hakkında detaylı bilgi paylaşamıyorum. Ancak geçmiş yıllardaki başarılarımız ve ödüllerimiz hakkında bilgi verebilirim. İpek Yolu Merkezi hakkındaki diğer sorularınızı seve seve yanıtlarım.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "kategori",
+                "yarışma"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "TEKNOFEST'te hangi ödülleri aldınız?"
+            ],
+            "source_ids": [
+                "internal_teknofest"
+            ]
+        },
+        {
+            "question": "İpek Yolu'nun TEKNOFEST başarıları neler?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin TEKNOFEST başarıları şunlardır:\n\n• TEKNOFEST 2021 - Roket Yarışması Orta İrtifa Kategorisi: Türkiye 2.'si ve En İyi Takım Ruhu Ödülü\n• TEKNOFEST 2022 - Roket Yarışması Orta İrtifa Kategorisi: Türkiye 3.'sü ve En İyi Sunum Ödülü\n• TEKNOFEST 2023 - Sanayide Dijital Teknolojiler: Türkiye 2.'si (Otonom Robot Takımı)\n• TEKNOFEST 2024 - Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması: Türkiye 2.'si\n• TEKNOFEST Girişim Programı: 314 firma arasından ilk 8'e girme ve 150 bin TL hibe desteği\n\nAyrıca İpek Yolu Roket Takımı, geliştirdiği SkyLogic uçuş kontrol kartı ile ROKETSAN'ın onaylı ürün listesine girerek Türkiye'nin ilk, dünyanın 9. lisanslı üreticisi olmuştur.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "başarı",
+                "ödül",
+                "derece",
+                "Türkiye ikincisi",
+                "Türkiye üçüncüsü",
+                "2021",
+                "2022",
+                "2023",
+                "2024"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2021'de hangi ödülü aldınız?",
+                "TEKNOFEST 2022'de hangi ödülü aldınız?",
+                "TEKNOFEST 2023'te hangi başarıyı elde ettiniz?",
+                "SkyLogic kartı nedir?"
+            ],
+            "source_ids": [
+                "news_teknofest_basarilar"
+            ]
+        },
+        {
+            "question": "TEKNOFEST'te hangi ödülleri aldınız?",
+            "answer": "İpek Yolu TEKNOFEST'te şu ödülleri almıştır:\n\n• 2021 - Roket Yarışması Orta İrtifa Kategorisi Türkiye 2.'liği\n• 2021 - En İyi Takım Ruhu Ödülü\n• 2022 - Roket Yarışması Orta İrtifa Kategorisi Türkiye 3.'lüğü\n• 2022 - En İyi Sunum Ödülü\n• 2023 - Sanayide Dijital Teknolojiler Kategorisi Türkiye 2.'liği\n• 2024 - Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması Türkiye 2.'liği\n• Girişim Programı - 314 firma arasından ilk 8'e girme ve 150 bin TL hibe",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "ödül",
+                "derece",
+                "başarı",
+                "2021"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "Hangi yıllarda TEKNOFEST'te dereceye girdiniz?"
+            ],
+            "source_ids": [
+                "news_teknofest_basarilar"
+            ]
+        },
+        {
+            "question": "Hangi yıllarda TEKNOFEST'te dereceye girdiniz?",
+            "answer": "İpek Yolu, TEKNOFEST'te 2021, 2022, 2023 ve 2024 yıllarında dereceye girmiştir:\n\n• 2021: Roket Yarışması Orta İrtifa - Türkiye 2.'si, En İyi Takım Ruhu Ödülü\n• 2022: Roket Yarışması Orta İrtifa - Türkiye 3.'sü, En İyi Sunum Ödülü\n• 2023: Sanayide Dijital Teknolojiler - Türkiye 2.'si\n• 2024: Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması - Türkiye 2.'si",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "derece"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "TEKNOFEST'te hangi ödülleri aldınız?"
+            ],
+            "source_ids": [
+                "news_teknofest_basarilar"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2021'de hangi başarıyı elde ettiniz?",
+            "answer": "İpek Yolu Roket Takımı, TEKNOFEST 2021'de Roket Yarışması Orta İrtifa Kategorisi'nde Türkiye 2.'si olmuş ve 'En İyi Takım Ruhu Ödülü'nü kazanmıştır. İlk kez katıldığı Roket Yarışması'nda görevleri eksiksiz bir şekilde tamamlayarak bu başarıyı elde etmiştir. Özgün olarak tasarlanan roket 3002 metre (yaklaşık 9850 feet) yüksekliğe çıkarak 4 kilogramlık yükü başarıyla serbest bırakmış ve paraşüt desteğiyle güvenli bir iniş gerçekleştirmiştir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST 2021",
+                "Roket Yarışması",
+                "Türkiye 2.si",
+                "En İyi Takım Ruhu",
+                "Orta İrtifa"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2022'de hangi başarıyı elde ettiniz?",
+                "İpek Yolu Roket Takımı'nın başarıları neler?",
+                "Roketin teknik özellikleri neler?"
+            ],
+            "source_ids": [
+                "news_2021_teknofest"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2022'de hangi başarıyı elde ettiniz?",
+            "answer": "İpek Yolu Roket Takımı, Samsun'da düzenlenen TEKNOFEST 2022'de Roket Yarışması Orta İrtifa Kategorisi'nde Türkiye 3.'sü olmuş ve ayrıca 'En İyi Sunum Ödülü'nü de kazanmıştır.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST 2022",
+                "Roket Yarışması",
+                "Türkiye 3.sü",
+                "En İyi Sunum"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2021'de hangi başarıyı elde ettiniz?",
+                "TEKNOFEST 2023'te hangi başarıyı elde ettiniz?",
+                "İpek Yolu Roket Takımı'nın başarıları neler?"
+            ],
+            "source_ids": [
+                "news_2022-09-04_3"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2023'te hangi başarıyı elde ettiniz?",
+            "answer": "İpek Yolu Otonom Robot Takımı, kuruluşunun ilk yılında katıldığı TEKNOFEST 2023'te 'Sanayide Dijital Teknolojiler' kategorisinde Türkiye 2.'si olmuştur. Ekibin geliştirdiği robot 1.5 tona kadar yük kaldırabilmektedir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST 2023",
+                "Otonom Robot",
+                "Türkiye 2.si",
+                "Sanayide Dijital Teknolojiler"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2022'de hangi başarıyı elde ettiniz?",
+                "TEKNOFEST 2024'te hangi başarıyı elde ettiniz?"
+            ],
+            "source_ids": [
+                "news_2023-05-01_4"
+            ]
+        },
+        {
+            "question": "TEKNOFEST 2024'te hangi başarıyı elde ettiniz?",
+            "answer": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024 kapsamında gerçekleştirilen 'Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması'nda Türkiye 2.'si olmuştur. Robotun elektronik devre kartı ve yazılımı %100 yerli ve milli imkanlarla geliştirilmiştir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "TEKNOFEST 2024",
+                "Otonom Robot",
+                "Türkiye 2.si",
+                "yerli üretim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2023'te hangi başarıyı elde ettiniz?",
+                "Otonom Robot Takımı'nın özellikleri neler?"
+            ],
+            "source_ids": [
+                "news_2024-09-24_1"
+            ]
+        },
+        {
+            "question": "İpek Yolu Roket Takımı'nın roketinin teknik özellikleri neler?",
+            "answer": "İpek Yolu Roket Takımı'nın TEKNOFEST 2021'de Türkiye 2.'liği kazandığı roketin teknik özellikleri şunlardır:\n\n• Uzunluk: 2552 mm\n• Dış Çap: 120 mm\n• Ağırlık: 24507 gr (yaklaşık 24.5 kg)\n• Yük Taşıma Kapasitesi: 4 Kg\n• Kullanılan Motor Tipi: M2020\n• Hedeflenen İrtifa: 10.000 feet\n• Gerçekleşen İrtifa: 9850 feet (yaklaşık 3002 metre)\n• Çıkış Hızı: 0.12 Mach\n• Maksimum Hız: 0.8 Mach\n\nRoket özgün olarak tasarlanmış, paraşüt desteğiyle güvenli iniş gerçekleştirmiştir.",
+            "category": "TEKNOFEST Başarıları",
+            "keywords": [
+                "roket",
+                "teknik özellik",
+                "uzunluk",
+                "ağırlık",
+                "irtifa",
+                "motor"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST 2021'de hangi başarıyı elde ettiniz?",
+                "İpek Yolu Roket Takımı ne yapıyor?",
+                "SkyLogic kartı nedir?"
+            ],
+            "source_ids": [
+                "news_2021_teknofest"
+            ]
+        },
+        {
+            "question": "Bu yıl TEKNOFEST'e katılacak mısınız?",
+            "answer": "TEKNOFEST yarışmalarına hazırlık çalışmalarımız devam etmektedir. Ancak bu yılki katılım detayları hakkında bilgi paylaşamıyorum. Geçmiş başarılarımız veya merkez hakkında başka sorularınız varsa yardımcı olmaktan mutluluk duyarım.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "katılım",
+                "bu yıl"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "TEKNOFEST'e hazırlanıyor musunuz?",
+                "İpek Yolu'nun TEKNOFEST başarıları neler?"
+            ],
+            "source_ids": [
+                "internal_teknofest"
+            ]
+        },
+        {
+            "question": "TEKNOFEST projeleri hakkında bilgi verir misiniz?",
+            "answer": "Üzgünüm, şu an devam eden projelerimiz hakkında detaylı bilgi paylaşamıyorum. Ancak geçmiş yıllardaki TEKNOFEST başarılarımız hakkında bilgi verebilirim. 2021'de Roket Yarışması'nda Türkiye 2.'si, 2022'de Türkiye 3.'sü, 2023 ve 2024'te Sanayide Dijital Teknolojiler'de Türkiye 2.'si olduk. Merkez hakkındaki diğer sorularınızı seve seve yanıtlarım.",
+            "category": "TEKNOFEST",
+            "keywords": [
+                "TEKNOFEST",
+                "proje",
+                "bilgi"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST başarıları neler?",
+                "TEKNOFEST'te hangi ödülleri aldınız?"
+            ],
+            "source_ids": [
+                "internal_teknofest"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "TEKNOFEST başarıları derece ve ödül odaklı düzenlendi. 2021 başarısı eklendi. Devam eden projeler hakkında bilgi paylaşılmıyor.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

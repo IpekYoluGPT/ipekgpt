@@ -3,13 +3,34 @@
         "file_name": "3.2_roket_ve_yarismalar.json",
         "category": "03_PROJELER_VE_BASARILAR",
         "sub_category": "Haber Kaynaklı Veri",
-        "last_updated": "2025-11-26",
-        "version": "1.0"
+        "last_updated": "2025-12-29",
+        "version": "2.0"
     },
     "data": [
         {
+            "question": "İpek Yolu Roket Takımı, TEKNOFEST 2021'de hangi başarıyı elde etti?",
+            "answer": "İpek Yolu Roket Takımı, TEKNOFEST 2021'de Roket Yarışması Orta İrtifa Kategorisi'nde Türkiye 2.'si olmuş ve 'En İyi Takım Ruhu Ödülü'nü kazanmıştır. İlk kez katıldığı Roket Yarışması'nda görevleri eksiksiz bir şekilde tamamlayarak bu başarıyı elde etmiştir. Özgün olarak tasarlanan roket 3002 metre (yaklaşık 9850 feet) yüksekliğe çıkarak 4 kilogramlık yükü başarıyla serbest bırakmış ve paraşüt desteğiyle güvenli bir iniş gerçekleştirmiştir. Roketin teknik özellikleri: Uzunluk 2552 mm, Dış Çap 120 mm, Ağırlık 24507 gr, Motor Tipi M2020, Maksimum Hız 0.8 Mach.",
+            "category": "Yarışma Başarıları",
+            "keywords": [
+                "TEKNOFEST 2021",
+                "Roket Takımı",
+                "Türkiye 2.si",
+                "En İyi Takım Ruhu",
+                "Orta İrtifa"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "İpek Yolu'nun TEKNOFEST'teki diğer başarıları nelerdir?",
+                "Roketin teknik özellikleri nelerdir?",
+                "İpek Yolu Roket Takımı TEKNOFEST 2022'de ne yaptı?"
+            ],
+            "source_ids": [
+                "news_2021_teknofest"
+            ]
+        },
+        {
             "question": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024'te hangi başarıyı elde etti?",
-            "answer": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024 kapsamında gerçekleştirilen “Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması”nda Türkiye ikinciliğini kazanmıştır. 2024 yılında Elazığ Valisi Numan Hatipoğlu ve milletvekilleri takımı tebrik etmiştir. Robotun elektronik devre kartı ve yazılımı %100 yerli ve milli imkanlarla geliştirilmiştir.",
+            "answer": "İpek Yolu Otonom Robot Takımı, TEKNOFEST 2024 kapsamında gerçekleştirilen "Sanayide Dijital Teknolojiler İleri Seviye Robot Yarışması"nda Türkiye ikinciliğini kazanmıştır. 2024 yılında Elazığ Valisi Numan Hatipoğlu ve milletvekilleri takımı tebrik etmiştir. Robotun elektronik devre kartı ve yazılımı %100 yerli ve milli imkanlarla geliştirilmiştir.",
             "category": "Yarışma Başarıları",
             "keywords": [
                 "TEKNOFEST",
@@ -171,7 +192,7 @@
     ],
     "notes": {
         "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
-        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. Tarih ve resmi detaylar eklendi.",
+        "augmentation_notes": "Haber kaynaklı veriler kullanılarak zenginleştirildi. 2021 TEKNOFEST başarısı eklendi. Tarih ve resmi detaylar eklendi.",
         "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
         "context_inclusion": "Her cevap kendi başına anlamlıdır."
     }
