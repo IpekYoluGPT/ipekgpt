@@ -1,0 +1,97 @@
+{
+    "metadata": {
+        "file_name": "son_etkinlikler_ozet.json",
+        "category": "04_ETKINLIK_VE_SSS",
+        "sub_category": "Güncel Etkinlik Özeti",
+        "last_updated": "2025-12-29",
+        "version": "1.0"
+    },
+    "data": [
+        {
+            "question": "En son gerçekleşen etkinlikler neler?",
+            "answer": "Merkezimizde yakın zamanda gerçekleştirilen bazı önemli etkinlikler şunlardır:\n\n• BTK Akademi İpek Yolu İşbirliği Eğitimleri: 6 Aralık 2025 tarihinde başlayan 5 farklı alanda yüz yüze eğitimler (Üretken Yapay Zekâ Araçları, Drone, ROS2 ile Otonom Mobil Robot, Python Programlama, IoT)\n• ROS ile Robotik Sistem Geliştirme Eğitimi: 27-30 Ocak 2025 tarihleri arasında BTK Akademi işbirliğiyle tamamlandı\n• Python Programlama Eğitimi: 27-30 Ocak 2025 tarihleri arasında BTK Akademi işbirliğiyle tamamlandı\n• TEKNOFEST 101 Etkinliği: 2 Şubat 2025 tarihinde TEKNOFEST yarışmalarına hazırlık bilgilendirmesi yapıldı\n\nGüncel etkinlikler ve duyurular için Instagram hesabımızı takip edebilirsiniz: https://www.instagram.com/ipekyolugirisimcikulucka/",
+            "category": "Etkinlik Özeti",
+            "keywords": [
+                "son etkinlikler",
+                "güncel etkinlikler",
+                "yakın zamanda",
+                "en son",
+                "son",
+                "etkinlik",
+                "BTK",
+                "eğitim"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "BTK Akademi eğitimleri neler?",
+                "Hangi eğitimler veriliyor?",
+                "Güncel duyurular nerede?"
+            ],
+            "source_ids": [
+                "internal_etkinlik_ozet"
+            ]
+        },
+        {
+            "question": "Son etkinlikler neler?",
+            "answer": "Merkezimizde yakın zamanda gerçekleştirilen önemli etkinlikler:\n\n• BTK Akademi İpek Yolu İşbirliği Eğitimleri (6 Aralık 2025): Üretken Yapay Zekâ Araçları, Drone, ROS2 ile AMR, Python, IoT eğitimleri\n• ROS ile Robotik Sistem Geliştirme Eğitimi (27-30 Ocak 2025): 4 günlük uygulamalı robotik eğitimi\n• Python Programlama Eğitimi (27-30 Ocak 2025): Lise öğrencilerine özel programlama eğitimi\n• TEKNOFEST 101 (2 Şubat 2025): Yarışmalara katılım bilgilendirmesi\n\nEn güncel etkinlikler için @ipekyolugirisimcikulucka Instagram hesabımızı takip edebilirsiniz.",
+            "category": "Etkinlik Özeti",
+            "keywords": [
+                "son etkinlik",
+                "etkinlikler",
+                "son",
+                "güncel"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "En son gerçekleşen etkinlikler neler?",
+                "Hangi eğitimler var?"
+            ],
+            "source_ids": [
+                "internal_etkinlik_ozet"
+            ]
+        },
+        {
+            "question": "Son zamanlarda hangi eğitimler verildi?",
+            "answer": "Son zamanlarda verilen eğitimler:\n\n• BTK Akademi İpek Yolu İşbirliği Eğitimleri (6 Aralık 2025 - Devam Ediyor):\n  - Üretken Yapay Zekâ Araçları\n  - İnsansız Hava Araçları (Drone) Kullanımı\n  - ROS2 ile AMR (Otonom Mobil Robot) Geliştirme\n  - Python ile Uygulama Geliştirme\n  - Elektronik Geliştirme Kartı ile IoT\n\n• Python Programlama Eğitimi (27-30 Ocak 2025): Tamamlandı\n• ROS ile Robotik Sistem Geliştirme Eğitimi (27-30 Ocak 2025): Tamamlandı\n\nEğitim duyuruları için Instagram: https://www.instagram.com/ipekyolugirisimcikulucka/",
+            "category": "Etkinlik Özeti",
+            "keywords": [
+                "son eğitimler",
+                "eğitim",
+                "son zamanda",
+                "verilen eğitimler"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "BTK Akademi eğitimleri neler?",
+                "Hangi eğitimler veriliyor?"
+            ],
+            "source_ids": [
+                "internal_etkinlik_ozet"
+            ]
+        },
+        {
+            "question": "Yakın zamanda ne etkinlikler oldu?",
+            "answer": "Yakın zamanda gerçekleşen etkinlikler:\n\n• BTK Akademi İpek Yolu İşbirliği Eğitimleri: 6 Aralık 2025'te 5 farklı teknoloji alanında eğitimler başladı\n• Python ve ROS Eğitimleri: Ocak 2025'te BTK Akademi işbirliğiyle tamamlandı\n• TEKNOFEST 101 Etkinliği: 2 Şubat 2025'te TEKNOFEST bilgilendirmesi yapıldı\n\nGüncel etkinlikler için Instagram hesabımızı takip edebilirsiniz: @ipekyolugirisimcikulucka",
+            "category": "Etkinlik Özeti",
+            "keywords": [
+                "yakın zamanda",
+                "etkinlik",
+                "son"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Son etkinlikler neler?",
+                "En son gerçekleşen etkinlikler neler?"
+            ],
+            "source_ids": [
+                "internal_etkinlik_ozet"
+            ]
+        }
+    ],
+    "notes": {
+        "chunking_strategy": "Her Q&A çifti bağımsız ve anlaşılır olacak şekilde yapılandırıldı.",
+        "augmentation_notes": "Son etkinlikler için özel sorgu desteği eklendi. Bu dosya periyodik olarak güncellenmelidir.",
+        "answer_length": "Cevaplar 50-500 kelime aralığına uygun tutuldu.",
+        "context_inclusion": "Her cevap kendi başına anlamlıdır."
+    }
+}

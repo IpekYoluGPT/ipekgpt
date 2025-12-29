@@ -6,10 +6,13 @@
         "last_updated": "2025-11-04",
         "version": "1.0"
     },
-    "data": [{
+    "data": [
+        {
             "question": "İpek Yolu Girişimci Kuluçka Merkezi'nin iletişim bilgileri nelerdir?",
-            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne birden fazla kanaldan ulaşabilirsiniz. Telefon yoluyla bilgi almak için 0424 503 94 39 numarasını arayabilirsiniz. Yazılı iletişim ve kurumsal talepleriniz için resmi e-posta adresimiz info@ipekyolugkm.com'dur. Merkezimizi ziyaret etmek isterseniz açık adresimiz Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ'dır.",
-            "source_ids": ["10"],
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne birden fazla kanaldan ulaşabilirsiniz. Telefon yoluyla bilgi almak için +90 424 503 94 39 numarasını arayabilirsiniz. Yazılı iletişim ve kurumsal talepleriniz için resmi e-posta adresimiz info@ipekyolugkm.com'dur. Merkezimizi ziyaret etmek isterseniz açık adresimiz Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ'dır.",
+            "source_ids": [
+                "10"
+            ],
             "category": "İletişim",
             "keywords": [
                 "iletişim",
@@ -29,14 +32,16 @@
         },
         {
             "question": "Merkezinizin telefon numarası nedir?",
-            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne 0424 503 94 39 numaralı sabit telefon hattı üzerinden ulaşabilirsiniz. Bu hat üzerinden merkezimizin faaliyetleri, güncel eğitim programları, başvuru süreçleri ve atölye imkanları hakkında detaylı bilgi alabilirsiniz. Ekibimiz size yardımcı olmaktan mutluluk duyacaktır.",
-            "source_ids": ["10"],
+            "answer": "İpek Yolu Girişimci Kuluçka Merkezi'ne +90 424 503 94 39 numaralı sabit telefon hattı üzerinden ulaşabilirsiniz. Bu hat üzerinden merkezimizin faaliyetleri, güncel eğitim programları, başvuru süreçleri ve atölye imkanları hakkında detaylı bilgi alabilirsiniz. Ekibimiz size yardımcı olmaktan mutluluk duyacaktır.",
+            "source_ids": [
+                "10"
+            ],
             "category": "İletişim",
             "keywords": [
                 "telefon",
                 "telefon numarası",
                 "iletişim",
-                "04245039439",
+                "+904245039439",
                 "arama",
                 "ulaşım"
             ],
@@ -49,8 +54,10 @@
         },
         {
             "question": "telefon no kaç?",
-            "answer": "Merkezimizin telefon numarası 0424 503 94 39'dur. Bu numarayı arayarak eğitimlerimiz, Teknofest takımlarımız veya gönüllülük programlarımız hakkında bilgi alabilirsiniz. Ayrıca info@ipekyolugkm.com e-posta adresimizden de bize yazılı olarak ulaşabilirsiniz.",
-            "source_ids": ["10"],
+            "answer": "Merkezimizin telefon numarası +90 424 503 94 39'dur. Bu numarayı arayarak eğitimlerimiz, Teknofest takımlarımız veya gönüllülük programlarımız hakkında bilgi alabilirsiniz. Ayrıca info@ipekyolugkm.com e-posta adresimizden de bize yazılı olarak ulaşabilirsiniz.",
+            "source_ids": [
+                "10"
+            ],
             "category": "İletişim",
             "keywords": [
                 "telefon no",
@@ -69,7 +76,9 @@
         {
             "question": "Size e-posta ile nasıl ulaşabilirim?",
             "answer": "Merkezimizle e-posta yoluyla iletişime geçmek için info@ipekyolugkm.com adresini kullanabilirsiniz. Proje başvuruları, kurumsal iş birlikleri, eğitim talepleri, gönüllülük başvuruları veya genel sorularınız için bu mail adresine e-posta gönderebilirsiniz. Ekibimiz en kısa sürede başvurunuzu değerlendirerek size geri dönüş yapacaktır.",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "İletişim",
             "keywords": [
                 "e-posta",
@@ -89,7 +98,9 @@
         {
             "question": "Merkezinizin tam adresi nedir?",
             "answer": "İpek Yolu Girişimci Kuluçka Merkezi, Elazığ ilinin Merkez ilçesinde bulunmaktadır. Ziyaretçilerimiz için tam ve açık adresimiz şu şekildedir: Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı, No:1/A Merkez, 23100 Merkez/Elazığ. Yüz yüze gerçekleşen eğitimlerimize ve atölye çalışmalarımıza bu konumdan katılabilirsiniz.",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Lokasyon",
             "keywords": [
                 "adres",
@@ -111,7 +122,9 @@
         {
             "question": "nerdesiniz?",
             "answer": "Merkezimiz Elazığ'dadır. Açık adresimiz Çaydaçıra Mahallesi, Adnan Kahveci Bulvarı No:1/A, Merkez / Elazığ olarak geçmektedir. Posta kodu 23100'dür. Eğitimlerimiz ve atölyelerimiz bu fiziksel konumda yüz yüze gerçekleştirilmektedir. Detaylı yol tarifi için harita uygulamalarını kullanabilirsiniz.",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Lokasyon",
             "keywords": [
                 "nerdesiniz",
@@ -130,7 +143,9 @@
         {
             "question": "Merkezinizin Instagram adresini öğrenebilir miyim?",
             "answer": "Evet, merkezimizin güncel duyurularını, eğitim takvimlerini, Teknofest takımlarının başarılarını ve etkinlik fotoğraflarını takip etmek için resmi Instagram hesabımızı kullanabilirsiniz. Instagram adresimiz: https://www.instagram.com/ipekyolugirisimcikulucka/ . Bizi 'ipekyolugirisimcikulucka' kullanıcı adıyla bularak takip edebilir ve en son gelişmelerden haberdar olabilirsiniz.",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Sosyal Medya",
             "keywords": [
                 "instagram",
@@ -149,7 +164,9 @@
         {
             "question": "LinkedIn hesabınız var mı?",
             "answer": "Evet, İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi olarak profesyonel ağlarda da yer alıyoruz. Kurumsal duyurularımızı, başarılarımızı, ortaklıklarımızı ve iş birliği fırsatlarını takip etmek için LinkedIn sayfamızı ziyaret edebilirsiniz. LinkedIn profil linkimiz: https://tr.linkedin.com/company/i̇pek-yolu-uluslararası-çocuk-ve-gençlik-çalışmaları-merkezi",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Sosyal Medya",
             "keywords": [
                 "linkedin",
@@ -167,7 +184,9 @@
         {
             "question": "Tüm sosyal medya hesaplarınıza tek bir yerden nasıl ulaşabilirim?",
             "answer": "Tüm resmi sosyal medya hesaplarımıza ve önemli bağlantılarımıza (başvuru formları, web sitesi vb.) tek bir noktadan kolayca erişmek için Linktree sayfamızı kullanabilirsiniz. Bu sayfa üzerinden Instagram, LinkedIn ve diğer tüm platformlarımıza yönlenebilirsiniz. Güncel bağlantı listemiz için Linktree adresimiz: https://linktr.ee/ipekyolugenclik",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Sosyal Medya",
             "keywords": [
                 "linktree",
@@ -185,8 +204,10 @@
         },
         {
             "question": "Merkezinizin çalışma saatleri nedir?",
-            "answer": "Merkezimizin telefon (0424 503 94 39) ve e-posta (info@ipekyolugkm.com) gibi iletişim bilgileri mevcuttur. Ayrıca adresimiz Çaydaçıra Mahallesi, Elazığ'dır. Ancak, merkezimizin spesifik çalışma saatleri (örneğin hafta içi hangi saatler arası açık olduğu veya haftasonu hizmet verip vermediği) hakkında detaylı bilgi şu anda bilgi tabanımızda yer almamaktadır.",
-            "source_ids": ["10"],
+            "answer": "Merkezimizin telefon (+90 424 503 94 39) ve e-posta (info@ipekyolugkm.com) gibi iletişim bilgileri mevcuttur. Ayrıca adresimiz Çaydaçıra Mahallesi, Elazığ'dır. Ancak, merkezimizin spesifik çalışma saatleri (örneğin hafta içi hangi saatler arası açık olduğu veya haftasonu hizmet verip vermediği) hakkında detaylı bilgi şu anda bilgi tabanımızda yer almamaktadır.",
+            "source_ids": [
+                "10"
+            ],
             "category": "Negatif Test",
             "keywords": [
                 "çalışma saatleri",
@@ -204,8 +225,10 @@
         },
         {
             "question": "WhatsApp hattınız var mı?",
-            "answer": "Merkezimizle iletişim kurmak için 0424 503 94 39 numaralı telefon hattımız ve info@ipekyolugkm.com e-posta adresimiz bulunmaktadır. Ancak, bu telefon numarasının bir WhatsApp iletişim hattı olarak kullanılıp kullanılmadığı veya ayrı bir WhatsApp hattımızın olup olmadığı bilgisi şu anda kaynaklarımızda mevcut değildir. Hızlı iletişim için telefonla arayabilirsiniz.",
-            "source_ids": ["10"],
+            "answer": "Merkezimizle iletişim kurmak için +90 424 503 94 39 numaralı telefon hattımız ve info@ipekyolugkm.com e-posta adresimiz bulunmaktadır. Ancak, bu telefon numarasının bir WhatsApp iletişim hattı olarak kullanılıp kullanılmadığı veya ayrı bir WhatsApp hattımızın olup olmadığı bilgisi şu anda kaynaklarımızda mevcut değildir. Hızlı iletişim için telefonla arayabilirsiniz.",
+            "source_ids": [
+                "10"
+            ],
             "category": "Negatif Test",
             "keywords": [
                 "whatsapp",
@@ -222,7 +245,9 @@
         {
             "question": "Twitter (X) veya Facebook hesabınız var mı?",
             "answer": "Merkezimizin Instagram, LinkedIn ve tüm bağlantılarını içeren Linktree (https://linktr.ee/ipekyolugenclik) üzerinde resmi hesapları bulunmaktadır. Ancak, Twitter (X), Facebook veya diğer sosyal medya platformlarındaki en güncel sosyal medya listesi için Linktree sayfamızı kontrol edebilirsiniz.",
-            "source_ids": ["10"],
+            "source_ids": [
+                "10"
+            ],
             "category": "Negatif Test",
             "keywords": [
                 "twitter",
