@@ -109,27 +109,6 @@
             "source_ids": [
                 "news_2024-11-01_saha_expo"
             ]
-        },
-        {
-            "question": "Safa Kaya ve Onurcan Sarı TUSAŞ saldırısı hakkında ne söyledi?",
-            "answer": "İpek Yolu Girişimci Kuluçka Merkezi Birim Koordinatörü Mekatronik Mühendisi Safa Kaya ve Roket Takımı üyelerinden Bilgisayar Mühendisliği Öğrencisi Onurcan Sarı şu açıklamayı yapmıştır: 'İpek Yolu Çocuk ve Gençlik Çalışmaları Merkezi'nde faaliyet gösteren gençler olarak, teknoloji ve savunma sanayi alanındaki çalışmalarımıza kararlılıkla devam ediyoruz. Son dönemde milli firmalarımıza yönelik gerçekleştirilen hain saldırılar, yerli teknolojiye olan inancımızı daha da güçlendirdi. TUSAŞ'a yapılan terör saldırısı biz gençleri daha çok çalışmaya teşvik edecek ve yerli ve milli teknoloji yolundaki adımlarımızı hızlandıracaktır.'",
-            "category": "Basın Açıklaması",
-            "keywords": [
-                "Safa Kaya",
-                "Onurcan Sarı",
-                "TUSAŞ",
-                "yerli teknoloji",
-                "savunma sanayi"
-            ],
-            "priority": "medium",
-            "related_questions": [
-                "Safa Kaya kimdir?",
-                "İpek Yolu savunma sanayine nasıl katkı sağlıyor?",
-                "Girişimci Kuluçka Birimi ne yapıyor?"
-            ],
-            "source_ids": [
-                "news_2024-11-01_saha_expo"
-            ]
         }
     ],
     "notes": {

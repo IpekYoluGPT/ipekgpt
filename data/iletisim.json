@@ -141,6 +141,84 @@
             ]
         },
         {
+            "question": "Adresiniz nerede?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi'nin adresi: Çaydaçıra Mahallesi Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ. Merkezimiz Elazığ'ın merkez ilçesinde yer almaktadır.",
+            "source_ids": [
+                "10"
+            ],
+            "category": "Lokasyon",
+            "keywords": [
+                "adresiniz",
+                "nerede",
+                "adres",
+                "konum",
+                "yer"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkezinizin tam adresi nedir?",
+                "Merkeziniz nerede?"
+            ]
+        },
+        {
+            "question": "Merkeziniz nerede?",
+            "answer": "İpek Yolu Merkezi, Elazığ'da bulunmaktadır. Tam adresimiz: Çaydaçıra Mahallesi Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ. Merkezimizi ziyaret etmek isterseniz bu adrese gelebilirsiniz.",
+            "source_ids": [
+                "10"
+            ],
+            "category": "Lokasyon",
+            "keywords": [
+                "merkez",
+                "nerede",
+                "konum",
+                "yer",
+                "elazığ"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Adresiniz nerede?",
+                "Hangi şehirdesiniz?"
+            ]
+        },
+        {
+            "question": "Hangi şehirdesiniz?",
+            "answer": "İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi, Elazığ ilinde bulunmaktadır. Tam adresimiz: Çaydaçıra Mahallesi Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ.",
+            "source_ids": [
+                "10"
+            ],
+            "category": "Lokasyon",
+            "keywords": [
+                "şehir",
+                "il",
+                "elazığ",
+                "konum"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Merkeziniz nerede?",
+                "Adresiniz nedir?"
+            ]
+        },
+        {
+            "question": "Konum bilgisi alabilir miyim?",
+            "answer": "Elbette! İpek Yolu Merkezi'nin konumu: Çaydaçıra Mahallesi Adnan Kahveci Bulvarı No:1/A Merkez, 23100 Merkez/Elazığ. Google Maps veya diğer harita uygulamalarında 'İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi' aratarak yol tarifi alabilirsiniz.",
+            "source_ids": [
+                "10"
+            ],
+            "category": "Lokasyon",
+            "keywords": [
+                "konum",
+                "harita",
+                "yol tarifi",
+                "google maps"
+            ],
+            "priority": "high",
+            "related_questions": [
+                "Adresiniz nerede?",
+                "Nasıl ulaşabilirim?"
+            ]
+        },
+        {
             "question": "Merkezinizin Instagram adresini öğrenebilir miyim?",
             "answer": "Evet, merkezimizin güncel duyurularını, eğitim takvimlerini, Teknofest takımlarının başarılarını ve etkinlik fotoğraflarını takip etmek için resmi Instagram hesabımızı kullanabilirsiniz. Instagram adresimiz: https://www.instagram.com/ipekyolugirisimcikulucka/ . Bizi 'ipekyolugirisimcikulucka' kullanıcı adıyla bularak takip edebilir ve en son gelişmelerden haberdar olabilirsiniz.",
             "source_ids": [
