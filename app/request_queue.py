@@ -10,7 +10,7 @@ import uuid
 
 
 # Maximum number of concurrent requests to process
-MAX_CONCURRENT_REQUESTS = 5
+MAX_CONCURRENT_REQUESTS = 12
 
 
 @dataclass
