@@ -36,7 +36,7 @@ class Settings:
     # Model loaded from environment variable
     @property
     def GEMINI_MODEL(self):
-        return os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        return os.getenv("GEMINI_MODEL", "gemini-3-flash-preview")
     
     # Delay between API requests in milliseconds (to prevent rate limiting)
     REQUEST_DELAY_MS = 500
