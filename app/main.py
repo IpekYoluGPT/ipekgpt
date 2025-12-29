@@ -20,10 +20,8 @@ from .database import (
 _message_id_counter = 0
 from .models import (
     ChatRequest, ChatResponse, SessionResponse, FeedbackRequest,
-    FeedbackResponse, RecaptchaVerifyRequest, RecaptchaVerifyResponse,
-    ErrorResponse, RateLimitResponse
+    FeedbackResponse, ErrorResponse, RateLimitResponse
 )
-from .recaptcha import is_captcha_configured
 from .rate_limiter import rate_limiter
 from .request_queue import request_queue
 
