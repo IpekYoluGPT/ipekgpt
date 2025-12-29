@@ -15,8 +15,8 @@ langchain-core==0.3.25
 langchain-huggingface==0.1.2
 langchain-chroma==0.1.4
 
-# Vector Database
-chromadb==0.5.23
+# Vector Database (use stable version for compatibility)
+chromadb==0.5.0
 
 # Embeddings
 sentence-transformers==3.3.1
