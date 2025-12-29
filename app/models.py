@@ -14,6 +14,7 @@ class ChatRequest(BaseModel):
     """Request model for chat endpoint"""
     session_id: str = Field(..., description="Session ID for the conversation")
     message: str = Field(..., min_length=1, max_length=300, description="User message (max 300 characters)")
+    history: Optional[List[dict]] = Field(default_factory=list, description="Last 4 messages for context")
 
 
 class FeedbackRequest(BaseModel):

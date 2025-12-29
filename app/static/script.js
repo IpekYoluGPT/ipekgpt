@@ -53,10 +53,11 @@ const api = {
         return response.json();
     },
 
-    async sendMessage(sessionId, message) {
+    async sendMessage(sessionId, message, history = []) {
         const body = {
             session_id: sessionId,
-            message: message
+            message: message,
+            history: history
         };
 
         const response = await fetch(`${this.baseUrl}/ipekgpt/chat`, {
@@ -600,7 +601,10 @@ async function sendMessage(messageText = null) {
     // Hide suggested questions on first message
     hideSuggestedQuestions();
 
-    // Add user message to chat
+    // Add user message to state and chat
+    state.messages.push({ role: 'user', content: message });
+    if (state.messages.length > 4) state.messages.shift(); // Keep only last 4
+
     addMessage(message, true);
 
     // Set loading state - disable input until response comes
@@ -612,7 +616,11 @@ async function sendMessage(messageText = null) {
     addTypingIndicator();
 
     try {
-        const response = await api.sendMessage(requestSessionId, message);
+        const response = await api.sendMessage(requestSessionId, message, state.messages.slice(0, -1)); // Send everything EXCEPT the message we just added (RAG will handle it)
+        // Correct approach: The RAG engine needs the PREVIOUS history, while the current question is passed separately.
+        // So we send the history before the current message.
+        const historyToSend = state.messages.slice(0, -1);
+        const responseData = await api.sendMessage(requestSessionId, message, historyToSend);
 
         // Check if session changed while waiting for response
         if (state.sessionId !== requestSessionId) {
@@ -623,8 +631,12 @@ async function sendMessage(messageText = null) {
         // Remove typing indicator
         removeTypingIndicator();
 
+        // Add assistant response to state
+        state.messages.push({ role: 'assistant', content: responseData.response });
+        if (state.messages.length > 4) state.messages.shift();
+
         // Add the response (use streaming with session check)
-        await addStreamingMessage(response.response, response.message_id, requestSessionId);
+        await addStreamingMessage(responseData.response, responseData.message_id, requestSessionId);
 
         const rateLimitStatus = await api.getRateLimitStatus();
         updateRateLimitInfo(rateLimitStatus.remaining);

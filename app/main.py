@@ -147,14 +147,8 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
     # Update session activity
     update_session_activity(db, request.session_id)
     
-    # NOTE: Messages are NOT stored for privacy. No conversation history.
-    history = []  # Empty history - each request is independent
-    
-    # Increment rate limit counter
-    increment_request_count(db)
-    
-    # Process through FIFO queue (no history for privacy)
-    result = await request_queue.enqueue(request.session_id, request.message, history)
+    # Process through FIFO queue with history
+    result = await request_queue.enqueue(request.session_id, request.message, request.history)
     
     # Generate message ID for feedback tracking (no content stored)
     global _message_id_counter
