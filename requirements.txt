@@ -1,0 +1,32 @@
+# IpekGPT Dependencies
+
+# Web Framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.19
+
+# Database
+sqlalchemy==2.0.36
+
+# AI & LLM
+google-generativeai==0.8.3
+langchain==0.3.12
+langchain-core==0.3.25
+langchain-huggingface==0.1.2
+langchain-chroma==0.1.4
+
+# Vector Database
+chromadb==0.5.23
+
+# Embeddings
+sentence-transformers==3.3.1
+torch==2.5.1
+
+# Environment
+python-dotenv==1.0.1
+
+# HTTP Client (for reCAPTCHA)
+httpx==0.28.1
+
+# Pydantic
+pydantic==2.10.3
