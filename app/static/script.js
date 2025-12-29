@@ -616,10 +616,9 @@ async function sendMessage(messageText = null) {
     addTypingIndicator();
 
     try {
-        const response = await api.sendMessage(requestSessionId, message, state.messages.slice(0, -1)); // Send everything EXCEPT the message we just added (RAG will handle it)
-        // Correct approach: The RAG engine needs the PREVIOUS history, while the current question is passed separately.
-        // So we send the history before the current message.
+        // Send history (messages before the current one) to give context
         const historyToSend = state.messages.slice(0, -1);
+        console.log('[HISTORY] Sending history:', historyToSend);
         const responseData = await api.sendMessage(requestSessionId, message, historyToSend);
 
         // Check if session changed while waiting for response
