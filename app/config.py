@@ -65,14 +65,16 @@ class Settings:
     # Server & CORS Settings
     # ==========================================================================
     
-    HOST = "127.0.0.1"
-    PORT = 8000
+    HOST = "0.0.0.0"  # Listen on all interfaces (required for Railway)
+    PORT = int(os.getenv("PORT", 8000))  # Use Railway-provided PORT
     DEBUG = False  # Set to False for production
     
     # CORS - Add your production domains here
     ALLOWED_ORIGINS = [
         "http://localhost:8000",
         "http://127.0.0.1:8000",
+        "https://ipekgpt.com",
+        "https://www.ipekgpt.com",
     ]
 
 
