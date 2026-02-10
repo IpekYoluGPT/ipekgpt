@@ -48,7 +48,7 @@ class RequestQueue:
         self._request_handler: Callable[[str, str, list], Awaitable[Dict[str, Any]]] = None
         
         RequestQueue._initialized = True
-        print(f"[OK] Request Queue initialized (max concurrent: {MAX_CONCURRENT_REQUESTS})")
+        pass
     
     def set_handler(self, handler: Callable[[str, str, list], Awaitable[Dict[str, Any]]]):
         """
@@ -64,7 +64,7 @@ class RequestQueue:
         
         self._processing = True
         self._semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
-        print("[START] Concurrent request processor started")
+
     
     async def stop_processor(self):
         """Stop the queue processor"""
@@ -74,7 +74,7 @@ class RequestQueue:
         while self._active_requests > 0 and timeout > 0:
             await asyncio.sleep(0.5)
             timeout -= 0.5
-        print("[STOP] Request processor stopped")
+
     
     async def _handle_request(self, request: QueuedRequest):
         """Handle a single request with semaphore-based concurrency control"""

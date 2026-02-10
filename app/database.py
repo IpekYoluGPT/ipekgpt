@@ -116,18 +116,18 @@ def add_feedback(db, message_id: int, rating: int) -> Feedback:
             existing.created_at = datetime.utcnow()
             db.commit()
             db.refresh(existing)
-            print(f"[DB] Updated feedback for message {message_id}: rating={rating}")
+
             return existing
         
         feedback = Feedback(message_id=message_id, rating=rating)
         db.add(feedback)
         db.commit()
         db.refresh(feedback)
-        print(f"[DB] Created feedback for message {message_id}: rating={rating}, id={feedback.id}")
+
         return feedback
     except Exception as e:
         db.rollback()
-        print(f"[DB ERROR] add_feedback failed: {e}")
+
         raise
 
 
@@ -140,7 +140,7 @@ def get_today_request_count(db) -> int:
         count = rate_limit.request_count if rate_limit else 0
         return count
     except Exception as e:
-        print(f"[DB ERROR] get_today_request_count failed: {e}")
+
         return 0
 
 
@@ -157,11 +157,11 @@ def increment_request_count(db) -> int:
             db.add(rate_limit)
         
         db.commit()
-        print(f"[DB] Rate limit for {today}: count={rate_limit.request_count}")
+
         return rate_limit.request_count
     except Exception as e:
         db.rollback()
-        print(f"[DB ERROR] increment_request_count failed: {e}")
+
         raise
 
 

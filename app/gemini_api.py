@@ -25,7 +25,7 @@ class GeminiAPIManager:
         self.failed_keys: Dict[str, date] = {}  # key -> date it failed
         self.last_request_time = 0
         
-        print(f"[OK] Gemini API Manager initialized")
+        pass
     
     @property
     def api_keys(self):
@@ -46,14 +46,14 @@ class GeminiAPIManager:
         ]
         for key in keys_to_reset:
             del self.failed_keys[key]
-            print(f"[RESET] API key reset (new day): ...{key[-8:]}")
+            pass
     
     def _get_available_key(self) -> Optional[str]:
         """Get the next available API key, skipping failed ones"""
         current_keys = self.api_keys  # Get fresh keys from config
         
         if not current_keys:
-            print("[ERROR] No API keys configured in settings.GEMINI_API_KEYS")
+            pass
             return None
         
         # Reset daily failed keys
@@ -84,7 +84,7 @@ class GeminiAPIManager:
     def _mark_key_failed(self, key: str):
         """Mark an API key as failed for today"""
         self.failed_keys[key] = date.today()
-        print(f"[WARN] API key marked as failed (until tomorrow): ...{key[-8:]}")
+
         
         # Move to next key
         current_keys = self.api_keys
@@ -124,7 +124,7 @@ class GeminiAPIManager:
         if not api_key:
             # No available keys - try resetting failed keys if this is a retry scenario
             if self.failed_keys:
-                print("[GEMINI] All keys marked as failed, resetting for retry...")
+                pass
                 self.failed_keys.clear()
                 api_key = self._get_available_key()
             
@@ -141,7 +141,7 @@ class GeminiAPIManager:
             # Create model instance
             model = genai.GenerativeModel(settings.GEMINI_MODEL)
             
-            print(f"[GEMINI] Sending prompt ({len(prompt)} chars) to {settings.GEMINI_MODEL}")
+
             
             # Generate response
             response = await asyncio.to_thread(
@@ -151,14 +151,13 @@ class GeminiAPIManager:
             
             # Check if response has valid text
             if not response.parts:
-                print("[GEMINI] WARNING: Empty response from API")
+                pass
                 return {
                     'error': 'API boş yanıt döndürdü. Lütfen tekrar deneyin.',
                     'text': None
                 }
             
-            print(f"[GEMINI] Response received: {len(response.text)} chars")
-            print(f"[GEMINI] Response preview: '{response.text[:100]}...'")
+
             
             # Rotate key for next request (distribute load)
             self._rotate_key()
@@ -173,26 +172,26 @@ class GeminiAPIManager:
             
             # Check for rate limit or quota errors
             if any(err in error_str for err in ['429', 'too many requests', 'quota', 'resource exhausted']):
-                print(f"[GEMINI] Rate limit hit (attempt {retry_count + 1}/{MAX_RETRIES + 1}): {str(e)[:100]}")
+
                 
                 # Retry with exponential backoff instead of marking key as failed for the whole day
                 # retry_count starts at 0, so we retry when retry_count < MAX_RETRIES (0, 1, 2 = 3 retries)
                 if retry_count < MAX_RETRIES:
                     delay = RETRY_DELAY_SECONDS * (retry_count + 1)
-                    print(f"[GEMINI] Waiting {delay}s before retry...")
+                    pass
                     await asyncio.sleep(delay)
                     self._rotate_key()
                     return await self.generate_response(prompt, retry_count + 1)
                 else:
                     # All retries exhausted - don't mark as failed, just return error
-                    print(f"[GEMINI] All {MAX_RETRIES + 1} attempts failed, giving up.")
+                    pass
                     return {
                         'error': 'API kota limiti aşıldı. Lütfen birkaç dakika bekleyip tekrar deneyin.',
                         'text': None
                     }
             
             # Other API errors
-            print(f"[ERROR] Gemini API error: {e}")
+
             return {
                 'error': f'API hatası: {str(e)[:100]}',
                 'text': None

@@ -33,17 +33,17 @@ from .request_queue import request_queue
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan - initialize resources on startup"""
-    print("Starting IpekGPT Web Application...")
+
     
     # Initialize database
     init_db()
-    print("Database initialized")
+
     
     # Initialize RAG system (loads ChromaDB - no heavy model download needed anymore)
-    print("Loading RAG system...")
+
     from .rag_engine import rag_system
     rag_system.initialize()
-    print("RAG system ready!")
+
     
     # Set up request queue handler
     async def process_chat_request(session_id: str, message: str, history: list):
@@ -53,13 +53,13 @@ async def lifespan(app: FastAPI):
     
     request_queue.set_handler(process_chat_request)
     await request_queue.start_processor()
-    print("Request queue processor started")
+
     
     yield
     
     # Cleanup
     await request_queue.stop_processor()
-    print("Shutting down IpekGPT Web Application...")
+
 
 
 # ============================================================================
@@ -168,15 +168,15 @@ async def chat(request: ChatRequest, db: DBSession = Depends(get_db)):
 async def submit_feedback(request: FeedbackRequest, db: DBSession = Depends(get_db)):
     """Submit feedback (thumbs up/down) for an AI response"""
     try:
-        print(f"[FEEDBACK] Received: message_id={request.message_id}, rating={request.rating}")
+
         result = add_feedback(db, request.message_id, request.rating)
-        print(f"[FEEDBACK] Saved: feedback_id={result.id}")
+
         return FeedbackResponse(
             success=True,
             message="Feedback submitted successfully"
         )
     except Exception as e:
-        print(f"[FEEDBACK] Error: {e}")
+
         return FeedbackResponse(
             success=False,
             message=str(e)
@@ -245,5 +245,7 @@ if __name__ == "__main__":
         "app.main:app",
         host=settings.HOST,
         port=settings.PORT,
-        reload=settings.DEBUG
+        reload=settings.DEBUG,
+        access_log=False,
+        log_level="critical"
     )

@@ -37,7 +37,7 @@ class GeminiEmbeddings(Embeddings):
         api_keys = settings.GEMINI_API_KEYS
         if api_keys:
             self.client = genai.Client(api_key=api_keys[0])
-            print(f"[OK] Gemini Embeddings initialized (model={self.model}, dim={self.dimension})")
+            pass
         else:
             raise ValueError("No GEMINI_API_KEYS configured!")
     
@@ -86,13 +86,11 @@ class VectorStore:
     
     def _init_embeddings(self):
         """Initialize the Google Gemini embedding model"""
-        print("Initializing Google Gemini Embeddings API...")
         self.embeddings = GeminiEmbeddings(model="gemini-embedding-001", dimension=768)
-        print("Embeddings ready!")
     
     def load_existing(self):
         """Load existing vector store from disk"""
-        print("Loading existing vector store from chroma_db...")
+
         
         import chromadb
         from chromadb.config import Settings as ChromaSettings
@@ -117,7 +115,7 @@ class VectorStore:
             embedding_function=self.embeddings
         )
         
-        print("Vector store loaded!")
+
         return self.vectorstore
 
 
@@ -183,7 +181,7 @@ YANITIM:
             input_variables=["context", "history", "question", "current_datetime"]
         )
         
-        print("Turkish RAG Chatbot initialized with Gemini API!")
+        pass
     
     async def ask_async(self, question: str, history: list = None, show_sources: bool = False) -> Dict:
         """Ask a question and get a response (async version)
@@ -198,10 +196,10 @@ YANITIM:
         try:
             # Retrieve relevant documents
             perf_start = time.time()
-            print(f"[RAG] Searching for: '{question[:50]}...'")
+
             docs = self.vectorstore.similarity_search(question, k=settings.TOP_K_RESULTS)
             search_time = int((time.time() - perf_start) * 1000)
-            print(f"[PERF] Vector Search: {search_time}ms (k={settings.TOP_K_RESULTS})")
+
             
             # Build context from retrieved documents
             context_parts = []
@@ -218,7 +216,7 @@ YANITIM:
                     role = "Kullanıcı" if msg.get("role") == "user" else "İpekGPT"
                     history_parts.append(f"{role}: {msg.get('content', '')}")
                 history_text = "\n".join(history_parts)
-                print(f"[RAG] Including {len(history)} messages in history")
+                pass
             else:
                 history_text = "(İlk mesaj - önceki konuşma yok)"
             
@@ -240,11 +238,11 @@ YANITIM:
             perf_start = time.time()
             result = await gemini_manager.generate_response(prompt)
             llm_time = int((time.time() - perf_start) * 1000)
-            print(f"[PERF] Gemini LLM: {llm_time}ms")
+
             
             # Calculate total response time
             response_time_ms = int((time.time() - start_time) * 1000)
-            print(f"[PERF] Total RAG Cycle: {response_time_ms}ms")
+
             
             if result['error']:
                 return {
@@ -267,7 +265,7 @@ YANITIM:
             }
             
         except Exception as e:
-            print(f"Error in ask_async(): {e}")
+
             return {
                 'answer': "Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.",
                 'num_sources': 0,
@@ -319,29 +317,25 @@ class RAGSystem:
     def initialize(self):
         """Initialize the RAG system - loads existing ChromaDB"""
         if RAGSystem._initialized:
-            print("RAG System already initialized!")
+            pass
             return self.chatbot
         
-        print("=" * 70)
-        print("IPEKYOLU RAG SISTEMI BASLATILIYOR")
-        print("=" * 70)
+
         
         # Initialize vector store manager and load existing ChromaDB
         self.vector_store_manager = VectorStore()
         self.vectorstore = self.vector_store_manager.load_existing()
         
         if not self.vectorstore:
-            print("Vector store yuklenemedi!")
+            pass
             return None
         
-        print("\nTurkish Gemini RAG chatbot baslatiliyor...")
+
         self.chatbot = TurkishRAGChatbot(vectorstore=self.vectorstore)
         
         RAGSystem._initialized = True
         
-        print("\n" + "=" * 70)
-        print("IPEKYOLU RAG SISTEMI HAZIR!")
-        print("=" * 70)
+
         
         return self.chatbot
     
