@@ -31,7 +31,6 @@ ipekgpt/
 │   ├── rag_engine.py            # RAG sistemi (ChromaDB + Gemini)
 │   ├── request_queue.py         # FIFO istek kuyruğu
 │   ├── rate_limiter.py          # Günlük istek limitleme
-│   ├── recaptcha.py             # Google reCAPTCHA doğrulama
 │   └── static/                  # Frontend dosyaları
 │       ├── index.html           # Ana HTML sayfası
 │       ├── style.css            # CSS stilleri
@@ -40,12 +39,21 @@ ipekgpt/
 │       └── logo.svg             # SVG logo (favicon)
 ├── chroma_db/                   # ChromaDB vektör veritabanı
 │   └── chroma.sqlite3           # Vektörleştirilmiş Q&A verileri
-├── IPEKYOLU_RAG_VERISETI/       # Ham Q&A JSON dosyaları
-├── data/                        # Eski format veri dosyaları
+├── data/                        # Veri klasörü
+│   ├── processed/               # İşlenmiş JSON veri dosyaları
+│   ├── rag_dataset/             # Ham Q&A JSON dosyaları (Kategorik)
+│   ├── raw/                     # Ham metin verileri
+│   └── mining/                  # Veri madenciliği çıktıları
+├── scripts/                     # Yardımcı betikler
+│   ├── check_db.py              # Veritabanı kontrol betiği
+│   ├── rebuild_chromadb.py      # Vektör DB yeniden oluşturma betiği
+│   └── ...                      # Diğer veri madenciliği vb. betikler
+├── notebooks/                   # Jupyter Notebooklar
+│   └── İpekGPT.ipynb            # Orijinal Jupyter notebook
+├── docs/                        # Proje dokümantasyonu
 ├── ipekgpt.db                   # SQLite veritabanı (sessions, messages)
 ├── .env                         # Ortam değişkenleri (API keys)
-├── requirements.txt             # Python bağımlılıkları
-└── İpekGPT.ipynb               # Orijinal Jupyter notebook
+└── requirements.txt             # Python bağımlılıkları
 ```
 
 ---
