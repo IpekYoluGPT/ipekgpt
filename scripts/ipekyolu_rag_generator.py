@@ -7,8 +7,10 @@ from tqdm import tqdm
 from datetime import datetime
 
 # ================= AYARLAR =================
-GIRIS_DOSYASI = r'C:\Users\Atakan\Documents\GitHub\ipekgpt\Data Mining\ek_soru_cevap (1).txt'
-CIKIS_KLASORU = r'C:\Users\Atakan\Documents\GitHub\ipekgpt\IPEKYOLU_RAG_VERISETI'
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GIRIS_DOSYASI = os.path.join(BASE_DIR, 'data', 'mining', 'ek_soru_cevap (1).txt')
+CIKIS_KLASORU = os.path.join(BASE_DIR, 'data', 'rag_dataset')
 
 # Model Ayarları
 MODEL_NAME = 'models/gemini-2.5-flash'
