@@ -3,7 +3,7 @@ ChromaDB Rebuild Script with Google Gemini Embeddings
 Run this in Google Colab to rebuild your vector database.
 
 Usage:
-1. Upload your data folders (data/ and IPEKYOLU_RAG_VERISETI/) to Colab
+1. Upload your data folders (data/processed/ and data/rag_dataset/) to Colab
 2. Set your GEMINI_API_KEY
 3. Run this script
 4. Download the chroma_db folder
@@ -37,12 +37,20 @@ from google.genai import types
 # Configuration
 # ============================================================================
 
+import os
+
+# Base directory setup to work both locally and in Colab
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) if '__file__' in globals() else '.'
+
 GEMINI_API_KEY = "YOUR_API_KEY_HERE"  # Replace with your key
 EMBEDDING_MODEL = "gemini-embedding-001"
 EMBEDDING_DIMENSION = 768
 COLLECTION_NAME = "org_knowledge_turkish"
-CHROMA_DB_PATH = "./chroma_db"
-DATA_DIRECTORIES = ["./data", "./IPEKYOLU_RAG_VERISETI"]
+CHROMA_DB_PATH = os.path.join(BASE_DIR, "chroma_db")
+DATA_DIRECTORIES = [
+    os.path.join(BASE_DIR, "data", "processed"),
+    os.path.join(BASE_DIR, "data", "rag_dataset")
+]
 
 # ============================================================================
 # Google Gemini Embeddings
